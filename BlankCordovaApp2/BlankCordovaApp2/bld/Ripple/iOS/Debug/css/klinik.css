@@ -1,0 +1,76 @@
+﻿
+
+#logo img{
+   
+  position: absolute;
+  
+ 
+}
+
+.nav{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    position: absolute;
+   
+}
+
+.nav li{
+
+    float: left;
+    position: relative;
+    
+}
+
+.nav li a{
+
+  
+    color: white;
+    display: block;
+    text-decoration: none; 
+
+}
+
+#suche{
+
+    position: relative;
+    width:300px;
+    height: 103px;
+    background-color:#133663;
+}
+
+
+#bild{
+
+    position:relative;
+    top: 9px;
+    left: 2px;
+ 
+
+}
+
+
+#lupe{
+
+    position:relative;
+    width: 120px;
+    height:103px;
+
+    background-color:#133663;
+
+}
+
+#hintergrundfarbe{
+    background-color:#133663;
+   
+
+}
+
+
+
+
+
+
+
+
+

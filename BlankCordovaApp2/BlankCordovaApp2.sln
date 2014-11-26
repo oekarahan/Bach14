@@ -57,9 +57,9 @@ Global
 		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Debug|Windows-x86.ActiveCfg = Debug|Windows-x86
 		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Debug|Windows-x86.Build.0 = Debug|Windows-x86
 		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Debug|Windows-x86.Deploy.0 = Debug|Windows-x86
-		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Android.ActiveCfg = Distribution|Android
-		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Android.Build.0 = Distribution|Android
-		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Android.Deploy.0 = Distribution|Android
+		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Android.ActiveCfg = Distribution|Windows-x64
+		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Android.Build.0 = Distribution|Windows-x64
+		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Android.Deploy.0 = Distribution|Windows-x64
 		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|iOS.ActiveCfg = Distribution|iOS
 		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|iOS.Build.0 = Distribution|iOS
 		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|iOS.Deploy.0 = Distribution|iOS
@@ -75,9 +75,9 @@ Global
 		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Windows-ARM.ActiveCfg = Distribution|Windows-ARM
 		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Windows-ARM.Build.0 = Distribution|Windows-ARM
 		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Windows-ARM.Deploy.0 = Distribution|Windows-ARM
-		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Windows-x64.ActiveCfg = Distribution|Windows-x64
-		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Windows-x64.Build.0 = Distribution|Windows-x64
-		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Windows-x64.Deploy.0 = Distribution|Windows-x64
+		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Windows-x64.ActiveCfg = Distribution|iOS
+		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Windows-x64.Build.0 = Distribution|iOS
+		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Windows-x64.Deploy.0 = Distribution|iOS
 		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Windows-x86.ActiveCfg = Distribution|Windows-x86
 		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Windows-x86.Build.0 = Distribution|Windows-x86
 		{0E025D78-DA77-4A96-8FD4-BAB9C218895E}.Distribution|Windows-x86.Deploy.0 = Distribution|Windows-x86

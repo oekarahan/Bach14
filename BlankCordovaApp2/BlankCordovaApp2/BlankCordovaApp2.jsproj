@@ -113,10 +113,16 @@
     <Content Include="css\alters.PNG" />
     <Content Include="css\apo.PNG" />
     <Content Include="css\arzt.PNG" />
+    <Content Include="css\back.PNG" />
+    <Content Include="css\dl.PNG" />
     <Content Include="css\indus.PNG" />
     <Content Include="css\jquery.mobile-1.4.1.min.css" />
     <Content Include="css\private.PNG" />
     <Content Include="css\klinik.css" />
+    <Content Include="css\produkt.PNG" />
+    <Content Include="css\scanner.PNG" />
+    <Content Include="css\search.PNG" />
+    <Content Include="css\suche.PNG" />
     <Content Include="html\klinik.html" />
     <Content Include="packages.config" />
     <Content Include="scripts\jquery-2.1.1.intellisense.js" />

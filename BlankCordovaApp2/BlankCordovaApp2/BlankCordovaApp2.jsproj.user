@@ -6,6 +6,15 @@
     <ReferenceCachePath>C:\Users\admin.karahan\AppData\Local\Temp\BlankCordovaApp2_refcache</ReferenceCachePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Windows-x64'">
-    <DebuggerFlavor>WindowsLocal</DebuggerFlavor>
+    <DebuggerFlavor>WindowsSimulator</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|Windows-x64'">
+    <DebuggerFlavor>WindowsSimulator</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|Android'">
+    <DebuggerFlavor>RippleNexus7</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|iOS'">
+    <DebuggerFlavor>RippleiPhone5</DebuggerFlavor>
   </PropertyGroup>
 </Project>
