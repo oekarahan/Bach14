@@ -47,12 +47,6 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\dl.PNG">
       <PackagePath>www\css\dl.PNG</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\ev.PNG">
-      <PackagePath>www\css\ev.PNG</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\home.PNG">
-      <PackagePath>www\css\home.PNG</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\indus.PNG">
       <PackagePath>www\css\indus.PNG</PackagePath>
     </AppxPackagedFile>
@@ -109,9 +103,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\winstore-jscompat.js">
       <PackagePath>www\scripts\winstore-jscompat.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\bild.jpg">
-      <PackagePath>www\css\bild.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\full.jpg">
       <PackagePath>www\css\full.jpg</PackagePath>

@@ -12,21 +12,17 @@
     padding: 0px;
     list-style: none;
     position: absolute;
-   
+    display: inline;
+  
 }
 
 .nav li{
-
     float: left;
-    position: relative;
-    
+    position: relative;  
 }
 
-.nav li a{
-
-  
+.nav li a{ 
     color: white;
-    display: block;
     text-decoration: none; 
 
 }
@@ -34,9 +30,10 @@
 #suche{
 
     position: relative;
-    width:300px;
+    width:350px;
     height: 103px;
     background-color:#133663;
+   
 }
 
 
@@ -55,7 +52,6 @@
     position:relative;
     width: 120px;
     height:103px;
-
     background-color:#133663;
 
 }
@@ -66,11 +62,13 @@
 
 }
 
+#lu{
+
+    position: relative;
+    width: 35px;
+    top: 11px;
 
 
-
-
-
-
+}
 
 
