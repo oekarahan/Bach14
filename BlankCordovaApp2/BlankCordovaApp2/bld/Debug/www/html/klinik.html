@@ -2,54 +2,54 @@
 <html>
 <head>
     <meta charset="utf-8" meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>BlankCordovaApp2</title>
+   
+    <script type="text/javascript" src="../scripts/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="../scripts/ajax.js"></script>
+
     <link href="../css/klinik.css" rel="stylesheet" media="screen" />
-    <link href="../css/jquery.mobile-1.4.1.min.css" rel="stylesheet" />
-    <script language="javascript" type="text/javascript" src="../scripts/jquery-2.1.1.min.js"></script>
-    <script language="javascript" type="text/javascript" src="../scripts/jquery.mobile-1.4.1.min.js"></script>
-  
+    <link href="../css/style.css" rel="stylesheet" media="screen" />
 </head>
-<body>
-
-
+    <body>
 
         <script src="cordova.js"></script>
         <script src="scripts/platformOverrides.js"></script>
         <script src="scripts/index.js"></script>
-
-
-        <div id="logo">
-            <img id="hintergrundbild" src="../css/full.jpg"  />
-        </div>
-
-
-    <div data-role="navbar">
-        <div class="nav">
-
-            <li>
-                <a href="#" id="hintergrundfarbe"><img src="../css/back.PNG" width="100" height="100" id="back" /></a>
-            </li>
-            <li>
-                <a href="#" id="hintergrundfarbe"><img src="../css/produkt.PNG" width="120" height="100" id="pro" /></a>
-            </li>
-            <li>
-                <a href="#" id="hintergrundfarbe"><img src="../css/dl.PNG" width="120" height="100" id="dl" /></a>
-            </li>
-            <li>
-                <a href="#" id="hintergrundfarbe"><img src="../css/scanner.PNG" width="120" height="100" id="scanner" /></a>
-            </li>
-            <li>
-                <a id="suche" ><input id="search" type="text" placeholder="SUCHE" ></a>
-            </li>
-            <li id="lu">
-                <img src="../css/suche.PNG" id="bild" width="30" height="30" />
-            </li>
-
-
-        </div>
-
-    </div>
    
+
+            <div id="logo">
+                <img id="hintergrundbild" src="../css/full.jpg"  />
+             </div>
+
+
+            <div data-role="">
+                 <div class="nav">
+                        <li id="zurück">
+                             <a href="../html/testajax.html"><img src="../css/back.PNG" width="100" height="100" id="back"/></a>
+                        </li>
+                        <li>
+                             <img src="../css/produkt.PNG" width="120" height="100" id="pro" />
+                        </li>
+                        <li>
+                            <img src="../css/dl.PNG" width="120" height="100" id="dl" />
+                        </li>
+                        <li>
+                            <img src="../css/scanner.PNG" width="120" height="100"  id="scanner" />
+                        </li>
+                        <li id="in">
+                            <span id="feld1">
+                                <input id="feld" min="0" max="80" type="text" placeholder="SUCHE">
+                            </span>
+                        </li>
+                        <li> 
+                            <img src="../css/suche.PNG" id="bild" width="33" height="38" />
+                        </li>
+
+                </div>
+            </div>
+   
+   <div id="content"><p>Wilkommen</p></div>
 
 
 </body>
