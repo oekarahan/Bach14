@@ -3,7 +3,7 @@
   <PropertyGroup>
     <AutoRefresh>true</AutoRefresh>
     <ShowAllFiles>true</ShowAllFiles>
-    <ReferenceCachePath>C:\Users\Ozlem\AppData\Local\Temp\s2q3kamk_BlankCordovaApp2_refcache</ReferenceCachePath>
+    <ReferenceCachePath>C:\Users\admin.karahan\AppData\Local\Temp\o4ni42z1_BlankCordovaApp2_refcache</ReferenceCachePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Windows-x64'">
     <DebuggerFlavor>WindowsLocal</DebuggerFlavor>

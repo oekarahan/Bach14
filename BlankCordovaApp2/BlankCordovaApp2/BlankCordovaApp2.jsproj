@@ -128,6 +128,7 @@
     <Content Include="html\klinik.html" />
     <Content Include="html\leistungen.html" />
     <Content Include="html\produkte.html" />
+    <Content Include="html\scanner.html" />
     <Content Include="html\testajax.html" />
     <Content Include="packages.config" />
     <Content Include="scripts\ajax.js" />

@@ -43,13 +43,13 @@
 
 #icon{
     z-index:1;
-    position: absolute; top: 450px; left: 400px;
-    
+    position: absolute; top: 450px; left: 650px;
+   align-content: center; 
 
 }
 
 #icon1{
      z-index:1;
-    position: absolute; top: 600px; left: 400px;
-    
+    position: absolute; top: 600px; left: 650px;
+    align-content: center;
 }

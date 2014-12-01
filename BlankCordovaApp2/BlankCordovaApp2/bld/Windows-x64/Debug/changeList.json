@@ -11,6 +11,7 @@
     "res\\icons\\ios\\icon-60.png",
     "css\\apo.PNG",
     "res\\screens\\windows\\splashscreen.png",
+    "html\\leistungen.html",
     "scripts\\jquery-2.1.1.js",
     "css\\Logo_IVF_Hartmann.svg.png",
     "res\\icons\\android\\icon-48-mdpi.png",
@@ -30,6 +31,7 @@
     "css\\indus.PNG",
     "res\\icons\\windows\\StoreLogo.scale-240.png",
     "res\\screens\\ios\\screen-ipad-landscape.png",
+    "html\\produkte.html",
     "css\\full.jpg",
     "css\\klinik.PNG",
     "packages.config",
@@ -76,6 +78,7 @@
     "css\\ev.PNG",
     "index.html",
     "res\\icons\\ios\\icon-40-2x.png",
+    "css\\pfeil.PNG",
     "res\\screens\\android\\screen-hdpi-landscape.png",
     "css\\produkt.PNG",
     "res\\screens\\ios\\screen-ipad-portrait.png",
@@ -88,15 +91,14 @@
     "res\\screens\\android\\screen-mdpi-portrait.png",
     "css\\back.PNG",
     "css\\home.PNG",
-    "css\\pfeil.PNG",
-    "html\\produkte.html",
-    "html\\leistungen.html"
+    "html\\scanner.html"
   ],
   "deletedFilesIos": [],
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "html\\produkte.html"
+    "html\\scanner.html",
+    "html\\leistungen.html"
   ],
   "deletedFiles": [],
   "addedPlugins": [],
