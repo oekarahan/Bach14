@@ -20,7 +20,7 @@
     <AppXManifest Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\build\windows80\debug\x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-12-01T14:01:44.023</Modified>
+      <Modified>2014-12-01T16:48:32.271</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -46,211 +46,215 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\alters.PNG">
       <PackagePath>www\css\alters.PNG</PackagePath>
-      <Modified>2014-12-01T14:01:41.234</Modified>
+      <Modified>2014-12-01T16:48:29.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\apo.PNG">
       <PackagePath>www\css\apo.PNG</PackagePath>
-      <Modified>2014-12-01T14:01:41.235</Modified>
+      <Modified>2014-12-01T16:48:29.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\arzt.PNG">
       <PackagePath>www\css\arzt.PNG</PackagePath>
-      <Modified>2014-12-01T14:01:41.237</Modified>
+      <Modified>2014-12-01T16:48:29.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\back.PNG">
       <PackagePath>www\css\back.PNG</PackagePath>
-      <Modified>2014-12-01T14:01:41.239</Modified>
+      <Modified>2014-12-01T16:48:29.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\dl.PNG">
       <PackagePath>www\css\dl.PNG</PackagePath>
-      <Modified>2014-12-01T14:01:41.242</Modified>
+      <Modified>2014-12-01T16:48:29.447</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\ev.PNG">
       <PackagePath>www\css\ev.PNG</PackagePath>
-      <Modified>2014-12-01T14:01:41.244</Modified>
+      <Modified>2014-12-01T16:48:29.448</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\home.PNG">
       <PackagePath>www\css\home.PNG</PackagePath>
-      <Modified>2014-12-01T14:01:41.249</Modified>
+      <Modified>2014-12-01T16:48:29.453</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\indus.PNG">
       <PackagePath>www\css\indus.PNG</PackagePath>
-      <Modified>2014-12-01T14:01:41.252</Modified>
+      <Modified>2014-12-01T16:48:29.456</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\klinik.PNG">
       <PackagePath>www\css\klinik.PNG</PackagePath>
-      <Modified>2014-12-01T14:01:41.437</Modified>
+      <Modified>2014-12-01T16:48:29.652</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\Logo_IVF_Hartmann.svg.png">
       <PackagePath>www\css\Logo_IVF_Hartmann.svg.png</PackagePath>
-      <Modified>2014-12-01T14:01:41.438</Modified>
+      <Modified>2014-12-01T16:48:29.653</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\pfeil.PNG">
       <PackagePath>www\css\pfeil.PNG</PackagePath>
-      <Modified>2014-12-01T14:01:41.441</Modified>
+      <Modified>2014-12-01T16:48:29.656</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\private.PNG">
       <PackagePath>www\css\private.PNG</PackagePath>
-      <Modified>2014-12-01T14:01:41.442</Modified>
+      <Modified>2014-12-01T16:48:29.658</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\produkt.PNG">
       <PackagePath>www\css\produkt.PNG</PackagePath>
-      <Modified>2014-12-01T14:01:41.444</Modified>
+      <Modified>2014-12-01T16:48:29.659</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\scanner.PNG">
       <PackagePath>www\css\scanner.PNG</PackagePath>
-      <Modified>2014-12-01T14:01:41.445</Modified>
+      <Modified>2014-12-01T16:48:29.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\search.PNG">
       <PackagePath>www\css\search.PNG</PackagePath>
-      <Modified>2014-12-01T14:01:41.446</Modified>
+      <Modified>2014-12-01T16:48:29.662</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\start.png">
+      <PackagePath>www\css\start.png</PackagePath>
+      <Modified>2014-12-01T16:48:29.664</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\suche.PNG">
       <PackagePath>www\css\suche.PNG</PackagePath>
-      <Modified>2014-12-01T14:01:41.449</Modified>
+      <Modified>2014-12-01T16:48:29.668</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\cordova.js">
       <PackagePath>www\cordova.js</PackagePath>
-      <Modified>2014-12-01T14:01:41.677</Modified>
+      <Modified>2014-12-01T16:48:29.892</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\cordova_plugins.js">
       <PackagePath>www\cordova_plugins.js</PackagePath>
-      <Modified>2014-12-01T14:01:42.005</Modified>
+      <Modified>2014-12-01T16:48:30.220</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\ajax.js">
       <PackagePath>www\scripts\ajax.js</PackagePath>
-      <Modified>2014-12-01T14:01:41.468</Modified>
+      <Modified>2014-12-01T16:48:29.690</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\index.js">
       <PackagePath>www\scripts\index.js</PackagePath>
-      <Modified>2014-12-01T14:01:41.470</Modified>
+      <Modified>2014-12-01T16:48:29.691</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-1.6.2-vsdoc.js">
       <PackagePath>www\scripts\jquery-1.6.2-vsdoc.js</PackagePath>
-      <Modified>2014-12-01T14:01:42.220</Modified>
+      <Modified>2014-12-01T16:48:30.445</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-1.6.2.js">
       <PackagePath>www\scripts\jquery-1.6.2.js</PackagePath>
-      <Modified>2014-12-01T14:01:42.243</Modified>
+      <Modified>2014-12-01T16:48:30.469</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-1.6.2.min.js">
       <PackagePath>www\scripts\jquery-1.6.2.min.js</PackagePath>
-      <Modified>2014-12-01T14:01:42.263</Modified>
+      <Modified>2014-12-01T16:48:30.490</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-2.1.1.intellisense.js">
       <PackagePath>www\scripts\jquery-2.1.1.intellisense.js</PackagePath>
-      <Modified>2014-12-01T14:01:42.291</Modified>
+      <Modified>2014-12-01T16:48:30.518</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-2.1.1.js">
       <PackagePath>www\scripts\jquery-2.1.1.js</PackagePath>
-      <Modified>2014-12-01T14:01:42.313</Modified>
+      <Modified>2014-12-01T16:48:30.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-2.1.1.min.js">
       <PackagePath>www\scripts\jquery-2.1.1.min.js</PackagePath>
-      <Modified>2014-12-01T14:01:42.333</Modified>
+      <Modified>2014-12-01T16:48:30.561</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery.mobile-1.4.1.min.js">
       <PackagePath>www\scripts\jquery.mobile-1.4.1.min.js</PackagePath>
-      <Modified>2014-12-01T14:01:42.360</Modified>
+      <Modified>2014-12-01T16:48:30.589</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery.mobile-1.4.5.min.js">
       <PackagePath>www\scripts\jquery.mobile-1.4.5.min.js</PackagePath>
-      <Modified>2014-12-01T14:01:42.389</Modified>
+      <Modified>2014-12-01T16:48:30.618</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\platformOverrides.js">
       <PackagePath>www\scripts\platformOverrides.js</PackagePath>
-      <Modified>2014-12-01T14:01:41.665</Modified>
+      <Modified>2014-12-01T16:48:29.880</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\script.js">
       <PackagePath>www\scripts\script.js</PackagePath>
-      <Modified>2014-12-01T14:01:41.660</Modified>
+      <Modified>2014-12-01T16:48:29.875</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\script1.js">
       <PackagePath>www\scripts\script1.js</PackagePath>
-      <Modified>2014-12-01T14:01:41.661</Modified>
+      <Modified>2014-12-01T16:48:29.877</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\winstore-jscompat.js">
       <PackagePath>www\scripts\winstore-jscompat.js</PackagePath>
-      <Modified>2014-12-01T14:01:41.666</Modified>
+      <Modified>2014-12-01T16:48:29.881</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\bild.jpg">
       <PackagePath>www\css\bild.jpg</PackagePath>
-      <Modified>2014-12-01T14:01:41.241</Modified>
+      <Modified>2014-12-01T16:48:29.445</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\full.jpg">
       <PackagePath>www\css\full.jpg</PackagePath>
-      <Modified>2014-12-01T14:01:41.247</Modified>
+      <Modified>2014-12-01T16:48:29.451</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\index.css">
       <PackagePath>www\css\index.css</PackagePath>
-      <Modified>2014-12-01T14:01:41.250</Modified>
+      <Modified>2014-12-01T16:48:29.455</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\jquery.mobile-1.4.1.min.css">
       <PackagePath>www\css\jquery.mobile-1.4.1.min.css</PackagePath>
-      <Modified>2014-12-01T14:01:42.101</Modified>
+      <Modified>2014-12-01T16:48:30.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\jquery.mobile-1.4.5.min.css">
       <PackagePath>www\css\jquery.mobile-1.4.5.min.css</PackagePath>
-      <Modified>2014-12-01T14:01:42.200</Modified>
+      <Modified>2014-12-01T16:48:30.426</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\klinik.css">
       <PackagePath>www\css\klinik.css</PackagePath>
-      <Modified>2014-12-01T14:01:41.435</Modified>
+      <Modified>2014-12-01T16:48:29.650</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\style.css">
       <PackagePath>www\css\style.css</PackagePath>
-      <Modified>2014-12-01T14:01:41.447</Modified>
+      <Modified>2014-12-01T16:48:29.667</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\op.gif">
       <PackagePath>www\css\op.gif</PackagePath>
-      <Modified>2014-12-01T14:01:41.439</Modified>
+      <Modified>2014-12-01T16:48:29.655</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\html\klinik.html">
       <PackagePath>www\html\klinik.html</PackagePath>
-      <Modified>2014-12-01T14:01:41.451</Modified>
+      <Modified>2014-12-01T16:48:29.671</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\html\leistungen.html">
       <PackagePath>www\html\leistungen.html</PackagePath>
-      <Modified>2014-12-01T14:01:41.452</Modified>
+      <Modified>2014-12-01T16:48:29.672</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\html\produkte.html">
       <PackagePath>www\html\produkte.html</PackagePath>
-      <Modified>2014-12-01T14:01:41.453</Modified>
+      <Modified>2014-12-01T16:48:29.673</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\html\scanner.html">
       <PackagePath>www\html\scanner.html</PackagePath>
-      <Modified>2014-12-01T14:01:41.455</Modified>
+      <Modified>2014-12-01T16:48:29.675</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\html\startseite.html">
       <PackagePath>www\html\startseite.html</PackagePath>
-      <Modified>2014-12-01T14:01:41.456</Modified>
+      <Modified>2014-12-01T16:48:29.677</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\html\testajax.html">
       <PackagePath>www\html\testajax.html</PackagePath>
-      <Modified>2014-12-01T14:01:41.457</Modified>
+      <Modified>2014-12-01T16:48:29.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\index.html">
       <PackagePath>www\index.html</PackagePath>
-      <Modified>2014-12-01T14:01:41.459</Modified>
+      <Modified>2014-12-01T16:48:29.680</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\Project_Readme.html">
       <PackagePath>www\Project_Readme.html</PackagePath>
-      <Modified>2014-12-01T14:01:41.466</Modified>
+      <Modified>2014-12-01T16:48:29.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\packages.config">
       <PackagePath>www\packages.config</PackagePath>
-      <Modified>2014-12-01T14:01:41.460</Modified>
+      <Modified>2014-12-01T16:48:29.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-2.1.1.min.map">
       <PackagePath>www\scripts\jquery-2.1.1.min.map</PackagePath>
-      <Modified>2014-12-01T14:01:41.604</Modified>
+      <Modified>2014-12-01T16:48:29.817</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\config.xml">
       <PackagePath>config.xml</PackagePath>
-      <Modified>2014-12-01T14:01:41.991</Modified>
+      <Modified>2014-12-01T16:48:30.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\build\windows80\debug\x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-12-01T14:01:43.857</Modified>
+      <Modified>2014-12-01T16:48:32.104</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

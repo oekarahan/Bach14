@@ -91,14 +91,14 @@
     "res\\screens\\android\\screen-mdpi-portrait.png",
     "css\\back.PNG",
     "css\\home.PNG",
-    "html\\scanner.html"
+    "html\\scanner.html",
+    "css\\start.png"
   ],
   "deletedFilesIos": [],
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "html\\scanner.html",
-    "html\\leistungen.html"
+    "index.html"
   ],
   "deletedFiles": [],
   "addedPlugins": [],

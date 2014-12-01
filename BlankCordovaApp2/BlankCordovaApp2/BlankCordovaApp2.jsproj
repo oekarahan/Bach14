@@ -123,6 +123,7 @@
     <Content Include="css\produkt.PNG" />
     <Content Include="css\scanner.PNG" />
     <Content Include="css\search.PNG" />
+    <Content Include="css\start.png" />
     <Content Include="css\style.css" />
     <Content Include="css\suche.PNG" />
     <Content Include="html\klinik.html" />
