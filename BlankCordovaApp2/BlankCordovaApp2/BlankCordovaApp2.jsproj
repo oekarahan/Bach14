@@ -117,6 +117,7 @@
     <Content Include="css\dl.PNG" />
     <Content Include="css\indus.PNG" />
     <Content Include="css\jquery.mobile-1.4.1.min.css" />
+    <Content Include="css\pfeil.PNG" />
     <Content Include="css\private.PNG" />
     <Content Include="css\klinik.css" />
     <Content Include="css\produkt.PNG" />
@@ -125,12 +126,15 @@
     <Content Include="css\style.css" />
     <Content Include="css\suche.PNG" />
     <Content Include="html\klinik.html" />
+    <Content Include="html\leistungen.html" />
+    <Content Include="html\produkte.html" />
     <Content Include="html\testajax.html" />
     <Content Include="packages.config" />
     <Content Include="scripts\ajax.js" />
-    <Content Include="scripts\jquery-1.6.2-vsdoc.js" />
-    <Content Include="scripts\jquery-1.6.2.js" />
-    <Content Include="scripts\jquery-1.6.2.min.js" />
+    <Content Include="scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="scripts\jquery-2.1.1.js" />
+    <Content Include="scripts\jquery-2.1.1.min.js" />
+    <Content Include="scripts\jquery-2.1.1.min.map" />
     <Content Include="scripts\jquery.mobile-1.4.1.min.js" />
     <Content Include="scripts\script.js" />
     <Folder Include="images\" />

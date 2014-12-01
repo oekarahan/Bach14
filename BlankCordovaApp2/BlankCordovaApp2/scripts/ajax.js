@@ -1,14 +1,20 @@
 ﻿
 
-$(document).ready(function(){       // code direkt nach laden der seite starten
 
-    $('#zurück a, #content a').live('click', function(){ //click funtkion zuweisen
-        
-        var pageToLoad = $(this).attr('href'); // das ziel-link auslesen und zwischenspeichern
+$(document).ready(toStaticHTML(function () {       // code direkt nach laden der seite starten
 
-        $('#content').load(pageToLoad); // dem div content den inhalt zuweisen 
+    $('#back').click(function () {
 
 
-        return false;
+        $('div').load('../index.html');
+
     });
+
+    $('#produkt').click(function () {
+        $('#ajax').load('../html/produkte.html');
+
     });
+
+
+
+}));

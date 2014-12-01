@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
     <meta charset="utf-8" meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>BlankCordovaApp2</title>
    
-    <script type="text/javascript" src="../scripts/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="../scripts/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="../scripts/ajax.js"></script>
 
     <link href="../css/klinik.css" rel="stylesheet" media="screen" />
@@ -23,33 +23,33 @@
              </div>
 
 
-            <div data-role="">
+            <div id="navbar">
                  <div class="nav">
                         <li id="zurück">
-                             <a href="../html/testajax.html"><img src="../css/back.PNG" width="100" height="100" id="back"/></a>
+                           <a href="../index.html"><img src="../css/pfeil.PNG" width="100" height="100" id="back"/></a>
                         </li>
-                        <li>
-                             <img src="../css/produkt.PNG" width="120" height="100" id="pro" />
+                        <li id="produkt">
+                             <a href="produkte.html"><img src="../css/produkt.PNG" width="120" height="100" id="pro"/></a>
                         </li>
-                        <li>
+                        <li id="leistungen">
                             <img src="../css/dl.PNG" width="120" height="100" id="dl" />
                         </li>
-                        <li>
+                        <li id="scan">
                             <img src="../css/scanner.PNG" width="120" height="100"  id="scanner" />
                         </li>
-                        <li id="in">
+                        <li id="inputfeld">
                             <span id="feld1">
                                 <input id="feld" min="0" max="80" type="text" placeholder="SUCHE">
                             </span>
                         </li>
                         <li> 
-                            <img src="../css/suche.PNG" id="bild" width="33" height="38" />
+                            <img src="../css/suche.PNG" id="bild" width="25" height="22" />
                         </li>
 
                 </div>
             </div>
    
-   <div id="content"><p>Wilkommen</p></div>
+  <div id="ajax"></div>
 
 
 </body>

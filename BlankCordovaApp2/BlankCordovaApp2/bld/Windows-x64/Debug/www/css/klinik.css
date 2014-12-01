@@ -8,12 +8,17 @@
  
 }
 
+#navbar {
+background-color:#133663;
+
+}
+
 .nav{
     margin: 0px;
     padding: 0px;
     list-style: none;
     position: absolute;
-    
+     background-color:#133663;
     
   
 }
@@ -45,25 +50,15 @@
 
 
 
-
-
-
-
-#hintergrundfarbe{
-    background-color:#133663;
-   
-
-}
-
 #bild{
 
    position:relative;
-   top: 31px;
-   right:6px;
+   top: 23px;
+   right:85px;
 
 }
 
-#in{
+#inputfeld{
 
     position: relative;
     width:250px;
@@ -72,14 +67,44 @@
 }
 
 
-#feld1{
+#feld1 {
     position: relative;
     top: 23px;
     height: 105px;
     left: 20px;
     width: 250px;
-   
+}
 
+#zurück img:hover{
 
+    opacity: 0.4;
 
 }
+
+#zurück {
+
+background-color:#133663;
+   
+
+}
+
+#produkt img:hover{
+
+    opacity:0.4;
+}
+
+#leistungen img:hover{
+    opacity:0.4;
+
+}
+
+#scan img:hover{
+    opacity:0.4;
+
+}
+
+#inputfeld img:hover{
+    opacity: 0.4;
+
+}
+

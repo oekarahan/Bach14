@@ -4,8 +4,7 @@
   width:100%;
   z-index:0;
   opacity: 0.6;
- 
- 
+
 }
 
 
@@ -15,8 +14,8 @@
     position: absolute;
     font-family:Cambria;
     font-size: 50px;  
-    right: 40%;
-    bottom: 60%;
+    right: 30%;
+    top: 15%;
     text-align: center;
 }
 
@@ -32,24 +31,25 @@
 
 }
 
-#icon img:hover{
-     opacity: 0.4;
-}
 
 #icon1 img:hover{
     opacity: 0.4;
 }
 
 
+#icon img:hover{
+    opacity: 0.4;
+}
+
 #icon{
     z-index:1;
-    position: absolute; top: 500px; left: 600px;
+    position: absolute; top: 450px; left: 400px;
     
 
 }
 
 #icon1{
      z-index:1;
-    position: absolute; top: 670px; left: 600px;
+    position: absolute; top: 600px; left: 400px;
     
 }
