@@ -1,97 +1,62 @@
-﻿
-
-#logo img{
+﻿#hintergrundbild{
    
   position: absolute;
-  opacity: 0.6;
-  
+  align-content: center;
+  opacity: 0.3;
  
 }
 
-#navbar {
-background-color:#133663;
 
-}
-
-.nav{
-    margin: 0px;
-    padding: 0px;
+.navii{
+  
     list-style: none;
     position: absolute;
-     background-color:#133663;
-    
+    background-color:#1a4064;
+    width: 768px;
+   
   
 }
 
-.nav li{
-    float: left;
-    position: relative;
-    width: 150px;
-    height: 105px; 
-    position: center;
-    background-color:#133663;
+
+
+.navii li{
+   
+    display:inline;
+    background-color:#1a4064;
 }
 
-.nav li a{ 
+
+.schrift{
+
+    font-family: Arial;
     color: white;
-    text-decoration: none; 
-    display: block;
-   position: relative;
-    width: 150px;
-    height: 105px; 
-}
 
-#suche {
-    position: relative;
-    width: 400px;
-    height: 200px;
-    background-color: #133663;
-}
-
-
-
-#bild{
-
-   position:relative;
-   top: 23px;
-   right:85px;
 
 }
 
-#inputfeld{
+#feld{
+
+position:relative;
+    border-radius: 4px;
+    bottom: 22px!important;
+  
+   
+}
+
+#lupe{
 
     position: relative;
-    width:250px;
-    height: 105px;
-    
+ bottom: 10px !important;
+ 
 }
 
-
-#feld1 {
-    position: relative;
-    top: 23px;
-    height: 105px;
-    left: 20px;
-    width: 250px;
-}
 
 #zurück img:hover{
-
-    opacity: 0.4;
-
-}
-
-#zurück {
-
-background-color:#133663;
-   
-
-}
-
-#produkt img:hover{
-
     opacity:0.4;
+
 }
+
+
 
 #leistungen img:hover{
     opacity:0.4;

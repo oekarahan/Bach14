@@ -1,57 +1,66 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html>
+
 <html>
 <head>
-    <meta charset="utf-8" meta name="viewport" content="width=device-width, initial-scale=1" />
+
 
     <title>BlankCordovaApp2</title>
-
-    <script type="text/javascript" src="../scripts/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="../scripts/ajax.js"></script>
-
     <link href="../css/klinik.css" rel="stylesheet" media="screen" />
-    <link href="../css/style.css" rel="stylesheet" media="screen" />
+
 </head>
+
 <body>
 
-    <script src="cordova.js"></script>
-    <script src="scripts/platformOverrides.js"></script>
+    <img id="hintergrundbild" src="../css/home.png" />
 
 
 
-    <div id="logo">
-        <img id="hintergrundbild" src="../css/full.jpg" />
-    </div>
+    <div class="navii">
+        <div id="navi">
 
-
-    <div id="navbar">
-        <div class="nav">
             <li id="zurück">
-                <a href="../index.html"><img src="../css/pfeil.PNG" width="100" height="100" id="back" /></a>
+                <a href="../index.html" class="azurück">
+                    <img src="../css/zurück.png" width="80" height="55" style="margin-right: 30px; border-style: none" />
+                </a>
             </li>
             <li id="produkt">
-                <a href="produkte.html"><img src="../css/produkt.PNG" width="120" height="100" id="pro" /></a>
+                <img src="../css/pro_weiss.png" style="margin-right: 83px; border-style: none" />
+
             </li>
             <li id="leistungen">
-                <a href="leistungen.html"><img src="../css/dl.PNG" width="120" height="100" id="dl" /></a>
+                <img src="../css/leistung.png" width="50" height="50" style="margin-right: 83px; border-style: none" />
+
             </li>
             <li id="scan">
-                <a href="scanner.html"><img src="../css/scanner.PNG" width="120" height="100" id="scanner" /></a>
+                <img src="../css/scanner.png" width="50" height="50" style="margin-right: 75px; border-style: none" />
 
             </li>
-            <li id="inputfeld">
-                <span id="feld1">
-                    <input id="feld" min="0" max="80" type="text" placeholder="SUCHE">
-                </span>
+
+            <li id="feld1">
+                <input type="text" id="feld" placeholder="SUCHE" width="160" height="40" />
+                <img src="../css/search.png" id="lupe" width="40" height="35" style="margin-right: 30px ; border-style: none" />
             </li>
-            <li>
-                <img src="../css/suche.PNG" id="bild" width="25" height="22" />
-            </li>
+            <div class="schrift">
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <a style="margin-right: 67px">Produkte</a>
+                <a style="margin-right: 60px">Leistungen</a>
+                <a style="margin-right: 65px">Scanner</a>
+
+            </div>
+
 
         </div>
+
     </div>
 
-    <div id="ajax"></div>
+    <p>
+        leistungen
+    </p>
 
 
+ 
 </body>
 </html>
