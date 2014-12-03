@@ -19,20 +19,28 @@
         <div id="navi">
 
             <li id="zurück">
-                <a href="../index.html" class="azurück">
+                <a onclick="history.back()" class="azurück">
                     <img src="../css/zurück.png" width="80" height="55" style="margin-right: 30px; border-style: none" />
                 </a>
             </li>
+
             <li id="produkt">
-                <img src="../css/pro_weiss.png" style="margin-right: 83px; border-style: none" />
+                <a href="klinik.html">
+                    <img src="../css/pro_weiss.png" style="margin-right: 83px; border-style: none" />
+                </a>
 
             </li>
+
             <li id="leistungen">
-                <img src="../css/leistung.png" width="50" height="50" style="margin-right: 83px; border-style: none" />
-
+               <a href="leistungen.html">
+                   <img src="../css/leistung.png" width="50" height="50" style="margin-right: 83px; border-style: none" />
+                </a>
             </li>
+
             <li id="scan">
-                <img src="../css/scanner.png" width="50" height="50" style="margin-right: 75px; border-style: none" />
+                <a href="scanner.html">
+                       <img src="../css/scanner.png" width="50" height="50" style="margin-right: 75px; border-style: none" />
+                </a>
 
             </li>
 
@@ -43,11 +51,11 @@
             <div class="schrift">
 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                <a style="margin-right: 67px">Produkte</a>
-                <a style="margin-right: 60px">Leistungen</a>
-                <a style="margin-right: 65px">Scanner</a>
+                <a style="margin-right: 50px" id="produktschrift">Produkte</a>
+                <a style="margin-right: 58px" id="leistungschrift">Leistungen</a>
+                <a style="margin-right: 65px" id="scanschrift">Scanner</a>
 
             </div>
 

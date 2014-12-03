@@ -1,0 +1,55 @@
+﻿#hintergrundbild{
+   
+  position: absolute;
+  width:100%;
+  z-index:0;
+  opacity: 0.9;
+ 
+ 
+}
+
+
+#u1{
+    
+    color: white;
+    position: absolute;
+    font-family:Cambria;
+    font-size: 50px;  
+    right: 40%;
+    bottom: 60%;
+    text-align: center;
+}
+
+#logo{
+
+    z-index:1;
+    position:absolute;top:35px;left:35px; 
+}
+
+#home{
+  
+  opacity: 0.6;
+
+}
+
+#icon img:hover{
+     opacity: 0.4;
+}
+
+#icon1 img:hover{
+    opacity: 0.4;
+}
+
+
+#icon{
+    z-index:1;
+    position: absolute; top: 500px; left: 600px;
+    
+
+}
+
+#icon1{
+     z-index:1;
+    position: absolute; top: 670px; left: 600px;
+    
+}

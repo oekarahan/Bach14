@@ -1,4 +1,13 @@
-﻿#hintergrundbild{
+﻿@charset "utf-8";
+
+@font-face{
+
+    font-family: meineSchrift;
+    src:url(Open_Sans/OpenSans-Light.ttf);
+
+}
+
+#hintergrundbild{
    
   position: absolute;
   align-content: center;
@@ -6,25 +15,22 @@
  
 }
 
-
 .navii{
   
     list-style: none;
     position: absolute;
     background-color:#1a4064;
     width: 768px;
+    height: 95px
    
   
 }
-
-
 
 .navii li{
    
     display:inline;
     background-color:#1a4064;
 }
-
 
 .schrift{
 
@@ -71,5 +77,23 @@ position:relative;
 #inputfeld img:hover{
     opacity: 0.4;
 
+}
+
+
+#produktschrift{
+
+font-family:meineSchrift;
+}
+
+#leistungschrift{
+
+    font-family: meineSchrift;
+
+}
+
+#scanschrift{
+
+
+    font-family: meineSchrift;
 }
 
