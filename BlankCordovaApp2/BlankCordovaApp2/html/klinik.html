@@ -7,43 +7,13 @@
     <title>BlankCordovaApp2</title>
 
     <link href="../css/klinik.css" rel="stylesheet" media="screen" />
-    <script src="../scripts/jquery-2.1.0.min.js"></script>
-
-    <script type="text/javascript">
-
-
-    $(document).ready(function () {
-
-
-        $.ajax({
-            type: 'POST',
-            url: 'index.php',
-            data: 'language=DE',
-            dataType: 'json',
-            cache: false,
-            error: function (xhr, ajaxOptions, thrownError) { console.log(xhr.status); console.log(thrownError); },
-            success: function (result) {
-                console.log(result.data);
-                for (index = 0; index < result.data.length; index++) {
-                    console.log(result.data[index].name);
-                    console.log(result.data[index].subGroups.length);
-                }
-                $('#output').html(result);
-            }
-        });
-
-    });
-
-
-    </script>
-
     
 
 </head>
 
     <body>
 
-                <img id="hintergrundbild" src="../css/home.png"  />
+          
             
 
         
@@ -95,8 +65,72 @@
                                
      </div>
         
-   <div id="output"></div>
-    
+  
+        
 
+        <script src="../scripts/jquery-2.1.0.min.js"></script>
+
+        <script>
+            
+            $(document).ready(function () {
+
+
+                $.ajax({
+
+                    type: 'POST',
+                    url: 'https://katalog.ivf.hartmann.info/mobileapi/index.php',
+                    data: 'language=DE',
+                    dataType: 'json',
+                    cache: false,
+                    error: function (xhr, ajaxOptions, thrownError) { console.log(xhr.status); console.log(thrownError); console.log(xhr.responseText)},
+                    success: function (result) {
+                        console.log(result.data);
+
+                        for (index = 0; index < result.data.length; index++) {
+
+                            console.log(result.data[index].name);
+                            
+                              $('#inhalt').append('<div style="float: left;  border: solid black"><a id="link" href="subgruppe.html">' + result.data[index].name + '</a></div><div style=" float: left;"></div><div style="clear: both"></div>');
+     
+                           
+
+                              
+
+
+                                  console.log(result.data[index].subGroups);
+
+
+                 
+
+
+
+                         
+
+                            // $('#inhalt').append('<table width="700" border="1" ><p id="a"><b>' + result.data[index].name +'</b></p> <tr><td><a href="#"><img src="../css/probild.png"></a>'+'</td><td width="350"></td></tr></table>'); // die Daten werden in einer Tabelle angezeigt.
+                            
+                            //console.log(result.data[index].name); //gibt die Daten in der Konsole aus. 
+                            //console.log(result.data[index].subGroups.length);
+                        }
+                        
+                    }
+                });
+
+            });
+  
+
+        </script>
+
+        <style>
+        #a{
+          
+            color: #1a4064;
+            font-family: Arial;
+        }
+        </style>
+
+    
+        <div id="inhalt"></div>
+      
+      
 </body>
 </html>

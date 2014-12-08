@@ -44,6 +44,9 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\lupe.png">
       <PackagePath>www\css\lupe.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\Probild.png">
+      <PackagePath>www\css\Probild.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\produkte.png">
       <PackagePath>www\css\produkte.png</PackagePath>
     </AppxPackagedFile>
@@ -218,6 +221,9 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\html\startseite.html">
       <PackagePath>www\html\startseite.html</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\html\subgruppe.html">
+      <PackagePath>www\html\subgruppe.html</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\html\testajax.html">
       <PackagePath>www\html\testajax.html</PackagePath>
     </AppxPackagedFile>
@@ -227,8 +233,8 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\Project_Readme.html">
       <PackagePath>www\Project_Readme.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\index.php">
-      <PackagePath>www\index.php</PackagePath>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\html\webserive.php">
+      <PackagePath>www\html\webserive.php</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\packages.config">
       <PackagePath>www\packages.config</PackagePath>

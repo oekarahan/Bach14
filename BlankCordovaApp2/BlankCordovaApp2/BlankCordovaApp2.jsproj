@@ -1004,7 +1004,9 @@
     <Content Include="html\leistungen.html" />
     <Content Include="html\produkte.html" />
     <Content Include="html\scanner.html" />
+    <Content Include="html\subgruppe.html" />
     <Content Include="html\testajax.html" />
+    <Content Include="html\webserive.php" />
     <Content Include="index.php" />
     <Content Include="packages.config" />
     <Content Include="Project_Readme.html" />
@@ -1014,6 +1016,7 @@
     <Content Include="scripts\jquery-2.1.0.min.js" />
     <Content Include="scripts\jquery-2.1.0.min.map" />
     <Content Include="scripts\script.js" />
+    <Content Include="webserive.php" />
     <Folder Include="bin\Android\Debug\" />
     <Folder Include="bin\iOS\Debug\" />
     <Folder Include="bin\iOS\Distribution\" />

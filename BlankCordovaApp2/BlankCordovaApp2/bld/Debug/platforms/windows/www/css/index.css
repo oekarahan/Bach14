@@ -11,13 +11,11 @@
 
 body{
       width: 90%;
+      background-image:url(start.png);
+      background-repeat: no-repeat;
 }
 
-    #hintergrundbild {
-        position: absolute;
-        align-content: center;
-      
-    }
+    
 
 
     #uberschrift {

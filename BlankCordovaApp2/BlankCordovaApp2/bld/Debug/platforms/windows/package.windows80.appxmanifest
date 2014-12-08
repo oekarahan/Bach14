@@ -34,12 +34,14 @@
     <Applications>
         <Application Id="io.cordova.BlankCordovaApp2" StartPage="www/index.html">
             <VisualElements DisplayName="BlankCordovaApp2" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="CordovaApp" ForegroundText="light" BackgroundColor="#464646">
-                <DefaultTile ShowName="allLogos" />
+                <DefaultTile ShowName="logoOnly" />
                 <SplashScreen Image="images\splashscreen.png" />
             </VisualElements>
         </Application>
     </Applications>
     <Capabilities>
+        <Capability Name="privateNetworkClientServer" />
         <Capability Name="internetClient" />
+        <Capability Name="internetClientServer" />
     </Capabilities>
 </Package>
