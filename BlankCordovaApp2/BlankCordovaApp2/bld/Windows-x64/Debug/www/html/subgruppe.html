@@ -69,7 +69,7 @@
 
     <script>
 
-        $(document).ready(function () {
+        $(document).ready(function(){
 
 
             $.ajax({
@@ -81,49 +81,32 @@
                 cache: false,
                 error: function (xhr, ajaxOptions, thrownError) { console.log(xhr.status); console.log(thrownError); console.log(xhr.responseText) },
                 success: function (result) {
-                    console.log(result);
 
-                    var lange =  result.data.length; // 15
+                    console.log(result.data);
 
-
-                
                     for (index = 0; index < result.data.length; index++) {
-
-                       
-
-                        $('#inhalt').append('<div style="float: left;  border: solid black"><a id="link">' + result.data[index].subGroups.name + '</a></div><div style=" float: left;"></div><div style="clear: both"></div>');
-
-
+                        
+                        console.log(result.data[index].name);
                         console.log(result.data[index].subGroups);
+                        
 
 
+                        $('#output').append('<div style="float: left; border: solid black" ><a href="subgruppe.html">'+result.data[index].name+' ' + result.data[index].subGroups +  '</a></span></div><div style=" float: left;"></div><div style="clear: both"></div>');
 
 
-
-
-
-
-                        // $('#inhalt').append('<table width="700" border="1" ><p id="a"><b>' + result.data[index].name +'</b></p> <tr><td><a href="#"><img src="../css/probild.png"></a>'+'</td><td width="350"></td></tr></table>'); // die Daten werden in einer Tabelle angezeigt.
-
-                        //console.log(result.data[index].name); //gibt die Daten in der Konsole aus.
-                        //console.log(result.data[index].subGroups.length);
                     }
 
+
                 }
+
             });
 
         });
 
-
     </script>
 
 
-
-
-
-
-
-    <div id="inhalt"></div>
+    <div id="output"></div>
 
 
 </body>

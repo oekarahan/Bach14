@@ -109,6 +109,7 @@
     "scripts\\jquery-2.1.0.min.map",
     "css\\start_schrift\\private.png",
     "res\\screens\\android\\screen-hdpi-landscape.png",
+    "css\\Probild.png",
     "css\\start_schrift\\arzt.png",
     "res\\screens\\ios\\screen-ipad-portrait.png",
     "scripts\\ajax.js",
@@ -124,7 +125,7 @@
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "html\\subgruppe.html"
+    "html\\klinik.html"
   ],
   "deletedFiles": [],
   "addedPlugins": [],
