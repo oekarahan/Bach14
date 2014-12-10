@@ -979,6 +979,7 @@
     <Content Include="css\Open_Sans_Condensed\OpenSans-CondBold.ttf" />
     <Content Include="css\Open_Sans_Condensed\OpenSans-CondLight.ttf" />
     <Content Include="css\Open_Sans_Condensed\OpenSans-CondLightItalic.ttf" />
+    <Content Include="css\Probild.png" />
     <Content Include="css\produkte.png" />
     <Content Include="css\pro_weiss.png" />
     <Content Include="css\responsive.css" />
