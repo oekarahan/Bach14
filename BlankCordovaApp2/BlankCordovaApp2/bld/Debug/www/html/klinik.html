@@ -62,31 +62,40 @@
         {
             data: null,
             showSubgroups: function (prgr_fk) {
-
-                console.log(prgr_fk); // gibt die Subgruppen schlüssen aus
-
+                $('#inhalt').html('');
                 for (index = 0; index < datahandler.data.length; index++) {
 
-                    if (datahandler.data[index].gr_fk == prgr_fk) {
-                        var subgroups = datahandler.data[index].subGroups;
+                         if (datahandler.data[index].gr_fk == prgr_fk) {
+            
+                                     var lange = datahandler.data[index].subGroups.length
+                                     //var feld = new Array();
+                                     console.log(lange);
+                         
+                                     for (var i = 0; i < lange; i++) {
 
-                       
-                      
-                        var div = document.createElement('div');
-                        div.innerHTML = subgroups;
-                        
-                        console.log(subgroups.length);
-                        $('#inhalt').html(div); //iste bu beee!!
-                        
-                    }
+                                         var feld = datahandler.data[index].subGroups[i].name;
+                                         console.log(feld);                                                                 
+                                         var div = document.createElement('div');
+                                         div.innerHTML = '<div style="float: left; border: solid black">' + feld + '</div><div style="clear: both"></div>';
+                                         $('#inhalt').append(div);
+
+                                     }
+                             
+
+                                    
+                         }
                 }
             },
 
-          
+            showSubgroupsname: function () {
+                
+
+            },
 
             showProducts: function () {
 
             },
+
             loaddata: function () {
                 $.ajax({
 
@@ -98,30 +107,32 @@
                     error: function (xhr, ajaxOptions, thrownError) { console.log(xhr.status); console.log(thrownError); console.log(xhr.responseText) },
                     success: function (result) {
 
-                        //console.log(result.data);
+                       console.log(result.data);
                         datahandler.data = result.data;
                         for (index = 0; index < result.data.length; index++) {
 
+                            // console.log(result.data[index].subGroups);
+                            console.log(result.data[index].name);
                             var div = document.createElement('div');
                             div.innerHTML = result.data[index].name //+ " " + result.data[index].gr_fk;
                             var gr_fk = result.data[index].gr_fk;
+                            
+
+
+                       
                             //div.onclick = function (gr_fk) { return datahandler.showSubgroups(gr_fk); }();
 
                             var makeShowItemEventListener = function (element) {
                                 return function () { datahandler.showSubgroups(element) };
                             }
 
+                           
 
                             div.onclick = makeShowItemEventListener(gr_fk);
+
                             $('#inhalt').append(div);
 
-
-
-
                             //$('#inhalt').append('<div style="float: left; border: solid black" name="' + result.data[index].prgr_fk + '"><span id="klicken">' + result.data[index].name + '<br><a href="#"><img src="../css/probild.png"></a></span></div><div style=" float: left;"></div><div style="clear: both"></div>');
-
-
-
 
 
                         }
