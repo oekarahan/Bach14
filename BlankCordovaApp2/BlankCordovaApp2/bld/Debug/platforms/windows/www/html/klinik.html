@@ -62,6 +62,7 @@
         {
             data: null,
             showSubgroups: function (prgr_fk) {
+
                 $('#inhalt').html('');
                 for (index = 0; index < datahandler.data.length; index++) {
 
@@ -76,16 +77,13 @@
                                          var feld = datahandler.data[index].subGroups[i].name;
                                          console.log(feld);                                                                 
                                          var div = document.createElement('div');
-                                         div.innerHTML = '<div style="float: left; border: solid black">' + feld + '</div><div style="clear: both"></div>';
+                                         div.innerHTML = '<div style="float: left; border: solid black">' + feld + '</div><div style="clear: both"><img src="../css/Probild.png"><div><div></div>';
                                          $('#inhalt').append(div);
 
-                                     }
-                             
-
-                                    
+                                   }
                          }
-                }
-            },
+               }
+       },
 
             showSubgroupsname: function () {
                 
@@ -114,7 +112,7 @@
                             // console.log(result.data[index].subGroups);
                             console.log(result.data[index].name);
                             var div = document.createElement('div');
-                            div.innerHTML = result.data[index].name //+ " " + result.data[index].gr_fk;
+                            div.innerHTML = '<div style="float: left; border: solid black">' + result.data[index].name + '</div><div style="clear: both"><img src="../css/Probild.png"></div><div></div>' 
                             var gr_fk = result.data[index].gr_fk;
                             
 
