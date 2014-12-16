@@ -27,42 +27,38 @@ body{
   
 }
 
+
+.navi{
+
+
+    background-color:#1a4064;
+}
+
+
+/*
 .navii li{
 
     display:inline;
     background-color:#1a4064;
     top:10px !important;
 }
-
+    */
 
 #azurück{
 
     top:10px !important;
-
+    background-color:#1a4064;
 }
 
-.schrift{
-
-    font-family: Arial;
-    color: white;
 
 
-}
 
-#feld{
-
-
-    border-radius: 4px;
-    bottom: 22px!important;
-  
-   
-}
 
 #lupe{
 
   position: relative;
  bottom: 10px !important;
- 
+ background-color:#1a4064;
 }
 
 
@@ -89,22 +85,6 @@ body{
 }
 
 
-#produktschrift{
-
-font-family:meineSchrift;
-}
-
-#leistungschrift{
-
-    font-family: meineSchrift;
-
-}
-
-#scanschrift{
-
-
-    font-family: meineSchrift;
-}
 
 #inhalt{
 

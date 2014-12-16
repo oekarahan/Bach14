@@ -40,7 +40,7 @@
     </Applications>
     <Capabilities>
         <Capability Name="privateNetworkClientServer" />
-        <Capability Name="internetClient" />
         <Capability Name="internetClientServer" />
+        <Capability Name="internetClient" />
     </Capabilities>
 </Package>

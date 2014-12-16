@@ -19,7 +19,7 @@
 -->
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
     <Identity Name="io.cordova.BlankCordovaApp2" Version="1.0.0.0" Publisher="CN=$username$" />
-    <mp:PhoneIdentity PhoneProductId="dd6bc7b0-754c-11e4-8890-71abedb5b0d0" PhonePublisherId="db093ed5-53b1-45f7-af72-751e8f36ab80" />
+    <mp:PhoneIdentity PhoneProductId="7105ab90-8537-11e4-8c7a-1bb9439bcd08" PhonePublisherId="db093ed5-53b1-45f7-af72-751e8f36ab80" />
     <Properties>
         <DisplayName>io.cordova.BlankCordovaApp2</DisplayName>
         <PublisherDisplayName>$username$</PublisherDisplayName>
@@ -42,7 +42,6 @@
         </Application>
     </Applications>
     <Capabilities>
-        <Capability Name="enterpriseAuthentication" />
         <Capability Name="internetClientServer" />
     </Capabilities>
 </Package>
