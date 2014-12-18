@@ -1,18 +1,15 @@
 ﻿@charset "utf-8";
 
-@font-face{
 
-    font-family: meineSchrift;
-    src:url(Open_Sans/OpenSans-Light.ttf);
 
-}
 
+/*
 body{
     background-image:url(home.png);
     background-repeat: no-repeat;
 
    
-}
+}*/
 
 
 
@@ -35,14 +32,14 @@ body{
 }
 
 
-/*
+
 .navii li{
 
     display:inline;
     background-color:#1a4064;
     top:10px !important;
 }
-    */
+ 
 
 #azurück{
 
