@@ -16,7 +16,6 @@
  
 
 
-
 #schriftfarbe{
 
     color: white;
@@ -64,10 +63,10 @@
 
         <div id="icon">
             <a href="#Produktgruppen"><img id="klinik" src="css/start_icons/klinik.png" width="88" height="91" style="border-style: none" /></a>
-            <img id="alters" src="css/start_icons/alters.png" width="88" height="91" style="margin-left:130px; margin-right: 130px; border-style: none" />
-            <img id="arzt" src="css/start_icons/arzt.png" width="88" height="91" style="border-style: none" />
+            <a href="#Produktgruppen"><img id="alters" src="css/start_icons/alters.png" width="88" height="91" style="margin-left:130px; margin-right: 130px; border-style: none" /></a>
+             <a href="#Produktgruppen"><img id="arzt" src="css/start_icons/arzt.png" width="88" height="91" style="border-style: none" /></a>
 
-        </div>
+</div>
 
         <img src="css/start_schrift/klinik.png" style="position:absolute; top: 510px; margin-left: 113px" />
         <img src="css/start_schrift/alters.png" style="position:absolute; top: 525px; margin-left: 300px" />
@@ -76,11 +75,11 @@
 
         <div id="icon1">
 
-            <img id="apo" src="css/start_icons/apo.png" width="88" height="91" style="border-style: none" />
-            <img id="industrie" src="css/start_icons/industrie.png" width="88" height="91" style="margin-left:130px; margin-right: 130px; border-style: none">
-            <img id="private" src="css/start_icons/private.png" width="88" height="91" style="border-style: none" />
+                <a href="#Produktgruppen"><img id="apo" src="css/start_icons/apo.png" width="88" height="91" style="border-style: none" /></a>
+                <a href="#Produktgruppen"><img id="industrie" src="css/start_icons/industrie.png" width="88" height="91" style="margin-left:130px; margin-right: 130px; border-style: none"></a>
+                    <a href="#Produktgruppen"><img id="private" src="css/start_icons/private.png" width="88" height="91" style="border-style: none" /></a>
 
-        </div>
+</div>
 
 
         <img src="css/start_schrift/apo.png" style="position:absolute; bottom: 230px; margin-left: 92px" />
@@ -134,7 +133,8 @@
                 </div>
             </div>
 
-
+            <br /><br /><br /><br />
+            <br /><br />
             <div id="produktgruppen_inhalt"></div>
 
         </div>
@@ -183,8 +183,8 @@
         </div>
 
 
-
-
+        <br /><br /><br /><br />
+        <br /><br />
         <div id="sub"></div>
 
     </div>
@@ -211,7 +211,7 @@
                     </li>
 
                     <li id="leistungen">
-                        <a href="leistungen.html">
+                        <a href="#">
                             <img src="css/leistung.png" width="50" height="50" style="margin-right: 83px; border-style: none" />
                             <span>Leistungen</span>
                         </a>
@@ -235,7 +235,8 @@
 
 
 
-
+        <br /><br /><br /><br />
+        <br /><br />
         <div id="products" ></div>
 
     </div>
@@ -274,7 +275,7 @@
 
                                 div.style.styleFloat = "left";
                             
-                                div.innerHTML = '<div style="float: left;"><b>' + subgruppen + '</div><div style="clear: both"><img src="css/Probild.png"></div>';
+                                div.innerHTML = '<div style="float: left;"><b>' + subgruppen + '</div><div style="clear: both"><img src="css/Probild.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
 
 
                                 $('#sub').append(div);
@@ -329,7 +330,7 @@
                                         var div = document.createElement('div');
                                        // div.innerHTML = '<div  style="float: left; border: 0px; "><b>' + produktename + '</b></div><div style="clear: both"><img src="css/Probild.png"><div><div></div>';
                                         div.style.styleFloat = "left";
-                                        div.innerHTML = '<div style="float: left; "><b>' + produktename + '</div><div style="clear: both"><img src="css/Probild.png"></div>';
+                                        div.innerHTML = '<div style="float: left; "><b>' + produktename + '</div><div style="clear: both"><img src="css/Probild.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
 
                                         $('#products').append(div);
                                     }
@@ -353,7 +354,7 @@
                     var pgname = datahandler.data[index].name;
                     div.style.styleFloat = "left";
                     //div.innerHTML = '<div style="float: left; border: 0px; "><b>' + datahandler.data[index].name + '</div><div style="clear: both"><img src="css/Probild.png"></div><div>&nbsp;</div>';
-                    div.innerHTML = '<div style="float: left; "><b>' + pgname + '</div><div style="clear: both"><img src="css/Probild.png"></div>';
+                    div.innerHTML = '<div style="float: left; "><b>' + pgname + '</div><div style="clear: both"><img src="css/Probild.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
 
                     var gr_fk = datahandler.data[index].gr_fk;
                     $('#produktgruppen_inhalt').append(div);
