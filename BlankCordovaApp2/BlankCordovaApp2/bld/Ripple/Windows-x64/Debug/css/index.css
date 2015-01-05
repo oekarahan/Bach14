@@ -13,6 +13,7 @@
 body{
 
       width: 100%;
+     
 
 }
 
@@ -21,9 +22,11 @@ body{
         position:relative;
         font-size: 35px;
         font-family: meineSchrift;
-        top: 180px;
+        top: 140px;
         margin-left:200px;
     }
+
+    
 
 
     #logo {
@@ -37,7 +40,7 @@ body{
 
     #icon {
         position: relative;
-        top: 400px;
+        top: 195px;
         margin-right: 117px;
         align-content: center;
         margin-left: 117px;
@@ -48,7 +51,7 @@ body{
         position: relative;
         align-content: center;
         margin-left: 117px;
-        top: 550px;
+        top: 340px;
     }
 
     #schrift {
@@ -61,24 +64,40 @@ body{
 
 
 
-
+.ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page
+{
+    position:relative;
+}
 
 #navigation
 {
-   top:0px!important;
-    width: 768px;
+   position: fixed;
+   width: 768px;
     /*width: 100%;*/
-    top:0px!important;
+    bottom: 90.5%;
+    left: 0px;
+
 }
+
+.mainContent
+{
+    width:768px;
+}
+
+#div {
+    background-color: #1a4064;
+    
+}
+
 
 
 .navii
 {
 
     background-color:#1a4064;
-    height: 107px;
-    
-   
+       height: 100px;
+
+       
    
 }
 
@@ -93,7 +112,7 @@ body{
 
 .navii li{
 
-    top:5px;
+    top: 10px;
     background-color:#1a4064;
     display: inline-block;
 }
@@ -106,7 +125,7 @@ body{
 
 .navii span
 {
-     top:0px!important;
+    
     display:block;
     font-family: Arial;
     color: white;

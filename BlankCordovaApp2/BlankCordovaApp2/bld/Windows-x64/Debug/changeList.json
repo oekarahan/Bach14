@@ -832,7 +832,8 @@
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "index.html"
+    "index.html",
+    "css\\index.css"
   ],
   "deletedFiles": [],
   "addedPlugins": [],
