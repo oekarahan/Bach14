@@ -79,6 +79,7 @@ body{
 
 }
 
+
 .mainContent
 {
     width:768px;
@@ -129,12 +130,12 @@ body{
     display:block;
     font-family: Arial;
     color: white;
+
 }
 
 #azurück{
 
-   
-    background-color:#1a4064;
+     background-color:#1a4064;
 }
 
 
@@ -167,10 +168,7 @@ body{
 
 }
 
-#inputfeld img:hover{
-    opacity: 0.4;
 
-}
 
 #produkte_inhalt{
 
@@ -199,5 +197,21 @@ body{
     color:#1a4064;
     font-family: Arial;
      font-size: 15px;
+
+}
+
+
+#label{
+
+    background-color: white;
+
+}
+
+#feld{
+
+    border-radius: 4px;
+    bottom: 22px!important;
+    width: 50px;
+    background-color: white;
 
 }
