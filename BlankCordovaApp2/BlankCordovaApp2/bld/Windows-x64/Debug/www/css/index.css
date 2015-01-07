@@ -170,7 +170,7 @@ body{
 
 
 
-#produkte_inhalt{
+#produktgruppen_inhalt{
 
     color: #1a4064;
     font-family: Arial;
@@ -200,12 +200,32 @@ body{
 
 }
 
+#artikelgrp{
 
-#label{
-
-    background-color: white;
+    color: #1a4064;
+    font-family: Arial;
+    font-size: 15px;
 
 }
+
+#artgrp{
+
+    color: #1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+#artgrpart{
+
+    color: #1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+
+
 
 #feld{
 
@@ -215,3 +235,4 @@ body{
     background-color: white;
 
 }
+
