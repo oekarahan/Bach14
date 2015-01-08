@@ -106,16 +106,15 @@
                             </a>
                         </li>
 
-                        <li id="feld1">
-                            <input type="text" value="suche" placeholder="suche" />
-                            <img src="css/search.png" id="lupe" width="40" height="35" />
+                        <li id="feld1" style="width: 100px; border: 2px solid white;">
+                            <input type="text" value="suche" placeholder="suche" style="width: 95px;" />
+                            <img src="css/search.png" id="lupe" width="40" height="35"/>
 
                         </li>
                     </ul>
 
                 </div>
             </div>
-
             <br /><br /><br /><br />
             <br /><br />
             <div id="produktgruppen_inhalt"></div>
@@ -206,7 +205,7 @@
                         </li>
 
                         <li id="feld1">
-                            <input type="text" value="suche" placeholder="suche" />
+                            <input type="text" value="suche" placeholder="suche"><input placeholder="suche" type="text"/>
                             <img src="css/search.png" id="lupe" width="40" height="35" />
 
                         </li>
@@ -224,7 +223,7 @@
         </div>
 
 
-        <div data-role="page" id="Artikelgruppen">
+        <div data-role="page" id="ifArtikelorArtikelgruppe">
 
             <div id="navigation">
 
@@ -267,6 +266,9 @@
                 </div>
             </div>
 
+
+                </div>
+           
 
             <br /><br /><br /><br />
             <br /><br />
@@ -322,18 +324,30 @@
             <br /><br /><br /><br />
             <br /><br />
             
-            <div style="background-color: white; border: 2px; margin-left: 1cm; margin-right: 2cm;">
+            <div style="background-color: white; height: 830px; margin-left: 1cm; margin-right: 2cm; overflow:scroll; padding:10px">
+                
+              
+                <div id="artgrp"></div>
 
-            <div id="artgrp"></div>
+
                 <hr style="color:grey;" noshade size="1" width="600" align="center" />
-            <div id="artgrpart"></div>
+                <div id="artgrpart"></div>
 
-            </div>
+                <div id="footer" style="background-color:#cce4e6; left: 46px; width: 654px; height: 65px; position: fixed; top: 920px; ">
+                <button id="mediacenter" name="button" value="Mediacenter" type="button"><span id="buttonschrift">Mediacenter</span></button>
+
+
+
+</div>
+</div>
+                                           
+                
+ </div>
 
         </div>
 
 
-    </div> <!--main div-->
+  <!--main div-->
 
     <script>
 
@@ -444,7 +458,7 @@
                                         return function () {
                                             var tmp = [element, sg_fk, pk];
                                             datahandler.nextid = tmp;
-                                            $.mobile.pageContainer.pagecontainer("change", "#Artikelgruppen", { test: "Hello World!" });
+                                            $.mobile.pageContainer.pagecontainer("change", "#ifArtikelorArtikelgruppe", { test: "Hello World!" });
                                         };
                                     }
 
@@ -459,14 +473,14 @@
             },
 
 
-            showArtikelgruppen: function (grgr) //Artikeleigenschaften
+            showifArtikelorArtikelgruppe: function (grgr) // es wird überprüft ob es eine Artikelgruppe gibt
             {
-
 
                 console.log(grgr[1]);
                 console.log('test');
 
                 $('#artikelgrp').html('');
+              
 
                 for (index = 0; index < datahandler.data.length; index++) {
 
@@ -492,67 +506,89 @@
                                         var produktname = datahandler.data[index].subGroups[i].products[ii].name;
                                         var charakter = datahandler.data[index].subGroups[i].products[ii].charakter_SL;
                                         var artikelgruppen = datahandler.data[index].subGroups[i].products[ii].articlegroups;
-
-                                        console.log(artikelgruppen);
-                                        console.log(produktname);
-                                        console.log(charakter);
-                                        console.log(dateiname);
+                                        
 
                                     }
-                                        if (artikelgruppen == null) {
+                                
+                                if (artikelgruppen == null) {
+                                    
+                                    // die Artikeln ohne Artikelgruppen
+                                    
+                                    if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
 
-                                                
+                                        var lange = datahandler.data[index].subGroups[i].products[ii].articles.length;
 
-                                        } else {
+                                        for (ind = 0; ind < lange; ind++) {
+
+                                            var artikel_nr = datahandler.data[index].subGroups[i].products[ii].articles[ind].artikel_nr;
+
+                                            console.log(artikel_nr);
+
+                                            var div = document.createElement('div');
+
+                                            div.style.styleFloat = "left";
+
+                                            div.innerHTML = '<div style="float: left; "><b>' + artikel_nr + '</div><div style="clear: both"></div>';
+                                            $('#artikelgrp').append(div);
 
 
-                                            var lange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
-
-                                            if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
-
-                                            for (ind = 0; ind < lange; ind++) {
+                                        }
 
 
-                                                    var artikelgruppe = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
+                                    }
 
-                                                    console.log(artikelgruppe);
+                                } else { // die Artikeln mt Artikelgruppen
 
-                                                    var div = document.createElement('div');
 
-                                                    div.style.styleFloat = "left";
+                                  
 
-                                                    div.innerHTML = '<div style="float: left; "><b>' + artikelgruppe + '</div><div style="clear: both"><img src="css/Probild.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
-                                                    $('#artikelgrp').append(div);
+                                    if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
+                                        var aglange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
 
-                                                    var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
-                                                    var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
-                                                    var gr = datahandler.data[index].gr_fk;
-                                                    var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+                                        for (ind = 0; ind < aglange; ind++) {
 
-                                                    var makeShowItemEventListener = function (element, sg_fk, pk, argr_fk) {
-                                                        return function () {
-                                                            var tmp = [element, sg_fk, pk, argr_fk];
-                                                            datahandler.nextid = tmp;
-                                                            $.mobile.pageContainer.pagecontainer("change", "#ArtikelgruppenArtikel", { test: "Hello World!" });
-                                                        };
-                                                    }
 
-                                                    div.onclick = makeShowItemEventListener(gr, sg_fk, pk, argr_fk);
 
-                                                }
+                                            var artikelgruppe = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
+
+                                            console.log(artikelgruppe);
+
+                                            var div = document.createElement('div');
+
+                                            div.style.styleFloat = "left";
+
+                                            div.innerHTML = '<div style="float: left; "><b>' + artikelgruppe + '</div><div style="clear: both"><img src="css/Probild.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                            $('#artikelgrp').append(div);
+
+                                            var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
+                                            var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                            var gr = datahandler.data[index].gr_fk;
+                                            var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+
+                                            var makeShowItemEventListener = function (element, sg_fk, pk, argr_fk) {
+                                                return function () {
+                                                    var tmp = [element, sg_fk, pk, argr_fk];
+                                                    datahandler.nextid = tmp;
+                                                    $.mobile.pageContainer.pagecontainer("change", "#ArtikelgruppenArtikel", { test: "Hello World!" });
+                                                };
                                             }
+
+                                            div.onclick = makeShowItemEventListener(gr, sg_fk, pk, argr_fk);
+
+                                        }
                                     }
                                 }
+    
                             }
                         }
-                    }
+                    }}
                 }
             },
 
+
             showArtikelgruppenArtikel: function (grgr) {
 
-                console.log('test');
-
+ 
                 $('#artgrpart').html('');
                 $('#artgrp').html('');
 
@@ -560,17 +596,20 @@
 
                     if (datahandler.data[index].gr_fk == grgr[0]) {
 
-                        var lange = datahandler.data[index].subGroups.length
+                        var sublange = datahandler.data[index].subGroups.length
 
 
-                        for (var i = 0; i < lange; i++) {
+                        for (var i = 0; i < sublange; i++) {
 
-                            // var subgruppen = datahandler.data[index].subGroups[i].name;
-                            //var produkte = datahandler.data[index].subGroups[i].products;
-                            var prolange = datahandler.data[index].subGroups[i].products.length;
+                            var subgruppen = datahandler.data[index].subGroups[i].name;
+                            var produkte = datahandler.data[index].subGroups[i].products;
+                            var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                           
 
 
-                            if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
+                            if (sg_fk == grgr[1]) {
+
+                                var prolange = datahandler.data[index].subGroups[i].products.length;
 
                                 for (var ii = 0; ii < prolange; ii++) {
 
@@ -590,10 +629,10 @@
                                     } else {
 
 
-                                        var lange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
 
                                         if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
 
+                                            var lange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
                                             for (ind = 0; ind < lange; ind++) {
 
 
@@ -618,26 +657,33 @@
 
                                                         var abmessung = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].abmessungen;
                                                         var verpackungshinweis = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].verpackungshinweis;
-
+                                                        var artikel_nr = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].artikel_nr;
+                                                        var migel1 = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].migel1;
                                                     
                                                         console.log(abmessung);
                                                         console.log(verpackungshinweis);
+                                                        console.log(artikel_nr);
+                                                        console.log(migel1);
 
                                                         var div = document.createElement('div');
                                                         //div.style.styleFloat = "left";
                                                         $('#artgrpart').append(div);
                                                        
-                                                        div.innerHTML = '<div style=" background-color: white; border: 2px solid black; margin-left: 0.4cm; margin-right: 2cm; width:625px; height:150px;"><tabel ><tr></tr><tr><br>' + verpackungshinweis + '</b></tr><br>' + abmessung + '<br><select style="background-color: blue; width:300;"><option>1</option><option>2</option><option>3</option></select><hr style="color:grey; margin-left:0cm; margin-right:3cm;" noshade width="600" /></tr></table></div>';
-                                 
+                                                        div.innerHTML = '<div style="  margin-left: 0.4cm;"><b>' + verpackungshinweis + '</b></div><div style=" margin-left: 0.4cm;">' + abmessung + '</div><div id="mainselection" style=" width: 600px; margin-left: 0.4cm;"><select id="select" style="background-color: #74cae0; width: 585px; height: 25px; line-height: 1; border: 0; "><option></option value="1"><option>1</option><option value="2">2</option><option value="3">3</option></select><br></div><div style=" margin-left: 0.4cm;"><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div style=" margin-left: 0.4cm;">' + migel1 + '</div><hr style="color:grey; noshade width="580" />';
+                                                        //<div style=" background-color: white; margin-left: 0.4cm; margin-right: 2cm; width:625px; height:150px;">
                                                      
                                                     } 
-                                                    
+                                                
                                                    
                                                 }
                                                 }
 
-                                            }
                                         }
+
+                                    }
+
+
+
 
                                     }
                                 }
@@ -649,6 +695,8 @@
                                                     
             },                                  
 
+
+         
 
 
             loaddata: function () {
@@ -688,14 +736,13 @@
 
         });
 
-
         $(document).on('pagebeforeshow', '#produkte', function (event, data) {
             datahandler.showProducts(datahandler.nextid);
         });
 
-        $(document).on('pagebeforeshow', '#Artikelgruppen', function (event, data) {
+        $(document).on('pagebeforeshow', '#ifArtikelorArtikelgruppe', function (event, data) {
 
-            datahandler.showArtikelgruppen(datahandler.nextid);
+            datahandler.showifArtikelorArtikelgruppe(datahandler.nextid);
 
         });
 
@@ -703,6 +750,8 @@
 
             datahandler.showArtikelgruppenArtikel(datahandler.nextid);
         });
+
+       
 
     </script>
 </body>

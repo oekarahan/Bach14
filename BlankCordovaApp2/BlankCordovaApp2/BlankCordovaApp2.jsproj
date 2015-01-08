@@ -976,6 +976,7 @@
     <Content Include="css\leistung.png" />
     <Content Include="css\logo.png" />
     <Content Include="css\lupe.png" />
+    <Content Include="css\mediacenter.png" />
     <Content Include="css\Open_Sans\LICENSE.txt" />
     <Content Include="css\Open_Sans\OpenSans-Bold.ttf" />
     <Content Include="css\Open_Sans\OpenSans-BoldItalic.ttf" />
@@ -991,6 +992,7 @@
     <Content Include="css\Open_Sans_Condensed\OpenSans-CondBold.ttf" />
     <Content Include="css\Open_Sans_Condensed\OpenSans-CondLight.ttf" />
     <Content Include="css\Open_Sans_Condensed\OpenSans-CondLightItalic.ttf" />
+    <Content Include="css\pfeil.PNG" />
     <Content Include="css\Probild.png" />
     <Content Include="css\produkte.png" />
     <Content Include="css\pro_weiss.png" />

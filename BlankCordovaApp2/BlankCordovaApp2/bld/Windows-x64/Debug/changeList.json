@@ -695,6 +695,7 @@
     "scripts\\jQueryMobile\\images\\icons-png\\bars-white.png",
     "res\\icons\\ios\\icon-40-2x.png",
     "html\\subgruppe.html",
+    "css\\pfeil.PNG",
     "scripts\\jQueryMobile\\demos\\css\\themes\\default\\images\\icons-png\\bullets-black.png",
     "scripts\\jQueryMobile\\images\\icons-svg\\gear-white.svg",
     "scripts\\jQueryMobile\\demos\\css\\themes\\default\\images\\icons-svg\\arrow-u-white.svg",
@@ -826,7 +827,8 @@
     "scripts\\jQueryMobile\\images\\icons-svg\\delete-black.svg",
     "scripts\\jQueryMobile\\demos\\css\\themes\\default\\jquery.mobile.external-png-1.4.5.min.css",
     "scripts\\jQueryMobile\\demos\\popup-outside-multipage\\index.html",
-    "scripts\\jQueryMobile\\demos\\_assets\\img\\glyphish-icons\\19-gear.png"
+    "scripts\\jQueryMobile\\demos\\_assets\\img\\glyphish-icons\\19-gear.png",
+    "css\\mediacenter.png"
   ],
   "deletedFilesIos": [],
   "addedPluginsIos": [],

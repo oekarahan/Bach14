@@ -236,3 +236,19 @@ body{
 
 }
 
+#mediacenter{
+
+    background-color:#74cae0;
+    border-radius: 2px; 
+    width: 139px;  
+    height: 21px;
+    top: 10px;
+    margin-left: 0.8cm;
+    
+}
+
+#buttonschrift{
+
+    color: white;
+   
+}
