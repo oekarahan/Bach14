@@ -27,6 +27,7 @@ www\css\klinik.css
 www\css\leistung.png
 www\css\logo.png
 www\css\lupe.png
+www\css\mediacenter.png
 www\css\Open_Sans\LICENSE.txt
 www\css\Open_Sans\OpenSans-Bold.ttf
 www\css\Open_Sans\OpenSans-BoldItalic.ttf
@@ -42,6 +43,7 @@ www\css\Open_Sans_Condensed\LICENSE.txt
 www\css\Open_Sans_Condensed\OpenSans-CondBold.ttf
 www\css\Open_Sans_Condensed\OpenSans-CondLight.ttf
 www\css\Open_Sans_Condensed\OpenSans-CondLightItalic.ttf
+www\css\pfeil.PNG
 www\css\pro_weiss.png
 www\css\Probild.png
 www\css\produkte.png
@@ -777,6 +779,14 @@ www\scripts\jQueryMobile\jquery.mobile-1.4.5.min.css
 www\scripts\jQueryMobile\jquery.mobile-1.4.5.min.js
 www\scripts\jQueryMobile\jquery.mobile-1.4.5.min.map
 www\scripts\platformOverrides.js
+www\scripts\ql.html
+www\scripts\ql_files\cb=gapi.loaded_0
+www\scripts\ql_files\rs=ACT90oH3HmtmuxiJLy3Tff0UwSV0cdUF1A
+www\scripts\ql_files\rs=ACT90oH3HmtmuxiJLy3Tff0UwSV0cdUF1A(1)
+www\scripts\ql_files\rs=ACT90oH3HmtmuxiJLy3Tff0UwSV0cdUF1A(2)
+www\scripts\ql_files\rs=AItRSTNEKk-UOyYI5LC4sFi8pGMsXCbwVg
+www\scripts\ql_files\rs=AItRSTNEKk-UOyYI5LC4sFi8pGMsXCbwVg(1)
+www\scripts\ql_files\rs=AItRSTNVQj6JceEHzwUPuBNxGqmFlZgKPA
 www\scripts\script.js
 www\scripts\script1.js
 www\scripts\winstore-jscompat.js

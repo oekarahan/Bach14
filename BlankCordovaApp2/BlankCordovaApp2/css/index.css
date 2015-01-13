@@ -71,18 +71,19 @@ body{
 
 #navigation
 {
-   position: fixed;
+ 
    width: 768px;
-    /*width: 100%;*/
-    bottom: 90.5%;
+    position: fixed;  
+    bottom: 88.5%;
     left: 0px;
+    height: 120px;
 
 }
 
 
 .mainContent
 {
-    width:768px;
+    width:769px;
 }
 
 #div {
@@ -96,33 +97,30 @@ body{
 {
 
     background-color:#1a4064;
-       height: 100px;
-
-       
-   
+    width: 768px;
+    position: fixed;  
+    bottom: 88.5%;
+    left: 0px;
+    height: 120px;
 }
 
 .navii ul{
-   /* width:100%; */
-    /*border:1px solid red;*/
+  
     list-style-type:none;
-   
+    
 }
 
 
 
 .navii li{
 
-    top: 10px;
+   
     background-color:#1a4064;
     display: inline-block;
+  
 }
 
-.navii img
-{
 
-     top:0px!important;
-} 
 
 .navii span
 {
@@ -142,13 +140,7 @@ body{
 
 
 
-#lupe{
 
-  position: relative;
-
- background-color:#1a4064;
-
-}
 
 
 #zurück img:hover{
@@ -224,6 +216,21 @@ body{
 
 }
 
+#artikelohneartikelgruppen{
+
+    color:#1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+#produktname{
+
+    color:#1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
 
 
 
@@ -235,6 +242,7 @@ body{
     background-color: white;
 
 }
+
 
 #mediacenter{
 
@@ -252,3 +260,15 @@ body{
     color: white;
    
 }
+
+#ta {
+  width: 180px !important;
+  height:20px!important;
+  position: absolute;
+  left: 500px; 
+  top: 35px;
+  background-image:url(lupe.png); 
+  background-position: right;
+  background-repeat:no-repeat;
+  }
+

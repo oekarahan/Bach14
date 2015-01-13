@@ -56,6 +56,12 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Release\platforms\windows\www\css\lupe.png">
       <PackagePath>www\css\lupe.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Release\platforms\windows\www\css\mediacenter.png">
+      <PackagePath>www\css\mediacenter.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Release\platforms\windows\www\css\pfeil.PNG">
+      <PackagePath>www\css\pfeil.PNG</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Release\platforms\windows\www\css\Probild.png">
       <PackagePath>www\css\Probild.png</PackagePath>
     </AppxPackagedFile>
@@ -1625,6 +1631,9 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Release\platforms\windows\www\scripts\jQueryMobile\demos\_search\index.html">
       <PackagePath>www\scripts\jQueryMobile\demos\_search\index.html</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Release\platforms\windows\www\scripts\ql.html">
+      <PackagePath>www\scripts\ql.html</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Release\platforms\windows\www\html\webserive.php">
       <PackagePath>www\html\webserive.php</PackagePath>
     </AppxPackagedFile>
@@ -2362,6 +2371,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Release\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\photo-run.jpeg">
       <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\photo-run.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Release\platforms\windows\www\scripts\ql_files\cb=gapi.loaded_0">
+      <PackagePath>www\scripts\ql_files\cb=gapi.loaded_0</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Release\platforms\windows\www\scripts\ql_files\rs=ACT90oH3HmtmuxiJLy3Tff0UwSV0cdUF1A">
+      <PackagePath>www\scripts\ql_files\rs=ACT90oH3HmtmuxiJLy3Tff0UwSV0cdUF1A</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Release\platforms\windows\www\scripts\ql_files\rs=ACT90oH3HmtmuxiJLy3Tff0UwSV0cdUF1A%281%29">
+      <PackagePath>www\scripts\ql_files\rs=ACT90oH3HmtmuxiJLy3Tff0UwSV0cdUF1A%281%29</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Release\platforms\windows\www\scripts\ql_files\rs=ACT90oH3HmtmuxiJLy3Tff0UwSV0cdUF1A%282%29">
+      <PackagePath>www\scripts\ql_files\rs=ACT90oH3HmtmuxiJLy3Tff0UwSV0cdUF1A%282%29</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Release\platforms\windows\www\scripts\ql_files\rs=AItRSTNEKk-UOyYI5LC4sFi8pGMsXCbwVg">
+      <PackagePath>www\scripts\ql_files\rs=AItRSTNEKk-UOyYI5LC4sFi8pGMsXCbwVg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Release\platforms\windows\www\scripts\ql_files\rs=AItRSTNEKk-UOyYI5LC4sFi8pGMsXCbwVg%281%29">
+      <PackagePath>www\scripts\ql_files\rs=AItRSTNEKk-UOyYI5LC4sFi8pGMsXCbwVg%281%29</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Release\platforms\windows\www\scripts\ql_files\rs=AItRSTNVQj6JceEHzwUPuBNxGqmFlZgKPA">
+      <PackagePath>www\scripts\ql_files\rs=AItRSTNVQj6JceEHzwUPuBNxGqmFlZgKPA</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Release\platforms\windows\config.xml">
       <PackagePath>config.xml</PackagePath>

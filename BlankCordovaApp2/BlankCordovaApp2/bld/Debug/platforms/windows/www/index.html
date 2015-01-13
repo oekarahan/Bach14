@@ -43,7 +43,7 @@
             </h1>
 
             <div id="icon">
-                <a href="#produktgruppen"><img id="klinik" src="css/start_icons/klinik.png" width="88" height="91" style="border-style: none" /></a>
+                <a href="#produktgruppen"><img id="klinik" src="css/start_icons/klinik.png" width="88" height="91" style="border-style: none;" /></a>
                 <a href="#produktgruppen"><img id="alters" src="css/start_icons/alters.png" width="88" height="91" style="margin-left:130px; margin-right: 130px; border-style: none" /></a>
                 <a href="#produktgruppen"><img id="arzt" src="css/start_icons/arzt.png" width="88" height="91" style="border-style: none" /></a>
 
@@ -73,9 +73,9 @@
         <div data-role="page" id="produktgruppen">
 
 
-            <div id="navigation">
+            <div id="navigation" style="border: 2px solid #1a4064; ">
 
-                <div class="navii">
+                <div class="navii" style="border: 2px solid #1a4064;">
                     <ul>
                         <li id="zurück">
                             <a onclick="history.back()" class="azurück">
@@ -103,14 +103,13 @@
                                 <span>Scanner</span>
                             </a>
                         </li>
-
-                        <li id="feld1" style="width: 100px; border: 2px solid white;">
-                            <input type="text" value="suche" placeholder="suche" style="width: 95px;" />
-                            <img src="css/search.png" id="lupe" width="40" height="35" />
+                        <li>
+                            <textarea id="ta" placeholder="Suche" style="overflow: hidden; "></textarea>
 
                         </li>
-                    </ul>
 
+
+                    </ul>
                 </div>
             </div>
             <br /><br /><br /><br />
@@ -311,39 +310,142 @@
 
                         </li>
                     </ul>
+                </div>
+            </div>
+            <br /><br /><br /><br />
+            <br /><br />
+            <div style="background-color: white; height: 845px; margin-left: 1cm; margin-right: 2cm; overflow:scroll; padding:10px">
+                <div id="artgrp"></div>
+                <hr style="color:grey;" noshade size="1" width="600" align="center" />
+                <div id="artgrpart"></div>
+
+                <div id="button"></div>
+                  
+                  
+
+            </div>
+        </div>
+
+
+        <div data-role="page" id="ArtikelohneArtikelgruppen">
+
+            <div id="navigation">
+
+                <div class="navii">
+                    <ul>
+                        <li id="zurück">
+                            <a onclick="history.back()" class="azurück">
+                                <img src="css/zurück.png" width="80" height="55" style="margin-right:10px; border-style: none" />
+                            </a>
+                        </li>
+
+                        <li id="produkt">
+                            <a href="#">
+                                <img src="css/pro_weiss.png" style="margin-right: 75px; border-style: none" />
+                                <span>Produkte</span>
+                            </a>
+                        </li>
+
+                        <li id="leistungen">
+                            <a href="leistungen.html">
+                                <img src="css/leistung.png" width="50" height="50" style="margin-right: 75px; border-style: none" />
+                                <span style="margin-left: 5px">Leistungen</span>
+                            </a>
+                        </li>
+
+                        <li id="scan">
+                            <a href="scanner.html">
+                                <img src="css/scanner.png" width="50" height="50" style="margin-right: 50px; border-style: none " />
+                                <span>Scanner</span>
+                            </a>
+                        </li>
+
+                        <li id="feld1">
+                            <input type="text" value="suche" placeholder="suche" />
+                            <img src="css/search.png" id="lupe" width="40" height="35" />
+
+                        </li>
+                    </ul>
 
                 </div>
             </div>
-
-
             <br /><br /><br /><br />
             <br /><br />
 
             <div style="background-color: white; height: 845px; margin-left: 1cm; margin-right: 2cm; overflow:scroll; padding:10px">
 
-
-                <div id="artgrp"></div>
-
+                <div id="produktname"></div>
 
                 <hr style="color:grey;" noshade size="1" width="600" align="center" />
-                <div id="artgrpart"></div>
 
-                <div id="footer" style="background-color:#cce4e6; left: 46px; width: 654px; height: 65px; position: fixed; top: 920px; ">
+                <div id="artikelohneartikelgruppen"></div>
 
-                    <button id="mediacenter" name="button" value="Mediacenter" type="button"><span id="buttonschrift">Mediacenter</span></button>
+             
 
-
-
+                    
                 </div>
             </div>
+      
 
+
+    <div data-role="page" id="Media">
+
+        <div id="navigation">
+
+            <div class="navii">
+                <ul>
+                    <li id="zurück">
+                        <a onclick="history.back()" class="azurück">
+                            <img src="css/zurück.png" width="80" height="55" style="margin-right:10px; border-style: none" />
+                        </a>
+                    </li>
+
+                    <li id="produkt">
+                        <a href="#">
+                            <img src="css/pro_weiss.png" style="margin-right: 75px; border-style: none" />
+                            <span>Produkte</span>
+                        </a>
+                    </li>
+
+                    <li id="leistungen">
+                        <a href="leistungen.html">
+                            <img src="css/leistung.png" width="50" height="50" style="margin-right: 75px; border-style: none" />
+                            <span style="margin-left: 5px">Leistungen</span>
+                        </a>
+                    </li>
+
+                    <li id="scan">
+                        <a href="scanner.html">
+                            <img src="css/scanner.png" width="50" height="50" style="margin-right: 50px; border-style: none " />
+                            <span>Scanner</span>
+                        </a>
+                    </li>
+
+                    <li id="feld1">
+                        <input type="text" value="suche" placeholder="suche" />
+                        <img src="css/search.png" id="lupe" width="40" height="35" />
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br /><br /><br /><br />
+        <br /><br />
+        <div style="background-color: white; height: 845px; margin-left: 1cm; margin-right: 2cm; overflow:scroll; padding:10px">
+            <div id="artgrp"></div>
+            <hr style="color:grey;" noshade size="1" width="600" align="center" />
+            <div id="artgrpart"></div>
+
+            <div id="button"></div>
+
+            </div>
 
         </div>
 
-    </div>
 
+    
+    </div>  
 
-    <!--main div-->
 
     <script>
 
@@ -380,6 +482,7 @@
             },
 
             showSubgroups: function (prgr_fk) { //SubGruppen
+               
 
                 $('#sub').html('');
 
@@ -402,6 +505,7 @@
 
 
                             var makeShowItemEventListener = function (element, sg_fk) {
+                             
                                 return function () {
                                     var tmp = [element, sg_fk];
                                     datahandler.nextid = tmp;
@@ -472,6 +576,10 @@
             showArtikelgruppen: function (grgr) //Artikeleigenschaften
             {
 
+
+                console.log(grgr[1]);
+                console.log('test');
+
                 $('#artikelgrp').html('');
 
                 for (index = 0; index < datahandler.data.length; index++) {
@@ -503,26 +611,35 @@
                                     }
 
                                     if (artikelgruppen == null) {
-                                       
+                                        console.log('testt');
                                         // die Artikeln ohne Artikelgruppen
 
                                         if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
 
+                                            var produktname = datahandler.data[index].subGroups[i].products[ii].name;
                                             var lange = datahandler.data[index].subGroups[i].products[ii].articles.length;
+
+                                            var div = document.createElement('div');
+                                            $('#produktname').append(div);
+
+                                            div.innerHTML = '<div style=" background-color: white; border: 2px solid white; margin-left:1cm; margin-right: 2cm; height:45px;" align: center><b><br>' + produktname + '</b></div>';
+
+
 
                                             for (ind = 0; ind < lange; ind++) {
 
                                                 var artikel_nr = datahandler.data[index].subGroups[i].products[ii].articles[ind].artikel_nr;
+                                                var abmessung = datahandler.data[index].subGroups[i].products[ii].articles[ind].abmessung;
+                                                var migel1 = datahandler.data[index].subGroups[i].products[ii].articles[ind].migel1;
+                                                var verpackungshinweis = datahandler.data[index].subGroups[i].products[ii].articles[ind].verpackungshinweis;
 
                                                 console.log(artikel_nr);
-
-
                                                 var div = document.createElement('div');
-
                                                 div.style.styleFloat = "left";
+                                                div.innerHTML = '<div style="  margin-left: 0.4cm;"><b>' + verpackungshinweis + '</b></div><div style=" margin-left: 0.4cm;">' + abmessung + '</div><div id="mainselection" style=" width: 600px; margin-left: 0.4cm;"><select id="select" style="background-color: #74cae0; width: 585px; height: 30px; line-height: 1; border: 0; "><option></option value="1"><option>1</option><option value="2">2</option><option value="3">3</option></select><br></div><div style=" margin-left: 0.4cm;"><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div style=" margin-left: 0.4cm;">' + migel1 + '</div><hr style="color:grey; noshade width="580" />';
 
-                                                div.innerHTML = '<div style="float: left; "><b>' + artikel_nr + '</div><div style="clear: both"></div>';
-                                                $('#artikelgrp').append(div);
+                                                $.mobile.pageContainer.pagecontainer("change", "#ArtikelohneArtikelgruppen", { test: "Hello World!" });
+
 
 
                                             }
@@ -585,10 +702,11 @@
 
             showArtikelgruppenArtikel: function (grgr) {
 
-               
+                console.log('test');
 
                 $('#artgrpart').html('');
                 $('#artgrp').html('');
+                $('#button').append('');
 
                 for (index = 0; index < datahandler.data.length; index++) {
 
@@ -601,10 +719,11 @@
 
                             // var subgruppen = datahandler.data[index].subGroups[i].name;
                             //var produkte = datahandler.data[index].subGroups[i].products;
-                            var prolange = datahandler.data[index].subGroups[i].products.length;
+                            
 
 
                             if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
+                                var prolange = datahandler.data[index].subGroups[i].products.length;
 
                                 for (var ii = 0; ii < prolange; ii++) {
 
@@ -660,40 +779,114 @@
                                                         console.log(artikel_nr);
                                                         console.log(migel1);
 
-                                                        var div = document.createElement('div');
-                                                        //div.style.styleFloat = "left";
-                                                        $('#artgrpart').append(div);
+                                                        var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
+                                                        var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                                        var gr = datahandler.data[index].gr_fk;
+                                                        var pk = datahandler.data[index].subGroups[i].products[ii].pk;
 
-                                                        div.innerHTML = '<div style="  margin-left: 0.4cm;"><b>' + verpackungshinweis + '</b></div><div style=" margin-left: 0.4cm;">' + abmessung + '</div><div id="mainselection" style=" width: 600px; margin-left: 0.4cm;"><select id="select" style="background-color: #74cae0; width: 585px; height: 30px; line-height: 1; border: 0; "><option></option value="1"><option>1</option><option value="2">2</option><option value="3">3</option></select><br></div><div style=" margin-left: 0.4cm;"><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div style=" margin-left: 0.4cm;">' + migel1 + '</div><hr style="color:grey; noshade width="580" />';
+
+                                                        var divb = document.createElement('div');
+
+
+                                                        //div.style.styleFloat = "left";
+                                                        $('#artgrpart').append(divb);
+
+                                                        divb.innerHTML = '<div style="  margin-left: 0.4cm;"><b>' + verpackungshinweis + '</b></div><div style=" margin-left: 0.4cm;">' + abmessung + '</div><div id="mainselection" style=" width: 600px; margin-left: 0.4cm;"><select id="select" style="background-color: #74cae0; width: 585px; height: 30px; line-height: 1; border: 0; "><option></option value="1"><option>1</option><option value="2">2</option><option value="3">3</option></select><br></div><div style=" margin-left: 0.4cm;"><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div style=" margin-left: 0.4cm;">' + migel1 + '</div><hr style="color:grey; noshade width="580" />';
                                                         //<div style=" background-color: white; margin-left: 0.4cm; margin-right: 2cm; width:625px; height:150px;">
 
                                                     }
 
+                                                    var diva = document.createElement('div');
+                                                    var mediacenter = 'Mediacenter';
 
+                                                    diva.innerHTML = '<div id="footer" style="background-color:#cce4e6; left: 46px; width: 654px; height: 65px; position: fixed; top: 920px; "><br><button name="button" value="Mediacenter"  type="button"><span id="buttonschrift">' + mediacenter + '</span></button></div>';
+
+                                                    $('#button').append(diva);
+
+                                                    var makeShowItemEventListener = function (element, sg_fk, pk, argr_fk) {
+
+                                                        return function () {
+                                                            var tmp = [element, sg_fk, pk, argr_fk];
+                                                            datahandler.nextid = tmp;
+                                                           $.mobile.pageContainer.pagecontainer("change", "#Media", { test: "Hello World!" });
+                                                        };
+                                                    }
+
+                                                    diva.onclick = makeShowItemEventListener(gr, sg_fk, pk, argr_fk);
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+          },
+            
+            showMedia: function (grgr) {
 
+                for (index = 0; index < datahandler.data.length; index++) {
+
+                    if (datahandler.data[index].gr_fk == grgr[0]) {
+
+                        var lange = datahandler.data[index].subGroups.length
+                        var linklange = datahandler.data[index].links.length;
+
+                        for (pi = 0; pi < linklange; pi++) {
+
+                            var prgrlink = datahandler.data[index].links[pi].link; // link zu der Produktgruppe wo ich draufgeklickt habe 
+                            console.log(prgrlink);
+    
+                        }
+                            for (i = 0; i < lange; i++){
+
+                                if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
+                                    
+                                    var prolange = datahandler.data[index].subGroups[i].products.length;
+                                    var sublinklange = datahandler.data[index].subGroups[i].links.length;
+                                    console.log(sublinklange);
+
+                                    for(si=0; si < sublinklange; si++){
+
+                                        var sublinks = datahandler.data[index].subGroups[i].links[si].link;
+                                            
+                                        console.log(sublinks);
+                                        console.log(sublinklange);
+
+                                    }
+
+                                    for (ii = 0; ii < prolange; ii++) {
+
+                                        if (datahandler.data[index].subGroups[i].products[ii].pk == grgr[2]) {
+
+                                            var prolinklange = datahandler.data[index].subGroups[i].products[ii].links.length;
+                                            console.log(prolinklange);
+
+                                            for (pri = 0; pri < prolinklange; pri++) {
+
+
+                                                var prolinks = datahandler.data[index].subGroups[i].products[ii].links[pri].link;
+
+                                                console.log(prolinks);
+                                                console.log(prolinklange);
+
+
+                                            }
                                         }
 
                                     }
 
+                                
 
-
-
-                                }
-                            }
+                           }
 
                         }
+  
                     }
                 }
-
-
             },
-
-
-
-
-
+            
             loaddata: function () {
                 $.ajax({
 
@@ -727,6 +920,7 @@
 
 
         $(document).on('pagebeforeshow', '#subgruppen', function (event, data) {
+        
             datahandler.showSubgroups(datahandler.nextid);
 
         });
@@ -747,7 +941,18 @@
             datahandler.showArtikelgruppenArtikel(datahandler.nextid);
         });
 
+        $(document).on('pagebeforeshow','#ArtikelohneArtikelgruppen', function (event, data){
 
+            datahandler.showArtikelgruppen(datahandler.nextid);
+
+        });
+
+
+        $(document).on('pagebeforeshow', '#Media', function (event, data) {
+ 
+            datahandler.showMedia(datahandler.nextid);
+
+        });
 
     </script>
 </body>
