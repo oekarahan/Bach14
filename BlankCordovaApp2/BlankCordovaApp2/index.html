@@ -79,32 +79,33 @@
                     <ul>
                         <li id="zurück">
                             <a onclick="history.back()" class="azurück">
-                                <img src="css/zurück.png" width="80" height="55" style="margin-right:10px; border-style: none" />
+                                <img src="css/zurück.png" width="70" height="55" style=" border-style: none" />
                             </a>
                         </li>
 
-                        <li id="produkt">
+                        <li id="produkt" style="margin-left: 8px;">
                             <a href="#">
-                                <img src="css/pro_weiss.png" style="margin-right: 75px; border-style: none" />
-                                <span>Produkte</span>
-                            </a>
+                                <img src="css/pro_weiss.png" style="margin-right: 50px; border-style: none" />
+                            </a>  
+                                <span style="left: 2px;">Produkte</span>
+                           
                         </li>
 
                         <li id="leistungen">
                             <a href="leistungen.html">
-                                <img src="css/leistung.png" width="50" height="50" style="margin-right: 75px; border-style: none" />
+                                <img src="css/leistung.png" width="50" height="50" style="margin-right: 70px; border-style: none" />
                                 <span>Leistungen</span>
                             </a>
                         </li>
 
                         <li id="scan">
                             <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" height="50" style="margin-right: 50px; border-style: none " />
+                                <img src="css/scanner.png" width="50" height="50" style="margin-right: 70px; border-style: none " />
                                 <span>Scanner</span>
                             </a>
                         </li>
                         <li>
-                            <textarea id="ta" placeholder="Suche" style="overflow: hidden; "></textarea>
+                            <textarea id="ta" placeholder="SUCHE"  style="overflow: hidden; "></textarea>
 
                         </li>
 
@@ -151,10 +152,8 @@
                                 <span>Scanner</span>
                             </a>
                         </li>
-
-                        <li id="feld1">
-                            <input type="text" value="suche" placeholder="suche" />
-                            <img src="css/search.png" id="lupe" width="40" height="35" />
+                        <li>
+                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; "></textarea>
 
                         </li>
                     </ul>
@@ -200,10 +199,8 @@
                                 <span>Scanner</span>
                             </a>
                         </li>
-
-                        <li id="feld1">
-                            <input type="text" value="suche" placeholder="suche"><input placeholder="suche" type="text" />
-                            <img src="css/search.png" id="lupe" width="40" height="35" />
+                        <li>
+                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; "></textarea>
 
                         </li>
                     </ul>
@@ -252,10 +249,8 @@
                                 <span>Scanner</span>
                             </a>
                         </li>
-
-                        <li id="feld1">
-                            <input type="text" value="suche" placeholder="suche" />
-                            <img src="css/search.png" id="lupe" width="40" height="35" />
+                        <li>
+                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; "></textarea>
 
                         </li>
                     </ul>
@@ -268,9 +263,22 @@
             <br /><br />
             <div id="artikelgrp"></div>
 
+            <div style="background-color: white; height: 845px; margin-left: 1cm; margin-right: 2cm; overflow:scroll; padding:10px">
+
+                <div id="produktname"></div>
+
+                <hr style="color:grey;" noshade size="1" width="600" align="center" />
+
+                <div id="artikelohneartikelgruppen"></div>
+
+                <div id="buttonmedia"></div>
+
+            </div>
 
         </div>
 
+
+     
         <div data-role="page" id="ArtikelgruppenArtikel">
 
             <div id="navigation">
@@ -303,10 +311,8 @@
                                 <span>Scanner</span>
                             </a>
                         </li>
-
-                        <li id="feld1">
-                            <input type="text" value="suche" placeholder="suche" />
-                            <img src="css/search.png" id="lupe" width="40" height="35" />
+                        <li>
+                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; "></textarea>
 
                         </li>
                     </ul>
@@ -320,75 +326,12 @@
                 <div id="artgrpart"></div>
 
                 <div id="button"></div>
-                  
-                  
-
-            </div>
+   
         </div>
-
-
-        <div data-role="page" id="ArtikelohneArtikelgruppen">
-
-            <div id="navigation">
-
-                <div class="navii">
-                    <ul>
-                        <li id="zurück">
-                            <a onclick="history.back()" class="azurück">
-                                <img src="css/zurück.png" width="80" height="55" style="margin-right:10px; border-style: none" />
-                            </a>
-                        </li>
-
-                        <li id="produkt">
-                            <a href="#">
-                                <img src="css/pro_weiss.png" style="margin-right: 75px; border-style: none" />
-                                <span>Produkte</span>
-                            </a>
-                        </li>
-
-                        <li id="leistungen">
-                            <a href="leistungen.html">
-                                <img src="css/leistung.png" width="50" height="50" style="margin-right: 75px; border-style: none" />
-                                <span style="margin-left: 5px">Leistungen</span>
-                            </a>
-                        </li>
-
-                        <li id="scan">
-                            <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" height="50" style="margin-right: 50px; border-style: none " />
-                                <span>Scanner</span>
-                            </a>
-                        </li>
-
-                        <li id="feld1">
-                            <input type="text" value="suche" placeholder="suche" />
-                            <img src="css/search.png" id="lupe" width="40" height="35" />
-
-                        </li>
-                    </ul>
-
-                </div>
             </div>
-            <br /><br /><br /><br />
-            <br /><br />
-
-            <div style="background-color: white; height: 845px; margin-left: 1cm; margin-right: 2cm; overflow:scroll; padding:10px">
-
-                <div id="produktname"></div>
-
-                <hr style="color:grey;" noshade size="1" width="600" align="center" />
-
-                <div id="artikelohneartikelgruppen"></div>
-
-             
-
-                    
-                </div>
-            </div>
-      
 
 
-    <div data-role="page" id="Media">
+    <div data-role="page" id="Mediacenter">
 
         <div id="navigation">
 
@@ -420,32 +363,32 @@
                             <span>Scanner</span>
                         </a>
                     </li>
-
-                    <li id="feld1">
-                        <input type="text" value="suche" placeholder="suche" />
-                        <img src="css/search.png" id="lupe" width="40" height="35" />
+                    <li>
+                        <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; "></textarea>
 
                     </li>
                 </ul>
             </div>
         </div>
         <br /><br /><br /><br />
-        <br /><br />
-        <div style="background-color: white; height: 845px; margin-left: 1cm; margin-right: 2cm; overflow:scroll; padding:10px">
-            <div id="artgrp"></div>
-            <hr style="color:grey;" noshade size="1" width="600" align="center" />
-            <div id="artgrpart"></div>
+        <br /><br /><br /><br />
 
-            <div id="button"></div>
+        <div style="background-color: white; height: 800px; margin-left: 1cm; margin-right: 2cm; overflow:scroll; padding:10px">
+           
+            <br />      
+            <div style="margin-left: 1cm;">Sap Nr.:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link:</div> 
+                 <hr style="color:grey; margin-right: 0.4cm;" noshade size="1" width="600" align="center" />
 
-            </div>
+            <div id="prgrlinks"></div>
+            <div id="sublinks"></div>
+            <div id="prolinks"></div>
 
-        </div>
+               
+         </div>
 
+    </div>
 
-    
-    </div>  
-
+</div>
 
     <script>
 
@@ -551,7 +494,9 @@
                                     div.innerHTML = '<div style="float: left; "><b>' + produktename + '</div><div style="clear: both"><img src="css/Probild.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
                                     $('#products').append(div);
 
-
+                                    
+                                    var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                    var gr = datahandler.data[index].gr_fk;
                                     var pk = datahandler.data[index].subGroups[i].products[ii].pk;
 
                                     var makeShowItemEventListener = function (element, sg_fk, pk) {
@@ -573,60 +518,53 @@
             },
 
 
-            showArtikelgruppen: function (grgr) //Artikeleigenschaften
+          showArtikelgruppen: function (grgr) //Artikeleigenschaften
             {
 
 
-                console.log(grgr[1]);
-                console.log('test');
-
-                $('#artikelgrp').html('');
+              $('#artikelgrp').html(''); // nach dem ausgeben immer leeren sonst wird es doppelt ausgegeben 
+              $('#produktname').html('');
+              $('#artikelohneartikelgruppen').html('');
+              $('#buttonmedia').html('');
 
                 for (index = 0; index < datahandler.data.length; index++) {
 
                     if (datahandler.data[index].gr_fk == grgr[0]) {
 
-                        var lange = datahandler.data[index].subGroups.length
+                        var sublange = datahandler.data[index].subGroups.length
 
 
-                        for (var i = 0; i < lange; i++) {
-
-                            // var subgruppen = datahandler.data[index].subGroups[i].name;
-                            //var produkte = datahandler.data[index].subGroups[i].products;
-                            var prolange = datahandler.data[index].subGroups[i].products.length;
+                        for (var i = 0; i < sublange; i++) {
 
 
                             if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
+
+                                var prolange = datahandler.data[index].subGroups[i].products.length;
 
                                 for (var ii = 0; ii < prolange; ii++) {
 
                                     if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
 
-                                        var dateiname = datahandler.data[index].subGroups[i].products[ii].dateiname;
                                         var produktname = datahandler.data[index].subGroups[i].products[ii].name;
-                                        var charakter = datahandler.data[index].subGroups[i].products[ii].charakter_SL;
                                         var artikelgruppen = datahandler.data[index].subGroups[i].products[ii].articlegroups;
-
+                                       
 
                                     }
 
                                     if (artikelgruppen == null) {
-                                        console.log('testt');
-                                        // die Artikeln ohne Artikelgruppen
 
-                                        if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
-
-                                            var produktname = datahandler.data[index].subGroups[i].products[ii].name;
-                                            var lange = datahandler.data[index].subGroups[i].products[ii].articles.length;
-
-                                            var div = document.createElement('div');
-                                            $('#produktname').append(div);
-
-                                            div.innerHTML = '<div style=" background-color: white; border: 2px solid white; margin-left:1cm; margin-right: 2cm; height:45px;" align: center><b><br>' + produktname + '</b></div>';
 
 
 
-                                            for (ind = 0; ind < lange; ind++) {
+                                        if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
+                                            var artikellange = datahandler.data[index].subGroups[i].products[ii].articles.length;
+                                            var divname = document.createElement('div');
+                                            $('#produktname').append(divname);
+
+                                            divname.innerHTML = '<div style=" background-color: white; border: 2px solid white; margin-left:1cm; margin-right: 2cm; height:45px;" align: center><b><br>' + produktname + '</b></div>';
+
+
+                                            for (ind = 0; ind < artikellange; ind++) {
 
                                                 var artikel_nr = datahandler.data[index].subGroups[i].products[ii].articles[ind].artikel_nr;
                                                 var abmessung = datahandler.data[index].subGroups[i].products[ii].articles[ind].abmessung;
@@ -634,18 +572,39 @@
                                                 var verpackungshinweis = datahandler.data[index].subGroups[i].products[ii].articles[ind].verpackungshinweis;
 
                                                 console.log(artikel_nr);
+
                                                 var div = document.createElement('div');
                                                 div.style.styleFloat = "left";
-                                                div.innerHTML = '<div style="  margin-left: 0.4cm;"><b>' + verpackungshinweis + '</b></div><div style=" margin-left: 0.4cm;">' + abmessung + '</div><div id="mainselection" style=" width: 600px; margin-left: 0.4cm;"><select id="select" style="background-color: #74cae0; width: 585px; height: 30px; line-height: 1; border: 0; "><option></option value="1"><option>1</option><option value="2">2</option><option value="3">3</option></select><br></div><div style=" margin-left: 0.4cm;"><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div style=" margin-left: 0.4cm;">' + migel1 + '</div><hr style="color:grey; noshade width="580" />';
+                                                div.innerHTML = '<div style="  margin-left: 0.4cm;"><b>' + verpackungshinweis + '</b></div><div style=" margin-left: 0.4cm;">' + abmessung + '</div><div id="mainselection" style=" width: 600px; margin-left: 0.4cm;"><br></div><div style=" margin-left: 0.4cm;"><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div style=" margin-left: 0.4cm;">' + migel1 + '</div><hr style="color:grey; noshade width="580" />';
 
-                                                $.mobile.pageContainer.pagecontainer("change", "#ArtikelohneArtikelgruppen", { test: "Hello World!" });
-
-
-
+                                                $('#artikelohneartikelgruppen').append(div);
+                                              
+                                                
+                                               
                                             }
 
+                                            var divaa = document.createElement('div');
+                                            var mediacenter = 'Mediacenter';
+
+                                            divaa.innerHTML = '<div id="footer" style="background-color:#eaf4f5; left: 46px; width: 654px; height: 65px; position: fixed; top: 920px; "><br>&nbsp;&nbsp;&nbsp;<button name="button" style="background-color:#83d0e3; width:100px; height:25px; " value="Mediacenter" type="button"><span id="buttonschrift">' + mediacenter + '</span></button></div>';
+
+                                            $('#buttonmedia').append(divaa);
+
+                                           
+                                            var makeShowItemEventListener = function (element, sg_fk, pk) {
+
+                                                return function () {
+
+                                                    var tmp = [element, sg_fk, pk];
+                                                    datahandler.nextid = tmp;
+                                                    $.mobile.pageContainer.pagecontainer("change", "#Mediacenter", { test: "Hello World!" });
+                                                };
+                                            }
+
+                                            divaa.onclick = makeShowItemEventListener(gr, sg_fk, pk);
 
                                         }
+
 
                                     } else { // die Artikeln mt Artikelgruppen
 
@@ -669,10 +628,14 @@
                                                 div.innerHTML = '<div style="float: left; "><b>' + artikelgruppe + '</div><div style="clear: both"><img src="css/Probild.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
                                                 $('#artikelgrp').append(div);
 
+
+
                                                 var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
                                                 var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
                                                 var gr = datahandler.data[index].gr_fk;
                                                 var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+
+
 
                                                 var makeShowItemEventListener = function (element, sg_fk, pk, argr_fk) {
                                                     return function () {
@@ -684,21 +647,21 @@
 
                                                 div.onclick = makeShowItemEventListener(gr, sg_fk, pk, argr_fk);
 
+
                                             }
                                         }
+
+
+
                                     }
-
-
-
                                 }
 
-
+                                
                             }
                         }
                     }
                 }
             },
-
 
             showArtikelgruppenArtikel: function (grgr) {
 
@@ -706,7 +669,7 @@
 
                 $('#artgrpart').html('');
                 $('#artgrp').html('');
-                $('#button').append('');
+                $('#button').html('');
 
                 for (index = 0; index < datahandler.data.length; index++) {
 
@@ -723,15 +686,14 @@
 
 
                             if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
+
                                 var prolange = datahandler.data[index].subGroups[i].products.length;
 
                                 for (var ii = 0; ii < prolange; ii++) {
 
                                     if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
 
-                                        var dateiname = datahandler.data[index].subGroups[i].products[ii].dateiname;
                                         var produktname = datahandler.data[index].subGroups[i].products[ii].name;
-                                        var charakter = datahandler.data[index].subGroups[i].products[ii].charakter_SL;
                                         var artikelgruppen = datahandler.data[index].subGroups[i].products[ii].articlegroups;
 
 
@@ -753,13 +715,7 @@
                                                 var artikelgruppename = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
                                                 var artlange = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles.length;
 
-
-
-
                                                 if (grgr[3] == datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk) {
-
-
-
 
                                                     var div = document.createElement('div');
                                                     $('#artgrp').append(div);
@@ -796,23 +752,29 @@
 
                                                     }
 
-                                                    var diva = document.createElement('div');
+                                                    var divaa = document.createElement('div');
                                                     var mediacenter = 'Mediacenter';
 
-                                                    diva.innerHTML = '<div id="footer" style="background-color:#cce4e6; left: 46px; width: 654px; height: 65px; position: fixed; top: 920px; "><br><button name="button" value="Mediacenter"  type="button"><span id="buttonschrift">' + mediacenter + '</span></button></div>';
+                                                    divaa.innerHTML = '<div id="footer" style="background-color:#eaf4f5; left: 46px; width: 654px; height: 65px; position: fixed; top: 920px; "><br>&nbsp;&nbsp;&nbsp;<button name="button" style="background-color:#83d0e3; width:100px; height:25px; " value="Mediacenter" type="button"><span id="buttonschrift">' + mediacenter + '</span></button></div>';
 
-                                                    $('#button').append(diva);
+                                                    $('#button').append(divaa); 
+
 
                                                     var makeShowItemEventListener = function (element, sg_fk, pk, argr_fk) {
 
+                                                     
+
                                                         return function () {
+                                                           
+                                                                    
                                                             var tmp = [element, sg_fk, pk, argr_fk];
                                                             datahandler.nextid = tmp;
-                                                           $.mobile.pageContainer.pagecontainer("change", "#Media", { test: "Hello World!" });
+                                                            $.mobile.pageContainer.pagecontainer("change", "#Mediacenter", { test: "Hello World!" });
                                                         };
                                                     }
 
-                                                    diva.onclick = makeShowItemEventListener(gr, sg_fk, pk, argr_fk);
+                                                    divaa.onclick = makeShowItemEventListener(gr, sg_fk, pk, argr_fk);
+
                                                 }
                                             }
                                         }
@@ -824,77 +786,97 @@
                 }
           },
             
-            showMedia: function (grgr) {
+            showMediacenter: function (grgr) {
+                console.log('test1');
 
                 for (index = 0; index < datahandler.data.length; index++) {
 
                     if (datahandler.data[index].gr_fk == grgr[0]) {
 
                         var lange = datahandler.data[index].subGroups.length
-                        var linklange = datahandler.data[index].links.length;
-            
+                        var prgrlinklange = datahandler.data[index].links.length;
+                        var prgrname = datahandler.data[index].name;
 
-                        // produktgruppen links werden ausgegeben
-                        for (pi = 0; pi < linklange; pi++) {
 
-                            var prgrlink = datahandler.data[index].links[pi].link; 
-                            console.log(prgrlink);
-    
+
+                        console.log('Links der Produktgruppe' + prgrname);
+                        console.log(prgrlinklange)
+
+                        // produktgruppenlinks werden ausgegeben
+                        for (pi = 0; pi < prgrlinklange; pi++) {
+
+                            var prgrlink = datahandler.data[index].links[pi].link;
+                            var prgrsap = datahandler.data[index].links[pi].sap_nr;
+
+                            console.log(prgrlink)
+
+
+
+                            var div = document.createElement('div');
+                            div.innerHTML = '<div style="height:22px; width: 600px;"><span style="color: #1a4064;">' + prgrsap + '</span><div style="width: 500px; float: right; "><span style="color:#74cae0;">' + prgrlink + '</span></div><hr style="color:grey;" noshade size="0.3" width="600" align="center" />';
+                            $('#prgrlinks').append(div);
+
                         }
-                            for (i = 0; i < lange; i++){
+                        for (i = 0; i < lange; i++) {
 
-                                if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
-                                    
-                                    var prolange = datahandler.data[index].subGroups[i].products.length;
-                                    var sublinklange = datahandler.data[index].subGroups[i].links.length;
-                                    console.log(sublinklange);
+                            if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
 
-                                    // subgruppen links werden ausgegeben
-                                    for(si=0; si < sublinklange; si++){
+                                var prolange = datahandler.data[index].subGroups[i].products.length;
+                                var sublinklange = datahandler.data[index].subGroups[i].links.length;
+                                var subname = datahandler.data[index].subGroups[i].name;
 
-                                        var sublinks = datahandler.data[index].subGroups[i].links[si].link;
-                                            
-                                        console.log(sublinks);
-                                        console.log(sublinklange);
+                                console.log('Links der Subgruppe' + subname);
+                                console.log(sublinklange);
 
-                                    }
+                                // subgruppen links werden ausgegeben
+                                for (si = 0; si < sublinklange; si++) {
 
-                                    for (ii = 0; ii < prolange; ii++) {
-
-                                        if (datahandler.data[index].subGroups[i].products[ii].pk == grgr[2]) {
-
-                                            var prolinklange = datahandler.data[index].subGroups[i].products[ii].links.length;
-                                            console.log(prolinklange);
-
-                                            // produkte links werden ausgegeben
-                                            for (pri = 0; pri < prolinklange; pri++) {
-
-
-                                                var prolinks = datahandler.data[index].subGroups[i].products[ii].links[pri].link;
-
-                                                console.log(prolinks);
-                                                //console.log(prolinklange);
-
-
-                            //hier wird wieder ein div definiert indem die ganzen prf_link ausgegeben werden. 
+                                    var sublinks = datahandler.data[index].subGroups[i].links[si].link;
+                                    var subsap = datahandler.data[index].subGroups[i].links[si].sap_nr;
+                                    console.log(sublinks);
 
 
 
+                                    var div = document.createElement('div');
+                                    div.innerHTML = '<div style="height:22px; width: 600px;"><span style="color: #1a4064;">' + subsap + '</span><div style="width: 500px; float: right; "><span style="color:#74cae0;">' + sublinks + '</span></div><hr style="color:grey;" noshade size="0.3" width="600" align="center" />';
+                                    $('#sublinks').append(div);
 
-                                            }
+
+                                }
+
+                                for (ii = 0; ii < prolange; ii++) {
+
+                                    if (datahandler.data[index].subGroups[i].products[ii].pk == grgr[2]) {
+
+                                        var prolinklange = datahandler.data[index].subGroups[i].products[ii].links.length;
+                                        var proname = datahandler.data[index].subGroups[i].products[ii].name;
+
+                                        console.log('Links der Produkte' + proname);
+                                        console.log(prolinklange);
+
+                                        // produkte links werden ausgegeben
+                                        for (pri = 0; pri < prolinklange; pri++) {
+
+                                            var prolinks = datahandler.data[index].subGroups[i].products[ii].links[pri].link;
+                                            var prosap = datahandler.data[index].subGroups[i].products[ii].links[pri].sap_nr;
+                                            console.log(prolinks);
+
+
+
+                                            var div = document.createElement('div');
+                                            div.innerHTML = '<div style="height:22px; width: 600px;"><span style="color: #1a4064;">' + prosap + '</span><div style="width: 500px; float: right; "><span style="color:#74cae0;">' + prolinks + '</span></div><hr style="color:grey;" noshade size="0.3" width="600" align="center" />';
+                                            $('#prolinks').append(div);
+
                                         }
-
                                     }
-
-                                
-
-                           }
-
+                                }
+                            }
                         }
-  
                     }
                 }
             },
+
+
             
             loaddata: function () {
                 $.ajax({
@@ -956,12 +938,12 @@
 
         });
 
+        $(document).on('pagebeforeshow', '#Mediacenter', function (event, data) {
 
-        $(document).on('pagebeforeshow', '#Media', function (event, data) {
- 
-            datahandler.showMedia(datahandler.nextid);
+            datahandler.showMediacenter(datahandler.nextid);
 
         });
+
 
     </script>
 </body>
