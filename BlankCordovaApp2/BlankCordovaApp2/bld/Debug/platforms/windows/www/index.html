@@ -64,7 +64,7 @@
 
 
         </div>
-<!---------------------------------------------------------------------- Produktgruppen-------------- ----------------------------------------------->
+<!---------------------------------------------------------------------- Produktgruppen-------------------------------------------------------------->
         <div data-role="page" id="produktgruppen">
 
 
@@ -99,15 +99,14 @@
                                 <span>Scanner</span>
                             </a>
                         </li>
-                        <li id="sucheli" >
-                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; "></textarea>
-                        </li>
-
+                        <li id="sucheli">
+                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden;"></textarea>
+                            </li>
+                        
                         <li id="lupe">
-                           <img onclick="suche();" src="css/lupe.png" />
+                            <img onclick="datahandler.suchen();" src="css/lupe.png" />
 
-                       </li>
-
+                        </li>
                 </ul>
             </div>
             </div>
@@ -384,353 +383,407 @@
 
         </div>
 
+
+
+<!-------------------------------------------------------------Suchergebnisse ----------------------------------------------------------->
+
+    <div data-role="page" id="Suche">
+
+        <div id="navigation">
+
+            <div class="navii">
+                <ul>
+                    <li id="zurück">
+                        <a onclick="history.back()" class="azurück">
+                            <img src="css/zurück.png" width="80" height="55" style="margin-right:10px; border-style: none" />
+                        </a>
+                    </li>
+
+                    <li id="produkt">
+                        <a href="#">
+                            <img src="css/pro_weiss.png" style="margin-right: 75px; border-style: none" />
+                            <span>Produkte</span>
+                        </a>
+                    </li>
+
+                    <li id="leistungen">
+                        <a href="leistungen.html">
+                            <img src="css/leistung.png" width="50" height="50" style="margin-right: 75px; border-style: none" />
+                            <span style="margin-left: 5px">Leistungen</span>
+                        </a>
+                    </li>
+
+                    <li id="scan">
+                        <a href="scanner.html">
+                            <img src="css/scanner.png" width="50" height="50" style="margin-right: 50px; border-style: none " />
+                            <span>Scanner</span>
+                        </a>
+                    </li>
+                    <li>
+                        <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; "></textarea>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+
+        <div style="background-color: white; height: 800px; margin-left: 1cm; margin-right: 2cm; overflow:scroll; padding:10px">
+
+
+        </div>
+
     </div>
 
-    <script>
-//-----------------------------------------------Prdouktgruppen werden angezeigt---------------------------------------------------------------------------------------------------------------
-       
 
-        datahandler =
- 
-            {
-                data: null,
-                nextid: 0,
+</div>
 
-                
-                showProductGroups: function () { //Produktgruppen
-                    $('#produktgruppen_inhalt').html('');
+ <script>
+ //-----------------------------------------------Prdouktgruppen werden angezeigt---------------------------------------------------------------------------------------------------------------
 
-                    for (index = 0; index < datahandler.data.length; index++) {
 
-                        var div = document.createElement('div');
-                        var pgname = datahandler.data[index].name;
+            datahandler =
 
-                        div.style.styleFloat = "left";
-                        //div.innerHTML = '<div style="float: left; border: 0px; "><b>' + datahandler.data[index].name + '</div><div style="clear: both"><img src="css/Probild.png"></div><div>&nbsp;</div>';
-                        div.innerHTML = '<div style="float: left; "><b>' + pgname + '</div><div style="clear: both"><img src="css/Probild.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                {
+                    data: null,
+                    nextid: 0,
 
-                        var gr_fk = datahandler.data[index].gr_fk;
 
-                        $('#produktgruppen_inhalt').append(div);
+                    showProductGroups: function () { //Produktgruppen
+                        $('#produktgruppen_inhalt').html('');
 
-                        console.log(datahandler.data);
+                        for (index = 0; index < datahandler.data.length; index++) {
 
-                        var makeShowItemEventListener = function (element) {
-                            return function () {
-                                datahandler.nextid = element;
-                                $.mobile.pageContainer.pagecontainer("change", "#subgruppen", { test: "Hello World!" });
-                            };
+                            var div = document.createElement('div');
+                            var pgname = datahandler.data[index].name;
+
+                            div.style.styleFloat = "left";
+                            //div.innerHTML = '<div style="float: left; border: 0px; "><b>' + datahandler.data[index].name + '</div><div style="clear: both"><img src="css/Probild.png"></div><div>&nbsp;</div>';
+                            div.innerHTML = '<div style="float: left; "><b>' + pgname + '</div><div style="clear: both"><img src="css/Probild.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+
+                            var gr_fk = datahandler.data[index].gr_fk;
+
+                            $('#produktgruppen_inhalt').append(div);
+
+                            console.log(datahandler.data);
+
+                            var makeShowItemEventListener = function (element) {
+                                return function () {
+                                    datahandler.nextid = element;
+                                    $.mobile.pageContainer.pagecontainer("change", "#subgruppen", { test: "Hello World!" });
+                                };
+                            }
+                            div.onclick = makeShowItemEventListener(gr_fk);
                         }
-                        div.onclick = makeShowItemEventListener(gr_fk);
-                    }
-                },
-//----------------------------------------------Subgruppen werden angezeigt----------------------------------------------------------------------------------------------------------------
-                showSubgroups: function (prgr_fk) { //SubGruppen
-               
-               
-                
-                    for (index = 0; index < datahandler.data.length; index++) {
+                    },
+                    //----------------------------------------------Subgruppen werden angezeigt----------------------------------------------------------------------------------------------------------------
+                    showSubgroups: function (prgr_fk) { //SubGruppen
 
-                        if (datahandler.data[index].gr_fk == prgr_fk) {
 
-                            var lange = datahandler.data[index].subGroups.length
-                            $('#sub').html('');
-                            for (var i = 0; i < lange; i++) {
 
-                                var subgruppen = datahandler.data[index].subGroups[i].name;
-                                var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
-                                var gr = datahandler.data[index].gr_fk;
-                                var div = document.createElement('div');
-                                //div.innerHTML = '<div  style="float: left; border: 0px;"><b>' + subgruppen + '</b></div><div style="clear: both"><img src="css/Probild.png"><div><div></div>';
+                        for (index = 0; index < datahandler.data.length; index++) {
 
-                                div.style.styleFloat = "left";
-                                div.innerHTML = '<div style="float: left;"><b>' + subgruppen + '</div><div style="clear: both"><img src="css/Probild.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                            if (datahandler.data[index].gr_fk == prgr_fk) {
 
-                                $('#sub').append(div);
-                    
+                                var lange = datahandler.data[index].subGroups.length
+                                $('#sub').html('');
+                                for (var i = 0; i < lange; i++) {
 
-                                var makeShowItemEventListener = function (element, sg_fk) {
+                                    var subgruppen = datahandler.data[index].subGroups[i].name;
+                                    var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                    var gr = datahandler.data[index].gr_fk;
+                                    var div = document.createElement('div');
+                                    //div.innerHTML = '<div  style="float: left; border: 0px;"><b>' + subgruppen + '</b></div><div style="clear: both"><img src="css/Probild.png"><div><div></div>';
 
-                               
-                                    return function () {
-                                        var tmp = [element, sg_fk];
-                                        datahandler.nextid = tmp;
-                                        $.mobile.pageContainer.pagecontainer("change", "#produkte", { test: "Hello World!" });
-                                    };
+                                    div.style.styleFloat = "left";
+                                    div.innerHTML = '<div style="float: left;"><b>' + subgruppen + '</div><div style="clear: both"><img src="css/Probild.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+
+                                    $('#sub').append(div);
+
+
+                                    var makeShowItemEventListener = function (element, sg_fk) {
+
+
+                                        return function () {
+                                            var tmp = [element, sg_fk];
+                                            datahandler.nextid = tmp;
+                                            $.mobile.pageContainer.pagecontainer("change", "#produkte", { test: "Hello World!" });
+                                        };
+                                    }
+                                    div.onclick = makeShowItemEventListener(gr, sg_fk);
                                 }
-                                div.onclick = makeShowItemEventListener(gr, sg_fk);
                             }
                         }
-                    }
 
-                },
-//---------------------------------------------------Produkte werden angezeigt-----------------------------------------------------------------------------------------------------------
-                showProducts: function (grgr) { //Produkte
+                    },
+                    //---------------------------------------------------Produkte werden angezeigt-----------------------------------------------------------------------------------------------------------
+                    showProducts: function (grgr) { //Produkte
 
 
-                    for (index = 0; index < datahandler.data.length; index++) {
-                    
+                        for (index = 0; index < datahandler.data.length; index++) {
 
-                        if (datahandler.data[index].gr_fk == grgr[0]) {
-                            $('#products').html('');
-                            var lange = datahandler.data[index].subGroups.length
-                            //console.log(lange);
-                            for (var i = 0; i < lange; i++) {
 
-                                var subgruppen = datahandler.data[index].subGroups[i].name;
-                                var produkte = datahandler.data[index].subGroups[i].products;
-                                var prolange = datahandler.data[index].subGroups[i].products.length;
-                                var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
-                                var gr = datahandler.data[index].gr_fk;
+                            if (datahandler.data[index].gr_fk == grgr[0]) {
+                                $('#products').html('');
+                                var lange = datahandler.data[index].subGroups.length
+                                //console.log(lange);
+                                for (var i = 0; i < lange; i++) {
 
-                                if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
+                                    var subgruppen = datahandler.data[index].subGroups[i].name;
+                                    var produkte = datahandler.data[index].subGroups[i].products;
+                                    var prolange = datahandler.data[index].subGroups[i].products.length;
+                                    var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                    var gr = datahandler.data[index].gr_fk;
 
-                                    for (var ii = 0; ii < prolange; ii++) {
+                                    if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
 
-                                        var produktename = datahandler.data[index].subGroups[i].products[ii].name;
-                                        var div = document.createElement('div');
-                                        // div.innerHTML = '<div  style="float: left; border: 0px; "><b>' + produktename + '</b></div><div style="clear: both"><img src="css/Probild.png"><div><div></div>';
+                                        for (var ii = 0; ii < prolange; ii++) {
 
-                                        div.style.styleFloat = "left";
-                                        div.innerHTML = '<div style="float: left; "><b>' + produktename + '</div><div style="clear: both"><img src="css/Probild.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                            var produktename = datahandler.data[index].subGroups[i].products[ii].name;
+                                            var div = document.createElement('div');
+                                            // div.innerHTML = '<div  style="float: left; border: 0px; "><b>' + produktename + '</b></div><div style="clear: both"><img src="css/Probild.png"><div><div></div>';
 
-                                        $('#products').append(div);
+                                            div.style.styleFloat = "left";
+                                            div.innerHTML = '<div style="float: left; "><b>' + produktename + '</div><div style="clear: both"><img src="css/Probild.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
 
-                                        var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
-                                        var gr = datahandler.data[index].gr_fk;
-                                        var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+                                            $('#products').append(div);
 
-                                        var makeShowItemEventListener = function (element, sg_fk, pk) {
-                                            return function () {
-                                                var tmp = [element, sg_fk, pk];
-                                                datahandler.nextid = tmp;
-                                                $.mobile.pageContainer.pagecontainer("change", "#Artikelgruppen", { test: "Hello World!" });
-                                            };
+                                            var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                            var gr = datahandler.data[index].gr_fk;
+                                            var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+
+                                            var makeShowItemEventListener = function (element, sg_fk, pk) {
+                                                return function () {
+                                                    var tmp = [element, sg_fk, pk];
+                                                    datahandler.nextid = tmp;
+                                                    $.mobile.pageContainer.pagecontainer("change", "#Artikelgruppen", { test: "Hello World!" });
+                                                };
+                                            }
+                                            div.onclick = makeShowItemEventListener(gr, sg_fk, pk);
                                         }
-                                        div.onclick = makeShowItemEventListener(gr, sg_fk, pk);
                                     }
                                 }
                             }
                         }
-                    }
-                },
-//---------------------------------------------es wird geprüft ob Artikelgruppen bestehen-----------------------------------------------------------------------------------------------------------------
-                showArtikelgruppen: function (grgr) 
-                {
-                    for (index = 0; index < datahandler.data.length; index++) {
+                    },
+                    //---------------------------------------------es wird geprüft ob Artikelgruppen bestehen-----------------------------------------------------------------------------------------------------------------
+                    showArtikelgruppen: function (grgr) {
+                        for (index = 0; index < datahandler.data.length; index++) {
 
-                        if (datahandler.data[index].gr_fk == grgr[0]) {
+                            if (datahandler.data[index].gr_fk == grgr[0]) {
 
-                            $('#artikelgrp').html(''); // nach dem ausgeben immer leeren sonst wird es doppelt ausgegeben
-                            $('#produktname').html('');
-                            $('#artikelohneartikelgruppen').html('');
-                            $('#buttonmedia').html('');
+                                $('#artikelgrp').html(''); // nach dem ausgeben immer leeren sonst wird es doppelt ausgegeben
+                                $('#produktname').html('');
+                                $('#artikelohneartikelgruppen').html('');
+                                $('#buttonmedia').html('');
 
-                            var sublange = datahandler.data[index].subGroups.length
+                                var sublange = datahandler.data[index].subGroups.length
 
-                            for (var i = 0; i < sublange; i++) {
+                                for (var i = 0; i < sublange; i++) {
 
-                                if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
+                                    if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
 
-                                    var prolange = datahandler.data[index].subGroups[i].products.length;
+                                        var prolange = datahandler.data[index].subGroups[i].products.length;
 
-                                    for (var ii = 0; ii < prolange; ii++) {
-
-                                        if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
-
-                                            var produktname = datahandler.data[index].subGroups[i].products[ii].name;
-                                            var artikelgruppen = datahandler.data[index].subGroups[i].products[ii].articlegroups;
-
-                                        }
-                                        if (artikelgruppen == null) {
+                                        for (var ii = 0; ii < prolange; ii++) {
 
                                             if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
 
-                                                var artikellange = datahandler.data[index].subGroups[i].products[ii].articles.length;
-                                                var divname = document.createElement('div');
+                                                var produktname = datahandler.data[index].subGroups[i].products[ii].name;
+                                                var artikelgruppen = datahandler.data[index].subGroups[i].products[ii].articlegroups;
 
-                                                $('#produktname').append(divname);
-                                                divname.innerHTML = '<div style=" background-color: white; border: 2px solid white; margin-left:1cm; margin-right: 2cm; height:45px;" align: center><b><br>' + produktname + '</b></div>';
-
-                                                for (ind = 0; ind < artikellange; ind++) {
-
-                                                    var artikel_nr = datahandler.data[index].subGroups[i].products[ii].articles[ind].artikel_nr;
-                                                    var abmessung = datahandler.data[index].subGroups[i].products[ii].articles[ind].abmessung;
-                                                    var migel1 = datahandler.data[index].subGroups[i].products[ii].articles[ind].migel1;
-                                                    var verpackungshinweis = datahandler.data[index].subGroups[i].products[ii].articles[ind].verpackungshinweis;
-
-                                                    console.log(artikel_nr);
-
-                                                    var div = document.createElement('div');
-                                                    div.style.styleFloat = "left";
-                                                    div.innerHTML = '<div style="  margin-left: 0.4cm;"><b>' + verpackungshinweis + '</b></div><div style=" margin-left: 0.4cm;">' + abmessung + '</div><div id="mainselection" style=" width: 600px; margin-left: 0.4cm;"><br></div><div style=" margin-left: 0.4cm;"><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div style=" margin-left: 0.4cm;">' + migel1 + '</div><hr style="color:grey; noshade width="580" />';
-
-                                                    $('#artikelohneartikelgruppen').append(div);
-
-                                                }
-                                                var divaa = document.createElement('div');
-                                                var mediacenter = 'Mediacenter';
-
-                                                divaa.innerHTML = '<div id="footer" style="background-color:#eaf4f5; left: 46px; width: 655px; height: 65px; position: fixed; top: 920px; "><br>&nbsp;&nbsp;&nbsp;<button name="button" style="background-color:#83d0e3; width:100px; height:25px; " value="Mediacenter" type="button"><span id="buttonschrift">' + mediacenter + '</span></button></div>';
-
-                                                $('#buttonmedia').append(divaa);
-
-                                                var makeShowItemEventListener = function (element, sg_fk, pk) {
-                                                    return function () {
-                                                        var tmp = [element, sg_fk, pk];
-                                                        datahandler.nextid = tmp;
-                                                        $.mobile.pageContainer.pagecontainer("change", "#Mediacenter", { test: "Hello World!" });
-                                                    };
-                                                }
-                                                divaa.onclick = makeShowItemEventListener(gr, sg_fk, pk);
                                             }
-                                        } else { // die Artikeln mt Artikelgruppen
-
-
-                                            for (var ii = 0; ii < prolange; ii++) {
+                                            if (artikelgruppen == null) {
 
                                                 if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
 
-                                                    var produktname = datahandler.data[index].subGroups[i].products[ii].name;
-                                                    var artikelgruppen = datahandler.data[index].subGroups[i].products[ii].articlegroups;
+                                                    var artikellange = datahandler.data[index].subGroups[i].products[ii].articles.length;
+                                                    var divname = document.createElement('div');
 
-                                                    var lange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
+                                                    $('#produktname').append(divname);
+                                                    divname.innerHTML = '<div style=" background-color: white; border: 2px solid white; margin-left:1cm; margin-right: 2cm; height:45px;" align: center><b><br>' + produktname + '</b></div>';
+
+                                                    for (ind = 0; ind < artikellange; ind++) {
+
+                                                        var artikel_nr = datahandler.data[index].subGroups[i].products[ii].articles[ind].artikel_nr;
+                                                        var abmessung = datahandler.data[index].subGroups[i].products[ii].articles[ind].abmessung;
+                                                        var migel1 = datahandler.data[index].subGroups[i].products[ii].articles[ind].migel1;
+                                                        var verpackungshinweis = datahandler.data[index].subGroups[i].products[ii].articles[ind].verpackungshinweis;
+
+                                                        console.log(artikel_nr);
+
+                                                        var div = document.createElement('div');
+                                                        div.style.styleFloat = "left";
+                                                        div.innerHTML = '<div style="  margin-left: 0.4cm;"><b>' + verpackungshinweis + '</b></div><div style=" margin-left: 0.4cm;">' + abmessung + '</div><div id="mainselection" style=" width: 600px; margin-left: 0.4cm;"><br></div><div style=" margin-left: 0.4cm;"><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div style=" margin-left: 0.4cm;">' + migel1 + '</div><hr style="color:grey; noshade width="580" />';
+
+                                                        $('#artikelohneartikelgruppen').append(div);
+
+                                                    }
+                                                    var divaa = document.createElement('div');
+                                                    var mediacenter = 'Mediacenter';
+
+                                                    divaa.innerHTML = '<div id="footer" style="background-color:#eaf4f5; left: 46px; width: 655px; height: 65px; position: fixed; top: 920px; "><br>&nbsp;&nbsp;&nbsp;<button name="button" style="background-color:#83d0e3; width:100px; height:25px; " value="Mediacenter" type="button"><span id="buttonschrift">' + mediacenter + '</span></button></div>';
+
+                                                    $('#buttonmedia').append(divaa);
+
+                                                    var makeShowItemEventListener = function (element, sg_fk, pk) {
+                                                        return function () {
+                                                            var tmp = [element, sg_fk, pk];
+                                                            datahandler.nextid = tmp;
+                                                            $.mobile.pageContainer.pagecontainer("change", "#Mediacenter", { test: "Hello World!" });
+                                                        };
+                                                    }
+                                                    divaa.onclick = makeShowItemEventListener(gr, sg_fk, pk);
+                                                }
+                                            } else { // die Artikeln mt Artikelgruppen
+
+
+                                                for (var ii = 0; ii < prolange; ii++) {
 
                                                     if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
 
-                                                        for (ind = 0; ind < lange; ind++) {
+                                                        var produktname = datahandler.data[index].subGroups[i].products[ii].name;
+                                                        var artikelgruppen = datahandler.data[index].subGroups[i].products[ii].articlegroups;
 
-                                                            var artikelgruppe = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
-                                                            console.log(artikelgruppe);
-                                                            var div = document.createElement('div');
+                                                        var lange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
 
-                                                            div.style.styleFloat = "left";
-                                                            div.innerHTML = '<div style="float: left; "><b>' + artikelgruppe + '</div><div style="clear: both"><img src="css/Probild.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
-                                                            $('#artikelgrp').append(div);
+                                                        if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
 
-                                                            var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
-                                                            var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
-                                                            var gr = datahandler.data[index].gr_fk;
-                                                            var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+                                                            for (ind = 0; ind < lange; ind++) {
 
-                                                            var makeShowItemEventListener = function (element, sg_fk, pk, argr_fk) {
-                                                                return function () {
-                                                                    var tmp = [element, sg_fk, pk, argr_fk];
-                                                                    datahandler.nextid = tmp;
-                                                                    $.mobile.pageContainer.pagecontainer("change", "#ArtikelgruppenArtikel", { test: "Hello World!" });
-                                                                };
+                                                                var artikelgruppe = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
+                                                                console.log(artikelgruppe);
+                                                                var div = document.createElement('div');
+
+                                                                div.style.styleFloat = "left";
+                                                                div.innerHTML = '<div style="float: left; "><b>' + artikelgruppe + '</div><div style="clear: both"><img src="css/Probild.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                                                $('#artikelgrp').append(div);
+
+                                                                var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
+                                                                var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                                                var gr = datahandler.data[index].gr_fk;
+                                                                var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+
+                                                                var makeShowItemEventListener = function (element, sg_fk, pk, argr_fk) {
+                                                                    return function () {
+                                                                        var tmp = [element, sg_fk, pk, argr_fk];
+                                                                        datahandler.nextid = tmp;
+                                                                        $.mobile.pageContainer.pagecontainer("change", "#ArtikelgruppenArtikel", { test: "Hello World!" });
+                                                                    };
+                                                                }
+                                                                div.onclick = makeShowItemEventListener(gr, sg_fk, pk, argr_fk);
                                                             }
-                                                            div.onclick = makeShowItemEventListener(gr, sg_fk, pk, argr_fk);
                                                         }
                                                     }
                                                 }
-                                            }
 
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
-                    }
-                },
-//-------------------------------------------------------------Artikeln der Artikelgruppen werden angezeigt-------------------------------------------------------------------------------------------------
-                showArtikelgruppenArtikel: function (grgr) {
+                    },
+                    //-------------------------------------------------------------Artikeln der Artikelgruppen werden angezeigt-------------------------------------------------------------------------------------------------
+                    showArtikelgruppenArtikel: function (grgr) {
 
-                    console.log('test');
-
-              
-
-               
-                    for (index = 0; index < datahandler.data.length; index++) {
-
-                        if (datahandler.data[index].gr_fk == grgr[0]) {
-
-                            $('#artgrpart').html('');
-                            $('#artgrp').html('');
-                            $('#button').html('');
-
-                            var sublange = datahandler.data[index].subGroups.length
-
-                            for (var i = 0; i < sublange; i++) {
-           
-                                if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
-
-                                    var prolange = datahandler.data[index].subGroups[i].products.length;
-
-                                    for (var ii = 0; ii < prolange; ii++) {
-
-                                        if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
-
-                                            var produktname = datahandler.data[index].subGroups[i].products[ii].name;
-                                            var artikelgruppen = datahandler.data[index].subGroups[i].products[ii].articlegroups;
-                                        }
-
-                                        if (artikelgruppen == null) {
-
-                                        } else {
+                        console.log('test');
 
 
 
-                                        
+
+                        for (index = 0; index < datahandler.data.length; index++) {
+
+                            if (datahandler.data[index].gr_fk == grgr[0]) {
+
+                                $('#artgrpart').html('');
+                                $('#artgrp').html('');
+                                $('#button').html('');
+
+                                var sublange = datahandler.data[index].subGroups.length
+
+                                for (var i = 0; i < sublange; i++) {
+
+                                    if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
+
+                                        var prolange = datahandler.data[index].subGroups[i].products.length;
+
+                                        for (var ii = 0; ii < prolange; ii++) {
 
                                             if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
-                                                var lange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
 
-                                                for (ind = 0; ind < lange; ind++) {
+                                                var produktname = datahandler.data[index].subGroups[i].products[ii].name;
+                                                var artikelgruppen = datahandler.data[index].subGroups[i].products[ii].articlegroups;
+                                            }
 
-                                                    var artikelgruppename = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
-                                                    var artlange = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles.length;
+                                            if (artikelgruppen == null) {
 
-                                                    if (grgr[3] == datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk) {
+                                            } else {
 
-                                                        var div = document.createElement('div');
 
-                                                        $('#artgrp').append(div);
 
-                                                        div.innerHTML = '<div style=" background-color: white; border: 2px solid white; margin-left:1cm; margin-right: 2cm; height:45px;" align: center><b><br>' + artikelgruppename + '</b></div>';
 
-                                                        for (inde = 0; inde < artlange; inde++) {
 
-                                                            var abmessung = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].abmessungen;
-                                                            var verpackungshinweis = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].verpackungshinweis;
-                                                            var artikel_nr = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].artikel_nr;
-                                                            var migel1 = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].migel1;
+                                                if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
+                                                    var lange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
 
-                                                            console.log(abmessung);
-                                                            console.log(verpackungshinweis);
-                                                            console.log(artikel_nr);
-                                                            console.log(migel1);
+                                                    for (ind = 0; ind < lange; ind++) {
 
-                                                            var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
-                                                            var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
-                                                            var gr = datahandler.data[index].gr_fk;
-                                                            var pk = datahandler.data[index].subGroups[i].products[ii].pk;
-                                                            var divb = document.createElement('div');
+                                                        var artikelgruppename = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
+                                                        var artlange = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles.length;
 
-                                                            //div.style.styleFloat = "left";
+                                                        if (grgr[3] == datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk) {
 
-                                                            $('#artgrpart').append(divb);
-                                                            divb.innerHTML = '<div style="  margin-left: 0.4cm;"><b>' + verpackungshinweis + '</b></div><div style=" margin-left: 0.4cm;">' + abmessung + '</div><div id="mainselection" style=" width: 600px; margin-left: 0.4cm;"><select id="select" style="background-color: #74cae0; width: 585px; height: 30px; line-height: 1; border: 0; "><option></option value="1"><option>1</option><option value="2">2</option><option value="3">3</option></select><br></div><div style=" margin-left: 0.4cm;"><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div style=" margin-left: 0.4cm;">' + migel1 + '</div><hr style="color:grey; noshade width="580" />';
-                                                            //<div style=" background-color: white; margin-left: 0.4cm; margin-right: 2cm; width:625px; height:150px;">
+                                                            var div = document.createElement('div');
+
+                                                            $('#artgrp').append(div);
+
+                                                            div.innerHTML = '<div style=" background-color: white; border: 2px solid white; margin-left:1cm; margin-right: 2cm; height:45px;" align: center><b><br>' + artikelgruppename + '</b></div>';
+
+                                                            for (inde = 0; inde < artlange; inde++) {
+
+                                                                var abmessung = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].abmessungen;
+                                                                var verpackungshinweis = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].verpackungshinweis;
+                                                                var artikel_nr = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].artikel_nr;
+                                                                var migel1 = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].migel1;
+
+                                                                console.log(abmessung);
+                                                                console.log(verpackungshinweis);
+                                                                console.log(artikel_nr);
+                                                                console.log(migel1);
+
+                                                                var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
+                                                                var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                                                var gr = datahandler.data[index].gr_fk;
+                                                                var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+                                                                var divb = document.createElement('div');
+
+                                                                //div.style.styleFloat = "left";
+
+                                                                $('#artgrpart').append(divb);
+                                                                divb.innerHTML = '<div style="  margin-left: 0.4cm;"><b>' + verpackungshinweis + '</b></div><div style=" margin-left: 0.4cm;">' + abmessung + '</div><div id="mainselection" style=" width: 600px; margin-left: 0.4cm;"><select id="select" style="background-color: #74cae0; width: 585px; height: 30px; line-height: 1; border: 0; "><option></option value="1"><option>1</option><option value="2">2</option><option value="3">3</option></select><br></div><div style=" margin-left: 0.4cm;"><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div style=" margin-left: 0.4cm;">' + migel1 + '</div><hr style="color:grey; noshade width="580" />';
+                                                                //<div style=" background-color: white; margin-left: 0.4cm; margin-right: 2cm; width:625px; height:150px;">
+                                                            }
+                                                            var divaa = document.createElement('div');
+                                                            var mediacenter = 'Mediacenter';
+
+                                                            divaa.innerHTML = '<div id="footer" style="background-color:#eaf4f5; left: 46px; width: 655px; height: 65px; position: fixed; top: 920px; "><br>&nbsp;&nbsp;&nbsp;<button name="button" style="background-color:#83d0e3; width:100px; height:25px; " value="Mediacenter" type="button"><span id="buttonschrift">' + mediacenter + '</span></button></div>';
+
+                                                            $('#button').append(divaa);
+
+                                                            var makeShowItemEventListener = function (element, sg_fk, pk, argr_fk) {
+
+                                                                return function () {
+
+
+                                                                    var tmp = [element, sg_fk, pk, argr_fk];
+                                                                    datahandler.nextid = tmp;
+                                                                    $.mobile.pageContainer.pagecontainer("change", "#Mediacenter", { test: "Hello World!" });
+                                                                };
+                                                            }
+                                                            divaa.onclick = makeShowItemEventListener(gr, sg_fk, pk, argr_fk);
                                                         }
-                                                        var divaa = document.createElement('div');
-                                                        var mediacenter = 'Mediacenter';
-
-                                                        divaa.innerHTML = '<div id="footer" style="background-color:#eaf4f5; left: 46px; width: 655px; height: 65px; position: fixed; top: 920px; "><br>&nbsp;&nbsp;&nbsp;<button name="button" style="background-color:#83d0e3; width:100px; height:25px; " value="Mediacenter" type="button"><span id="buttonschrift">' + mediacenter + '</span></button></div>';
-
-                                                        $('#button').append(divaa);
-
-                                                        var makeShowItemEventListener = function (element, sg_fk, pk, argr_fk) {
-
-                                                            return function () {
-
-
-                                                                var tmp = [element, sg_fk, pk, argr_fk];
-                                                                datahandler.nextid = tmp;
-                                                                $.mobile.pageContainer.pagecontainer("change", "#Mediacenter", { test: "Hello World!" });
-                                                            };
-                                                        }
-                                                        divaa.onclick = makeShowItemEventListener(gr, sg_fk, pk, argr_fk);
                                                     }
                                                 }
                                             }
@@ -739,164 +792,235 @@
                                 }
                             }
                         }
-                    }
-                },
-//---------------------------------------------------------pdf links werden angezeigt-----------------------------------------------------------------------------------------------------
-                showMediacenter: function (grgr) {
+                    },
+                    //---------------------------------------------------------pdf links werden angezeigt-----------------------------------------------------------------------------------------------------
+                    showMediacenter: function (grgr) {
 
-                    console.log('test1');
+                        console.log('test1');
 
-                    for (index = 0; index < datahandler.data.length; index++) {
+                        for (index = 0; index < datahandler.data.length; index++) {
 
-                        if (datahandler.data[index].gr_fk == grgr[0]) {
+                            if (datahandler.data[index].gr_fk == grgr[0]) {
 
-                            $('#prgrlinks').html('');
-                            $('#sublinks').html('');
-                            $('#prolinks').html('');
-
-
-                            var lange = datahandler.data[index].subGroups.length
-                            var prgrlinklange = datahandler.data[index].links.length;
-                            var prgrname = datahandler.data[index].name;
-                       
-
-                            console.log('Links der Produktgruppe' + prgrname);
-                            console.log(prgrlinklange)
-
-                            // produktgruppenlinks werden ausgegeben
-                            for (pi = 0; pi < prgrlinklange; pi++) {
-
-                                var prgrlink = datahandler.data[index].links[pi].link;
-                                var prgrsap = datahandler.data[index].links[pi].sap_nr;
-                                var prgrurl = datahandler.data[index].links[pi].url;
+                                $('#prgrlinks').html('');
+                                $('#sublinks').html('');
+                                $('#prolinks').html('');
 
 
-                                console.log(prgrlink);
-                                console.log(prgrurl);
-
-                                var div = document.createElement('div');
-                                div.innerHTML = '<div style="height:22px; width: 600px;"><span style="color: #1a4064;">' + prgrsap + '</span><div style="width: 500px; float: right; "><a style="color:#74cae0;" href="'+prgrurl+'">' + prgrlink + '</a></div><hr style="color:grey;" noshade size="0.3" width="600" align="center" />';
-                                $('#prgrlinks').append(div);
-                            }
-
-                            for (i = 0; i < lange; i++) {
-
-                                if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
-
-                                    var prolange = datahandler.data[index].subGroups[i].products.length;
-                                    var sublinklange = datahandler.data[index].subGroups[i].links.length;
-                                    var subname = datahandler.data[index].subGroups[i].name;
-
-                                    console.log('Links der Subgruppe' + subname);
-                                    console.log(sublinklange);
-                                    // subgruppen links werden ausgegeben
-
-                                    for (si = 0; si < sublinklange; si++) {
-
-                                        var sublinks = datahandler.data[index].subGroups[i].links[si].link;
-                                        var subsap = datahandler.data[index].subGroups[i].links[si].sap_nr;
-                                        var suburl = datahandler.data[index].subGroups[i].links[si].url;
-
-                                        console.log(sublinks);
-                                        console.log(suburl);
-
-                                        var div = document.createElement('div');
-                                        div.innerHTML = '<div style="height:22px; width: 600px;"><span style="color: #1a4064;">' + subsap + '</span><div style="width: 500px; float: right; "><a style="color:#74cae0;" href="'+suburl+'">' + sublinks + '</a></div><hr style="color:grey;" noshade size="0.3" width="600" align="center" />';
-                                        $('#sublinks').append(div);
-                                    }
-
-                                    for (ii = 0; ii < prolange; ii++) {
-
-                                        if (datahandler.data[index].subGroups[i].products[ii].pk == grgr[2]) {
-
-                                            var prolinklange = datahandler.data[index].subGroups[i].products[ii].links.length;
-                                            var proname = datahandler.data[index].subGroups[i].products[ii].name;
-
-                                            console.log('Links der Produkte' + proname);
-                                            console.log(prolinklange);
-
-                                            // produkte links werden ausgegeben
-                                            for (pri = 0; pri < prolinklange; pri++) {
-
-                                                var prolinks = datahandler.data[index].subGroups[i].products[ii].links[pri].link;
-                                                var prosap = datahandler.data[index].subGroups[i].products[ii].links[pri].sap_nr;
-                                                var prourl = datahandler.data[index].subGroups[i].products[ii].links[pri].url;
+                                var lange = datahandler.data[index].subGroups.length
+                                var prgrlinklange = datahandler.data[index].links.length;
+                                var prgrname = datahandler.data[index].name;
 
 
-                                                console.log(prolinks);
-                                            
+                                console.log('Links der Produktgruppe' + prgrname);
+                                console.log(prgrlinklange)
 
-                                                var div = document.createElement('div');
-                                                div.innerHTML = '<div style="height:22px; width: 600px;"><span style="color: #1a4064;">' + prosap + '</span><div style="width: 500px; float: right; "><a style="color:#74cae0;" href="'+prourl+'">' + prolinks + '</a></div><hr style="color:grey;" noshade size="0.3" width="600" align="center" />';
-                                                $('#prolinks').append(div);
+                                // produktgruppenlinks werden ausgegeben
+                                for (pi = 0; pi < prgrlinklange; pi++) {
+
+                                    var prgrlink = datahandler.data[index].links[pi].link;
+                                    var prgrsap = datahandler.data[index].links[pi].sap_nr;
+                                    var prgrurl = datahandler.data[index].links[pi].url;
+
+
+                                    console.log(prgrlink);
+                                    console.log(prgrurl);
+
+                                    var div = document.createElement('div');
+                                    div.innerHTML = '<div style="height:22px; width: 600px;"><span style="color: #1a4064;">' + prgrsap + '</span><div style="width: 500px; float: right; "><a style="color:#74cae0;" href="' + prgrurl + '">' + prgrlink + '</a></div><hr style="color:grey;" noshade size="0.3" width="600" align="center" />';
+                                    $('#prgrlinks').append(div);
+                                }
+
+                                for (i = 0; i < lange; i++) {
+
+                                    if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
+
+                                        var prolange = datahandler.data[index].subGroups[i].products.length;
+                                        var sublinklange = datahandler.data[index].subGroups[i].links.length;
+                                        var subname = datahandler.data[index].subGroups[i].name;
+
+                                        console.log('Links der Subgruppe' + subname);
+                                        console.log(sublinklange);
+                                        // subgruppen links werden ausgegeben
+
+                                        for (si = 0; si < sublinklange; si++) {
+
+                                            var sublinks = datahandler.data[index].subGroups[i].links[si].link;
+                                            var subsap = datahandler.data[index].subGroups[i].links[si].sap_nr;
+                                            var suburl = datahandler.data[index].subGroups[i].links[si].url;
+
+                                            console.log(sublinks);
+                                            console.log(suburl);
+
+                                            var div = document.createElement('div');
+                                            div.innerHTML = '<div style="height:22px; width: 600px;"><span style="color: #1a4064;">' + subsap + '</span><div style="width: 500px; float: right; "><a style="color:#74cae0;" href="' + suburl + '">' + sublinks + '</a></div><hr style="color:grey;" noshade size="0.3" width="600" align="center" />';
+                                            $('#sublinks').append(div);
+                                        }
+
+                                        for (ii = 0; ii < prolange; ii++) {
+
+                                            if (datahandler.data[index].subGroups[i].products[ii].pk == grgr[2]) {
+
+                                                var prolinklange = datahandler.data[index].subGroups[i].products[ii].links.length;
+                                                var proname = datahandler.data[index].subGroups[i].products[ii].name;
+
+                                                console.log('Links der Produkte' + proname);
+                                                console.log(prolinklange);
+
+                                                // produkte links werden ausgegeben
+                                                for (pri = 0; pri < prolinklange; pri++) {
+
+                                                    var prolinks = datahandler.data[index].subGroups[i].products[ii].links[pri].link;
+                                                    var prosap = datahandler.data[index].subGroups[i].products[ii].links[pri].sap_nr;
+                                                    var prourl = datahandler.data[index].subGroups[i].products[ii].links[pri].url;
+
+
+                                                    console.log(prolinks);
+
+
+                                                    var div = document.createElement('div');
+                                                    div.innerHTML = '<div style="height:22px; width: 600px;"><span style="color: #1a4064;">' + prosap + '</span><div style="width: 500px; float: right; "><a style="color:#74cae0;" href="' + prourl + '">' + prolinks + '</a></div><hr style="color:grey;" noshade size="0.3" width="600" align="center" />';
+                                                    $('#prolinks').append(div);
+                                                }
                                             }
                                         }
                                     }
                                 }
                             }
                         }
-                    }
-                },
+                    },
 
-//----------------------------------------------------------lokale daten werden ausgegeben--------------------------------------------------------------------------------------------------------------
-                localStorage_ausgeben: function () {
+ //----------------------------------------------------------lokale daten werden ausgegeben--------------------------------------------------------------------------------------------------------------
+                    localStorage_ausgeben: function () {
 
-                    console.log('ich bin im localStorage');
-                    
-                    var alleDaten = JSON.parse(localStorage.getItem('feld'));
+                        console.log('ich bin im localStorage');
 
-                    datahandler.data = alleDaten;
+                        var alleDaten = JSON.parse(localStorage.getItem('feld'));
 
-                    console.log(datahandler.data);
+                        datahandler.data = alleDaten;
 
-                  /*  for (var i = 0; i < localStorage.length; i++) {
+                        console.log(datahandler.data);
 
-                        var name = alleDaten[i].name;
-                        var prgr_fk = alleDaten[i].prgr_fk;
+                        /*  for (var i = 0; i < localStorage.length; i++) {
 
-                        console.log(name, prgr_fk);
+                              var name = alleDaten[i].name;
+                              var prgr_fk = alleDaten[i].prgr_fk;
 
-                    }*/
-                },
+                              console.log(name, prgr_fk);
+
+                          }*/
+                    },
 
 //--------------------------------------------------Webservice wird aufgerufen und daten werden lokal abgespeichert------------------------------------------------------------------------------------------------------------
 
-                loaddata: function () {
-                    $.ajax({
-                        type: 'POST',
-                        url: 'https://katalog.ivf.hartmann.info/mobileapi/index.php',
-                        data: 'language=DE',
-                        dataType: 'json',
-                        cache: false,
-                        error: function (xhr, ajaxOptions, thrownError) { console.log(xhr.status); console.log(thrownError); console.log(xhr.responseText) },
-                        success: function (result) {
-                            datahandler.data = result.data;
+                    loaddata: function () {
+                        console.log('mit dem Webservice verbunden');
 
-                           // Daten als feld in localStorage speichern!
-                            var feld = [];
-                            localStorage["feld"] = JSON.stringify(datahandler.data);
-                            var alleDaten = JSON.parse(localStorage["feld"]);
+                        $.ajax({
+                            type: 'POST',
+                            url: 'https://katalog.ivf.hartmann.info/mobileapi/index.php',
+                            data: 'language=DE',
+                            dataType: 'json',
+                            cache: false,
+                            error: function (xhr, ajaxOptions, thrownError) { console.log(xhr.status); console.log(thrownError); console.log(xhr.responseText) },
+                            success: function (result) {
+                                datahandler.data = result.data;
 
-                            //console.log(alleDaten);
+                                // Daten als feld in localStorage speichern!
+                                var feld = [];
+                                localStorage["feld"] = JSON.stringify(datahandler.data);
+                                var alleDaten = JSON.parse(localStorage["feld"]);
+
+                                //console.log(alleDaten);
 
                             }
-                    });
-                },
+                        });
+                    },
+                
+//-------------------------------------------------------Suchfunktion-----------------------------------------------------------------------------------------------------------------
+           suchen: function(){
 
-            }
+               console.log('ich suche im LocalStorage');
+               var alleDaten = JSON.parse(localStorage.getItem('feld')); //die Daten aus dem localStorage werden mit get ausgelesen
+               datahandler.data = alleDaten; //alelDaten aus dem lokalStorage werden in datahandler.data geschrieben
+               var suchbegriff = document.getElementById('ta').value; //Begriff wird aus Textfeld ausgelesen
+               
+       
+               if (suchbegriff == '') {
+
+                   console.log('sie müssen iwas eingeben');
+
+               } else {
+
+                   for (var index = 0; index < datahandler.data.length; index++) {
+
+                       var prgrname = datahandler.data[index].name;
+                       var gr_fk = datahandler.data[index].gr_fk;
+                       var prgrIK = datahandler.data[index].internetKatalog;
+
+                       var sublange = datahandler.data[index].subGroups.length;
+
+                       console.log(datahandler.data);
+                       if (suchbegriff == prgrname || suchbegriff == gr_fk || suchbegriff == prgrIK) {
+
+                           console.log('drin');
+                           return true;
+                          
+                       }else{
+
+
+                           for (var i = 0; i < sublange; i++) {
+
+                               var subname = datahandler.data[index].subGroups[i].name;
+                               var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                              
+                               var prolange = datahandler.data[index].subGroups[i].products.length;
+
+                               if (suchbegriff == subname || suchbegriff == sg_fk) {
+
+                                   console.log('drin');
+                                   return true;
+
+                               }else{
+
+                                   for(var ii =0; ii < prolange; ii++){
+
+                                       var proname = datahandler.data[index].subGroups[i].products[ii].name;
+                                       var pk= datahandler.data[index].subGroups[i].products[ii].pk;
+
+                                       if(suchbegriff == proname|| suchbegriff==pk){
+
+                                           console.log('drin');
+                                           return true;
+
+                                       }else{
+
+                                           console.log('nicht vorhanden');
+
+                                       }
+                                   }
+
+                              }
+                              
+                           }                         
+                       }
+                   }
+               }
+    },
+     }
 //--------------------------------------------Internetverbidnung wird geprüft-----------------------------------------------------------------------------------------------------------------
-        
 
-                    function checkInternet() {
 
-                var inet = navigator.onLine; 
+            function checkInternet() {
+
+                var inet = navigator.onLine;
                 console.log(inet);
 
                 if (inet == false) {
 
                     console.log('offline');
                     $(document).ready(function () {
-                        
+
                         datahandler.localStorage_ausgeben();
 
                     });
@@ -914,20 +1038,12 @@
 
             }
 
-        //---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                   
-                    
-                    function suche() {
+        
+
+       
 
 
-                        var suchfeld = document.getElementById('ta');
-
-                        console.log(suchfeld);
-                    }
-
-                    
-
-
+            //-----------------------------------------page Aufruf----------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -955,7 +1071,7 @@
             });
 
 
-    </script>
+        </script>
 </body>
 </html>
 
