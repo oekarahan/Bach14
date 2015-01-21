@@ -104,7 +104,7 @@
                             </li>
                         
                         <li id="lupe">
-                            <img onclick="datahandler.suchen();" src="css/lupe.png" />
+                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" />
 
                         </li>
                 </ul>
@@ -429,8 +429,15 @@
         <br /><br /><br /><br />
         <br /><br /><br /><br />
 
+        <div id="zahler" style="margin-left: 1cm;"></div>
+
         <div style="background-color: white; height: 800px; margin-left: 1cm; margin-right: 2cm; overflow:scroll; padding:10px">
 
+            <div id="prgr"></div>
+           
+            <div id="artgr"></div>
+
+               
 
         </div>
 
@@ -721,10 +728,6 @@
 
                                             } else {
 
-
-
-
-
                                                 if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
                                                     var lange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
 
@@ -890,7 +893,7 @@
                         }
                     },
 
- //----------------------------------------------------------lokale daten werden ausgegeben--------------------------------------------------------------------------------------------------------------
+                    //----------------------------------------------------------lokale daten werden ausgegeben--------------------------------------------------------------------------------------------------------------
                     localStorage_ausgeben: function () {
 
                         console.log('ich bin im localStorage');
@@ -911,7 +914,7 @@
                           }*/
                     },
 
-//--------------------------------------------------Webservice wird aufgerufen und daten werden lokal abgespeichert------------------------------------------------------------------------------------------------------------
+                    //--------------------------------------------------Webservice wird aufgerufen und daten werden lokal abgespeichert------------------------------------------------------------------------------------------------------------
 
                     loaddata: function () {
                         console.log('mit dem Webservice verbunden');
@@ -936,77 +939,294 @@
                             }
                         });
                     },
-                
-//-------------------------------------------------------Suchfunktion-----------------------------------------------------------------------------------------------------------------
-           suchen: function(){
 
-               console.log('ich suche im LocalStorage');
-               var alleDaten = JSON.parse(localStorage.getItem('feld')); //die Daten aus dem localStorage werden mit get ausgelesen
-               datahandler.data = alleDaten; //alleDaten aus dem lokalStorage werden in datahandler.data geschrieben
-               var suchbegriff = document.getElementById('ta').value; //Begriff wird aus Textfeld ausgelesen
+                    //-------------------------------------------------------Suchfunktion-----------------------------------------------------------------------------------------------------------
+                    prgrsuchen: function () {
+                        
+                        var zahler = 0;
+
+
+                        console.log('ich suche im LocalStorage');
+                        var alleDaten = JSON.parse(localStorage.getItem('feld')); //die Daten aus dem localStorage werden mit get ausgelesen
+                        datahandler.data = alleDaten; //alleDaten aus dem lokalStorage werden in datahandler.data geschrieben
+                        var suchbegriff = document.getElementById('ta').value; //Begriff wird aus Textfeld ausgeles
+                       
+                        var Suche = new RegExp(suchbegriff, "gi");
+                        //console.log(Suche);
+                       
+                        $.mobile.pageContainer.pagecontainer("change", "#Suche", { test: "Hello World!" });
+
+                        if (suchbegriff == '') {
+
+                            console.log('sie müssen iwas eingeben');
+
+                        } else {
+
+                         
+                            var diva = document.createElement('div');
+                            diva.innerHTML = '<span style="color: #1a4064;">Produktgruppen</span>';
+                            $('#prgr').append(diva);
+
+                            //Produktgruppe durchsuchen 
+                            for (var index = 0; index < datahandler.data.length; index++) {
+
+                              
+                                var sublange = datahandler.data[index].subGroups.length;
+                                var prgrname = datahandler.data[index].name;
+
+                                if (prgrname.search(Suche) >= 0) {
+
+                                    console.log(prgrname);
+                                    zahler++;
+                                    var div = document.createElement('div');
+                                    div.innerHTML = '<div><span style="color:#74cae0;">' + prgrname + '</span></div>';
+                                    $('#prgr').append(div);
+
+                                } else {
+
+                                    console.log('kein Treffer');
+
+                                }
+                            }
+                            var x = zahler;
+                            console.log(x);
+                            datahandler.subsuchen(Suche, x);
+
+                           
+
+
+
+                        }
+
+                    },
+
+ //-----------------------------------------subgruppen druchsuchen------------------------------------------------------------------------
+
+                    subsuchen: function (Suche, x) {
+                        
+                        console.log('subsuche');
+                        //console.log(suchbegriff);
+                        
+                        var zahler = x;
+                        console.log(zahler);
+
+                        var div = document.createElement('div');
+                        div.innerHTML = '<span style="color: #1a4064;">Subgruppen</span>';
+                        $('#prgr').append(div);
+
+                        for (var index = 0; index < datahandler.data.length; index++) {
+                            var sublange = datahandler.data[index].subGroups.length;
+
+                            for (var i = 0; i < sublange; i++) {
+
+                                var subname = datahandler.data[index].subGroups[i].name;
+
+                                if (subname.search(Suche) >= 0) {
+
+
+                                    console.log(subname);
+                                    zahler++;
+                                    var diva = document.createElement('div');
+                                    diva.innerHTML = '<div><span style="color:#74cae0;">' + subname + '</span></div>';
+                                    $('#prgr').append(diva);
+
+
+                                } else {
+
+                                    console.log('kein Treffer');
+                                }
+                            }
+                        }
+                        var x = zahler;
+                        console.log(x);
+                        datahandler.prosuchen(Suche,x);
+
+                    },
+
+//-----------------------------------------produkte druchsuchen----------------------------------------------------------------------------
+
+
+                    prosuchen: function (Suche, x) {
+                       
+                        var zahler = x;
+                        console.log(zahler);
+
+                        console.log('prosuche');
+                        //console.log(suchbegriff);
+
+
+                        var diva = document.createElement('div');
+                        diva.innerHTML = '<span style="color: #1a4064;">Produkte</span>';
+                        $('#prgr').append(diva);
+
+                        for (var index = 0; index < datahandler.data.length; index++) {
+                            var sublange = datahandler.data[index].subGroups.length;
+
+                            for (var i = 0; i < sublange; i++) {
+
+                                var subname = datahandler.data[index].subGroups[i].name;
+                                var prolange = datahandler.data[index].subGroups[i].products.length;
+
+                                for (var ii = 0; ii < prolange; ii++) {
+
+                                    var pkname = datahandler.data[index].subGroups[i].products[ii].name;
+                                    var artgr = datahandler.data[index].subGroups[i].products[ii].articlegroups;
+
+                                    if (pkname.search(Suche) >= 0) {
+
+                                        console.log(pkname);
+                                       
+                                        zahler++;
+                                        var divaa = document.createElement('div');
+                                        divaa.innerHTML = '<div>' + pkname + '</div>';
+                                        $('#prgr').append(divaa);
+
+                                    } else {
+
+                                        console.log('kein Treffer');
+                                    }
+
+                                }
+                                //art gruppe
+
+                                for (var index = 0; index < datahandler.data.length; index++) {
+                                    var sublange = datahandler.data[index].subGroups.length;
+
+                                    for (var i = 0; i < sublange; i++) {
+
+                                        var subname = datahandler.data[index].subGroups[i].name;
+                                        var prolange = datahandler.data[index].subGroups[i].products.length;
+
+                                        for (var ii = 0; ii < prolange; ii++) {
+
+                                            var pkname = datahandler.data[index].subGroups[i].products[ii].name;
+                                            var artgr = datahandler.data[index].subGroups[i].products[ii].articlegroups;
+
+                                            if (pkname.search(Suche) >= 0) {
+                                                console.log(pkname);
+
+                                            } else {
+
+                                                console.log('kein Treffer');
+                                            }
+
+
+                                            if (artgr == null) {
+
+
+                                                console.log('keine artgr');
+
+                                            } else {
+
+
+                                                var x = zahler;
+                                                console.log(x);
+                                                datahandler.artgrsuchen(Suche,x);
+
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+
+                        }
+                    
+
+                    },
+
+
+                    //----------------------------------------------------Artikelgruppen durchsuchen--------------------------------------------------------------------------------
+
+                    artgrsuchen: function (Suche, x) {
+                       
+
+                        var zahler =x;
+                        console.log('Artikelgruppen_suche');
+
+                        $('#artgr').html('');
+                       
+
+                        var diva = document.createElement('div');
+                        diva.innerHTML = '<span style="color: #1a4064;">Artikelgruppen</span>';
+                        $('#artgr').append(diva);
+
+                        for (var index = 0; index < datahandler.data.length; index++) {
+
+                            var sublange = datahandler.data[index].subGroups.length
+
+                            for (var i = 0; i < sublange; i++) {
+
+                                var prolange = datahandler.data[index].subGroups[i].products.length;
+
+
+                                for (var ii = 0; ii < prolange; ii++) {
+                    
+                                    var artgr = datahandler.data[index].subGroups[i].products[ii].articlegroups;
+                                   
+
+                                    if (artgr != null) {
+
+                                        var artgrlange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
+
+                                        for (var ind = 0; ind < artgrlange; ind++) {
+
+                                            var artgrname = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
+                                           
+                                                if(artgrname != null){
+                                                    
+                                                    if (artgrname.search(Suche) >= 0) {
+                                                        
+                                                        console.log(artgrname);
+
+                                                        zahler++;
+
+                                                        var divaa = document.createElement('div');
+                                                        divaa.innerHTML = '<div><span style="color:#74cae0;">' + artgrname + '</span></div>';
+                                                        $('#artgr').append(divaa);
+
+                                                     
+                                                        
+                                                    } else {
+                                                        console.log('kein Treffer');
+                                                    }
+
+                                                }else{
+
+                                                console.log('name null');
+                                            }
+                                        }
+
+                                    }else{
+
+
+                                        console.log('keine artikelgruppe');
+
+                                    }
+
+
+                                }
+                               
+                            }}
+
+                        $('#zahler').html('');
+                        var x = zahler;
+
+                        var div = document.createElement('div');
+                        div.innerHTML = '<div><span style="color: #1a4064;"><b>Es wurden ' + x + ' Ergebnisse gefunden!</b></span></div>';
+                        $('#zahler').append(div);
+
+
+                    },
+                    
                
-       
-               if (suchbegriff == '') {
+                }
+               
 
-                   console.log('sie müssen iwas eingeben');
 
-               } else {
+                       
 
-                   for (var index = 0; index < datahandler.data.length; index++) {
-
-                       var prgrname = datahandler.data[index].name;
-                       var gr_fk = datahandler.data[index].gr_fk;
-                       var prgrIK = datahandler.data[index].internetKatalog;
-
-                       var sublange = datahandler.data[index].subGroups.length;
-
-                       //console.log(datahandler.data);
-                       if (suchbegriff == prgrname || suchbegriff == gr_fk || suchbegriff == prgrIK) {
-
-                           console.log('IST VORHANDEN');
-                           return true;
-                          
-                       }else{
-
-                           for (var i = 0; i < sublange; i++) {
-
-                               var subname = datahandler.data[index].subGroups[i].name;
-                               var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
-                              
-                               var prolange = datahandler.data[index].subGroups[i].products.length;
-
-                               if (suchbegriff == subname || suchbegriff == sg_fk) {
-
-                                   console.log('IST VORHANDEN');
-                                   return true;
-
-                               }else{
-
-                                   for(var ii =0; ii < prolange; ii++){
-
-                                       var proname = datahandler.data[index].subGroups[i].products[ii].name;
-                                       var pk= datahandler.data[index].subGroups[i].products[ii].pk;
-
-                                       if(suchbegriff == proname || suchbegriff==pk){
-
-                                           console.log('IST VORHANDEN');
-                                           return true;
-
-                                       }else{
-
-                                           console.log('nicht vorhanden');
-
-                                       }
-                                   }
-
-                              }
-                              
-                           }                         
-                       }
-                   }
-               }
-    },
-     }
+                         
 //--------------------------------------------Internetverbidnung wird geprüft-----------------------------------------------------------------------------------------------------------------
 
 
@@ -1037,11 +1257,6 @@
 
             }
 
-        
-
-       
-
-
             //-----------------------------------------page Aufruf----------------------------------------------------------------------------------------------------------------------------
 
 
@@ -1068,6 +1283,8 @@
             $(document).on('pagebeforeshow', '#Mediacenter', function (event, data) {
                 datahandler.showMediacenter(datahandler.nextid);
             });
+
+           
 
 
         </script>
