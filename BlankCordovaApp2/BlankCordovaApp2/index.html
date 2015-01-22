@@ -1,8 +1,7 @@
-﻿
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>.
 <html>
 <head>
-    <meta charset="utf-8" meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Katalog-App</title>
 
 
@@ -29,11 +28,11 @@
 
     <div class="mainContent">
 
-           <div data-role="page" id="startseite">
+        <div data-role="page" id="startseite">
 
-              <div id="logo">
-                    <img id="hartmann" src="css/logo.png" />
-              </div>
+            <div id="logo">
+                <img id="hartmann" src="css/logo.png" />
+            </div>
 
             <h1 id="uberschrift">
                 WIR SIND DIE HELFER<br /><br />
@@ -64,58 +63,57 @@
 
 
         </div>
-<!---------------------------------------------------------------------- Produktgruppen-------------------------------------------------------------->
+        <!---------------------------------------------------------------------- Produktgruppen-------------------------------------------------------------->
         <div data-role="page" id="produktgruppen">
 
+            <div id="navigation">
 
-            <div id="navigation" style="border: 2px solid #1a4064; ">
-
-                <div class="navii" style="border: 2px solid #1a4064;">
+                <div class="navii">
                     <ul>
                         <li id="zurück">
                             <a onclick="history.back()" class="azurück">
-                                <img src="css/zurück.png" width="70" height="55" style=" border-style: none" />
+                                <img src="css/zurück.png" width="80" height="55" style="margin-right:10px; border-style: none" />
                             </a>
                         </li>
-
-                        <li id="produkt" style="margin-left: 8px;">
+                        
+                        <li id="produkt">
                             <a href="#">
-                                <img src="css/pro_weiss.png" style="margin-right: 50px; border-style: none" />
+                                <img src="css/pro_weiss.png" style="margin-left:7px; border-style: none" />
+                                <span>Produkte</span>
                             </a>
-                            <span style="left: 2px;">Produkte</span>
-
                         </li>
 
                         <li id="leistungen">
-                            <a href="leistungen.html">
-                                <img src="css/leistung.png" width="50" height="50" style="margin-right: 70px; border-style: none" />
-                                <span>Leistungen</span>
+                            <a href="leistungen.html" >
+                                <img src="css/leistung.png" width="50" height="50" style="margin-left: 54px; border-style: none" />
+                                <span style="margin-left: 40px;">Leistungen</span>
                             </a>
                         </li>
 
                         <li id="scan">
                             <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" height="50" style="margin-right: 70px; border-style: none " />
-                                <span>Scanner</span>
+                                <img src="css/scanner.png" width="50" height="50" style="margin-left: 53px; border-style: none " />
+                                <span style="margin-left: 49px;">Scanner</span>
                             </a>
                         </li>
                         <li id="sucheli">
-                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden;"></textarea>
-                            </li>
+                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; margin-left: 78px"></textarea>
+                            
+                        <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
                         
-                        <li id="lupe">
-                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" />
+                      
+                            
 
                         </li>
-                </ul>
-            </div>
+                    </ul>
+                </div>
             </div>
             <br /><br /><br /><br />
             <br /><br />
-            <div id="produktgruppen_inhalt"></div>
+            <div  id="produktgruppen_inhalt"></div>
 
         </div>
-<!---------------------------------------------------------------------- Subgruppen------------------------------------------------------------->
+        <!---------------------------------------------------------------------- Subgruppen------------------------------------------------------------->
 
         <div data-role="page" id="subgruppen">
 
@@ -131,39 +129,42 @@
 
                         <li id="produkt">
                             <a href="#">
-                                <img src="css/pro_weiss.png" style="margin-right: 75px; border-style: none" />
+                                <img src="css/pro_weiss.png" style="margin-left:7px; border-style: none" />
                                 <span>Produkte</span>
                             </a>
                         </li>
 
                         <li id="leistungen">
                             <a href="leistungen.html">
-                                <img src="css/leistung.png" width="50" height="50" style="margin-right: 75px; border-style: none" />
-                                <span>Leistungen</span>
+                                <img src="css/leistung.png" width="50" height="50" style="margin-left: 54px; border-style: none" />
+                                <span style="margin-left: 40px;">Leistungen</span>
                             </a>
                         </li>
 
                         <li id="scan">
                             <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" height="50" style="margin-right: 50px; border-style: none " />
-                                <span>Scanner</span>
+                                <img src="css/scanner.png" width="50" height="50" style="margin-left: 53px; border-style: none " />
+                                <span style="margin-left: 49px;">Scanner</span>
                             </a>
                         </li>
-                        <li>
-                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; "></textarea>
+                        <li id="sucheli">
+                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; margin-left: 78px"></textarea>
+
+                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
+
+
+
 
                         </li>
                     </ul>
                 </div>
             </div>
-
-
             <br /><br /><br /><br />
             <br /><br />
             <div id="sub"></div>
 
         </div>
-<!---------------------------------------------------------------------- Produkte------------------------------------------------------------->
+        <!---------------------------------------------------------------------- Produkte------------------------------------------------------------->
         <div data-role="page" id="produkte">
 
             <div id="navigation">
@@ -178,42 +179,43 @@
 
                         <li id="produkt">
                             <a href="#">
-                                <img src="css/pro_weiss.png" style="margin-right: 75px; border-style: none" />
+                                <img src="css/pro_weiss.png" style="margin-left:7px; border-style: none" />
                                 <span>Produkte</span>
                             </a>
                         </li>
 
                         <li id="leistungen">
                             <a href="leistungen.html">
-                                <img src="css/leistung.png" width="50" height="50" style="margin-right: 75px; border-style: none" />
-                                <span>Leistungen</span>
+                                <img src="css/leistung.png" width="50" height="50" style="margin-left: 54px; border-style: none" />
+                                <span style="margin-left: 40px;">Leistungen</span>
                             </a>
                         </li>
 
                         <li id="scan">
                             <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" height="50" style="margin-right: 50px; border-style: none " />
-                                <span>Scanner</span>
+                                <img src="css/scanner.png" width="50" height="50" style="margin-left: 53px; border-style: none " />
+                                <span style="margin-left: 49px;">Scanner</span>
                             </a>
                         </li>
-                        <li>
-                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; "></textarea>
+                        <li id="sucheli">
+                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; margin-left: 78px"></textarea>
+
+                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
+
+
+
 
                         </li>
                     </ul>
-
                 </div>
             </div>
-
-
-
             <br /><br /><br /><br />
             <br /><br />
             <div id="products"></div>
 
         </div>
 
-<!---------------------------------------------------------------------- Artikelgruppem------------------------------------------------------------->
+        <!---------------------------------------------------------------------- Artikelgruppem------------------------------------------------------------->
         <div data-role="page" id="Artikelgruppen">
 
             <div id="navigation">
@@ -228,34 +230,36 @@
 
                         <li id="produkt">
                             <a href="#">
-                                <img src="css/pro_weiss.png" style="margin-right: 75px; border-style: none" />
+                                <img src="css/pro_weiss.png" style="margin-left:7px; border-style: none" />
                                 <span>Produkte</span>
                             </a>
                         </li>
 
                         <li id="leistungen">
                             <a href="leistungen.html">
-                                <img src="css/leistung.png" width="50" height="50" style="margin-right: 75px; border-style: none" />
-                                <span style="margin-left: 5px">Leistungen</span>
+                                <img src="css/leistung.png" width="50" height="50" style="margin-left: 54px; border-style: none" />
+                                <span style="margin-left: 40px;">Leistungen</span>
                             </a>
                         </li>
 
                         <li id="scan">
                             <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" height="50" style="margin-right: 50px; border-style: none " />
-                                <span>Scanner</span>
+                                <img src="css/scanner.png" width="50" height="50" style="margin-left: 53px; border-style: none " />
+                                <span style="margin-left: 49px;">Scanner</span>
                             </a>
                         </li>
-                        <li>
-                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; "></textarea>
+                        <li id="sucheli">
+                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; margin-left: 78px"></textarea>
+
+                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
+
+
+
 
                         </li>
                     </ul>
-
                 </div>
             </div>
-
-
             <br /><br /><br /><br />
             <br /><br />
             <div id="artikelgrp"></div>
@@ -273,7 +277,7 @@
             </div>
 
         </div>
-<!---------------------------------------------------------------------- Artikel der Artikelgruppen------------------------------------------------------------->
+        <!---------------------------------------------------------------------- Artikel der Artikelgruppen------------------------------------------------------------->
         <div data-role="page" id="ArtikelgruppenArtikel">
 
             <div id="navigation">
@@ -288,26 +292,31 @@
 
                         <li id="produkt">
                             <a href="#">
-                                <img src="css/pro_weiss.png" style="margin-right: 75px; border-style: none" />
+                                <img src="css/pro_weiss.png" style="margin-left:7px; border-style: none" />
                                 <span>Produkte</span>
                             </a>
                         </li>
 
                         <li id="leistungen">
                             <a href="leistungen.html">
-                                <img src="css/leistung.png" width="50" height="50" style="margin-right: 75px; border-style: none" />
-                                <span style="margin-left: 5px">Leistungen</span>
+                                <img src="css/leistung.png" width="50" height="50" style="margin-left: 54px; border-style: none" />
+                                <span style="margin-left: 40px;">Leistungen</span>
                             </a>
                         </li>
 
                         <li id="scan">
                             <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" height="50" style="margin-right: 50px; border-style: none " />
-                                <span>Scanner</span>
+                                <img src="css/scanner.png" width="50" height="50" style="margin-left: 53px; border-style: none " />
+                                <span style="margin-left: 49px;">Scanner</span>
                             </a>
                         </li>
-                        <li>
-                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; "></textarea>
+                        <li id="sucheli">
+                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; margin-left: 78px"></textarea>
+
+                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
+
+
+
 
                         </li>
                     </ul>
@@ -325,7 +334,7 @@
             </div>
         </div>
 
-<!---------------------------------------------------------------------- Mediacenter (PDF-links)------------------------------------------------------------->
+        <!---------------------------------------------------------------------- Mediacenter (PDF-links)------------------------------------------------------------->
         <div data-role="page" id="Mediacenter">
 
             <div id="navigation">
@@ -340,34 +349,38 @@
 
                         <li id="produkt">
                             <a href="#">
-                                <img src="css/pro_weiss.png" style="margin-right: 75px; border-style: none" />
+                                <img src="css/pro_weiss.png" style="margin-left:7px; border-style: none" />
                                 <span>Produkte</span>
                             </a>
                         </li>
 
                         <li id="leistungen">
                             <a href="leistungen.html">
-                                <img src="css/leistung.png" width="50" height="50" style="margin-right: 75px; border-style: none" />
-                                <span style="margin-left: 5px">Leistungen</span>
+                                <img src="css/leistung.png" width="50" height="50" style="margin-left: 54px; border-style: none" />
+                                <span style="margin-left: 40px;">Leistungen</span>
                             </a>
                         </li>
 
                         <li id="scan">
                             <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" height="50" style="margin-right: 50px; border-style: none " />
-                                <span>Scanner</span>
+                                <img src="css/scanner.png" width="50" height="50" style="margin-left: 53px; border-style: none " />
+                                <span style="margin-left: 49px;">Scanner</span>
                             </a>
                         </li>
-                        <li>
-                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; "></textarea>
+                        <li id="sucheli">
+                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; margin-left: 78px"></textarea>
+
+                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
+
+
+
 
                         </li>
                     </ul>
                 </div>
             </div>
             <br /><br /><br /><br />
-            <br /><br /><br /><br />
-
+            <br /><br />
             <div style="background-color: white; height: 800px; margin-left: 1cm; margin-right: 2cm; overflow:scroll; padding:10px">
 
                 <br />
@@ -385,66 +398,128 @@
 
 
 
-<!-------------------------------------------------------------Suchergebnisse ----------------------------------------------------------->
+        <!-------------------------------------------------------------Suchergebnisse ----------------------------------------------------------->
 
-    <div data-role="page" id="Suche">
+        <div data-role="page" id="Suche">
 
-        <div id="navigation">
+            <div id="navigation">
 
-            <div class="navii">
-                <ul>
-                    <li id="zurück">
-                        <a onclick="history.back()" class="azurück">
-                            <img src="css/zurück.png" width="80" height="55" style="margin-right:10px; border-style: none" />
-                        </a>
-                    </li>
+                <div class="navii">
+                    <ul>
+                        <li id="zurück">
+                            <a onclick="history.back()" class="azurück">
+                                <img src="css/zurück.png" width="80" height="55" style="margin-right:10px; border-style: none" />
+                            </a>
+                        </li>
 
-                    <li id="produkt">
-                        <a href="#">
-                            <img src="css/pro_weiss.png" style="margin-right: 75px; border-style: none" />
-                            <span>Produkte</span>
-                        </a>
-                    </li>
+                        <li id="produkt">
+                            <a href="#">
+                                <img src="css/pro_weiss.png" style="margin-left:7px; border-style: none" />
+                                <span>Produkte</span>
+                            </a>
+                        </li>
 
-                    <li id="leistungen">
-                        <a href="leistungen.html">
-                            <img src="css/leistung.png" width="50" height="50" style="margin-right: 75px; border-style: none" />
-                            <span style="margin-left: 5px">Leistungen</span>
-                        </a>
-                    </li>
+                        <li id="leistungen">
+                            <a href="leistungen.html">
+                                <img src="css/leistung.png" width="50" height="50" style="margin-left: 54px; border-style: none" />
+                                <span style="margin-left: 40px;">Leistungen</span>
+                            </a>
+                        </li>
 
-                    <li id="scan">
-                        <a href="scanner.html">
-                            <img src="css/scanner.png" width="50" height="50" style="margin-right: 50px; border-style: none " />
-                            <span>Scanner</span>
-                        </a>
-                    </li>
-                    <li>
-                        <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; "></textarea>
+                        <li id="scan">
+                            <a href="scanner.html">
+                                <img src="css/scanner.png" width="50" height="50" style="margin-left: 53px; border-style: none " />
+                                <span style="margin-left: 49px;">Scanner</span>
+                            </a>
+                        </li>
+                        <li id="sucheli">
+                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; margin-left: 78px"></textarea>
 
-                    </li>
-                </ul>
+                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
+
+
+
+
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <br /><br /><br /><br />
+            <br /><br />
+
+            <div id="zahler" style="margin-left: 0.5cm;"></div>
+
+            <div style="background-color: white; height: 800px; margin-left: 0.5cm; margin-right: 0.5cm; overflow:scroll; padding:10px">
+
+                <div id="prgr"></div>
+
+                <div id="artgr"></div>
+
+
+
+            </div>
+
         </div>
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
+        <!--------------------------------------------------------------Artikelsuche_Ergebnis-------------------------------------------------------------------------------------->
 
-        <div id="zahler" style="margin-left: 1cm;"></div>
+        <div data-role="page" id="Artikelsuche">
 
-        <div style="background-color: white; height: 800px; margin-left: 1cm; margin-right: 2cm; overflow:scroll; padding:10px">
+            <div id="navigation">
 
-            <div id="prgr"></div>
-           
-            <div id="artgr"></div>
+                <div class="navii">
+                    <ul>
+                        <li id="zurück">
+                            <a onclick="history.back()" class="azurück">
+                                <img src="css/zurück.png" width="80" height="55" style="margin-right:10px; border-style: none" />
+                            </a>
+                        </li>
 
-               
+                        <li id="produkt">
+                            <a href="#">
+                                <img src="css/pro_weiss.png" style="margin-left:7px; border-style: none" />
+                                <span>Produkte</span>
+                            </a>
+                        </li>
+
+                        <li id="leistungen">
+                            <a href="leistungen.html">
+                                <img src="css/leistung.png" width="50" height="50" style="margin-left: 54px; border-style: none" />
+                                <span style="margin-left: 40px;">Leistungen</span>
+                            </a>
+                        </li>
+
+                        <li id="scan">
+                            <a href="scanner.html">
+                                <img src="css/scanner.png" width="50" height="50" style="margin-left: 53px; border-style: none " />
+                                <span style="margin-left: 49px;">Scanner</span>
+                            </a>
+                        </li>
+                        <li id="sucheli">
+                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; margin-left: 78px"></textarea>
+
+                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
+
+
+
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br /><br /><br /><br />
+            <br /><br />
+            <div id="x" style="margin-left: 4cm;"></div>
+
+            <div style="border-radius: 5px; background-color: white; top:300px; height: 600px; width:400px; margin-left:4cm; overflow:scroll; padding:10px">
+
+                <div id="artikel"></div>
+
+
+            </div>
 
         </div>
 
     </div>
-
-
-</div>
 
  <script>
  //-----------------------------------------------Prdouktgruppen werden angezeigt---------------------------------------------------------------------------------------------------------------
@@ -486,8 +561,6 @@
                     },
                     //----------------------------------------------Subgruppen werden angezeigt----------------------------------------------------------------------------------------------------------------
                     showSubgroups: function (prgr_fk) { //SubGruppen
-
-
 
                         for (index = 0; index < datahandler.data.length; index++) {
 
@@ -892,8 +965,7 @@
                             }
                         }
                     },
-
-                    //----------------------------------------------------------lokale daten werden ausgegeben--------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------lokale daten werden ausgegeben--------------------------------------------------------------------------------------------------------------
                     localStorage_ausgeben: function () {
 
                         console.log('ich bin im localStorage');
@@ -914,7 +986,7 @@
                           }*/
                     },
 
-                    //--------------------------------------------------Webservice wird aufgerufen und daten werden lokal abgespeichert------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------Webservice wird aufgerufen und daten werden lokal abgespeichert------------------------------------------------------------------------------------------------------------
 
                     loaddata: function () {
                         console.log('mit dem Webservice verbunden');
@@ -940,7 +1012,7 @@
                         });
                     },
 
-                    //-------------------------------------------------------Suchfunktion-----------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------Suchfunktion-----------------------------------------------------------------------------------------------------------
                     prgrsuchen: function () {
                         
                         var zahler = 0;
@@ -954,52 +1026,79 @@
                         var Suche = new RegExp(suchbegriff, "gi");
                         //console.log(Suche);
                        
-                        $.mobile.pageContainer.pagecontainer("change", "#Suche", { test: "Hello World!" });
+                        
 
                         if (suchbegriff == '') {
 
                             console.log('sie müssen iwas eingeben');
 
                         } else {
-
-                         
-                            var diva = document.createElement('div');
-                            diva.innerHTML = '<span style="color: #1a4064;">Produktgruppen</span>';
-                            $('#prgr').append(diva);
-
-                            //Produktgruppe durchsuchen 
-                            for (var index = 0; index < datahandler.data.length; index++) {
-
-                              
-                                var sublange = datahandler.data[index].subGroups.length;
-                                var prgrname = datahandler.data[index].name;
-
-                                if (prgrname.search(Suche) >= 0) {
-
-                                    console.log(prgrname);
-                                    zahler++;
-                                    var div = document.createElement('div');
-                                    div.innerHTML = '<div><span style="color:#74cae0;">' + prgrname + '</span></div>';
-                                    $('#prgr').append(div);
-
-                                } else {
-
-                                    console.log('kein Treffer');
-
-                                }
-                            }
-                            var x = zahler;
-                            console.log(x);
-                            datahandler.subsuchen(Suche, x);
-
                            
+                             
+                            if (isNaN(Suche)) {
+
+                                $('#prgr').html('');
+
+                                $.mobile.pageContainer.pagecontainer("change", "#Suche", { test: "Hello World!" });
+
+
+                                var diva = document.createElement('div');
+                                diva.innerHTML = '<span style="color: #1a4064;">Produktgruppen</span>';
+                                $('#prgr').append(diva);
+
+                                //Produktgruppe durchsuchen 
+                                for (var index = 0; index < datahandler.data.length; index++) {
+
+
+                                    var sublange = datahandler.data[index].subGroups.length;
+                                    var prgrname = datahandler.data[index].name;
+
+                                    if (prgrname.search(Suche) >= 0) {
+                                        zahler++;
+
+                                        $.mobile.pageContainer.pagecontainer("change", "#Suche", { test: "Hello World!" });
+
+                                        var gr = datahandler.data[index].gr_fk;
+
+                                        console.log(prgrname);
+                                       
+                                        var div = document.createElement('div');
+                                        div.innerHTML = '<div><span style="color:#74cae0;">' + prgrname + '</span></div>';
+                                        $('#prgr').append(div);
+
+                                        var makeShowItemEventListener = function (element) {
+                                            return function () {
+                                                var tmp = [element];
+                                                datahandler.nextid = tmp;
+                                                $.mobile.pageContainer.pagecontainer("change", "#subgruppen", { test: "Hello World!" });
+                                            };
+                                        }
+                                        div.onclick = makeShowItemEventListener(gr);
 
 
 
-                        }
 
-                    },
+                                    } else {
 
+                                        console.log('kein Treffer');
+
+                                    }
+                                }
+                                var x = zahler;
+                                console.log(x);
+                                datahandler.subsuchen(Suche, x);
+                               
+
+
+
+                            } else {
+
+                                datahandler.artikelsuchen(Suche); // falls zahlen eingeben werden
+
+
+
+                            } }},
+                                
  //-----------------------------------------subgruppen druchsuchen------------------------------------------------------------------------
 
                     subsuchen: function (Suche, x) {
@@ -1010,9 +1109,9 @@
                         var zahler = x;
                         console.log(zahler);
 
-                        var div = document.createElement('div');
-                        div.innerHTML = '<span style="color: #1a4064;">Subgruppen</span>';
-                        $('#prgr').append(div);
+                        var diva = document.createElement('div');
+                        diva.innerHTML = '<span style="color: #1a4064;">Subgruppen</span>';
+                        $('#prgr').append(diva);
 
                         for (var index = 0; index < datahandler.data.length; index++) {
                             var sublange = datahandler.data[index].subGroups.length;
@@ -1022,13 +1121,35 @@
                                 var subname = datahandler.data[index].subGroups[i].name;
 
                                 if (subname.search(Suche) >= 0) {
-
-
-                                    console.log(subname);
                                     zahler++;
-                                    var diva = document.createElement('div');
-                                    diva.innerHTML = '<div><span style="color:#74cae0;">' + subname + '</span></div>';
-                                    $('#prgr').append(diva);
+
+                                    var prolange= datahandler.data[index].subGroups[i].products.length;
+                                    var prgrname = datahandler.data[index].name;
+                                    
+                                    
+                                    for (var ii = 0; ii < prolange; ii++) {
+
+                                        var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+
+                                    }
+
+                                    var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                    var gr = datahandler.data[index].gr_fk;
+                                    
+                        
+                                    var div = document.createElement('div');
+                                    div.innerHTML = '<div><span style="color:#74cae0;" id="span">'+ prgrname+'<b>  >  </b>'+ subname +'</span></div>';
+                                    $('#prgr').append(div);
+
+                                    var makeShowItemEventListener = function (element, sg_fk, pk) {
+                                        return function () {
+                                            var tmp = [element, sg_fk, pk];
+                                            datahandler.nextid = tmp;
+                                            $.mobile.pageContainer.pagecontainer("change", "#produkte", { test: "Hello World!" });
+                                        };
+                                    }
+                                    div.onclick = makeShowItemEventListener(gr, sg_fk, pk);
+
 
 
                                 } else {
@@ -1061,63 +1182,86 @@
 
                         for (var index = 0; index < datahandler.data.length; index++) {
                             var sublange = datahandler.data[index].subGroups.length;
+                                 for (var i = 0; i < sublange; i++) {
+                                           var prolange = datahandler.data[index].subGroups[i].products.length;
 
-                            for (var i = 0; i < sublange; i++) {
+                                             for (var ii = 0; ii < prolange; ii++) {
 
-                                var subname = datahandler.data[index].subGroups[i].name;
-                                var prolange = datahandler.data[index].subGroups[i].products.length;
+                                                    var proname = datahandler.data[index].subGroups[i].products[ii].name;
+                                                    var artgr = datahandler.data[index].subGroups[i].products[ii].articlegroups;
+                                                    var prgrname = datahandler.data[index].name;
+                                                    var subname = datahandler.data[index].subGroups[i].name;
+                                                    
 
-                                for (var ii = 0; ii < prolange; ii++) {
+                                                    if (proname.search(Suche) >= 0) {
 
-                                    var pkname = datahandler.data[index].subGroups[i].products[ii].name;
-                                    var artgr = datahandler.data[index].subGroups[i].products[ii].articlegroups;
+                                                        var prgrname = datahandler.data[index].name;
+                                                        var subname = datahandler.data[index].subGroups[i].name;
 
-                                    if (pkname.search(Suche) >= 0) {
-
-                                        console.log(pkname);
-                                       
-                                        zahler++;
-                                        var divaa = document.createElement('div');
-                                        divaa.innerHTML = '<div>' + pkname + '</div>';
-                                        $('#prgr').append(divaa);
-
-                                    } else {
-
-                                        console.log('kein Treffer');
-                                    }
-
-                                }
-                                //art gruppe
-
-                                for (var index = 0; index < datahandler.data.length; index++) {
-                                    var sublange = datahandler.data[index].subGroups.length;
-
-                                    for (var i = 0; i < sublange; i++) {
-
-                                        var subname = datahandler.data[index].subGroups[i].name;
-                                        var prolange = datahandler.data[index].subGroups[i].products.length;
-
-                                        for (var ii = 0; ii < prolange; ii++) {
-
-                                            var pkname = datahandler.data[index].subGroups[i].products[ii].name;
-                                            var artgr = datahandler.data[index].subGroups[i].products[ii].articlegroups;
-
-                                            if (pkname.search(Suche) >= 0) {
-                                                console.log(pkname);
-
-                                            } else {
-
-                                                console.log('kein Treffer');
-                                            }
+                                                        console.log(proname);
 
 
-                                            if (artgr == null) {
+                                                                  if(artgr != null){
+
+                                                                      var artgrlange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
+
+                                                                      for (var ind = 0; ind < artgrlange; ind++) {
+
+                                                                          var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
+                                                                          var argr_name = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
+                                                                      
+                                                                      }
+
+                                                                      var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                                                      var gr = datahandler.data[index].gr_fk;
+                                                                      var pk = datahandler.data[index].subGroups[i].products[ii].pk;
 
 
-                                                console.log('keine artgr');
+                                                                      zahler++;
+                                                                      var divaa = document.createElement('div');
+                                                                      divaa.innerHTML = '<div><span style="color:#74cae0;">' + prgrname + '<b> > </b>' + subname + '<b> > </b>' + proname + '<b> > </b>'+argr_name+ ' </span></div>';
+                                                                      $('#prgr').append(divaa);
 
-                                            } else {
+                                                                      var makeShowItemEventListener = function (element, sg_fk, pk, argr_fk) {
+                                                                          return function () {
+                                                                              var tmp = [element, sg_fk, pk, argr_fk];
+                                                                              datahandler.nextid = tmp;
+                                                                              $.mobile.pageContainer.pagecontainer("change", "#Artikelgruppen", { test: "Hello World!" });
+                                                                          };
+                                                                      }
+                                                                      divaa.onclick = makeShowItemEventListener(gr, sg_fk, pk, argr_fk);
 
+                                                                      
+                                                                     //datahandler.artgrsuchen(Suche,x);
+
+  
+                                                                  }else{
+
+                                                                      zahler++;
+                                                                      var divaa = document.createElement('div');
+                                                                      divaa.innerHTML = '<div><span style="color:#74cae0;">' + prgrname + '<b> > </b>' + subname + '<b> > </b>' + proname + '<b> > </b>' + argr_name + ' </span></div>';
+                                                                      $('#prgr').append(divaa);
+
+                                                                      var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                                                      var gr = datahandler.data[index].gr_fk;
+                                                                      var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+
+
+                                                                      var makeShowItemEventListener = function (element, sg_fk, pk) {
+                                                                          return function () {
+                                                                              var tmp = [element, sg_fk, pk];
+                                                                              datahandler.nextid = tmp;
+                                                                              $.mobile.pageContainer.pagecontainer("change", "#Artikelgruppen", { test: "Hello World!" });
+                                                                          };
+                                                                      }
+                                                                      divaa.onclick = makeShowItemEventListener(gr, sg_fk, pk);
+
+
+
+
+                                                                  }
+
+                                                                  }
 
                                                 var x = zahler;
                                                 console.log(x);
@@ -1127,16 +1271,11 @@
                                         }
 
                                     }
-                                }
-                            }
-
-                        }
-                    
 
                     },
 
 
-                    //----------------------------------------------------Artikelgruppen durchsuchen--------------------------------------------------------------------------------
+//----------------------------------------------------Artikelgruppen durchsuchen--------------------------------------------------------------------------------
 
                     artgrsuchen: function (Suche, x) {
                        
@@ -1161,64 +1300,206 @@
 
 
                                 for (var ii = 0; ii < prolange; ii++) {
-                    
-                                    var artgr = datahandler.data[index].subGroups[i].products[ii].articlegroups;
-                                   
 
-                                    if (artgr != null) {
+                                    var artgr = datahandler.data[index].subGroups[i].products[ii].articlegroups
+                                    
+                                    if (artgr != null){
 
-                                        var artgrlange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
+                                         var artgrlange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
+                                    
+                                         for (var ind = 0; ind < artgrlange; ind++) {
 
-                                        for (var ind = 0; ind < artgrlange; ind++) {
+                                             var artgrname = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
 
-                                            var artgrname = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
-                                           
-                                                if(artgrname != null){
-                                                    
-                                                    if (artgrname.search(Suche) >= 0) {
+                                             if (artgrname != null) {
+
+                                                 if (artgrname.search(Suche) >= 0) {
+
+                                                     console.log(artgrname);
+
+                                                     zahler++;
+
+                                                     var prgrname = datahandler.data[index].name;
+                                                     var subname = datahandler.data[index].subGroups[i].name;
+                                                     var proname = datahandler.data[index].subGroups[i].products[ii].name;
+                                                     var artgrname = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
+    
+
+
+                                                     var divaa = document.createElement('div');
+                                                     divaa.innerHTML = '<div><span style="color:#74cae0;">' + prgrname + '<b> > </b>' + subname + '<b> > </b>'+proname +'<b> > </b>' + artgrname + '</span></div>';
+                                                     $('#artgr').append(divaa);
+
+                                                     var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
+                                                     var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                                     var gr = datahandler.data[index].gr_fk;
+                                                     var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+
+
+                                                     var makeShowItemEventListener = function (element, sg_fk, pk,argr_fk) {
+                                                         return function () {
+                                                             var tmp = [element, sg_fk, pk, argr_fk];
+                                                             datahandler.nextid = tmp;
+                                                             $.mobile.pageContainer.pagecontainer("change", "#ArtikelgruppenArtikel", { test: "Hello World!" });
+                                                         };
+                                                     }
+                                                     divaa.onclick = makeShowItemEventListener(gr, sg_fk, pk, argr_fk);
+
+
+
+                                                 } else {
+                                                     console.log('keine artikelgruppe');
+
+                                                 }
+
+                                             } else {
+
+                                                 console.log('name null');
+                                             }
+
+                                         }
+
+                                         }else{ 
+
+                                                
+
+                                         }
                                                         
-                                                        console.log(artgrname);
-
-                                                        zahler++;
-
-                                                        var divaa = document.createElement('div');
-                                                        divaa.innerHTML = '<div><span style="color:#74cae0;">' + artgrname + '</span></div>';
-                                                        $('#artgr').append(divaa);
-
-                                                     
-                                                        
-                                                    } else {
-                                                        console.log('kein Treffer');
-                                                    }
-
-                                                }else{
-
-                                                console.log('name null');
-                                            }
-                                        }
-
-                                    }else{
-
-
-                                        console.log('keine artikelgruppe');
-
-                                    }
-
 
                                 }
-                               
-                            }}
 
-                        $('#zahler').html('');
+
+                            }
+
+                        }
+
+                       // $('#zahler').html('');
                         var x = zahler;
-
+                        $('#zahler').html('');
                         var div = document.createElement('div');
                         div.innerHTML = '<div><span style="color: #1a4064;"><b>Es wurden ' + x + ' Ergebnisse gefunden!</b></span></div>';
                         $('#zahler').append(div);
 
 
                     },
+//----------------------------------------------------------------------- Artiklen durchsuchen--------------------------------------------------------------
+                    artikelsuchen: function (Suche) {
+
+                        var zahler = 0;
+                        $.mobile.pageContainer.pagecontainer("change", "#Artikelsuche", { test: "Hello World!" });
+
+                        console.log('Artikeln suchen');
+                        $('artikel').html('');
                     
+                        for (var index = 0; index < datahandler.data.length; index++) {
+
+                            var sublange = datahandler.data[index].subGroups.length;
+
+                            for (var i = 0; i < sublange; i++) {
+
+                                var prolange = datahandler.data[index].subGroups[i].products.length;
+
+                                for (var ii = 0; ii < prolange; ii++) {
+
+                                    var artgrp = datahandler.data[index].subGroups[i].products[ii].articlegroups;
+
+                                    if (artgrp != null) {
+
+                                        var artgrplange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
+
+                                        for (var ind = 0; ind < artgrplange; ind++) {
+
+                                            var artlange = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles.length;
+
+                                            for (var inde = 0; inde < artlange; inde++) {
+
+                                                var art_nr = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].artikel_nr;
+
+                                               if (art_nr.search(Suche) >= 0) {
+
+                                                    console.log(art_nr);
+                                                    zahler++;
+                                                    var div = document.createElement('div');
+                                                    div.innerHTML = '<div><span style="color:#74cae0; margin-left: 1cm;">' + art_nr + '</span></div>';
+                                                    $('#artikel').append(div);
+
+
+                                                    var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
+                                                    var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                                    var gr = datahandler.data[index].gr_fk;
+                                                    var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+
+
+                                                    var makeShowItemEventListener = function (element, sg_fk, pk, argr_fk) {
+                                                        return function () {
+                                                            var tmp = [element, sg_fk, pk, argr_fk];
+                                                            datahandler.nextid = tmp;
+                                                            $.mobile.pageContainer.pagecontainer("change", "#ArtikelgruppenArtikel", { test: "Hello World!" });
+                                                        };
+                                                    }
+                                                    div.onclick = makeShowItemEventListener(gr, sg_fk, pk, argr_fk);
+
+
+                                                } else {
+                                                    console.log('keine artikeln vohanden')
+                                                }
+                                            }
+                                        }
+
+                                    } else {
+
+                                        var artlange = datahandler.data[index].subGroups[i].products[ii].articles.length;
+
+                                        for (var inde = 0; inde < artlange; inde++) {
+
+                                            var art_nr = datahandler.data[index].subGroups[i].products[ii].articles[inde].artikel_nr;
+
+                                            if (art_nr.search(Suche) >= 0) {
+
+                                                console.log(art_nr);
+                                                zahler++;
+                                                var div = document.createElement('div');
+                                                div.innerHTML = '<div><span style="color:#74cae0; margin-left: 1cm;"><a>' + art_nr + '</a></span></div>';
+                                                $('#artikel').append(div);
+
+                                           //klick auf ergebnisse der artiklen    
+                                                var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                                var gr = datahandler.data[index].gr_fk;
+                                                var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+
+
+                                                var makeShowItemEventListener = function (element, sg_fk, pk) {
+                                                    return function () {
+                                                        var tmp = [element, sg_fk, pk];
+                                                        datahandler.nextid = tmp;
+                                                        $.mobile.pageContainer.pagecontainer("change", "#Artikelgruppen", { test: "Hello World!" });
+                                                    };
+                                                }
+                                                div.onclick = makeShowItemEventListener(gr, sg_fk, pk);
+                                               
+
+
+                                            } else {
+
+                                                console.log('keine Artikeln vorhanden');
+
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        var x = zahler;
+                        $('#x').html('');
+                        var div = document.createElement('div');
+                        div.innerHTML = '<div><span style="color: #1a4064;"><b>Es wurden ' + x + ' Ergebnisse gefunden!</b></span></div>';
+                        $('#x').append(div);
+
+
+
+                    },
                
                 }
                

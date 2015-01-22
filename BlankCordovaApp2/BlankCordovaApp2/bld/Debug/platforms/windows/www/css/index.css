@@ -1,7 +1,5 @@
 ﻿
 @charset "utf-8";
-
-
 /*
 @font-face{
 
@@ -12,7 +10,7 @@
 
 body{
 
-      width: 100%;
+      width: 90%;
      
 
 }
@@ -120,6 +118,11 @@ body{
   
 }
 
+.navii li a{
+
+    text-decoration: none;
+}
+
 
 
 .navii span
@@ -128,6 +131,7 @@ body{
     display:block;
     font-family: Arial;
     color: white;
+   
 
 }
 
@@ -263,39 +267,29 @@ body{
 
 #ta {
 
-  width: 190px !important;
+  width: 180px !important;
   height:16px!important;
   position: relative;
-  left:1px;
   background-position: right;
-  background-repeat:no-repeat;
   border-radius: 4px;
-    border-color:#1a4064;
+  border-color:#1a4064;
+  
+    
   }
-
-
-#lupe{
-
-    right: 55px;
-    position:absolute;
-     top: 25px;
- 
-
-}
 
 #sucheli{
 
-    position: absolute;
-    top: 25px;
-   
+    bottom: 30px;
+    position:relative;
+
 
 }
 
 
 
-:-moz-placeholder {color:#1a4064;  font-family: Arial; font-size: 8px;}
-::-webkit-input-placeholder {color:#1a4064; font-family: Arial; font-size: 8px;}
-:-ms-input-placeholder {color:#1a4064; font-family: Arial; font-size: 8px;}
+:-moz-placeholder {color:#1a4064;  font-family: Arial; font-size: 6px;}
+::-webkit-input-placeholder {color:#1a4064; font-family: Arial; font-size: 6px;}
+:-ms-input-placeholder {color:#1a4064; font-family: Arial; font-size: 6px;}
 
 #button{
 
@@ -304,5 +298,16 @@ body{
     height: 25px; 
     background-color: #8bd3e5; 
 
+
+}
+
+#bild{
+
+   position:fixed;
+   width: 45px;
+   height: 33px;
+   margin-left: 260px;
+   top:38px;
+  
 
 }
