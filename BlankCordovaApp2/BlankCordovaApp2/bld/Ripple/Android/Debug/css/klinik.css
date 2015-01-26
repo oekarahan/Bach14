@@ -1,59 +1,61 @@
 ﻿@charset "utf-8";
 
-@font-face{
 
-    font-family: meineSchrift;
-    src:url(Open_Sans/OpenSans-Light.ttf);
 
-}
 
-#hintergrundbild{
+/*
+body{
+    background-image:url(home.png);
+    background-repeat: no-repeat;
+
    
-  position: absolute;
-  align-content: center;
-  opacity: 0.3;
- 
-}
+}*/
+
+
 
 .navii{
-  
+    left:0px;
+    top: 0px;
     list-style: none;
-    position: absolute;
+    position:absolute;
     background-color:#1a4064;
     width: 768px;
-    height: 95px
-   
+    height: 107px
   
 }
 
-.navii li{
-   
-    display:inline;
+
+.navi{
+
+
     background-color:#1a4064;
 }
 
-.schrift{
-
-    font-family: Arial;
-    color: white;
 
 
+.navii li{
+
+    display:inline;
+    background-color:#1a4064;
+    top:10px !important;
+}
+ 
+
+#azurück{
+
+    top:10px !important;
+    background-color:#1a4064;
 }
 
-#feld{
 
-position:relative;
-    border-radius: 4px;
-    bottom: 22px!important;
-  
-   
-}
+
+
 
 #lupe{
 
-    position: relative;
+  position: relative;
  bottom: 10px !important;
- 
+ background-color:#1a4064;
 }
 
 
@@ -80,20 +82,10 @@ position:relative;
 }
 
 
-#produktschrift{
 
-font-family:meineSchrift;
-}
+#inhalt{
 
-#leistungschrift{
-
-    font-family: meineSchrift;
+    position:absolute;
+    top: 120px !important;
 
 }
-
-#scanschrift{
-
-
-    font-family: meineSchrift;
-}
-

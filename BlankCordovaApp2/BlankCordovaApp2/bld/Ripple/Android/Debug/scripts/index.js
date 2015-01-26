@@ -12,6 +12,11 @@
         document.addEventListener( 'pause', onPause.bind( this ), false );
         document.addEventListener( 'resume', onResume.bind( this ), false );
         
+        console.log('läuft');
+        //hier kommt die online/offline prüfung, wenn online .. kein problem die daten werden vom webservice aufgerufen dabei sollen aber auch
+        //die daten auf dem lokalen gerät gespeichert werden. 
+        // wenn offline, dann direkt auf dem loakeln gerät zugreifen und von dort aus die daten laden.
+
         // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
     };
 

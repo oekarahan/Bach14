@@ -860,6 +860,9 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\responsive.css">
       <PackagePath>www\css\responsive.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\smartphone.css">
+      <PackagePath>www\css\smartphone.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\style.css">
       <PackagePath>www\css\style.css</PackagePath>
     </AppxPackagedFile>

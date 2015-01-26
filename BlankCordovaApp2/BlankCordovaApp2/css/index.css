@@ -1,64 +1,118 @@
-﻿
-@charset "utf-8";
-/*
-@font-face{
-
+﻿@font-face {
     font-family: meineSchrift;
-    src:url(Open_Sans/OpenSans-Light.ttf); 
+    src: url(Open_Sans/OpenSans-Light.ttf);
+}
 
-*/
+
 
 body{
 
-      width: 90%;
+    width: 100%;
+    background-color:green;
+  
+}
+
+#uberschrift {
+
+        color: white;
+        margin-left: 230px;
+        font-size: 25px;
+        font-family: meineSchrift;
+        top: 140px;
+ }
+
+#hartmann {
      
+        position:relative;
+        top: 15px;
+        margin-left: 45px;
+        width: 90px;
+        height:50px;
+
+    }
+
+  
+#img_icon{
+width:60px; 
+height:60px;
+margin-right:90px;
+display:inline;
+    }
+
+
+#icon_schrift{
+
+position:relative; 
+display: inline;
+margin-left: 178px;
+
+ }
+
+#icon1_schrift{
+
+position:relative; 
+display: inline;
+margin-left: 130px;
+top:40px;
+
+  }
+
+
+#iklinikschrift{
+      
+      position:relative;
+      top:9px;
+      width:60px;
+  }
+
+  #ischrift{
+      position:relative;
+      margin-left:80px;
+      width:90px;
+      top: 0px;
+
+  }
+
+    #i1schrift{
+      position:relative;
+     margin-left: 56px;
+      width:90px;
+      top: 0px;
+
+  }
+
+    #apotheke{
+        margin-left: 45px;
+        width:90px;
+    }
+
+    #icon {
+        
+       margin-left: 180px;
+       position:relative;
+       display: inline;
+       top: 15px;
+
+    }
+
+
+#img_icon1{
+
+width:60px; 
+height:60px;
+margin-right:90px;
+
 
 }
 
-    #uberschrift {
-        color: white;
-        position:relative;
-        font-size: 35px;
-        font-family: meineSchrift;
-        top: 140px;
-        margin-left:200px;
-    }
-
-    
-
-
-    #logo {
-     
-       position:relative;
-        top: 29px;
-        margin-left: 41px;
-    }
-
-
-
-    #icon {
-        position: relative;
-        top: 195px;
-        margin-right: 117px;
-        align-content: center;
-        margin-left: 117px;
-    }
-
     #icon1 {
-        margin-right: 117px;
-        position: relative;
-        align-content: center;
-        margin-left: 117px;
-        top: 340px;
+         margin-left: 184px;
+       position:relative;
+        display: inline;
+        top: 25px;
     }
 
-    #schrift {
-        position: relative;
-        margin-right: 110px;
-        align-content: center;
-        margin-left: 112px;
-        top: 375px;
-    }
+
 
 
 
@@ -70,7 +124,7 @@ body{
 #navigation
 {
  
-   width: 768px;
+     width: 780px;
     position: fixed;  
     bottom: 88.5%;
     left: 0px;
@@ -95,11 +149,11 @@ body{
 {
 
     background-color:#1a4064;
-    width: 768px;
+    width: 797px;
     position: fixed;  
-    bottom: 88.5%;
+
     left: 0px;
-    height: 120px;
+    height: 105px;
 }
 
 .navii ul{
@@ -141,12 +195,6 @@ body{
 }
 
 
-
-
-
-
-
-
 #zurück img:hover{
     opacity:0.4;
 
@@ -156,7 +204,7 @@ body{
 
 #leistungen img:hover{
     opacity:0.4;
-
+    
 }
 
 #scan img:hover{
@@ -267,8 +315,8 @@ body{
 
 #ta {
 
-  width: 180px !important;
-  height:16px!important;
+  width: 150px !important;
+  height:10px!important;
   position: relative;
   background-position: right;
   border-radius: 4px;
@@ -279,17 +327,16 @@ body{
 
 #sucheli{
 
-    bottom: 30px;
+    bottom: 40px;
     position:relative;
 
 
 }
 
 
-
-:-moz-placeholder {color:#1a4064;  font-family: Arial; font-size: 6px;}
-::-webkit-input-placeholder {color:#1a4064; font-family: Arial; font-size: 6px;}
-:-ms-input-placeholder {color:#1a4064; font-family: Arial; font-size: 6px;}
+:-moz-placeholder {color:#1a4064;  font-size: 4px;}
+::-webkit-input-placeholder {color:#1a4064;  font-size: 4px;}
+:-ms-input-placeholder {color:#1a4064; font-size: 4px;}
 
 #button{
 
@@ -311,3 +358,4 @@ body{
   
 
 }
+

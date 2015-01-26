@@ -280,6 +280,7 @@
 "C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\jquery.mobile-1.4.1.min.css" "www\css\jquery.mobile-1.4.1.min.css"
 "C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\klinik.css" "www\css\klinik.css"
 "C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\responsive.css" "www\css\responsive.css"
+"C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\smartphone.css" "www\css\smartphone.css"
 "C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\style.css" "www\css\style.css"
 "C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\css\themes\default\jquery.mobile-1.4.5.min.css" "www\scripts\jQueryMobile\demos\css\themes\default\jquery.mobile-1.4.5.min.css"
 "C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\css\themes\default\jquery.mobile.external-png-1.4.5.min.css" "www\scripts\jQueryMobile\demos\css\themes\default\jquery.mobile.external-png-1.4.5.min.css"
