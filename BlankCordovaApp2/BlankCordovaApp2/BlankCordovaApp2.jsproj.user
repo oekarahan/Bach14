@@ -6,7 +6,7 @@
     <ReferenceCachePath>C:\Users\admin.karahan\AppData\Local\Temp\o4ni42z1_BlankCordovaApp2_refcache</ReferenceCachePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Windows-x64'">
-    <DebuggerFlavor>WindowsSimulator</DebuggerFlavor>
+    <DebuggerFlavor>WindowsLocal</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|Windows-x64'">
     <DebuggerFlavor>WindowsSimulator</DebuggerFlavor>

@@ -329,6 +329,7 @@
     "scripts\\jQueryMobile\\images\\icons-png\\star-black.png",
     "scripts\\jQueryMobile\\images\\icons-png\\check-white.png",
     "scripts\\jQueryMobile\\demos\\css\\themes\\default\\images\\icons-png\\info-black.png",
+    "css\\smartphone.css",
     "scripts\\jQueryMobile\\demos\\swipe-page\\capetown.html",
     "scripts\\jQueryMobile\\images\\icons-png\\clock-black.png",
     "css\\Open_Sans\\OpenSans-Bold.ttf",
@@ -863,13 +864,15 @@
     "scripts\\jQueryMobile\\images\\icons-svg\\delete-black.svg",
     "scripts\\jQueryMobile\\demos\\css\\themes\\default\\jquery.mobile.external-png-1.4.5.min.css",
     "scripts\\jQueryMobile\\demos\\popup-outside-multipage\\index.html",
-    "scripts\\jQueryMobile\\demos\\_assets\\img\\glyphish-icons\\19-gear.png",
-    "css\\smartphone.css"
+    "scripts\\jQueryMobile\\demos\\_assets\\img\\glyphish-icons\\19-gear.png"
   ],
   "deletedFilesIos": [],
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
-  "changedFiles": [],
+  "changedFiles": [
+    "css\\index.css",
+    "index.html"
+  ],
   "deletedFiles": [],
   "addedPlugins": [],
   "deletedPlugins": []

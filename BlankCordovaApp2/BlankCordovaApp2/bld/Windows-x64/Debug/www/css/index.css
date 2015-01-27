@@ -8,7 +8,7 @@
 body{
 
     width: 100%;
-    background-color:green;
+    
   
 }
 
@@ -16,7 +16,7 @@ body{
 
         color: white;
         margin-left: 230px;
-        font-size: 25px;
+        font-size: 1.5em;
         font-family: meineSchrift;
         top: 140px;
  }
@@ -124,7 +124,7 @@ margin-right:90px;
 #navigation
 {
  
-     width: 780px;
+     width: 100%;
     position: fixed;  
     bottom: 88.5%;
     left: 0px;
@@ -135,7 +135,7 @@ margin-right:90px;
 
 .mainContent
 {
-    width:769px;
+    width:100%;
 }
 
 #div {
@@ -149,7 +149,7 @@ margin-right:90px;
 {
 
     background-color:#1a4064;
-    width: 797px;
+    width: 100%;
     position: fixed;  
 
     left: 0px;
@@ -359,3 +359,134 @@ margin-right:90px;
 
 }
 
+
+@media only screen and (min-device-width: 1224px){
+
+
+    .mainContent {
+        width: 100%;
+    }
+
+
+
+    #uberschrift {
+
+        color: white;
+        margin-left: 550px;
+        font-size: 2em;
+        font-family: meineSchrift;
+        top: 145px;
+     }
+
+    #hartmann {
+     
+        position:relative;
+        top: 15px;
+        margin-left: 45px;
+        width: 160px;
+        height:90px;
+
+    }
+      #icon {
+        
+       margin-left: 400px;
+       position:relative;
+       display: inline;
+       top: 40px;
+       background-color: red;
+
+    }
+
+  
+    #img_icon{
+        width:90px; 
+        height:80px;
+        margin-right:200px;
+        display:inline;
+         background-color: blue;
+    }
+
+
+
+    #iklinikschrift{
+      
+      position:relative;
+      top:20px;
+      width:100px;
+      margin-left:395px;
+  }
+
+
+
+    
+  #ialtersschrift{
+      position:relative;
+      margin-left:165px;
+      width:150px;
+      top: 7px;
+
+  }
+
+
+  #iarztschrift{
+
+      position:relative;
+      margin-left:150px;
+      width:150px;
+      bottom: 13px;
+
+
+  }
+
+
+
+
+  
+        #img_icon1{
+
+        position: relative;
+        width:90px; 
+        height:80px;
+        margin-left:200px;
+         background-color: black;
+
+        }
+
+
+
+      #i1schrift{ 
+      position:relative;
+     
+      width:50px;
+ 
+
+  }
+
+
+    #icon1_schrift{ 
+
+        position:relative; 
+        display: inline;
+     
+        top:200px;
+
+          }
+
+
+
+
+  
+
+    #apotheke{
+      
+        width:50px;
+    }
+
+  
+
+
+
+    
+
+
+}

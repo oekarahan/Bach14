@@ -8,7 +8,7 @@
 body{
 
     width: 100%;
-    background-color:green;
+    
   
 }
 
@@ -16,7 +16,7 @@ body{
 
         color: white;
         margin-left: 230px;
-        font-size: 25px;
+        font-size: 5em;
         font-family: meineSchrift;
         top: 140px;
  }
@@ -124,7 +124,7 @@ margin-right:90px;
 #navigation
 {
  
-     width: 780px;
+     width: 100%;
     position: fixed;  
     bottom: 88.5%;
     left: 0px;
@@ -135,7 +135,7 @@ margin-right:90px;
 
 .mainContent
 {
-    width:769px;
+    width:100%;
 }
 
 #div {
@@ -149,7 +149,7 @@ margin-right:90px;
 {
 
     background-color:#1a4064;
-    width: 797px;
+    width: 100%;
     position: fixed;  
 
     left: 0px;
@@ -358,4 +358,365 @@ margin-right:90px;
   
 
 }
+
+
+@media only screen and (min-device-width: 1600px) {
+
+    .mainContent {
+        width: 100%;
+    }
+
+
+
+    #uberschrift {
+
+        color: white;
+        margin-left:600px;
+        font-size: 2em;
+        font-family: meineSchrift;
+        top: 145px;
+     }
+
+    #hartmann {
+     
+        position:relative;
+        top: 15px;
+        margin-left: 45px;
+        width: 160px;
+        height:90px;
+
+    }
+      #icon {
+        
+       margin-left: 400px;
+       position:relative;
+       display: inline;
+       top: 40px;
+      
+
+    }
+
+  
+    #img_icon{
+        width:90px; 
+        height:80px;
+        margin-right:200px;
+        display:inline;
+         
+    }
+
+
+
+    #iklinikschrift{
+      
+      position:relative;
+      top:20px;
+      width:100px;
+      margin-left:395px;
+  }
+
+
+
+    
+  #ialtersschrift{
+      position:relative;
+      margin-left:165px;
+      width:150px;
+      top: 7px;
+
+  }
+
+
+  #iarztschrift{
+
+      position:relative;
+      margin-left:150px;
+      width:150px;
+      bottom: 13px;
+
+
+  }
+
+#img_icon_apo{
+
+    position:relative;
+    margin-left: 400px;
+    margin-right: 90px;
+      width:90px; 
+        height:80px;
+
+
+}
+
+  
+        #img_icon1{
+
+        position: relative;
+        width:90px; 
+        height:80px;
+        margin-left:110px;
+
+    
+
+        }
+
+
+
+      #i1schrift{ 
+      position:relative;
+      width:150px;
+      margin-left: 135px;
+ 
+
+  }
+
+
+    #apotheke{
+      
+        width:150px;
+        margin-left:380px;
+       
+
+    }
+
+  
+
+}
+
+
+@media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
+
+    .mainContent {
+        width: 100%;
+    }
+
+
+
+    #uberschrift {
+        color: white;
+        margin-left: 370px;
+        font-size: 1.8em;
+        font-family: meineSchrift;
+        top: 145px;
+    }
+
+    #hartmann {
+        position: relative;
+        top: 15px;
+        margin-left: 45px;
+        width: 130px;
+        height: 70px;
+    }
+
+    #icon {
+        margin-left: 280px;
+        position: relative;
+        display: inline;
+        top: 30px;
+    }
+
+
+    #img_icon {
+        width: 80px;
+        height: 70px;
+        display: inline;
+    }
+
+
+
+    #iklinikschrift {
+        position: relative;
+        top: 20px;
+        width: 80px;
+        margin-left: 278px;
+    }
+
+
+
+
+    #ialtersschrift {
+        position: relative;
+        margin-left: 72px;
+        width: 120px;
+        top: 10px;
+    }
+
+
+    #iarztschrift {
+        position: relative;
+        margin-left: 58px;
+        width: 120px;
+        bottom: 7px;
+    }
+
+    #img_icon_apo {
+        position: relative;
+        margin-left: 280px;
+        margin-right: 80px;
+        width: 80px;
+        height: 70px;
+    }
+
+
+    #img_icon1 {
+        position: relative;
+        width: 80px;
+        height: 70px;
+        margin-left: 5px;
+    }
+
+
+
+    #i1schrift {
+        position: relative;
+        width: 120px;
+        margin-left: 48px;
+    }
+
+
+    #apotheke {
+        width: 120px;
+        margin-left: 265px;
+    }
+}
+
+
+@media only screen and (min-device-width:200px) and (max-device-width:353px){
+
+
+
+.mainContent {
+        width: 100%;
+    }
+
+
+
+    #uberschrift {
+        color: white;
+        margin-left:40px;
+        font-size: 0.9em;
+        font-family: meineSchrift;
+        top: 120px;
+    }
+
+    #hartmann {
+        position: relative;
+        top:0px;
+        margin-left: 2px;
+        width: 40px;
+        height: 20px;
+    }
+
+    #icon {
+        
+        position: relative;
+        display: inline;
+        top: 50px;
+        margin-left:20px;
+
+    }
+
+
+    #img_icon {
+        width: 45px;
+        height:40px;
+        margin-right: 33px;
+   
+    }
+
+ 
+
+    #iklinikschrift {
+        position: relative;
+        top: 40px;
+        width: 45px;
+        margin-left:-159px;
+       
+        
+    }
+
+ #ialtersschrift {
+        position: relative;
+        margin-left: 23px;
+        width: 72px;
+        top: 33px;
+    }
+
+
+
+    #iarztschrift {
+        position: relative;
+        margin-left:5px;
+        width: 70px;
+        bottom: -23px;
+    }
+
+    #img_icon_apo {
+      position: relative;
+       top:30px;
+        width: 40px;
+        margin-left:-163px;
+        
+        
+    }
+
+
+
+    #img_icon_indus {
+        position: relative;
+        width: 40px;
+        height:40px;
+        margin-left:-80px;
+        top: 30px;
+      
+        display:inline;
+     
+    }
+
+    #img_icon_private {
+      position: relative;
+        width: 40px;
+        height:40px;
+        margin-left:-5px;
+        top: 30px;
+      
+        display:inline;
+     
+    }
+
+
+
+    #apo {
+        position: relative;
+        width: 80px;
+      margin-left:-130px;
+      top:20px;
+    }
+
+
+ #in {
+        position: relative;
+        width: 80px;
+     margin-left: 5px;
+      top:20px;
+    }
+
+ #pri {
+        position: relative;
+        width: 80px;
+        margin-left:-3px;
+      
+      top:20px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
 

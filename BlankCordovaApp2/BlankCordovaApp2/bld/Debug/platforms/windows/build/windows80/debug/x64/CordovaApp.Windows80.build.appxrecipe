@@ -950,15 +950,6 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\cordova_plugins.js">
       <PackagePath>www\cordova_plugins.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\plugins\org.apache.cordova.network-information\src\windows8\NetworkInfoProxy.js">
-      <PackagePath>www\plugins\org.apache.cordova.network-information\src\windows8\NetworkInfoProxy.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\plugins\org.apache.cordova.network-information\www\Connection.js">
-      <PackagePath>www\plugins\org.apache.cordova.network-information\www\Connection.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\plugins\org.apache.cordova.network-information\www\network.js">
-      <PackagePath>www\plugins\org.apache.cordova.network-information\www\network.js</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\ajax.js">
       <PackagePath>www\scripts\ajax.js</PackagePath>
     </AppxPackagedFile>

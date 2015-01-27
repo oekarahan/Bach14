@@ -50,8 +50,8 @@
 
           <div id="icon_schrift">  
              <img src="css/start_schrift/klinik.png" id="iklinikschrift" />
-            <img src="css/start_schrift/alters.png" id="ischrift" />
-            <img src="css/start_schrift/arzt.png" id="ischrift" />
+            <img src="css/start_schrift/alters.png" id="ialtersschrift" />
+              <img src="css/start_schrift/arzt.png" id="iarztschrift" />
         </div>
 
             <div id="icon1">
@@ -111,7 +111,7 @@
             </div>
             <br /><br /><br /><br />
             <br /><br />
-            <div id="produktgruppen_inhalt" style="height: 300px;border:1px solid red;overflow-y:scroll;"></div>
+            <div id="produktgruppen_inhalt" style="height: 600px;  overflow-y:scroll;"></div>
 
         </div>
         <!---------------------------------------------------------------------- Subgruppen------------------------------------------------------------->
@@ -519,10 +519,13 @@
 
                         var div = document.createElement('div');
                         var pgname = datahandler.data[index].name;
+                        var prgrbild = datahandler.data[index].image;
+
+                    
 
                         div.style.styleFloat = "left";
                         //div.innerHTML = '<div style="float: left; border: 0px; "><b>' + datahandler.data[index].name + '</div><div style="clear: both"><img src="css/Probild.png"></div><div>&nbsp;</div>';
-                        div.innerHTML = '<div style="float: left; font-size:13px;" "><b>' + pgname + '</div><div style="clear: both"><img src="css/Probild.png" style="width: 180x; height:100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                        div.innerHTML = '<div style="float: left; font-size:16px;" "><b>' + pgname + '</div><div style="clear: both"><img style="width: 300px; height: 150px;" src="data:image/jpg;base64,'+prgrbild+'"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
 
                         var gr_fk = datahandler.data[index].gr_fk;
 
@@ -553,11 +556,15 @@
                                 var subgruppen = datahandler.data[index].subGroups[i].name;
                                 var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
                                 var gr = datahandler.data[index].gr_fk;
+                                var subBilder = datahandler.data[index].subGroups[i].image;
+                                
+
+
                                 var div = document.createElement('div');
                                 //div.innerHTML = '<div  style="float: left; border: 0px;"><b>' + subgruppen + '</b></div><div style="clear: both"><img src="css/Probild.png"><div><div></div>';
 
                                 div.style.styleFloat = "left";
-                                div.innerHTML = '<div style="float: left;"><b>' + subgruppen + '</div><div style="clear: both"><img src="css/Probild.png" style="width: 180x; height:100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                div.innerHTML = '<div style="float: left; font-size:16px;" "><b>' + subgruppen + '</div><div style="clear: both"><img style="width: 300px; height: 150px;" src="data:image/jpg;base64,' + subBilder + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
 
                                 $('#sub').append(div);
 
@@ -595,6 +602,7 @@
                                 var prolange = datahandler.data[index].subGroups[i].products.length;
                                 var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
                                 var gr = datahandler.data[index].gr_fk;
+                                
 
                                 if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
 
@@ -602,10 +610,10 @@
 
                                         var produktename = datahandler.data[index].subGroups[i].products[ii].name;
                                         var div = document.createElement('div');
-                                        // div.innerHTML = '<div  style="float: left; border: 0px; "><b>' + produktename + '</b></div><div style="clear: both"><img src="css/Probild.png"><div><div></div>';
+                                        var prbild = datahandler.data[index].subGroups[i].products[ii].image;
 
                                         div.style.styleFloat = "left";
-                                        div.innerHTML = '<div style="float: left; "><b>' + produktename + '</div><div style="clear: both"><img src="css/Probild.png" style="width: 180x; height:100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                        div.innerHTML = '<div style="float: left; font-size:16px;" "><b>' + produktename + '</div><div style="clear: both"><img style="width: 300px; height: 150px;" src="data:image/jpg;base64,' + prbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
 
                                         $('#products').append(div);
 
