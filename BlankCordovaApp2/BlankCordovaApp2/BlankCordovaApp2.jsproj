@@ -1052,6 +1052,8 @@
     <Content Include="css\start_schrift\industrie.png" />
     <Content Include="css\start_schrift\klinik.png" />
     <Content Include="css\start_schrift\private.png" />
+    <Content Include="css\start_smatphones.png" />
+    <Content Include="css\start_tablet.png" />
     <Content Include="css\style.css" />
     <Content Include="css\zurück.png" />
     <Content Include="html\klinik.html" />

@@ -18,7 +18,7 @@
 </head>
 
 <!-- hier wird die checkinternet funktion aufgerufen-->
-<body onload="checkInternet();" id="startseite" style="background-image:url(css/start.png);background-size: cover;" >
+<body onload="checkInternet();" id="startseite"  >
 
 
     <script src=" cordova.js">
@@ -37,36 +37,45 @@
                 <img id="hartmann" src="css/logo.png" />
             </div>
 
+            <div id="uber">
             <h1 id="uberschrift">
-                WIR SIND DIE HELFER<br /><br />
-                &nbsp; &nbsp; &nbsp;DER HELFENDEN.
+                WIR SIND DIE HELFER<br />
+                DER HELFENDEN.
             </h1>
+                </div>
+
 
             <div id="icon">
-                <a href="#produktgruppen"><img id="img_icon" src="css/start_icons/klinik.png"/></a>
+                <a href="#produktgruppen"><img id="img_icon" src="css/start_icons/klinik.png" /></a>
                 <a href="#produktgruppen"><img id="img_icon" src="css/start_icons/alters.png" /></a>
                 <a href="#produktgruppen"><img id="img_icon" src="css/start_icons/arzt.png" /></a>
+
+                <br /><b>
+                <span>KLINIK</span>
+                <span>ALTERS-UND PFLEGEHEIME</span>
+                <span>PFLEGEHEIME</span>
+                </b>
             </div>
 
-          <div id="icon_schrift">  
-             <img src="css/start_schrift/klinik.png" id="iklinikschrift" />
-            <img src="css/start_schrift/alters.png" id="ialtersschrift" />
-              <img src="css/start_schrift/arzt.png" id="iarztschrift" />
-        </div>
 
-            <div id="icon1">
-                <a href="#produktgruppen"><img id="img_icon1" src="css/start_icons/apo.png"  /></a>
-                <a href="#produktgruppen"><img id="img_icon1" src="css/start_icons/industrie.png" ></a>
-                <a href="#produktgruppen"><img id="img_icon1" src="css/start_icons/private.png" /></a>
-            </div>
 
-        <div id="icon1_schrift">
-            <img src="css/start_schrift/apo.png" id="apotheke" />
-            <img src="css/start_schrift/industrie.png" id="i1schrift" />
-            <img src="css/start_schrift/private.png" id="i1schrift" />
-       </div>
+            <div id="iconn">
+                <a href="#produktgruppen"><img  src="css/start_icons/apo.png"  /></a>
+                <a href="#produktgruppen"><img  src="css/start_icons/industrie.png" ></a>
+                <a href="#produktgruppen"><img  src="css/start_icons/private.png" /></a>
+            
 
-        </div>
+
+                <br /><b>
+                    <span>APOTHEKE/DROGERIE</span>
+                    <span>INDUSTRIE</span>
+                    <span>PRIVATE</span>
+
+                </b>
+</div>
+
+</div>
+     
         <!---------------------------------------------------------------------- Produktgruppen-------------------------------------------------------------->
         <div data-role="page" id="produktgruppen" >
 
@@ -111,7 +120,7 @@
             </div>
             <br /><br /><br /><br />
             <br /><br />
-            <div id="produktgruppen_inhalt" style="height: 600px;  overflow-y:scroll;"></div>
+            <div id="produktgruppen_inhalt" style="height:580px;  overflow-y:scroll;"></div>
 
         </div>
         <!---------------------------------------------------------------------- Subgruppen------------------------------------------------------------->
@@ -159,7 +168,7 @@
             </div>
             <br /><br /><br /><br />
             <br /><br />
-            <div id="sub"></div>
+            <div id="sub" style="height:520px;  overflow-y:scroll;"></div>
 
         </div>
         <!---------------------------------------------------------------------- Produkte------------------------------------------------------------->
@@ -524,8 +533,8 @@
                     
 
                         div.style.styleFloat = "left";
-                        //div.innerHTML = '<div style="float: left; border: 0px; "><b>' + datahandler.data[index].name + '</div><div style="clear: both"><img src="css/Probild.png"></div><div>&nbsp;</div>';
-                        div.innerHTML = '<div style="float: left; font-size:16px;" "><b>' + pgname + '</div><div style="clear: both"><img style="width: 300px; height: 150px;" src="data:image/jpg;base64,'+prgrbild+'"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                        
+                        div.innerHTML = '<div style="float: left; font-size:16px;" "><b>' + pgname + '</div><div style="clear: both"><img style="width: 300px; height: 150px;" src="data:image/jpg;base64,' + prgrbild + '"/></div>';
 
                         var gr_fk = datahandler.data[index].gr_fk;
 
@@ -1533,7 +1542,7 @@
 
 
         $(document).on('pagebeforeshow', '#produktgruppen', function () {
-            datahandler.showProductGroups();
+           datahandler.showProductGroups();
         });
         $(document).on('pagebeforeshow', '#subgruppen', function (event, data) {
 

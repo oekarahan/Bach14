@@ -3,114 +3,8 @@
     src: url(Open_Sans/OpenSans-Light.ttf);
 }
 
+/*
 
-
-body{
-
-    width: 100%;
-    
-  
-}
-
-#uberschrift {
-
-        color: white;
-        margin-left: 230px;
-        font-size: 5em;
-        font-family: meineSchrift;
-        top: 140px;
- }
-
-#hartmann {
-     
-        position:relative;
-        top: 15px;
-        margin-left: 45px;
-        width: 90px;
-        height:50px;
-
-    }
-
-  
-#img_icon{
-width:60px; 
-height:60px;
-margin-right:90px;
-display:inline;
-    }
-
-
-#icon_schrift{
-
-position:relative; 
-display: inline;
-margin-left: 178px;
-
- }
-
-#icon1_schrift{
-
-position:relative; 
-display: inline;
-margin-left: 130px;
-top:40px;
-
-  }
-
-
-#iklinikschrift{
-      
-      position:relative;
-      top:9px;
-      width:60px;
-  }
-
-  #ischrift{
-      position:relative;
-      margin-left:80px;
-      width:90px;
-      top: 0px;
-
-  }
-
-    #i1schrift{
-      position:relative;
-     margin-left: 56px;
-      width:90px;
-      top: 0px;
-
-  }
-
-    #apotheke{
-        margin-left: 45px;
-        width:90px;
-    }
-
-    #icon {
-        
-       margin-left: 180px;
-       position:relative;
-       display: inline;
-       top: 15px;
-
-    }
-
-
-#img_icon1{
-
-width:60px; 
-height:60px;
-margin-right:90px;
-
-
-}
-
-    #icon1 {
-         margin-left: 184px;
-       position:relative;
-        display: inline;
-        top: 25px;
-    }
 
 
 
@@ -358,9 +252,12 @@ margin-right:90px;
   
 
 }
-
+*/
 
 @media only screen and (min-device-width: 1600px) {
+
+    /*Laptops*/
+
 
     .mainContent {
         width: 100%;
@@ -484,230 +381,734 @@ margin-right:90px;
 }
 
 
-@media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
+@media only screen and (min-device-width: 500px) and (max-device-width: 1300px) {
 
-    .mainContent {
-        width: 100%;
-    }
+  /*Tablets*/
 
+  
+body{
 
-
-    #uberschrift {
-        color: white;
-        margin-left: 370px;
-        font-size: 1.8em;
-        font-family: meineSchrift;
-        top: 145px;
-    }
-
-    #hartmann {
-        position: relative;
-        top: 15px;
-        margin-left: 45px;
-        width: 130px;
-        height: 70px;
-    }
-
-    #icon {
-        margin-left: 280px;
-        position: relative;
-        display: inline;
-        top: 30px;
-    }
+  background-image:url(start_tablet.png);
+  background-size:cover;
+  background-repeat:no-repeat;
 
 
-    #img_icon {
-        width: 80px;
-        height: 70px;
-        display: inline;
-    }
-
-
-
-    #iklinikschrift {
-        position: relative;
-        top: 20px;
-        width: 80px;
-        margin-left: 278px;
-    }
-
-
-
-
-    #ialtersschrift {
-        position: relative;
-        margin-left: 72px;
-        width: 120px;
-        top: 10px;
-    }
-
-
-    #iarztschrift {
-        position: relative;
-        margin-left: 58px;
-        width: 120px;
-        bottom: 7px;
-    }
-
-    #img_icon_apo {
-        position: relative;
-        margin-left: 280px;
-        margin-right: 80px;
-        width: 80px;
-        height: 70px;
-    }
-
-
-    #img_icon1 {
-        position: relative;
-        width: 80px;
-        height: 70px;
-        margin-left: 5px;
-    }
-
-
-
-    #i1schrift {
-        position: relative;
-        width: 120px;
-        margin-left: 48px;
-    }
-
-
-    #apotheke {
-        width: 120px;
-        margin-left: 265px;
-    }
 }
-
-
-@media only screen and (min-device-width:200px) and (max-device-width:353px){
-
 
 
 .mainContent {
         width: 100%;
     }
 
+#uber{
 
+    position:relative;
+    top:60px;
+    text-align:center;
+
+}
 
     #uberschrift {
         color: white;
-        margin-left:40px;
-        font-size: 0.9em;
+        font-size: 2em;
         font-family: meineSchrift;
-        top: 120px;
-    }
-
-    #hartmann {
-        position: relative;
-        top:0px;
-        margin-left: 2px;
-        width: 40px;
-        height: 20px;
-    }
-
-    #icon {
-        
-        position: relative;
-        display: inline;
-        top: 50px;
-        margin-left:20px;
-
+      
+       
     }
 
 
-    #img_icon {
-        width: 45px;
-        height:40px;
-        margin-right: 33px;
+  #hartmann{
+
+      position:relative;
+     width:110px;
+     margin-left:30px;
+    top:30px;
    
+    
+
+  }
+
+  #icon{
+
+      min-width:100%;
+      max-width: 800%;
+      position: absolute;
+      display: inline;
+      top:45%;
+      text-align:center;
+  
+  }
+
+  #icon img{
+      
+    width:80px;
+    margin-left:5%;
+    margin-right:5%;
+   
+  }
+
+    #icon span{
+
+        font-family:meineSchrift;
+        color: white;
+        font-size:1.2em;
+        display:inline;
+        margin-left:2%;
+      
+
     }
+
+
+  #iconn{
+
+      min-width:100%;
+      max-width: 300%;
+      position: absolute;
+      display: inline-block;
+      top:70%;
+      text-align:center;
+  
+  }
+
+
+  #iconn span{
+
+      font-family:meineSchrift;
+        color: white;
+        font-size:1.2em;
+        display:inline;
+        margin-left:2%;
+
+
+  }
+
+
+
+#iconn img{
+
+    width:80px;
+    margin-left:5%;
+    margin-right:5%;
+   
+}
+
+
+
+.ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page
+{
+    position:relative;
+    
+}
+
+/*****************************Navigation*****************************/
+
+#navigation
+{
+
+    width: 100%;
+    position:fixed;
+    top:-2px;
+    left: -2px;
+    
+}
+
+
+.navii
+{
+    position:fixed;
+    background-color:#1a4064;
+    width: 100%;
+ 
+}
+
+.navii ul{
+  
+    list-style-type:none;
+    
+}
+
+
+
+.navii li{
+
+   
+    background-color:#1a4064;
+    display: inline-block;
+    margin-left: 5%;
+
+}
+
+.navii li a{
+
+    text-decoration: none;
+
+}
+
+
+
+.navii span
+{
+    
+    display:block;
+    font-family: meineSchrift;
+    color: white;
+   
+
+}
+
+#zurück{
+
+    position:relative;
+    margin-left:-30px;
+    top: -5px;
+
+}
+
+
+
+#zurück img:hover{
+    opacity:0.4;
+
+}
+
+
+
+#leistungen img:hover{
+    opacity:0.4;
+    
+}
+
+#scan img:hover{
+    opacity:0.4;
+
+}
+
+#ta {
+
+  width: 170px !important;
+  height:15px!important;
+  position:fixed;
+  background-position: right;
+  border-radius: 4px;
+  border-color:#1a4064;
+  top:25px;
+  left: 60%;
 
  
+    
+  }
 
-    #iklinikschrift {
-        position: relative;
-        top: 40px;
-        width: 45px;
-        margin-left:-159px;
+
+
+#bild{
+
+   position:fixed;
+   width: 45px;
+   height: 33px;
+    left:83%;
+   top:25px;
+   border-radius: 4px;
+
+
+}
+
+/**********************************Inhalt*********************************************/
+
+
+
+#produktgruppen_inhalt{
+
+    color: #1a4064;
+    font-family: meineSchrift;
+
+     height:auto;
+     width:auto;
+     position:absolute;
+   left: 5%;
+   right:5%;
+   
+ 
+}
+
+
+#sub{
+   color: #1a4064;
+    font-family: meineSchrift;
+   
+     height:auto;
+     width:auto;
+     
+     position:absolute;
+   left: 5%;
+   right:5%; 
+}
+
+#products{
+
+    color:#1a4064;
+    font-family: Arial;
+     font-size: 15px;
+}
+
+#Produktgruppen{
+
+    color:#1a4064;
+    font-family: Arial;
+     font-size: 15px;
+
+}
+
+#artikelgrp{
+
+    color: #1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+#artgrp{
+
+    color: #1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+#artgrpart{
+
+    color: #1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+#artikelohneartikelgruppen{
+
+    color:#1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+#produktname{
+
+    color:#1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+
+
+#feld{
+
+    border-radius: 4px;
+    bottom: 22px!important;
+    width: 50px;
+    background-color: white;
+
+}
+
+
+#mediacenter{
+
+    background-color:#74cae0;
+    border-radius: 2px; 
+    width: 139px;  
+    height: 21px;
+    top: 10px;
+    margin-left: 0.8cm;
+    
+}
+
+#buttonschrift{
+
+    color: white;
+   
+}
+
+
+
+:-moz-placeholder {color:#1a4064;  font-size: 4px;}
+::-webkit-input-placeholder {color:#1a4064;  font-size: 4px;}
+:-ms-input-placeholder {color:#1a4064; font-size: 4px;}
+
+#button{
+
+    border-radius: 3px;
+    width:110px; 
+    height: 25px; 
+    background-color: #8bd3e5; 
+
+
+}
+
+
+   
+}
+
+
+@media only screen and (min-device-width:200px) and (max-device-width:600px){
+
+/*Smartphones*/
+
+body{
+
+  background-image:url(start_smatphones.png);
+  background-size:cover;
+
+
+}
+
+.mainContent {
+         width: 100%;
+    }
+
+#uber{
+
+   
+     min-width:100%;
+      max-width: 300%;
+      position: absolute;
+      top:15%;
+    text-align:center;
+
+}
+
+    #uberschrift {
+        color: white;
+        font-size: 1.3em;
+        font-family: meineSchrift;
+      
        
-        
-    }
-
- #ialtersschrift {
-        position: relative;
-        margin-left: 23px;
-        width: 72px;
-        top: 33px;
     }
 
 
+  #hartmann{
 
-    #iarztschrift {
-        position: relative;
-        margin-left:5px;
-        width: 70px;
-        bottom: -23px;
-    }
+     width:80px;
+     margin-left:10px;
+    bottom:10px;
+   
+    
 
-    #img_icon_apo {
-      position: relative;
-       top:30px;
-        width: 40px;
-        margin-left:-163px;
-        
-        
-    }
+  }
 
+  #icon{
 
+      min-width:100%;
+      max-width: 300%;
+      position: absolute;
+      display: inline;
+      top:35%;
+      text-align:center;
+  
+  }
 
-    #img_icon_indus {
-        position: relative;
-        width: 40px;
-        height:40px;
-        margin-left:-80px;
-        top: 30px;
+  #icon img{
       
+    width:50px;
+    margin-left:5%;
+    margin-right:5%;
+   
+  }
+
+    #icon span{
+
+        font-family:meineSchrift;
+        color: white;
+        font-size:0.9em;
         display:inline;
-     
+        margin-left:2%;
+
     }
 
-    #img_icon_private {
-      position: relative;
-        width: 40px;
-        height:40px;
-        margin-left:-5px;
-        top: 30px;
-      
+
+  #iconn{
+
+      min-width:100%;
+      max-width: 300%;
+      position: absolute;
+      display: inline-block;
+    
+      top:60%;
+      text-align:center;
+  
+  }
+
+
+  #iconn span{
+
+      font-family:meineSchrift;
+        color: white;
+        font-size:0.9em;
         display:inline;
+        margin-left:2%;
+
+
+  }
+
+
+
+#iconn img{
+
+    width:50px;
+    margin-left:5%;
+    margin-right:5%;
+   
+}
+
+/*******************************************************************************************/
+
+
+#navigation
+{
+
+    width: 100%;
+    position:fixed;
+   
+    
+}
+
+
+.navii
+{
+    position:fixed;
+    background-color:#1a4064;
+    width: 100%;
+ 
+}
+
+.navii ul{
+  
+    list-style-type:none;
+    border: 2px solid grey;
+    
+}
+
+
+.navii li{
+
+ position:fixed;
+    background-color:#1a4064;
+    display: inline-block;
+    border: 2px solid red;
+    width:30px;
+
+}
+
+    .navii ul li a  {
+        position:relative;
+        text-decoration: none; 
+         border: 2px solid blue;
+        width:30px!important;
+    }
+
+.navii ul li a img{
+
+   
+    width:30px;
+    height:30px;
+    border: 2px solid black;
+    text-align:center;
+
+}
+
+
+
+.navii ul li a span
+{
+    
+    display:block;
+    font-family: meineSchrift;
+    color: white;
+    font-size:12px;
+   
+
+}
+
+#zurück{
+
+    position:relative;
+    margin-left:-30px;
+    top: -7px;
+
+}
+
+
+
+#zurück img:hover{
+    opacity:0.4;
+
+}
+
+
+
+#leistungen img:hover{
+    opacity:0.4;
+    
+}
+
+#scan img:hover{
+    opacity:0.4;
+
+}
+
+#ta {
+
+  width: 170px !important;
+  height:15px!important;
+  position:fixed;
+  background-position: right;
+  border-radius: 4px;
+  border-color:#1a4064;
+  top:25px;
+  left: 60%;
+
+ 
+    
+  }
+
+
+
+#bild{
+
+   position:fixed;
+   width: 45px;
+   height: 33px;
+    left:83%;
+   top:25px;
+   border-radius: 4px;
+
+
+}
+
+
+#produktgruppen_inhalt{
+
+    color: #1a4064;
+    font-family: meineSchrift;
+  min-width: 100%;
+  max-height:300%;
+     position:absolute;
+   left: 5%;
+   right:5%;
+   
+ 
+}
+
+
+#sub{
+   color: #1a4064;
+    font-family: meineSchrift;
+   
+     height:auto;
+     width:auto;
      
-    }
+     position:absolute;
+   left: 5%;
+   right:5%; 
+}
+
+#products{
+
+    color:#1a4064;
+    font-family: Arial;
+     font-size: 15px;
+}
+
+#Produktgruppen{
+
+    color:#1a4064;
+    font-family: Arial;
+     font-size: 15px;
+
+}
+
+#artikelgrp{
+
+    color: #1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+#artgrp{
+
+    color: #1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+#artgrpart{
+
+    color: #1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+#artikelohneartikelgruppen{
+
+    color:#1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+#produktname{
+
+    color:#1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
 
 
 
-    #apo {
-        position: relative;
-        width: 80px;
-      margin-left:-130px;
-      top:20px;
-    }
+#feld{
+
+    border-radius: 4px;
+    bottom: 22px!important;
+    width: 50px;
+    background-color: white;
+
+}
 
 
- #in {
-        position: relative;
-        width: 80px;
-     margin-left: 5px;
-      top:20px;
-    }
+#mediacenter{
 
- #pri {
-        position: relative;
-        width: 80px;
-        margin-left:-3px;
-      
-      top:20px;
-    }
+    background-color:#74cae0;
+    border-radius: 2px; 
+    width: 139px;  
+    height: 21px;
+    top: 10px;
+    margin-left: 0.8cm;
+    
+}
+
+#buttonschrift{
+
+    color: white;
+   
+}
+
+
+
+:-moz-placeholder {color:#1a4064;  font-size: 4px;}
+::-webkit-input-placeholder {color:#1a4064;  font-size: 4px;}
+:-ms-input-placeholder {color:#1a4064; font-size: 4px;}
+
+#button{
+
+    border-radius: 3px;
+    width:110px; 
+    height: 25px; 
+    background-color: #8bd3e5; 
+
+
+}
 
 
 
