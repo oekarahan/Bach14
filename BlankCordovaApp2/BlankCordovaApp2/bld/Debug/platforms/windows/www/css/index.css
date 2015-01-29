@@ -254,134 +254,374 @@
 }
 */
 
-@media only screen and (min-device-width: 1600px) {
+@media only screen and (min-device-width: 1300px) {
 
     /*Laptops*/
 
+    body{
 
-    .mainContent {
+  background-image:url(start_laptop.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+
+
+}
+
+
+
+.mainContent {
         width: 100%;
     }
 
-
-
-    #uberschrift {
-
-        color: white;
-        margin-left:600px;
-        font-size: 2em;
-        font-family: meineSchrift;
-        top: 145px;
-     }
-
-    #hartmann {
-     
-        position:relative;
-        top: 15px;
-        margin-left: 45px;
-        width: 160px;
-        height:90px;
-
-    }
-      #icon {
-        
-       margin-left: 400px;
-       position:relative;
-       display: inline;
-       top: 40px;
-      
-
-    }
-
-  
-    #img_icon{
-        width:90px; 
-        height:80px;
-        margin-right:200px;
-        display:inline;
-         
-    }
-
-
-
-    #iklinikschrift{
-      
-      position:relative;
-      top:20px;
-      width:100px;
-      margin-left:395px;
-  }
-
-
-
-    
-  #ialtersschrift{
-      position:relative;
-      margin-left:165px;
-      width:150px;
-      top: 7px;
-
-  }
-
-
-  #iarztschrift{
-
-      position:relative;
-      margin-left:150px;
-      width:150px;
-      bottom: 13px;
-
-
-  }
-
-#img_icon_apo{
+#uber{
 
     position:relative;
-    margin-left: 400px;
-    margin-right: 90px;
-      width:90px; 
-        height:80px;
-
+    top:60px;
+    text-align:center;
 
 }
 
-  
-        #img_icon1{
+    #uberschrift {
+        color: white;
+        font-size:2.5em;
+        font-family: meineSchrift;
+      
+       
+    }
 
-        position: relative;
-        width:90px; 
-        height:80px;
-        margin-left:110px;
 
+  #hartmann{
+
+      position:relative;
+     width:180px;
+     margin-left:30px;
+    top:30px;
+   
     
 
-        }
+  }
+
+  #icon{
+
+      min-width:100%;
+      max-width: 800%;
+      position: absolute;
+      display: inline;
+      top:45%;
+      text-align:center;
+  
+  }
+
+  #icon img{
+      
+    width:100px;
+    margin-left:5%;
+    margin-right:5%;
+   
+  }
+
+    #icon span{
+
+        font-family:meineSchrift;
+        color: white;
+        font-size:1.8em;
+        display:inline;
+        margin-left:2%;
+      
+
+    }
 
 
+  #iconn{
 
-      #i1schrift{ 
-      position:relative;
-      width:150px;
-      margin-left: 135px;
- 
+      min-width:100%;
+      max-width: 300%;
+      position: absolute;
+      display: inline-block;
+      top:70%;
+      text-align:center;
+  
+  }
+
+
+  #iconn span{
+
+      font-family:meineSchrift;
+        color: white;
+        font-size:1.8em;
+        display:inline;
+        margin-left:2%;
+
 
   }
 
 
-    #apotheke{
-      
-        width:150px;
-        margin-left:380px;
-       
 
-    }
+#iconn img{
 
+    width:100px;
+    margin-left:5%;
+    margin-right:5%;
+   
+}
+
+
+
+.ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page
+{
+    position:relative;
+    
+}
+
+/*****************************Navigation*****************************/
+
+#navigation
+{
+
+    width: 100%;
+    position:fixed;
+    top:-2px;
+    left: -2px;
+    
+}
+
+
+.navii
+{
+    position:fixed;
+    background-color:#1a4064;
+    width: 100%;
+ 
+}
+
+.navii ul{
   
+    list-style-type:none;
+    
+}
+
+
+
+.navii li{
+
+   
+    background-color:#1a4064;
+    display: inline-block;
+    margin-left: 5%;
+
+}
+
+.navii li a{
+
+    text-decoration: none;
 
 }
 
 
-@media only screen and (min-device-width: 500px) and (max-device-width: 1300px) {
+
+.navii span
+{
+    
+    display:block;
+    font-family: meineSchrift;
+    color: white;
+   
+
+}
+
+#zurück{
+
+    position:relative;
+    margin-left:-30px;
+    top: -5px;
+
+}
+
+
+
+#zurück img:hover{
+    opacity:0.4;
+
+}
+
+
+
+#leistungen img:hover{
+    opacity:0.4;
+    
+}
+
+#scan img:hover{
+    opacity:0.4;
+
+}
+
+#ta {
+
+  width: 190px !important;
+  height:20px!important;
+  position:fixed;
+  background-position: right;
+  border-radius: 4px;
+  border-color:#1a4064;
+  top:25px;
+  left: 60%;
+
+
+    
+  }
+
+
+
+#bild{
+
+   position:fixed;
+   width: 48px;
+   height: 38px;
+    left:78%;
+   top:25px;
+   border-radius: 4px;
+
+
+}
+
+/**********************************Inhalt*********************************************/
+
+
+
+#produktgruppen_inhalt{
+
+    color: #1a4064;
+    font-family: meineSchrift;
+
+     height:auto;
+     width:auto;
+     position:absolute;
+   left: 5%;
+   right:5%;
+   
+ 
+}
+
+
+#sub{
+   color: #1a4064;
+    font-family: meineSchrift;
+   
+     height:auto;
+     width:auto;
+     
+     position:absolute;
+   left: 5%;
+   right:5%; 
+}
+
+#products{
+
+    color:#1a4064;
+    font-family: Arial;
+     font-size: 15px;
+}
+
+#Produktgruppen{
+
+    color:#1a4064;
+    font-family: Arial;
+     font-size: 15px;
+
+}
+
+#artikelgrp{
+
+    color: #1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+#artgrp{
+
+    color: #1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+#artgrpart{
+
+    color: #1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+#artikelohneartikelgruppen{
+
+    color:#1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+#produktname{
+
+    color:#1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+
+
+#feld{
+
+    border-radius: 4px;
+    bottom: 22px!important;
+    width: 50px;
+    background-color: white;
+
+}
+
+
+#mediacenter{
+
+    background-color:#74cae0;
+    border-radius: 2px; 
+    width: 139px;  
+    height: 21px;
+    top: 10px;
+    margin-left: 0.8cm;
+    
+}
+
+#buttonschrift{
+
+    color: white;
+   
+}
+
+
+
+:-moz-placeholder {color:#1a4064;  font-size: 4px;}
+::-webkit-input-placeholder {color:#1a4064;  font-size: 4px;}
+:-ms-input-placeholder {color:#1a4064; font-size: 4px;}
+
+#button{
+
+    border-radius: 3px;
+    width:110px; 
+    height: 25px; 
+    background-color: #8bd3e5; 
+
+
+}
+
+
+   
+}
+
+
+@media only screen and (min-device-width: 450px) and (max-device-width: 1300px) {
 
   /*Tablets*/
 
@@ -594,7 +834,7 @@ body{
   top:25px;
   left: 60%;
 
- 
+
     
   }
 
@@ -623,6 +863,428 @@ body{
 
      height:auto;
      width:auto;
+     position:absolute;
+   left: 5%;
+   right:5%;
+   
+ 
+}
+
+
+#sub{
+   color: #1a4064;
+    font-family: meineSchrift;
+   
+     height:auto;
+     width:auto;
+     
+     position:absolute;
+   left: 5%;
+   right:5%; 
+}
+
+#products{
+
+    color:#1a4064;
+    font-family: Arial;
+     font-size: 15px;
+}
+
+#Produktgruppen{
+
+    color:#1a4064;
+    font-family: Arial;
+     font-size: 15px;
+
+}
+
+#artikelgrp{
+
+    color: #1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+
+
+
+#artgrp{
+
+    color: #1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+
+
+#artikelohneartikelgruppen{
+
+    color:#1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+#produktname{
+
+    color:#1a4064;
+    font-family: Arial;
+    font-size: 15px;
+
+}
+
+
+
+#feld{
+
+    border-radius: 4px;
+    bottom: 22px!important;
+    width: 50px;
+    background-color: white;
+
+}
+
+
+#mediacenter{
+
+    background-color:#74cae0;
+    border-radius: 2px; 
+    width: 139px;  
+    height: 21px;
+    top: 10px;
+    margin-left: 0.8cm;
+    
+}
+
+#buttonschrift{
+
+    color: white;
+   
+}
+
+
+
+:-moz-placeholder {color:#1a4064;  font-size: 4px;}
+::-webkit-input-placeholder {color:#1a4064;  font-size: 4px;}
+:-ms-input-placeholder {color:#1a4064; font-size: 4px;}
+
+#button{
+
+    border-radius: 3px;
+    width:110px; 
+    height: 25px; 
+    background-color: #8bd3e5; 
+    font-family: meineSchrift;
+
+
+}
+
+#artgrpart{
+
+   
+    color: #1a4064;
+    font-family: meineSchrift;
+    font-size: 15px;
+    margin-left:5%;
+    margin-right:5%;
+
+}
+
+#divaga{
+
+    margin-bottom:10%;
+     margin-top:10%;
+    margin-left:10%;
+    margin-right:10%;
+    font-family: meineSchrift;
+
+
+}
+#divmediacenter{
+
+      color: #1a4064;
+    font-family: meineSchrift;
+    font-size: 15px;
+    margin-left:5%;
+    margin-right:5%;
+
+}
+
+#media{
+
+  margin-bottom:10%;
+  font-family: meineSchrift;
+    margin-left:10%;
+    margin-right:10%;
+
+}
+
+#media span{
+
+    display: inline;
+    font-family: meineSchrift;
+    color:#1a4064;
+    
+    
+
+}
+
+
+
+@media only screen and (min-device-width:200px) and (max-device-width:600px){
+
+/*Smartphones*/
+
+body{
+
+  background-image:url(start_smatphones.png);
+  background-size:cover;
+
+
+}
+
+.mainContent {
+         width: 100%;
+    }
+
+#uber{
+
+   
+     min-width:100%;
+      max-width: 300%;
+      position: absolute;
+      top:15%;
+    text-align:center;
+
+}
+
+    #uberschrift {
+        color: white;
+        font-size: 1.3em;
+        font-family: meineSchrift;
+      
+       
+    }
+
+
+  #hartmann{
+
+     width:80px;
+     margin-left:10px;
+    bottom:10px;
+   
+    
+
+  }
+
+  #icon{
+
+      min-width:100%;
+      max-width: 300%;
+      position: absolute;
+      display: inline;
+      top:35%;
+      text-align:center;
+  
+  }
+
+  #icon img{
+      
+    width:50px;
+    margin-left:5%;
+    margin-right:5%;
+   
+  }
+
+    #icon span{
+
+        font-family:meineSchrift;
+        color: white;
+        font-size:0.9em;
+        display:inline;
+        margin-left:2%;
+
+    }
+
+
+  #iconn{
+
+      min-width:100%;
+      max-width: 300%;
+      position: absolute;
+      display: inline-block;
+    
+      top:60%;
+      text-align:center;
+  
+  }
+
+
+  #iconn span{
+
+      font-family:meineSchrift;
+        color: white;
+        font-size:0.9em;
+        display:inline;
+        margin-left:2%;
+
+
+  }
+
+
+
+#iconn img{
+
+    width:50px;
+    margin-left:5%;
+    margin-right:5%;
+   
+}
+
+/*******************************************************************************************/
+
+
+#navigation
+{
+
+    width: 100%;
+    position:fixed;
+   
+    
+}
+
+
+.navii
+{
+    position:fixed;
+    background-color:#1a4064;
+    width: 100%;
+    height:13%;
+ 
+}
+
+.navii ul{
+  
+        position:relative;
+    list-style-type:none;
+   bottom: 15%;
+}
+
+
+.navii li{
+
+    position:relative;
+    display:inline-block;
+    width: 30px;
+    height:30px;
+   
+
+}
+
+#zuruck{
+
+ position:relative;
+ margin-left: -31px;
+ top:-10px;
+
+}
+
+
+
+    .navii li a img {
+    
+        position:relative;
+        top:5px;
+        width:30px;
+        height:30px;
+        display:inline;
+        margin-left:-5px;
+
+    
+    }
+
+    .navii li a span{
+
+        font-size:0.7em;
+        color: white;
+        font-family:meineSchrift;
+        text-decoration: none;
+
+    }
+
+
+    #produkt{
+
+        left: -8%;
+    }
+
+    #leistungen{
+
+        left:-13%;
+
+    }
+
+    #scan{
+
+        left: -2%;
+
+    }
+
+
+
+#zurück img:hover{
+    opacity:0.4;
+
+}
+
+
+
+#leistungen img:hover{
+    opacity:0.4;
+    
+}
+
+#scan img:hover{
+    opacity:0.4;
+
+}
+
+#ta {
+
+  width:90px !important;
+  height:10px!important;
+position:fixed;
+  background-position: right;
+  border-radius: 4px;
+  border-color:#1a4064;
+  top:20px;
+  left: 44%;
+ 
+    
+  }
+
+#bild{
+
+   position:fixed;
+   width: 40px;
+   height: 26px;
+    left:87%;
+   top:22px;
+   border-radius: 4px;
+
+
+}
+
+
+
+#produktgruppen_inhalt{
+
+    color: #1a4064;
+    font-family: meineSchrift;
+  min-width: 100%;
+  max-height:300%;
      position:absolute;
    left: 5%;
    right:5%;
@@ -728,11 +1390,6 @@ body{
 }
 
 
-
-:-moz-placeholder {color:#1a4064;  font-size: 4px;}
-::-webkit-input-placeholder {color:#1a4064;  font-size: 4px;}
-:-ms-input-placeholder {color:#1a4064; font-size: 4px;}
-
 #button{
 
     border-radius: 3px;
@@ -742,122 +1399,6 @@ body{
 
 
 }
-
-
-   
-}
-
-
-@media only screen and (min-device-width:200px) and (max-device-width:600px){
-
-/*Smartphones*/
-
-body{
-
-  background-image:url(start_smatphones.png);
-  background-size:cover;
-
-
-}
-
-.mainContent {
-         width: 100%;
-    }
-
-#uber{
-
-   
-    
-    position:relative;
-    top:50px;
-    text-align:center;
-
-}
-
-    #uberschrift {
-        color: white;
-        font-size: 1.3em;
-        font-family: meineSchrift;
-      
-       
-    }
-
-
-  #hartmann{
-
-     width:80px;
-     margin-left:10px;
-    bottom:10px;
-   
-    
-
-  }
-
-  #icon{
-
-      min-width:100%;
-      max-width: 300%;
-      position: absolute;
-      display: inline;
-      top:35%;
-      text-align:center;
-  
-  }
-
-  #icon img{
-      
-    width:50px;
-    margin-left:5%;
-    margin-right:5%;
-   
-  }
-
-    #icon span{
-
-        font-family:meineSchrift;
-        color: white;
-        font-size:0.9em;
-        display:inline;
-        margin-left:2%;
-
-    }
-
-
-  #iconn{
-
-      min-width:100%;
-      max-width: 300%;
-      position: absolute;
-      display: inline-block;
-    
-      top:60%;
-      text-align:center;
-  
-  }
-
-
-  #iconn span{
-
-      font-family:meineSchrift;
-        color: white;
-        font-size:0.9em;
-        display:inline;
-        margin-left:2%;
-
-
-  }
-
-
-
-#iconn img{
-
-    width:50px;
-    margin-left:5%;
-    margin-right:5%;
-   
-}
-
-
 
 
 

@@ -1046,6 +1046,7 @@
     <Content Include="css\start_icons\industrie.png" />
     <Content Include="css\start_icons\klinik.png" />
     <Content Include="css\start_icons\private.png" />
+    <Content Include="css\start_laptop.png" />
     <Content Include="css\start_schrift\alters.png" />
     <Content Include="css\start_schrift\apo.png" />
     <Content Include="css\start_schrift\arzt.png" />

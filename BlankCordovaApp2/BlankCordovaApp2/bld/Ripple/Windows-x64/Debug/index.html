@@ -85,35 +85,37 @@
                     <ul>
                         <li id="zurück">
                             <a onclick="history.back()" class="azurück">
-                                <img src="css/zurück.png" width="100" height="55" style="margin-right:10px; border-style: none" />
+                                <img src="css/zurück.png"  width="100" height="55" style="margin-right:10px; border-style: none" id="zuruck" />
                             </a>
                         </li>
 
                         <li id="produkt">
                             <a href="#">
-                                <img src="css/pro_weiss.png" style="margin-left:7px; border-style: none" />
+                                <img src="css/pro_weiss.png" id="produktbild" style="margin-left:7px; border-style: none" />
                                 <span>Produkte</span>
                             </a>
-                        </li>
+                            
+                        </li> 
+                        
 
                         <li id="leistungen">
                             <a href="leistungen.html">
-                                <img src="css/leistung.png" width="50" height="50" style="margin-left: 54px; border-style: none" />
-                                <span style="margin-left: 40px;">Leistungen</span>
+                                <img src="css/leistung.png"  id="leistungenbild" width="50" height="50" style="margin-left: 54px; border-style: none" /><span style="margin-left: 40px;">Leistungen</span>
                             </a>
-                        </li>
+                           
+                        </li>  
+                       
 
                         <li id="scan">
                             <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" height="50" style="margin-left: 53px; border-style: none " />
+                                <img src="css/scanner.png" width="50" id="scannbild"height="50" style="margin-left: 53px; border-style: none " />
                                 <span style="margin-left: 49px;">Scanner</span>
                             </a>
+                           
                         </li>
                         <li id="sucheli">
-                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; margin-left: 78px"></textarea>
-
+                            <textarea id="ta"  style="overflow: hidden; margin-left: 78px"></textarea>
                             <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
-
                         </li>
                     </ul>
                 </div>
@@ -168,7 +170,7 @@
             </div>
             <br /><br /><br /><br />
             <br /><br />
-            <div id="sub" style="height:520px;  overflow-y:scroll;"></div>
+            <div id="sub" style="height:580px;  overflow-y:scroll;"></div>
 
         </div>
         <!---------------------------------------------------------------------- Produkte------------------------------------------------------------->
@@ -215,7 +217,7 @@
             </div>
             <br /><br /><br /><br />
             <br /><br />
-            <div id="products"></div>
+            <div id="products" style="height:580px; overflow-y:scroll;"></div>
 
         </div>
 
@@ -271,7 +273,7 @@
 
                 <hr style="color:grey;" noshade size="1" width="600" align="center" />
 
-                <div id="artikelohneartikelgruppen"></div>
+                <div id="artikelohneartikelgruppen" style="height:580px;  overflow-y:scroll;"></div>
 
                 <div id="buttonmedia" style="background-color:white;"></div>
 
@@ -320,14 +322,16 @@
                     </ul>
                 </div>
             </div>
-            <br /><br /><br /><br />
-            <br /><br />
-            <div style="background-color: white; height: 800px; margin-left: 1cm; margin-right: 2cm; overflow:scroll; padding:10px">
-                <div id="artgrp"></div>
-                <hr style="color:grey;" noshade size="1" width="600" align="center" />
-                <div id="artgrpart"></div>
+           
+            <div style="background-color: white; overflow:hidden;" id="divaga">
+               
+                 <div id="artgrp" ></div>
+               
+                 <hr style="color:grey;" noshade size="1"  align="center" />
+               
+                <div id="artgrpart" style="height:400px; overflow-y:scroll;"></div>
 
-                <div id="button" style="background-color: white;"></div>
+                <div id="button" style="background-color:#eaf4f5; left: 127px; width: 965px; height: 65px;"></div>
 
             </div>
         </div>
@@ -376,15 +380,19 @@
             </div>
             <br /><br /><br /><br />
             <br /><br />
-            <div style="background-color: white; height: 800px; margin-left: 1cm; margin-right: 2cm; overflow:scroll; padding:10px">
+
+
+            <div id="media" style="background-color: white; overflow-y:hidden; height:580px;">
+
+                <span style="margin-left:5%;">SAP Nr.:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="margin-left:10%;">Link:</span>
+                <b><hr style="color:#83d0e3; margin-left:5%; margin-right:5%;" /></b>
+                <div id="divmediacenter" overflow-y:scroll;" border: 2px solid black;"></div>
 
                 <br />
-                <div style="margin-left: 1cm;">Sap Nr.:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link:</div>
-                <hr style="color:grey; margin-right: 0.4cm;" noshade size="1" width="600" align="center" />
 
-                <div id="prgrlinks"></div>
-                <div id="sublinks"></div>
-                <div id="prolinks"></div>
+                <div id="prgrlinks" style="height:580px;  overflow-y:scroll; margin-left:5%; margin-right:5%; "></div>
+                <div id="sublinks" style="height:580px;  overflow-y:scroll; margin-left:5%; margin-right:5%;"></div>
+                <div id="prolinks" style="height:580px;  overflow-y:scroll; margin-left:5%; margin-right:5%;"></div>
 
 
             </div>
@@ -534,7 +542,7 @@
 
                         div.style.styleFloat = "left";
                         
-                        div.innerHTML = '<div style="float: left; font-size:16px;" "><b>' + pgname + '</div><div style="clear: both"><img style="width: 300px; height: 150px;" src="data:image/jpg;base64,' + prgrbild + '"/></div>';
+                        div.innerHTML = '<div style="float: left; font-size:16px;" "><b>' + pgname + '</div><div style="clear: both"><img style="width: 300px; height: 150px; border-radius: 4px;  " src="data:image/jpg;base64,' + prgrbild + '"/></div>';
 
                         var gr_fk = datahandler.data[index].gr_fk;
 
@@ -573,7 +581,7 @@
                                 //div.innerHTML = '<div  style="float: left; border: 0px;"><b>' + subgruppen + '</b></div><div style="clear: both"><img src="css/Probild.png"><div><div></div>';
 
                                 div.style.styleFloat = "left";
-                                div.innerHTML = '<div style="float: left; font-size:16px;" "><b>' + subgruppen + '</div><div style="clear: both"><img style="width: 300px; height: 150px;" src="data:image/jpg;base64,' + subBilder + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                div.innerHTML = '<div style="float: left; font-size:16px;" "><b>' + subgruppen + '</div><div style="clear: both"><img style="width: 300px; height: 150px; border-radius: 4px;" src="data:image/jpg;base64,' + subBilder + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
 
                                 $('#sub').append(div);
 
@@ -622,7 +630,7 @@
                                         var prbild = datahandler.data[index].subGroups[i].products[ii].image;
 
                                         div.style.styleFloat = "left";
-                                        div.innerHTML = '<div style="float: left; font-size:16px;" "><b>' + produktename + '</div><div style="clear: both"><img style="width: 300px; height: 150px;" src="data:image/jpg;base64,' + prbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                        div.innerHTML = '<div style="float: left; font-size:16px;" "><b>' + produktename + '</div><div style="clear: both"><img style="width: 300px; height: 150px; border-radius: 4px;" src="data:image/jpg;base64,' + prbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
 
                                         $('#products').append(div);
 
@@ -731,10 +739,13 @@
 
                                                             var artikelgruppe = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
                                                             console.log(artikelgruppe);
+                                                            var agbild = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].image;
+
+
                                                             var div = document.createElement('div');
 
                                                             div.style.styleFloat = "left";
-                                                            div.innerHTML = '<div style="float: left; "><b>' + artikelgruppe + '</div><div style="clear: both"><img src="css/Probild.png" style="width: 180x; height:100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                                            div.innerHTML = '<div style="float: left; "><b>' + artikelgruppe + '</div><div style="clear: both"><img style="width: 300px; height: 150px; border-radius: 4px;  " src="data:image/jpg;base64,' + agbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
                                                             $('#artikelgrp').append(div);
 
                                                             var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
@@ -835,13 +846,13 @@
                                                             //div.style.styleFloat = "left";
 
                                                             $('#artgrpart').append(divb);
-                                                            divb.innerHTML = '<div style="  margin-left: 0.4cm;"><b>' + verpackungshinweis + '</b></div><div style=" margin-left: 0.4cm;">' + abmessung + '</div><div id="mainselection" style=" width: 600px; margin-left: 0.4cm;"><select id="select" style="background-color: #74cae0; width: 585px; height: 30px; line-height: 1; border: 0; "><option></option value="1"><option>1</option><option value="2">2</option><option value="3">3</option></select><br></div><div style=" margin-left: 0.4cm;"><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div style=" margin-left: 0.4cm;">' + migel1 + '</div><hr style="color:grey; noshade width="580" />';
+                                                            divb.innerHTML = '<div><b>' + verpackungshinweis + '</b></div><div>' + abmessung + '</div><div id="mainselection"><select id="select" style="background-color: #74cae0;"><option></option value="1"><option>1</option><option value="2">2</option><option value="3">3</option></select><br></div><div><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade/>';
                                                             //<div style=" background-color: white; margin-left: 0.4cm; margin-right: 2cm; width:625px; height:150px;">
                                                         }
                                                         var divaa = document.createElement('div');
                                                         var mediacenter = 'Mediacenter';
 
-                                                        divaa.innerHTML = '<div id="footer" style="background-color:#eaf4f5; left: 46px; width: 655px; height: 65px; position: fixed; top: 920px; "><br>&nbsp;&nbsp;&nbsp;<button name="button" style="background-color:#83d0e3; width:100px; height:25px; " value="Mediacenter" type="button"><span id="buttonschrift">' + mediacenter + '</span></button></div>';
+                                                        divaa.innerHTML = '<div id="footer"><br>&nbsp;&nbsp;&nbsp;<button name="button" style="background-color:#83d0e3; width:100px; height:25px; " value="Mediacenter" type="button"><span id="buttonschrift">' + mediacenter + '</span></button></div>';
 
                                                         $('#button').append(divaa);
 
@@ -900,7 +911,7 @@
                                 console.log(prgrurl);
 
                                 var div = document.createElement('div');
-                                div.innerHTML = '<div style="height:22px; width: 600px;"><span style="color: #1a4064;">' + prgrsap + '</span><div style="width: 500px; float: right; "><a style="color:#74cae0;" href="' + prgrurl + '">' + prgrlink + '</a></div><hr style="color:grey;" noshade size="0.3" width="600" align="center" />';
+                                div.innerHTML = '<div><span style="color: #1a4064; ">' + prgrsap + '</span><div style="width: 700px; float: right; " ><a style="color:#74cae0;" href="' + prgrurl + '">' + prgrlink + '</a></div><hr noshade size="0.3" style="color:grey;" />';
                                 $('#prgrlinks').append(div);
                             }
 
@@ -926,10 +937,10 @@
                                         console.log(suburl);
 
                                         var div = document.createElement('div');
-                                        div.innerHTML = '<div style="height:22px; width: 600px;"><span style="color: #1a4064;">' + subsap + '</span><div style="width: 500px; float: right; "><a style="color:#74cae0;" href="' + suburl + '">' + sublinks + '</a></div><hr style="color:grey;" noshade size="0.3" width="600" align="center" />';
+                                        div.innerHTML = '<div ><span style="color: #1a4064; ">' + subsap + '</span><div style="width: 400px; float: right; " ><a style="color:#74cae0;" href="' + suburl + '">' + sublinks + '</a></div><hr noshade size="0.3" style="color:grey;"  />';
                                         $('#sublinks').append(div);
                                     }
-
+                               
                                     for (ii = 0; ii < prolange; ii++) {
 
                                         if (datahandler.data[index].subGroups[i].products[ii].pk == grgr[2]) {
@@ -952,7 +963,7 @@
 
 
                                                 var div = document.createElement('div');
-                                                div.innerHTML = '<div style="height:22px; width: 600px;"><span style="color: #1a4064;">' + prosap + '</span><div style="width: 500px; float: right; "><a style="color:#74cae0;" href="' + prourl + '">' + prolinks + '</a></div><hr style="color:grey;" noshade size="0.3" width="600" align="center" />';
+                                                div.innerHTML = '<div ><span style="color: #1a4064;">' + prosap + '</span><div style="width: 400px; float: right; "><a style="color:#74cae0;" href="' + prourl + '">' + prolinks + '</a></div><hr noshade size="0.3" style="color:grey;"/>';
                                                 $('#prolinks').append(div);
                                             }
                                         }

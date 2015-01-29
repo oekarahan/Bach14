@@ -59,6 +59,7 @@ www\css\start_icons\arzt.png
 www\css\start_icons\industrie.png
 www\css\start_icons\klinik.png
 www\css\start_icons\private.png
+www\css\start_laptop.png
 www\css\start_schrift\alters.png
 www\css\start_schrift\apo.png
 www\css\start_schrift\arzt.png
@@ -79,6 +80,9 @@ www\html\testajax.html
 www\html\webserive.php
 www\index.html
 www\packages.config
+www\plugins\org.apache.cordova.network-information\src\windows8\NetworkInfoProxy.js
+www\plugins\org.apache.cordova.network-information\www\Connection.js
+www\plugins\org.apache.cordova.network-information\www\network.js
 www\Project_Readme.html
 www\scripts\ajax.js
 www\scripts\index.js
