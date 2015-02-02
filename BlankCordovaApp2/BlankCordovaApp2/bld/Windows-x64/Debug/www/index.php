@@ -38,7 +38,7 @@ $stmt = $db->query("SELECT
                ON
                   prgr_beschreibung.gr_fk=prgr_bilder.prgr_fk
                where
-                  prgr_beschreibung.sprache_iso='DE'
+                  prgr_beschreibung.sprache_iso='".$language."'
                AND
                   view_InternetKatalog.InternetKatalog>0
                GROUP BY
@@ -88,9 +88,9 @@ function getSubgroups($gr_fk)
                ON
                   sg_pr.sg_fk = sg_beschreibung.sg_fk
                WHERE
-                  sg_beschreibung.sprache_iso='DE'
+                  sg_beschreibung.sprache_iso='".$language."'
                AND
-                  gr_sg.gr_fk='10'
+                  gr_sg.gr_fk='".$gr_fk."'
                AND
                   view_InternetKatalog.InternetKatalog>0
                GROUP BY
@@ -144,7 +144,7 @@ function getProducts($sg_fk)
                WHERE
                   sg_pr.sg_fk=".$sg_fk."
                AND
-                  pr_beschreibung.sprache_iso='DE'
+                  pr_beschreibung.sprache_iso='".$language."'
                AND
                   view_InternetKatalog.InternetKatalog>0
                GROUP BY

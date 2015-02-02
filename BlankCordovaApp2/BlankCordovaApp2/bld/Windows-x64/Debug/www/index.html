@@ -1,7 +1,8 @@
-﻿﻿<!DOCTYPE html>.
+﻿<!DOCTYPE html>
+.
 <html>
 <head>
-  
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Katalog-App</title>
 
@@ -18,7 +19,7 @@
 </head>
 
 <!-- hier wird die checkinternet funktion aufgerufen-->
-<body onload="checkInternet();" id="startseite"  >
+<body onload="checkInternet();" id="startseite">
 
 
     <script src=" cordova.js">
@@ -38,91 +39,102 @@
             </div>
 
             <div id="uber">
-            <h1 id="uberschrift">
-                WIR SIND DIE HELFER<br />
-                DER HELFENDEN.
-            </h1>
-                </div>
-
-
-            <div id="icon">
-                <a href="#produktgruppen"><img id="img_icon" src="css/start_icons/klinik.png" /></a>
-                <a href="#produktgruppen"><img id="img_icon" src="css/start_icons/alters.png" /></a>
-                <a href="#produktgruppen"><img id="img_icon" src="css/start_icons/arzt.png" /></a>
-
-                <br /><b>
-                <span>KLINIK</span>
-                <span>ALTERS-UND PFLEGEHEIME</span>
-                <span>PFLEGEHEIME</span>
-                </b>
+                <h1 id="uberschrift">
+                    WIR SIND DIE HELFER<br />
+                    DER HELFENDEN.
+                </h1>
             </div>
 
 
+            <div id="icon">
 
-            <div id="iconn">
-                <a href="#produktgruppen"><img  src="css/start_icons/apo.png"  /></a>
-                <a href="#produktgruppen"><img  src="css/start_icons/industrie.png" ></a>
-                <a href="#produktgruppen"><img  src="css/start_icons/private.png" /></a>
-            
+                <div id="iconicon" >
+                    <a href="#produktgruppen" style="display:block"><img id="img_icon" src="css/start_icons/klinik.png" /></a>
+                    <span id="klinik">KLINIK</span>
+                </div>
+                <div id="iconicon" >
+                    <a href="#produktgruppen" style="display:block"><img id="img_icon" src="css/start_icons/alters.png" /></a>
+                    <span id="alters">ALTERS-UND <br />PFLEGEHEIME</span>
+                </div>
+                <div id="iconicon" >
+                    <a href="#produktgruppen" style="display:block"><img id="img_icon" src="css/start_icons/arzt.png" /></a>
+                    <span id="arzt">ARZTPRAXIS</span>
+                </div>
 
-
-                <br /><b>
-                    <span>APOTHEKE/DROGERIE</span>
+                <div id="iconicon1" >
+                    <a href="#produktgruppen" style="display:block"><img src="css/start_icons/apo.png" /></a>
+                    <span>APOTHEKE/<br />DROGERIE</span>
+                </div>
+                <div id="iconicon1" >
+                    <a href="#produktgruppen" style="display:block"><img src="css/start_icons/industrie.png"></a>
                     <span>INDUSTRIE</span>
+                </div>
+                <div id="iconicon1" >
+                    <a href="#produktgruppen" style="display:block"><img src="css/start_icons/private.png" /></a>
                     <span>PRIVATE</span>
+                </div>
+            </div>
+        </div>
 
-                </b>
-</div>
-
-</div>
-     
         <!---------------------------------------------------------------------- Produktgruppen-------------------------------------------------------------->
-        <div data-role="page" id="produktgruppen" >
+        <div data-role="page" id="produktgruppen">
 
             <div id="navigation">
 
                 <div class="navii">
+                    
                     <ul>
-                        <li id="zurück">
-                            <a onclick="history.back()" class="azurück">
-                                <img src="css/zurück.png"  width="100" height="55" style="margin-right:10px; border-style: none" id="zuruck" />
+                      
+                          <li id="zurück">
+                            <div id="divzuruck">
+                                <a onclick="history.back()" class="azurück">
+                                <img src="css/zurück.png" width="100" height="55" id="zuruckbild" />
                             </a>
+                            </div>
+                        
                         </li>
 
                         <li id="produkt">
-                            <a href="#">
-                                <img src="css/pro_weiss.png" id="produktbild" style="margin-left:7px; border-style: none" />
-                                <span>Produkte</span>
-                            </a>
-                            
-                        </li> 
-                        
+                            <div id="divdiv">
+                                <a href="#">
+                                    <img src="css/pro_weiss.png" id="produktbild" style="margin-left:7px; border-style: none" />
+                                    <span>Produkte</span>
+                                </a>
+                            </div>
+
+                        </li>
+
 
                         <li id="leistungen">
-                            <a href="leistungen.html">
-                                <img src="css/leistung.png"  id="leistungenbild" width="50" height="50" style="margin-left: 54px; border-style: none" /><span style="margin-left: 40px;">Leistungen</span>
-                            </a>
-                           
-                        </li>  
-                       
+                            <div id="divdiv">
+                                <a href="leistungen.html">
+                                    <img src="css/leistung.png" id="leistungenbild" width="50" height="50" style="margin-left: 54px; border-style: none" /><span style="margin-left: 40px;">Leistungen</span>
+                                </a>
+                             </div>
+                        </li>
+
 
                         <li id="scan">
-                            <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" id="scannbild"height="50" style="margin-left: 53px; border-style: none " />
-                                <span style="margin-left: 49px;">Scanner</span>
-                            </a>
-                           
-                        </li>
+                            <div id="divdiv">
+                                <a href="scanner.html">
+                                    <img src="css/scanner.png" width="50" id="scannbild" height="50" style="margin-left: 53px; border-style: none " />
+                                    <span style="margin-left: 49px;">Scanner</span>
+                                </a>
+                            </div>
+                          </li>
+
+
                         <li id="sucheli">
-                            <textarea id="ta"  style="overflow: hidden; margin-left: 78px"></textarea>
-                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
-                        </li>
+                            <div id="divdiv">
+                                <textarea id="ta" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
+                            </div>
+                            </li>
                     </ul>
                 </div>
             </div>
             <br /><br /><br /><br />
-            <br /><br />
-            <div id="produktgruppen_inhalt" style="height:580px;  overflow-y:scroll;"></div>
+            <div id="produktgruppen_inhalt" style="overflow-y:scroll;"></div>
 
         </div>
         <!---------------------------------------------------------------------- Subgruppen------------------------------------------------------------->
@@ -132,45 +144,60 @@
             <div id="navigation">
 
                 <div class="navii">
+
                     <ul>
+
                         <li id="zurück">
-                            <a onclick="history.back()" class="azurück">
-                                <img src="css/zurück.png" width="100" height="55" style="margin-right:10px; border-style: none" />
-                            </a>
+                            <div id="divzuruck">
+                                <a onclick="history.back()" class="azurück">
+                                    <img src="css/zurück.png" width="100" height="55" id="zuruckbild" />
+                                </a>
+                            </div>
+
                         </li>
 
                         <li id="produkt">
-                            <a href="#">
-                                <img src="css/pro_weiss.png" style="margin-left:7px; border-style: none" />
-                                <span>Produkte</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="#">
+                                    <img src="css/pro_weiss.png" id="produktbild" style="margin-left:7px; border-style: none" />
+                                    <span>Produkte</span>
+                                </a>
+                            </div>
+
                         </li>
+
 
                         <li id="leistungen">
-                            <a href="leistungen.html">
-                                <img src="css/leistung.png" width="50" height="50" style="margin-left: 54px; border-style: none" />
-                                <span style="margin-left: 40px;">Leistungen</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="leistungen.html">
+                                    <img src="css/leistung.png" id="leistungenbild" width="50" height="50" style="margin-left: 54px; border-style: none" /><span style="margin-left: 40px;">Leistungen</span>
+                                </a>
+                            </div>
                         </li>
+
 
                         <li id="scan">
-                            <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" height="50" style="margin-left: 53px; border-style: none " />
-                                <span style="margin-left: 49px;">Scanner</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="scanner.html">
+                                    <img src="css/scanner.png" width="50" id="scannbild" height="50" style="margin-left: 53px; border-style: none " />
+                                    <span style="margin-left: 49px;">Scanner</span>
+                                </a>
+                            </div>
                         </li>
+
+
                         <li id="sucheli">
-                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; margin-left: 78px"></textarea>
-
-                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
-
+                            <div id="divdiv">
+                                <textarea id="ta" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
             <br /><br /><br /><br />
-            <br /><br />
-            <div id="sub" style="height:580px;  overflow-y:scroll;"></div>
+
+            <div id="sub" style="overflow-y:scroll;"></div>
 
         </div>
         <!---------------------------------------------------------------------- Produkte------------------------------------------------------------->
@@ -179,101 +206,130 @@
             <div id="navigation">
 
                 <div class="navii">
+
                     <ul>
+
                         <li id="zurück">
-                            <a onclick="history.back()" class="azurück">
-                                <img src="css/zurück.png" width="100" height="55" style="margin-right:10px; border-style: none" />
-                            </a>
+                            <div id="divzuruck">
+                                <a onclick="history.back()" class="azurück">
+                                    <img src="css/zurück.png" width="100" height="55" id="zuruckbild" />
+                                </a>
+                            </div>
+
                         </li>
 
                         <li id="produkt">
-                            <a href="#">
-                                <img src="css/pro_weiss.png" style="margin-left:7px; border-style: none" />
-                                <span>Produkte</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="#">
+                                    <img src="css/pro_weiss.png" id="produktbild" style="margin-left:7px; border-style: none" />
+                                    <span>Produkte</span>
+                                </a>
+                            </div>
+
                         </li>
+
 
                         <li id="leistungen">
-                            <a href="leistungen.html">
-                                <img src="css/leistung.png" width="50" height="50" style="margin-left: 54px; border-style: none" />
-                                <span style="margin-left: 40px;">Leistungen</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="leistungen.html">
+                                    <img src="css/leistung.png" id="leistungenbild" width="50" height="50" style="margin-left: 54px; border-style: none" /><span style="margin-left: 40px;">Leistungen</span>
+                                </a>
+                            </div>
                         </li>
+
 
                         <li id="scan">
-                            <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" height="50" style="margin-left: 53px; border-style: none " />
-                                <span style="margin-left: 49px;">Scanner</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="scanner.html">
+                                    <img src="css/scanner.png" width="50" id="scannbild" height="50" style="margin-left: 53px; border-style: none " />
+                                    <span style="margin-left: 49px;">Scanner</span>
+                                </a>
+                            </div>
                         </li>
+
+
                         <li id="sucheli">
-                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; margin-left: 78px"></textarea>
-
-                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
-
+                            <div id="divdiv">
+                                <textarea id="ta" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
             <br /><br /><br /><br />
-            <br /><br />
-            <div id="products" style="height:580px; overflow-y:scroll;"></div>
+            <div id="products" overflow-y:scroll;"></div>
 
         </div>
 
-        <!---------------------------------------------------------------------- Artikelgruppem------------------------------------------------------------->
+        <!---------------------------------------------------------------------- Artikelgruppen------------------------------------------------------------->
         <div data-role="page" id="Artikelgruppen">
 
             <div id="navigation">
 
                 <div class="navii">
+
                     <ul>
+
                         <li id="zurück">
-                            <a onclick="history.back()" class="azurück">
-                                <img src="css/zurück.png" width="100" height="55" style="margin-right:10px; border-style: none" />
-                            </a>
+                            <div id="divzuruck">
+                                <a onclick="history.back()" class="azurück">
+                                    <img src="css/zurück.png" width="100" height="55" id="zuruckbild" />
+                                </a>
+                            </div>
+
                         </li>
 
                         <li id="produkt">
-                            <a href="#">
-                                <img src="css/pro_weiss.png" style="margin-left:7px; border-style: none" />
-                                <span>Produkte</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="#">
+                                    <img src="css/pro_weiss.png" id="produktbild" style="margin-left:7px; border-style: none" />
+                                    <span>Produkte</span>
+                                </a>
+                            </div>
+
                         </li>
+
 
                         <li id="leistungen">
-                            <a href="leistungen.html">
-                                <img src="css/leistung.png" width="50" height="50" style="margin-left: 54px; border-style: none" />
-                                <span style="margin-left: 40px;">Leistungen</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="leistungen.html">
+                                    <img src="css/leistung.png" id="leistungenbild" width="50" height="50" style="margin-left: 54px; border-style: none" /><span style="margin-left: 40px;">Leistungen</span>
+                                </a>
+                            </div>
                         </li>
+
 
                         <li id="scan">
-                            <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" height="50" style="margin-left: 53px; border-style: none " />
-                                <span style="margin-left: 49px;">Scanner</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="scanner.html">
+                                    <img src="css/scanner.png" width="50" id="scannbild" height="50" style="margin-left: 53px; border-style: none " />
+                                    <span style="margin-left: 49px;">Scanner</span>
+                                </a>
+                            </div>
                         </li>
+
+
                         <li id="sucheli">
-                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; margin-left: 78px"></textarea>
-
-                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
-
+                            <div id="divdiv">
+                                <textarea id="ta" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
             <br /><br /><br /><br />
-            <br /><br />
-            <div id="artikelgrp"></div>
 
-            <div style="background-color: white; height: 845px; margin-left: 1cm; margin-right: 2cm; overflow:scroll; padding:10px">
+            <div id="artikelgrp" style="overflow-y:scroll;"></div>
+
+            <div id="artikelgrpdiv" style="background-color: white; display:normal; height: 845px; margin-left: 1cm; margin-right: 2cm; overflow:scroll; padding:10px">
 
                 <div id="produktname"></div>
 
                 <hr style="color:grey;" noshade size="1" width="600" align="center" />
 
-                <div id="artikelohneartikelgruppen" style="height:580px;  overflow-y:scroll;"></div>
+                <div id="artikelohneartikelgruppen" style="overflow-y:scroll;"></div>
 
                 <div id="buttonmedia" style="background-color:white;"></div>
 
@@ -286,52 +342,67 @@
             <div id="navigation">
 
                 <div class="navii">
+
                     <ul>
+
                         <li id="zurück">
-                            <a onclick="history.back()" class="azurück">
-                                <img src="css/zurück.png" width="100" height="55" style="margin-right:10px; border-style: none" />
-                            </a>
+                            <div id="divzuruck">
+                                <a onclick="history.back()" class="azurück">
+                                    <img src="css/zurück.png" width="100" height="55" id="zuruckbild" />
+                                </a>
+                            </div>
+
                         </li>
 
                         <li id="produkt">
-                            <a href="#">
-                                <img src="css/pro_weiss.png" style="margin-left:7px; border-style: none" />
-                                <span>Produkte</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="#">
+                                    <img src="css/pro_weiss.png" id="produktbild" style="margin-left:7px; border-style: none" />
+                                    <span>Produkte</span>
+                                </a>
+                            </div>
+
                         </li>
+
 
                         <li id="leistungen">
-                            <a href="leistungen.html">
-                                <img src="css/leistung.png" width="50" height="50" style="margin-left: 54px; border-style: none" />
-                                <span style="margin-left: 40px;">Leistungen</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="leistungen.html">
+                                    <img src="css/leistung.png" id="leistungenbild" width="50" height="50" style="margin-left: 54px; border-style: none" /><span style="margin-left: 40px;">Leistungen</span>
+                                </a>
+                            </div>
                         </li>
+
 
                         <li id="scan">
-                            <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" height="50" style="margin-left: 53px; border-style: none " />
-                                <span style="margin-left: 49px;">Scanner</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="scanner.html">
+                                    <img src="css/scanner.png" width="50" id="scannbild" height="50" style="margin-left: 53px; border-style: none " />
+                                    <span style="margin-left: 49px;">Scanner</span>
+                                </a>
+                            </div>
                         </li>
+
+
                         <li id="sucheli">
-                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; margin-left: 78px"></textarea>
-
-                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
-
+                            <div id="divdiv">
+                                <textarea id="ta" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
-           
-            <div style="background-color: white; overflow:hidden;" id="divaga">
-               
-                 <div id="artgrp" ></div>
-               
-                 <hr style="color:grey;" noshade size="1"  align="center" />
-               
-                <div id="artgrpart" style="height:400px; overflow-y:scroll;"></div>
 
-                <div id="button" style="background-color:#eaf4f5; left: 127px; width: 965px; height: 65px;"></div>
+            <div style="background-color: white;" id="divaga">
+
+                <div id="artgrp"></div>
+
+                <hr style="color:grey;" noshade size="1" align="center" />
+
+                <div id="artgrpart" style="overflow-y:scroll;"></div>
+
+                <div id="button" ></div>
 
             </div>
         </div>
@@ -342,57 +413,71 @@
             <div id="navigation">
 
                 <div class="navii">
+
                     <ul>
+
                         <li id="zurück">
-                            <a onclick="history.back()" class="azurück">
-                                <img src="css/zurück.png" width="100" height="55" style="margin-right:10px; border-style: none" />
-                            </a>
+                            <div id="divzuruck">
+                                <a onclick="history.back()" class="azurück">
+                                    <img src="css/zurück.png" width="100" height="55" id="zuruckbild" />
+                                </a>
+                            </div>
+
                         </li>
 
                         <li id="produkt">
-                            <a href="#">
-                                <img src="css/pro_weiss.png" style="margin-left:7px; border-style: none" />
-                                <span>Produkte</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="#">
+                                    <img src="css/pro_weiss.png" id="produktbild" style="margin-left:7px; border-style: none" />
+                                    <span>Produkte</span>
+                                </a>
+                            </div>
+
                         </li>
+
 
                         <li id="leistungen">
-                            <a href="leistungen.html">
-                                <img src="css/leistung.png" width="50" height="50" style="margin-left: 54px; border-style: none" />
-                                <span style="margin-left: 40px;">Leistungen</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="leistungen.html">
+                                    <img src="css/leistung.png" id="leistungenbild" width="50" height="50" style="margin-left: 54px; border-style: none" /><span style="margin-left: 40px;">Leistungen</span>
+                                </a>
+                            </div>
                         </li>
+
 
                         <li id="scan">
-                            <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" height="50" style="margin-left: 53px; border-style: none " />
-                                <span style="margin-left: 49px;">Scanner</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="scanner.html">
+                                    <img src="css/scanner.png" width="50" id="scannbild" height="50" style="margin-left: 53px; border-style: none " />
+                                    <span style="margin-left: 49px;">Scanner</span>
+                                </a>
+                            </div>
                         </li>
+
+
                         <li id="sucheli">
-                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; margin-left: 78px"></textarea>
-
-                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
-
+                            <div id="divdiv">
+                                <textarea id="ta" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
             <br /><br /><br /><br />
-            <br /><br />
 
 
-            <div id="media" style="background-color: white; overflow-y:hidden; height:580px;">
+            <div id="media" >
 
-                <span style="margin-left:5%;">SAP Nr.:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="margin-left:10%;">Link:</span>
+                <span id="sapnr">SAP Nr.:</span> &nbsp;&nbsp;&nbsp;<span id="saplink">Link:</span>
                 <b><hr style="color:#83d0e3; margin-left:5%; margin-right:5%;" /></b>
-                <div id="divmediacenter" overflow-y:scroll;" border: 2px solid black;"></div>
+                <div id="divmediacenter" ></div>
 
                 <br />
 
-                <div id="prgrlinks" style="height:580px;  overflow-y:scroll; margin-left:5%; margin-right:5%; "></div>
-                <div id="sublinks" style="height:580px;  overflow-y:scroll; margin-left:5%; margin-right:5%;"></div>
-                <div id="prolinks" style="height:580px;  overflow-y:scroll; margin-left:5%; margin-right:5%;"></div>
+                <div id="prgrlinks"  ></div>
+                <div id="sublinks" ></div>
+                <div id="prolinks"></div>
 
 
             </div>
@@ -408,48 +493,62 @@
             <div id="navigation">
 
                 <div class="navii">
+
                     <ul>
+
                         <li id="zurück">
-                            <a onclick="history.back()" class="azurück">
-                                <img src="css/zurück.png" width="100" height="55" style="margin-right:10px; border-style: none" />
-                            </a>
+                            <div id="divzuruck">
+                                <a onclick="history.back()" class="azurück">
+                                    <img src="css/zurück.png" width="100" height="55" id="zuruckbild" />
+                                </a>
+                            </div>
+
                         </li>
 
                         <li id="produkt">
-                            <a href="#">
-                                <img src="css/pro_weiss.png" style="margin-left:7px; border-style: none" />
-                                <span>Produkte</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="#">
+                                    <img src="css/pro_weiss.png" id="produktbild" style="margin-left:7px; border-style: none" />
+                                    <span>Produkte</span>
+                                </a>
+                            </div>
+
                         </li>
+
 
                         <li id="leistungen">
-                            <a href="leistungen.html">
-                                <img src="css/leistung.png" width="50" height="50" style="margin-left: 54px; border-style: none" />
-                                <span style="margin-left: 40px;">Leistungen</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="leistungen.html">
+                                    <img src="css/leistung.png" id="leistungenbild" width="50" height="50" style="margin-left: 54px; border-style: none" /><span style="margin-left: 40px;">Leistungen</span>
+                                </a>
+                            </div>
                         </li>
+
 
                         <li id="scan">
-                            <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" height="50" style="margin-left: 53px; border-style: none " />
-                                <span style="margin-left: 49px;">Scanner</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="scanner.html">
+                                    <img src="css/scanner.png" width="50" id="scannbild" height="50" style="margin-left: 53px; border-style: none " />
+                                    <span style="margin-left: 49px;">Scanner</span>
+                                </a>
+                            </div>
                         </li>
+
+
                         <li id="sucheli">
-                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; margin-left: 78px"></textarea>
-
-                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
-
+                            <div id="divdiv">
+                                <textarea id="ta" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
             <br /><br /><br /><br />
-            <br /><br />
 
             <div id="zahler" style="margin-left: 0.5cm;"></div>
 
-            <div style="background-color: white; height: 800px; margin-left: 0.5cm; margin-right: 0.5cm; overflow:scroll; padding:10px">
+            <div id="divsuche">
 
                 <div id="prgr"></div>
 
@@ -467,44 +566,58 @@
             <div id="navigation">
 
                 <div class="navii">
+
                     <ul>
+
                         <li id="zurück">
-                            <a onclick="history.back()" class="azurück">
-                                <img src="css/zurück.png" width="100" height="55" style="margin-right:10px; border-style: none" />
-                            </a>
+                            <div id="divzuruck">
+                                <a onclick="history.back()" class="azurück">
+                                    <img src="css/zurück.png" width="100" height="55" id="zuruckbild" />
+                                </a>
+                            </div>
+
                         </li>
 
                         <li id="produkt">
-                            <a href="#">
-                                <img src="css/pro_weiss.png" style="margin-left:7px; border-style: none" />
-                                <span>Produkte</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="#">
+                                    <img src="css/pro_weiss.png" id="produktbild" style="margin-left:7px; border-style: none" />
+                                    <span>Produkte</span>
+                                </a>
+                            </div>
+
                         </li>
+
 
                         <li id="leistungen">
-                            <a href="leistungen.html">
-                                <img src="css/leistung.png" width="50" height="50" style="margin-left: 54px; border-style: none" />
-                                <span style="margin-left: 40px;">Leistungen</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="leistungen.html">
+                                    <img src="css/leistung.png" id="leistungenbild" width="50" height="50" style="margin-left: 54px; border-style: none" /><span style="margin-left: 40px;">Leistungen</span>
+                                </a>
+                            </div>
                         </li>
+
 
                         <li id="scan">
-                            <a href="scanner.html">
-                                <img src="css/scanner.png" width="50" height="50" style="margin-left: 53px; border-style: none " />
-                                <span style="margin-left: 49px;">Scanner</span>
-                            </a>
+                            <div id="divdiv">
+                                <a href="scanner.html">
+                                    <img src="css/scanner.png" width="50" id="scannbild" height="50" style="margin-left: 53px; border-style: none " />
+                                    <span style="margin-left: 49px;">Scanner</span>
+                                </a>
+                            </div>
                         </li>
+
+
                         <li id="sucheli">
-                            <textarea id="ta" placeholder="SUCHE" style="overflow: hidden; margin-left: 78px"></textarea>
-
-                            <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
-
+                            <div id="divdiv">
+                                <textarea id="ta" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
             <br /><br /><br /><br />
-            <br /><br />
             <div id="x" style="margin-left: 4cm;"></div>
 
             <div style="border-radius: 5px; background-color: white; top:300px; height: 600px; width:400px; margin-left:4cm; overflow:scroll; padding:10px">
@@ -538,11 +651,11 @@
                         var pgname = datahandler.data[index].name;
                         var prgrbild = datahandler.data[index].image;
 
-                    
+
 
                         div.style.styleFloat = "left";
-                        
-                        div.innerHTML = '<div style="float: left; font-size:16px;" "><b>' + pgname + '</div><div style="clear: both"><img style="width: 300px; height: 150px; border-radius: 4px;  " src="data:image/jpg;base64,' + prgrbild + '"/></div>';
+
+                        div.innerHTML = '<div style="float: left; "><b>' + pgname + '</div><div style="clear: both"><img id="bildprgr"  src="data:image/jpg;base64,' + prgrbild + '"/></div>';
 
                         var gr_fk = datahandler.data[index].gr_fk;
 
@@ -574,14 +687,14 @@
                                 var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
                                 var gr = datahandler.data[index].gr_fk;
                                 var subBilder = datahandler.data[index].subGroups[i].image;
-                                
+
 
 
                                 var div = document.createElement('div');
                                 //div.innerHTML = '<div  style="float: left; border: 0px;"><b>' + subgruppen + '</b></div><div style="clear: both"><img src="css/Probild.png"><div><div></div>';
 
                                 div.style.styleFloat = "left";
-                                div.innerHTML = '<div style="float: left; font-size:16px;" "><b>' + subgruppen + '</div><div style="clear: both"><img style="width: 300px; height: 150px; border-radius: 4px;" src="data:image/jpg;base64,' + subBilder + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                div.innerHTML = '<div style="float: left;  "><b>' + subgruppen + '</div><div style="clear: both"><img id="bildsub"  src="data:image/jpg;base64,' + subBilder + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
 
                                 $('#sub').append(div);
 
@@ -619,7 +732,7 @@
                                 var prolange = datahandler.data[index].subGroups[i].products.length;
                                 var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
                                 var gr = datahandler.data[index].gr_fk;
-                                
+
 
                                 if (datahandler.data[index].subGroups[i].sg_fk == grgr[1]) {
 
@@ -630,7 +743,7 @@
                                         var prbild = datahandler.data[index].subGroups[i].products[ii].image;
 
                                         div.style.styleFloat = "left";
-                                        div.innerHTML = '<div style="float: left; font-size:16px;" "><b>' + produktename + '</div><div style="clear: both"><img style="width: 300px; height: 150px; border-radius: 4px;" src="data:image/jpg;base64,' + prbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                        div.innerHTML = '<div style="float: left;"><b>' + produktename + '</div><div style="clear: both"><img id="bildpr" src="data:image/jpg;base64,' + prbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
 
                                         $('#products').append(div);
 
@@ -700,7 +813,7 @@
 
                                                     var div = document.createElement('div');
                                                     div.style.styleFloat = "left";
-                                                    div.innerHTML = '<div style="  margin-left: 0.4cm;"><b>' + verpackungshinweis + '</b></div><div style=" margin-left: 0.4cm;">' + abmessung + '</div><div id="mainselection" style=" width: 600px; margin-left: 0.4cm;"><br></div><div style=" margin-left: 0.4cm;"><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div style=" margin-left: 0.4cm;">' + migel1 + '</div><hr style="color:grey; noshade width="580" />';
+                                                    div.innerHTML = '<div style="  margin-left: 0.4cm; height:400px;"><b>' + verpackungshinweis + '</b></div><div style=" margin-left: 0.4cm;">' + abmessung + '</div><div id="mainselection" style=" width: 600px; margin-left: 0.4cm;"><br></div><div style=" margin-left: 0.4cm;"><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div style=" margin-left: 0.4cm;">' + migel1 + '</div><hr style="color:grey; noshade width="580" />';
 
                                                     $('#artikelohneartikelgruppen').append(div);
 
@@ -708,7 +821,7 @@
                                                 var divaa = document.createElement('div');
                                                 var mediacenter = 'Mediacenter';
 
-                                                divaa.innerHTML = '<div id="footer" style="background-color:#eaf4f5; left: 46px; width: 655px; height: 65px; position: fixed; top: 920px; "><br>&nbsp;&nbsp;&nbsp;<button name="button" style="background-color:#83d0e3; width:100px; height:25px; " value="Mediacenter" type="button"><span id="buttonschrift">' + mediacenter + '</span></button></div>';
+                                                divaa.innerHTML = '<div id="footer" style="background-color:#eaf4f5; left: 46px; width: 655px; height: 65px; position: relative; top: 920px; "><br>&nbsp;&nbsp;&nbsp;<button name="button" style="background-color:#83d0e3; width:100px; height:25px; " value="Mediacenter" type="button"><span id="buttonschrift">' + mediacenter + '</span></button></div>';
 
                                                 $('#buttonmedia').append(divaa);
 
@@ -721,7 +834,7 @@
                                                 }
                                                 divaa.onclick = makeShowItemEventListener(gr, sg_fk, pk);
                                             }
-                                        } else { // die Artikeln mt Artikelgruppen
+                                        } else {  // die Artikeln mt Artikelgruppen
 
 
                                             for (var ii = 0; ii < prolange; ii++) {
@@ -745,8 +858,12 @@
                                                             var div = document.createElement('div');
 
                                                             div.style.styleFloat = "left";
-                                                            div.innerHTML = '<div style="float: left; "><b>' + artikelgruppe + '</div><div style="clear: both"><img style="width: 300px; height: 150px; border-radius: 4px;  " src="data:image/jpg;base64,' + agbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+
+                                                            div.innerHTML = '<div style="float: left; "><b>' + artikelgruppe + '</div><div style="clear: both"><img id="bildartikelgruppen"  src="data:image/jpg;base64,' + agbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
                                                             $('#artikelgrp').append(div);
+
+                                                            document.getElementById("artikelgrpdiv").style.display = "none";
+
 
                                                             var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
                                                             var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
@@ -819,11 +936,14 @@
 
                                                     if (grgr[3] == datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk) {
 
+                                                        var artgrpbild = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].image;
+
+
                                                         var div = document.createElement('div');
 
                                                         $('#artgrp').append(div);
 
-                                                        div.innerHTML = '<div style=" background-color: white; border: 2px solid white; margin-left:1cm; margin-right: 2cm; height:45px;" align: center><b><br>' + artikelgruppename + '</b></div>';
+                                                        div.innerHTML = '<div id="artikelgruppename"><b><br>' + artikelgruppename + '</b></div> <div ><img id="artgrpbild" src="data:image/jpg;base64,' + artgrpbild + '"/></div> ';
 
                                                         for (inde = 0; inde < artlange; inde++) {
 
@@ -831,6 +951,7 @@
                                                             var verpackungshinweis = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].verpackungshinweis;
                                                             var artikel_nr = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].artikel_nr;
                                                             var migel1 = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].migel1;
+                                                           
 
                                                             console.log(abmessung);
                                                             console.log(verpackungshinweis);
@@ -846,7 +967,7 @@
                                                             //div.style.styleFloat = "left";
 
                                                             $('#artgrpart').append(divb);
-                                                            divb.innerHTML = '<div><b>' + verpackungshinweis + '</b></div><div>' + abmessung + '</div><div id="mainselection"><select id="select" style="background-color: #74cae0;"><option></option value="1"><option>1</option><option value="2">2</option><option value="3">3</option></select><br></div><div><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade/>';
+                                                            divb.innerHTML = '<div id="lala"><b>' + verpackungshinweis + '</b></div><div>' + abmessung + '</div><div id="mainselection"><br></div><div><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade siz="3"/>';
                                                             //<div style=" background-color: white; margin-left: 0.4cm; margin-right: 2cm; width:625px; height:150px;">
                                                         }
                                                         var divaa = document.createElement('div');
@@ -911,7 +1032,7 @@
                                 console.log(prgrurl);
 
                                 var div = document.createElement('div');
-                                div.innerHTML = '<div><span style="color: #1a4064; ">' + prgrsap + '</span><div style="width: 700px; float: right; " ><a style="color:#74cae0;" href="' + prgrurl + '">' + prgrlink + '</a></div><hr noshade size="0.3" style="color:grey;" />';
+                                div.innerHTML = '<div><span  id="sap">' + prgrsap + '</span><div id="divlink" ><a style="color:#74cae0;" id="alink" href="' + prgrurl + '">' + prgrlink + '</a></div><hr noshade size="0.3" style="color:grey;" />';
                                 $('#prgrlinks').append(div);
                             }
 
@@ -937,10 +1058,10 @@
                                         console.log(suburl);
 
                                         var div = document.createElement('div');
-                                        div.innerHTML = '<div ><span style="color: #1a4064; ">' + subsap + '</span><div style="width: 400px; float: right; " ><a style="color:#74cae0;" href="' + suburl + '">' + sublinks + '</a></div><hr noshade size="0.3" style="color:grey;"  />';
+                                        div.innerHTML = '<div><span  id="sap">' + subsap + '</span><div id="divlink" ><a style="color:#74cae0;" id="alink" href="' + suburl + '">' + sublinks + '</a></div><hr noshade size="0.3" style="color:grey;" />';
                                         $('#sublinks').append(div);
                                     }
-                               
+
                                     for (ii = 0; ii < prolange; ii++) {
 
                                         if (datahandler.data[index].subGroups[i].products[ii].pk == grgr[2]) {
@@ -963,7 +1084,7 @@
 
 
                                                 var div = document.createElement('div');
-                                                div.innerHTML = '<div ><span style="color: #1a4064;">' + prosap + '</span><div style="width: 400px; float: right; "><a style="color:#74cae0;" href="' + prourl + '">' + prolinks + '</a></div><hr noshade size="0.3" style="color:grey;"/>';
+                                                div.innerHTML = '<div><span  id="sap">' + prosap + '</span><div id="divlink" ><a style="color:#74cae0;" id="alink" href="' + prourl + '">' + prolinks + '</a></div><hr noshade size="0.3" style="color:grey;" />';
                                                 $('#prolinks').append(div);
                                             }
                                         }
@@ -1020,7 +1141,7 @@
                     });
                 },
 
-                //-------------------------------------------------------Suchfunktion-----------------------------------------------------------------------------------------------------------
+                //-------------------------------------------------------Suchfunktion im lokalen Speicher-----------------------------------------------------------------------------------------------------------
                 prgrsuchen: function () {
 
                     var zahler = 0;
@@ -1029,7 +1150,7 @@
                     console.log('ich suche im LocalStorage');
                     var alleDaten = JSON.parse(localStorage.getItem('feld')); //die Daten aus dem localStorage werden mit get ausgelesen
                     datahandler.data = alleDaten; //alleDaten aus dem lokalStorage werden in datahandler.data geschrieben
-                    var suchbegriff = document.getElementById('ta').value; //Begriff wird aus Textfeld ausgeles
+                    var suchbegriff = document.getElementById('ta').value; //Begriff wird aus Textfeld ausgelesen
 
                     var Suche = new RegExp(suchbegriff, "gi");
                     //console.log(Suche);
@@ -1038,7 +1159,15 @@
 
                     if (suchbegriff == '') {
 
-                        console.log('sie müssen iwas eingeben');
+
+                        $.mobile.pageContainer.pagecontainer("change", "#Suche", { test: "Hello World!" });
+
+                        $('#zahler').html('');
+                        var x = 0;
+                        var div = document.createElement('div');
+                        div.innerHTML = '<div><span style="color: #1a4064;"><b>Es wurden ' + x + ' Ergebnisse gefunden!</b></span></div>';
+                        $('#zahler').append(div);
+
 
                     } else {
 
@@ -1169,6 +1298,7 @@
                         }
                     }
                     var x = zahler;
+
                     console.log(x);
                     datahandler.prosuchen(Suche, x);
 
@@ -1553,7 +1683,7 @@
 
 
         $(document).on('pagebeforeshow', '#produktgruppen', function () {
-           datahandler.showProductGroups();
+            datahandler.showProductGroups();
         });
         $(document).on('pagebeforeshow', '#subgruppen', function (event, data) {
 
@@ -1582,4 +1712,5 @@
 </body>
 
 </html>
+
 

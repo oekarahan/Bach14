@@ -1,258 +1,24 @@
 ﻿@font-face {
-    font-family: meineSchrift;
+    font-family: OpenSans-Light;
     src: url(Open_Sans/OpenSans-Light.ttf);
 }
 
-/*
-
-
-
-
-
-
-.ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page
-{
-    position:relative;
+@font-face {
+    font-family: OpenSans-bold;
+    src: url(Open_Sans/OpenSans-Bold.ttf);
 }
 
-#navigation
-{
- 
-     width: 100%;
-    position: fixed;  
-    bottom: 88.5%;
-    left: 0px;
-    height: 120px;
-
+@font-face {
+    font-family: 'OpenSans-ExtraBoldItalic';
+    src: url('Open_Sans/OpenSans-ExtraBoldItalic.ttf') format('truetype');
 }
 
 
-.mainContent
-{
-    width:100%;
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('Open_Sans/OpenSans-Regular.ttf') format('truetype');
 }
 
-#div {
-    background-color: #1a4064;
-    
-}
-
-
-
-.navii
-{
-
-    background-color:#1a4064;
-    width: 100%;
-    position: fixed;  
-
-    left: 0px;
-    height: 105px;
-}
-
-.navii ul{
-  
-    list-style-type:none;
-    
-}
-
-
-
-.navii li{
-
-   
-    background-color:#1a4064;
-    display: inline-block;
-  
-}
-
-.navii li a{
-
-    text-decoration: none;
-}
-
-
-
-.navii span
-{
-    
-    display:block;
-    font-family: Arial;
-    color: white;
-   
-
-}
-
-#azurück{
-
-     background-color:#1a4064;
-}
-
-
-#zurück img:hover{
-    opacity:0.4;
-
-}
-
-
-
-#leistungen img:hover{
-    opacity:0.4;
-    
-}
-
-#scan img:hover{
-    opacity:0.4;
-
-}
-
-
-
-#produktgruppen_inhalt{
-
-    color: #1a4064;
-    font-family: Arial;
-}
-
-#sub{
-
-
-    color:#1a4064;
-    font-family: Arial;
-    font-size: 15px;
-  
-}
-
-#products{
-
-    color:#1a4064;
-    font-family: Arial;
-     font-size: 15px;
-}
-
-#Produktgruppen{
-
-    color:#1a4064;
-    font-family: Arial;
-     font-size: 15px;
-
-}
-
-#artikelgrp{
-
-    color: #1a4064;
-    font-family: Arial;
-    font-size: 15px;
-
-}
-
-#artgrp{
-
-    color: #1a4064;
-    font-family: Arial;
-    font-size: 15px;
-
-}
-
-#artgrpart{
-
-    color: #1a4064;
-    font-family: Arial;
-    font-size: 15px;
-
-}
-
-#artikelohneartikelgruppen{
-
-    color:#1a4064;
-    font-family: Arial;
-    font-size: 15px;
-
-}
-
-#produktname{
-
-    color:#1a4064;
-    font-family: Arial;
-    font-size: 15px;
-
-}
-
-
-
-#feld{
-
-    border-radius: 4px;
-    bottom: 22px!important;
-    width: 50px;
-    background-color: white;
-
-}
-
-
-#mediacenter{
-
-    background-color:#74cae0;
-    border-radius: 2px; 
-    width: 139px;  
-    height: 21px;
-    top: 10px;
-    margin-left: 0.8cm;
-    
-}
-
-#buttonschrift{
-
-    color: white;
-   
-}
-
-#ta {
-
-  width: 150px !important;
-  height:10px!important;
-  position: relative;
-  background-position: right;
-  border-radius: 4px;
-  border-color:#1a4064;
-  
-    
-  }
-
-#sucheli{
-
-    bottom: 40px;
-    position:relative;
-
-
-}
-
-
-:-moz-placeholder {color:#1a4064;  font-size: 4px;}
-::-webkit-input-placeholder {color:#1a4064;  font-size: 4px;}
-:-ms-input-placeholder {color:#1a4064; font-size: 4px;}
-
-#button{
-
-    border-radius: 3px;
-    width:110px; 
-    height: 25px; 
-    background-color: #8bd3e5; 
-
-
-}
-
-#bild{
-
-   position:fixed;
-   width: 45px;
-   height: 33px;
-   margin-left: 260px;
-   top:38px;
-  
-
-}
-*/
 
 @media only screen and (min-device-width: 1300px) {
 
@@ -312,34 +78,6 @@
             display: inline;
             margin-left: 2%;
         }
-
-
-    #iconn {
-        min-width: 100%;
-        max-width: 300%;
-        position: absolute;
-        display: inline-block;
-        top: 70%;
-        text-align: center;
-    }
-
-
-        #iconn span {
-            font-family: meineSchrift;
-            color: white;
-            font-size: 1.8em;
-            display: inline;
-            margin-left: 2%;
-        }
-
-
-
-        #iconn img {
-            width: 100px;
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-
 
 
     .ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page {
@@ -407,6 +145,7 @@
     #scan img:hover {
         opacity: 0.4;
     }
+ 
 
     #ta {
         width: 190px !important;
@@ -417,6 +156,8 @@
         border-color: #1a4064;
         top: 25px;
         left: 60%;
+        font-family:meineSchrift;
+        font-size:12px;
     }
 
 
@@ -522,21 +263,7 @@
 
 
 
-    :-moz-placeholder {
-        color: #1a4064;
-        font-size: 4px;
-    }
-
-    ::-webkit-input-placeholder {
-        color: #1a4064;
-        font-size: 4px;
-    }
-
-    :-ms-input-placeholder {
-        color: #1a4064;
-        font-size: 4px;
-    }
-
+ 
     #button {
         border-radius: 3px;
         width: 110px;
@@ -572,8 +299,8 @@
     #media {
         margin-bottom: 10%;
         font-family: meineSchrift;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
         #media span {
@@ -583,342 +310,18 @@
         }
 }
 
-    @media only screen and (min-device-width: 450px) and (max-device-width: 1300px) {
+    @media only screen and (min-device-width: 600px) and (max-device-width: 1300px) {
 
         /*Tablets*/
 
 
-        body {
+         body {
             background-image: url(start_tablet.png);
             background-size: cover;
-            background-repeat: no-repeat;
+            background-repeat:no-repeat;
+
         }
 
-
-        .mainContent {
-            width: 100%;
-        }
-
-        #uber {
-            position: relative;
-            top: 60px;
-            text-align: center;
-        }
-
-        #uberschrift {
-            color: white;
-            font-size: 2em;
-            font-family: meineSchrift;
-        }
-
-
-        #hartmann {
-            position: relative;
-            width: 110px;
-            margin-left: 30px;
-            top: 30px;
-        }
-
-        #icon {
-            min-width: 100%;
-            max-width: 800%;
-            position: absolute;
-            display: inline;
-            top: 45%;
-            text-align: center;
-        }
-
-            #icon img {
-                width: 80px;
-                margin-left: 5%;
-                margin-right: 5%;
-            }
-
-            #icon span {
-                font-family: meineSchrift;
-                color: white;
-                font-size: 1.2em;
-                display: inline;
-                margin-left: 2%;
-            }
-
-
-        #iconn {
-            min-width: 100%;
-            max-width: 300%;
-            position: absolute;
-            display: inline-block;
-            top: 70%;
-            text-align: center;
-        }
-
-
-            #iconn span {
-                font-family: meineSchrift;
-                color: white;
-                font-size: 1.2em;
-                display: inline;
-                margin-left: 2%;
-            }
-
-
-
-            #iconn img {
-                width: 80px;
-                margin-left: 5%;
-                margin-right: 5%;
-            }
-
-
-
-        .ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page {
-            position: relative;
-        }
-
-        /*****************************Navigation*****************************/
-
-        #navigation {
-            width: 100%;
-            position: fixed;
-            top: -2px;
-            left: -2px;
-        }
-
-
-        .navii {
-            position: fixed;
-            background-color: #1a4064;
-            width: 100%;
-        }
-
-            .navii ul {
-                list-style-type: none;
-            }
-
-
-
-            .navii li {
-                background-color: #1a4064;
-                display: inline-block;
-                margin-left: 5%;
-            }
-
-                .navii li a {
-                    text-decoration: none;
-                }
-
-
-
-            .navii span {
-                display: block;
-                font-family: meineSchrift;
-                color: white;
-            }
-
-        #zurück {
-            position: relative;
-            margin-left: -30px;
-            top: -5px;
-        }
-
-
-
-            #zurück img:hover {
-                opacity: 0.4;
-            }
-
-
-
-        #leistungen img:hover {
-            opacity: 0.4;
-        }
-
-        #scan img:hover {
-            opacity: 0.4;
-        }
-
-        #ta {
-            width: 170px !important;
-            height: 15px !important;
-            position: fixed;
-            background-position: right;
-            border-radius: 4px;
-            border-color: #1a4064;
-            top: 25px;
-            left: 60%;
-        }
-
-
-
-        #bild {
-            position: fixed;
-            width: 45px;
-            height: 33px;
-            left: 83%;
-            top: 25px;
-            border-radius: 4px;
-        }
-
-        /**********************************Inhalt*********************************************/
-
-
-
-        #produktgruppen_inhalt {
-            color: #1a4064;
-            font-family: meineSchrift;
-            height: auto;
-            width: auto;
-            position: absolute;
-            left: 5%;
-            right: 5%;
-        }
-
-
-        #sub {
-            color: #1a4064;
-            font-family: meineSchrift;
-            height: auto;
-            width: auto;
-            position: absolute;
-            left: 5%;
-            right: 5%;
-        }
-
-        #products {
-            color: #1a4064;
-            font-family: Arial;
-            font-size: 15px;
-        }
-
-        #Produktgruppen {
-            color: #1a4064;
-            font-family: Arial;
-            font-size: 15px;
-        }
-
-        #artikelgrp {
-            color: #1a4064;
-            font-family: Arial;
-            font-size: 15px;
-        }
-
-
-
-
-        #artgrp {
-            color: #1a4064;
-            font-family: Arial;
-            font-size: 15px;
-        }
-
-
-
-        #artikelohneartikelgruppen {
-            color: #1a4064;
-            font-family: Arial;
-            font-size: 15px;
-        }
-
-        #produktname {
-            color: #1a4064;
-            font-family: Arial;
-            font-size: 15px;
-        }
-
-
-
-        #feld {
-            border-radius: 4px;
-            bottom: 22px !important;
-            width: 50px;
-            background-color: white;
-        }
-
-
-        #mediacenter {
-            background-color: #74cae0;
-            border-radius: 2px;
-            width: 139px;
-            height: 21px;
-            top: 10px;
-            margin-left: 0.8cm;
-        }
-
-        #buttonschrift {
-            color: white;
-        }
-
-
-
-        :-moz-placeholder {
-            color: #1a4064;
-            font-size: 4px;
-        }
-
-        ::-webkit-input-placeholder {
-            color: #1a4064;
-            font-size: 4px;
-        }
-
-        :-ms-input-placeholder {
-            color: #1a4064;
-            font-size: 4px;
-        }
-
-        #button {
-            border-radius: 3px;
-            width: 110px;
-            height: 25px;
-            background-color: #8bd3e5;
-            font-family: meineSchrift;
-        }
-
-        #artgrpart {
-            color: #1a4064;
-            font-family: meineSchrift;
-            font-size: 15px;
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-
-        #divaga {
-            margin-bottom: 10%;
-            margin-top: 10%;
-            margin-left: 10%;
-            margin-right: 10%;
-            font-family: meineSchrift;
-        }
-
-        #divmediacenter {
-            color: #1a4064;
-            font-family: meineSchrift;
-            font-size: 15px;
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-
-        #media {
-            margin-bottom: 10%;
-            font-family: meineSchrift;
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-
-            #media span {
-                display: inline;
-                font-family: meineSchrift;
-                color: #1a4064;
-            }
-    }
-
-    @media only screen and (min-device-width:200px) and (max-device-width:600px) {
-
-        /*Smartphones*/
-
-        body {
-            background-image: url(start_smatphones.png);
-            background-size: cover;
-        }
 
         .mainContent {
             width: 100%;
@@ -934,68 +337,79 @@
 
         #uberschrift {
             color: white;
-            font-size: 1.3em;
-            font-family: meineSchrift;
+            font-size: 2em;
+            font-family: OpenSans-Light;
         }
 
 
         #hartmann {
-            width: 80px;
-            margin-left: 10px;
+            width: 15%;
+            margin-top:5%;
+            margin-left: 5%;
             bottom: 10px;
+    
+        }
+        
+
+    #icon { 
+
+            width:60%;
+            margin-top:15%;
+             margin-left:20%;
+            margin-right:20%;
+            display:inline-block;
+            text-align:center;
+          
+
         }
 
-        #icon {
-            min-width: 100%;
-            max-width: 300%;
-            position: absolute;
-            display: inline;
-            top: 35%;
-            text-align: center;
+        #iconicon{
+
+            width:25%;
+            margin-left:2%;
+            margin-right:5%;
+            float:left;
+            height:80px;
+            text-align:center;
+           
+           
         }
+
+        #iconicon1{
+
+          
+            width:25%;
+            margin-left:2%;
+            margin-right:5%;
+            float:left;
+            height:80px;
+            margin-top:10%;
+            text-align:center;
+            
+               
+         
+        }
+
+
+        #icon span{
+
+
+            font-family: OpenSans-bold;
+          color: white;
+         font-size: 0.8em;  
+
+        }
+
 
             #icon img {
-                width: 50px;
+                width: 70px;
                 margin-left: 5%;
-                margin-right: 5%;
-            }
-
-            #icon span {
-                font-family: meineSchrift;
-                color: white;
-                font-size: 0.9em;
-                display: inline;
-                margin-left: 2%;
-            }
-
-
-        #iconn {
-            min-width: 100%;
-            max-width: 300%;
-            position: absolute;
-            display: inline-block;
-            top: 60%;
-            text-align: center;
-        }
-
-
-            #iconn span {
-                font-family: meineSchrift;
-                color: white;
-                font-size: 0.9em;
-                display: inline;
-                margin-left: 2%;
+                margin-right: 8%;
             }
 
 
 
-            #iconn img {
-                width: 50px;
-                margin-left: 5%;
-                margin-right: 5%;
-            }
-
-        /*******************************************************************************************/
+        /*****************************Navigation******tablets***********************/
 
 
         #navigation {
@@ -1003,51 +417,135 @@
             position: fixed;
         }
 
-
         .navii {
             position: fixed;
             background-color: #1a4064;
             width: 100%;
-            height: 13%;
+            height: 16%;
         }
 
             .navii ul {
-                position: relative;
-                list-style-type: none;
-                bottom: 15%;
+              
+              list-style-type: none;
+           
             }
 
+            #divzuruck{
+width:150%;
+        position: absolute;
+        top: 20%;
+        
+        
+            }
+
+
+
+            #divprodukt {
+                width:150%;
+        position: absolute;
+     
+        
+        text-align:center;
+            }
+
+
+            #divleistungen{
+                width:150%;
+ position: absolute;
+        
+
+        text-align:center;
+            }
+
+
+            #divscanner{
+                width:150%;
+                 position: absolute;
+       
+      
+        text-align:center;
+        margin-left: -400%;
+
+
+            }
 
             .navii li {
                 position: relative;
                 display: inline-block;
                 width: 30px;
                 height: 30px;
+                margin-right:10%;
+                margin-top:-100%;
             }
 
-        #zuruck {
-            position: relative;
-            margin-left: -31px;
-            top: -10px;
+            .navii a{
+                     text-decoration: none;
+
+            }
+
+            
+        
+        #zuruckbild{
+
+         
+            border-style: none;
         }
 
 
 
         .navii li a img {
             position: relative;
-            top: 5px;
-            width: 30px;
-            height: 30px;
+            top: 10px;
+            width: 45px;
+            height: 45px;
             display: inline;
-            margin-left: -5px;
+           
         }
 
         .navii li a span {
             font-size: 0.7em;
             color: white;
-            font-family: meineSchrift;
+            font-family: OpenSans-bold;
             text-decoration: none;
+      
+           
+            
         }
+
+     
+
+
+        #bildprgr{
+
+            width:160px;
+            height:80px;
+            border-radius: 4px;
+
+        }
+
+        #bildsub{
+
+            width:160px;
+            height:80px;
+            border-radius: 4px;
+
+        }
+
+        #bildpr{
+
+             width:160px;
+            height:80px;
+            border-radius: 4px;
+
+        }
+
+        #bildartikelgruppen{
+
+              width:160px;
+            height:80px;
+            border-radius: 4px;
+        }
+
 
 
         #produkt {
@@ -1078,45 +576,54 @@
             opacity: 0.4;
         }
 
+
+  
         #ta {
-            width: 90px !important;
-            height: 10px !important;
+            width: 120px !important;
+            height: 15px !important;
             position: fixed;
             background-position: right;
             border-radius: 4px;
             border-color: #1a4064;
             top: 20px;
             left: 44%;
+            font-size:12px;
+            font-weight:100;
+          
+            font-family:OpenSans-bold;
         }
+
 
         #bild {
             position: fixed;
             width: 40px;
-            height: 26px;
-            left: 87%;
+            height: 30px;
+            left: 85%;
             top: 22px;
             border-radius: 4px;
         }
 
-
+     
 
 
 
     #produktgruppen_inhalt {
         color: #1a4064;
-        font-family: meineSchrift;
-        height: auto;
+        font-size: 0.8em;
+        font-family:OpenSans-Regular;
+        height: 400px;
         width: auto;
         position: absolute;
         left: 5%;
         right: 5%;
+       
     }
-
 
     #sub {
         color: #1a4064;
-        font-family: meineSchrift;
-        height: auto;
+       font-family:OpenSans-Regular;
+       font-size: 0.8em;
+        height: 400px;
         width: auto;
         position: absolute;
         left: 5%;
@@ -1125,20 +632,54 @@
 
     #products {
         color: #1a4064;
-        font-family: Arial;
-        font-size: 15px;
+        font-family:OpenSans-Regular;
+       font-size: 0.8em;
+        height: 400px;
+        width: auto;
+        position: absolute;
+        left: 5%;
+        right: 5%;
+
     }
+
+        #divsuche {
+           background-color: white; 
+           height: 800px; 
+           margin-left: 0.5cm; 
+           margin-right: 0.5cm; 
+           overflow:scroll; 
+            height:400px;
+            font-family:OpenSans-Regular;
+            font-size:0.8em;
+        }
+
+
+
+    #artikelgrp {
+        color: #1a4064;
+        font-family:OpenSans-Regular;
+       font-size: 0.6em;
+        height: 400px;
+        width: auto;
+        position: absolute;
+        left: 5%;
+        right: 5%;
+    }
+
+
 
     #Produktgruppen {
         color: #1a4064;
-        font-family: Arial;
+        font-family:OpenSans-Regular;
+       
         font-size: 15px;
     }
 
     #artikelgrp {
         color: #1a4064;
-        font-family: Arial;
-        font-size: 15px;
+       font-family:OpenSans-Regular;
+       font-size: 15px;
+      
     }
 
 
@@ -1146,21 +687,18 @@
 
     #artgrp {
         color: #1a4064;
-        font-family: Arial;
-        font-size: 15px;
+        font-family:OpenSans-Regular;
+       font-size: 15px;
+        
     }
 
 
 
-    #artikelohneartikelgruppen {
-        color: #1a4064;
-        font-family: Arial;
-        font-size: 15px;
-    }
 
     #produktname {
         color: #1a4064;
-        font-family: Arial;
+        font-family:OpenSans-Regular;
+     
         font-size: 15px;
     }
 
@@ -1174,14 +712,6 @@
     }
 
 
-    #mediacenter {
-        background-color: #74cae0;
-        border-radius: 2px;
-        width: 139px;
-        height: 21px;
-        top: 10px;
-        margin-left: 0.8cm;
-    }
 
     #buttonschrift {
         color: white;
@@ -1189,66 +719,738 @@
 
 
 
-    :-moz-placeholder {
-        color: #1a4064;
-        font-size: 4px;
-    }
-
-    ::-webkit-input-placeholder {
-        color: #1a4064;
-        font-size: 4px;
-    }
-
-    :-ms-input-placeholder {
-        color: #1a4064;
-        font-size: 4px;
-    }
 
     #button {
         border-radius: 3px;
-        width: 110px;
-        height: 25px;
-        background-color: #8bd3e5;
-        font-family: meineSchrift;
+        font-family:OpenSans-bold;
+        position:relative;
+      
+       background-color:#eaf4f5; 
+       margin-left:0%; 
+       width:100%; 
+       height: 60px; 
+
+
+    }
+
+
+    #footer{
+        position: absolute;
+        bottom:25px;
+        
+
+
     }
 
     #artgrpart {
         color: #1a4064;
-        font-family: meineSchrift;
-        font-size: 15px;
+        font-family: OpenSans-Regular;
+        font-size: 12px;
         margin-left: 5%;
         margin-right: 5%;
+        height:300px;
+        
     }
 
+    #artgrp{
+
+        font-size:13px;
+         font-family: OpenSans-bold;
+         
+    }
+
+    #artgrpbild{
+    
+        position:relative;
+      
+        height:90px;
+        width:100%
+        
+
+
+
+    }
+
+    #artikelgruppename{
+      background-color: white; 
+      border: 2px solid white;
+     margin-left:5%;
+      height:45px;
+
+    }
+
+
     #divaga {
-        margin-bottom: 10%;
-        margin-top: 10%;
-        margin-left: 10%;
-        margin-right: 10%;
-        font-family: meineSchrift;
+      
+
+        margin-top: 25%;
+        height:470px;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-family:OpenSans-Regular;
+       
+        
     }
 
     #divmediacenter {
         color: #1a4064;
-        font-family: meineSchrift;
+        font-family: OpenSans-Regular;
         font-size: 15px;
         margin-left: 5%;
         margin-right: 5%;
     }
 
     #media {
+        background-color: white; 
+        overflow:scroll;
+        height:450px;
         margin-bottom: 10%;
-        font-family: meineSchrift;
-        margin-left: 10%;
-        margin-right: 10%;
+        font-family: OpenSans-Regular;
+        margin-left: 4%;
+        margin-right:4%;
+        margin-top:5%
     }
 
         #media span {
             display: inline;
-            font-family: meineSchrift;
+            font-family: OpenSans-Regular;
             color: #1a4064;
+            font-size:13px;
+         
         }
+
+        
+
+        #alink{
+
+            font-size:10px;
+
+
+        }
+                #sapnr{
+            margin-left:5%;
+
+        }
+
+        #sap{
+
+            font-size:10px;
+           color: #1a4064;
+           height:30px;
+           width:40px;
+        }
+
+        #divlink {
+           width:250px; 
+           height:30px;
+           float: right; 
+           
+           overflow-y:scroll; 
+       
+        }
+
+
+        #prgrlinks{
+            
+          
+            overflow-y:scroll; 
+            margin-left:5%; 
+            margin-right:5%;
+        }
+
+        #sublinks{
+           
+            overflow-y:scroll; 
+            margin-left:5%; 
+            margin-right:5%;
+
+        }
+
+        #prolinks{
+           
+            overflow-y:scroll; 
+            margin-left:5%; 
+            margin-right:5%;
+
+
+        }
+
 }
+
+    @media only screen and (min-device-width:200px) and (max-device-width:600px) {
+
+        /*Smartphones*/
+
+        body {
+            background-image: url(start_smatphones.png);
+            background-size: cover;
+            background-repeat:no-repeat;
+
+        }
+
+
+        .mainContent {
+            width: 100%;
+        }
+
+        #uber {
+            min-width: 100%;
+            max-width: 300%;
+            position: absolute;
+            top: 15%;
+            text-align: center;
+        }
+
+        #uberschrift {
+            color: white;
+            font-size: 1.4em;
+            font-family: OpenSans-Light;
+        }
+
+
+        #hartmann {
+            width: 18%;
+            margin-top:5%;
+            margin-left: 5%;
+            bottom: 10px;
+    
+        }
+        
+
+        #icon {
+       
+            
+           margin-top:40%;
+           margin-left:10%;
+           margin-right:10%;
+         
+            display:inline-block;
+            text-align:center;
+          
+
+        }
+
+        #iconicon{
+
+            width:25%;
+            margin-left:2%;
+            margin-right:5%;
+            float:left;
+            height:80px;
+            text-align:center;
+           
+           
+        }
+
+        #iconicon1{
+
+          
+            width:25%;
+            margin-left:2%;
+            margin-right:5%;
+            float:left;
+            height:80px;
+            margin-top:10%;
+            text-align:center;
+            
+               
+         
+        }
+
+
+        #icon span{
+
+
+            font-family: OpenSans-bold;
+          color: white;
+         font-size: 0.8em;  
+
+        }
+
+
+            #icon img {
+                width: 50px;
+                margin-left: 5%;
+                margin-right: 8%;
+            }
+
+      
+
+        /************************************Smartphone Navigation*****(min-device-width:200px) and (max-device-width:600px) {**************************************************/
+
+
+        #navigation {
+            width: 100%;
+            position: fixed;
+        }
+
+        .navii {
+            position: fixed;
+            background-color: #1a4064;
+            width: 100%;
+            height: 16%;
+        }
+
+            .navii ul {
+              
+              list-style-type: none;
+           margin-left:-10%;
+           
+            }
+
+            #divzuruck{
+        width:150%;
+        position: absolute;
+        top: 20%;
+        
+        
+            }
+
+
+
+            #divprodukt {
+                width:150%;
+        position: absolute;
+     margin-left:-20%;
+        
+        text-align:center;
+            }
+
+
+            #divleistungen{
+                width:150%;
+ position: absolute;
+        
+
+        text-align:center;
+            }
+
+
+            #divscanner{
+                width:150%;
+                 position: absolute;
+       
+        text-align:center;
+        top: -7%;
+        margin-left: -200%;
+        margin-right:10%;
+
+
+            }
+
+            .navii li {
+                position: relative;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                margin-right:15%;
+                margin-top:-100%;
+            }
+
+            .navii a{
+                     text-decoration: none;
+
+            }
+
+            
+        
+        #zuruckbild{
+
+         
+            border-style: none;
+        }
+
+
+
+        .navii li a img {
+            position: relative;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            display: inline;
+           
+        }
+
+        .navii li a span {
+            font-size: 0.7em;
+            color: white;
+            font-family: OpenSans-bold;
+            text-decoration: none;
+      
+           
+            
+        }
+
+     
+
+
+        #bildprgr{
+
+            width:160px;
+            height:80px;
+            border-radius: 4px;
+
+        }
+
+        #bildsub{
+
+            width:160px;
+            height:80px;
+            border-radius: 4px;
+
+        }
+
+        #bildpr{
+
+             width:160px;
+            height:80px;
+            border-radius: 4px;
+
+        }
+
+        #bildartikelgruppen{
+
+              width:160px;
+            height:80px;
+            border-radius: 4px;
+        }
+
+
+
+        #produkt {
+            left: -8%;
+        }
+
+        #leistungen {
+            left: -13%;
+        }
+
+        #scan {
+            left: -2%;
+        }
+
+
+
+        #zurück img:hover {
+            opacity: 0.4;
+        }
+
+
+
+        #leistungen img:hover {
+            opacity: 0.4;
+        }
+
+        #scan img:hover {
+            opacity: 0.4;
+        }
+
+
+  
+        #ta {
+            width: 100px !important;
+            height: 14px !important;
+            position: fixed;
+            background-position: right;
+            border-radius: 4px;
+            border-color: #1a4064;
+            top: 20px;
+            left: 48%;
+            font-size:12px;
+            font-weight:100;
+          
+            font-family:OpenSans-bold;
+        }
+
+
+        #bild {
+            position: fixed;
+            width: 40px;
+            height: 30px;
+            left: 88%;
+            top: 22px;
+            border-radius: 4px;
+        }
+
+     
+
+
+
+
+    #produktgruppen_inhalt {
+        color: #1a4064;
+        font-size: 0.8em;
+        font-family:OpenSans-Regular;
+        height: 400px;
+        width: auto;
+        position: absolute;
+        left: 5%;
+        right: 5%;
+       
+    }
+
+    #sub {
+        color: #1a4064;
+       font-family:OpenSans-Regular;
+       font-size: 0.8em;
+        height: 400px;
+        width: auto;
+        position: absolute;
+        left: 5%;
+        right: 5%;
+    }
+
+    #products {
+        color: #1a4064;
+        font-family:OpenSans-Regular;
+       font-size: 0.8em;
+        height: 400px;
+        width: auto;
+        position: absolute;
+        left: 5%;
+        right: 5%;
+
+    }
+
+        #divsuche {
+           background-color: white; 
+           height: 800px; 
+           margin-left: 0.5cm; 
+           margin-right: 0.5cm; 
+           overflow:scroll; 
+            height:400px;
+            font-family:OpenSans-Regular;
+            font-size:0.8em;
+        }
+
+
+
+    #artikelgrp {
+        color: #1a4064;
+        font-family:OpenSans-Regular;
+       font-size: 0.6em;
+        height: 400px;
+        width: auto;
+        position: absolute;
+        left: 5%;
+        right: 5%;
+    }
+
+
+
+    #Produktgruppen {
+        color: #1a4064;
+        font-family:OpenSans-Regular;
+       
+        font-size: 15px;
+    }
+
+    #artikelgrp {
+        color: #1a4064;
+       font-family:OpenSans-Regular;
+       font-size: 15px;
+      
+    }
+
+
+
+
+    #artgrp {
+        color: #1a4064;
+        font-family:OpenSans-Regular;
+       font-size: 15px;
+        
+    }
+
+
+
+
+    #produktname {
+        color: #1a4064;
+        font-family:OpenSans-Regular;
+     
+        font-size: 15px;
+    }
+
+
+
+    #feld {
+        border-radius: 4px;
+        bottom: 22px !important;
+        width: 50px;
+        background-color: white;
+    }
+
+
+
+    #buttonschrift {
+        color: white;
+    }
+
+
+
+
+    #button {
+        border-radius: 3px;
+        font-family:OpenSans-bold;
+        position:relative;
+      
+       background-color:#eaf4f5; 
+       margin-left:0%; 
+       width:100%; 
+       height: 60px; 
+
+
+    }
+
+
+    #footer{
+        position: absolute;
+        bottom:25px;
+        
+
+
+    }
+
+    #artgrpart {
+        color: #1a4064;
+        font-family: OpenSans-Regular;
+        font-size: 12px;
+        margin-left: 5%;
+        margin-right: 5%;
+        height:300px;
+        
+    }
+
+    #artgrp{
+
+        font-size:13px;
+         font-family: OpenSans-bold;
+         
+    }
+
+    #artgrpbild{
+    
+        position:relative;
+      
+        height:90px;
+        width:100%
+        
+
+
+
+    }
+
+    #artikelgruppename{
+      background-color: white; 
+      border: 2px solid white;
+     margin-left:5%;
+      height:45px;
+
+    }
+
+
+    #divaga {
+      
+
+        margin-top: 25%;
+        height:470px;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-family:OpenSans-Regular;
+       
+        
+    }
+
+    #divmediacenter {
+        color: #1a4064;
+        font-family: OpenSans-Regular;
+        font-size: 15px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #media {
+        background-color: white; 
+        overflow:scroll;
+        height:450px;
+        margin-bottom: 10%;
+        font-family: OpenSans-Regular;
+        margin-left: 4%;
+        margin-right:4%;
+        margin-top:5%
+    }
+
+        #media span {
+            display: inline;
+            font-family: OpenSans-Regular;
+            color: #1a4064;
+            font-size:13px;
+         
+        }
+
+        
+
+        #alink{
+
+            font-size:10px;
+
+
+        }
+                #sapnr{
+            margin-left:5%;
+
+        }
+
+        #sap{
+
+            font-size:10px;
+           color: #1a4064;
+           height:30px;
+           width:40px;
+        }
+
+        #divlink {
+           width:250px; 
+           height:30px;
+           float: right; 
+           
+           overflow-y:scroll; 
+       
+        }
+
+
+        #prgrlinks{
+            
+          
+            overflow-y:scroll; 
+            margin-left:5%; 
+            margin-right:5%;
+        }
+
+        #sublinks{
+           
+            overflow-y:scroll; 
+            margin-left:5%; 
+            margin-right:5%;
+
+        }
+
+        #prolinks{
+           
+            overflow-y:scroll; 
+            margin-left:5%; 
+            margin-right:5%;
+
+
+        }
+
+}
+
+
+
+
+
 
 
 

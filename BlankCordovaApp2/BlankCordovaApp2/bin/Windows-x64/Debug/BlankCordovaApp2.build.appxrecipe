@@ -44,14 +44,41 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\Content\images\icons-36-white.png">
       <PackagePath>www\Content\images\icons-36-white.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\alters.PNG">
+      <PackagePath>www\css\alters.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\apo.PNG">
+      <PackagePath>www\css\apo.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\arzt.PNG">
+      <PackagePath>www\css\arzt.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\back.PNG">
+      <PackagePath>www\css\back.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\dl.PNG">
+      <PackagePath>www\css\dl.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\ev.PNG">
+      <PackagePath>www\css\ev.PNG</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\home.png">
       <PackagePath>www\css\home.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\indus.PNG">
+      <PackagePath>www\css\indus.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\klinik.PNG">
+      <PackagePath>www\css\klinik.PNG</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\leistung.png">
       <PackagePath>www\css\leistung.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\logo.png">
       <PackagePath>www\css\logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\Logo_IVF_Hartmann.svg.png">
+      <PackagePath>www\css\Logo_IVF_Hartmann.svg.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\lupe.png">
       <PackagePath>www\css\lupe.png</PackagePath>
@@ -62,8 +89,14 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\pfeil.PNG">
       <PackagePath>www\css\pfeil.PNG</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\private.PNG">
+      <PackagePath>www\css\private.PNG</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\Probild.png">
       <PackagePath>www\css\Probild.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\produkt.PNG">
+      <PackagePath>www\css\produkt.PNG</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\produkte.png">
       <PackagePath>www\css\produkte.png</PackagePath>
@@ -127,6 +160,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\start_tablet.png">
       <PackagePath>www\css\start_tablet.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\suche.PNG">
+      <PackagePath>www\css\suche.PNG</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\zurück.png">
       <PackagePath>www\css\zurück.png</PackagePath>
@@ -818,6 +854,9 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\Content\images\ajax-loader.gif">
       <PackagePath>www\Content\images\ajax-loader.gif</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\op.gif">
+      <PackagePath>www\css\op.gif</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\css\themes\default\images\ajax-loader.gif">
       <PackagePath>www\scripts\jQueryMobile\demos\css\themes\default\images\ajax-loader.gif</PackagePath>
     </AppxPackagedFile>
@@ -862,6 +901,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\jquery.mobile-1.4.1.min.css">
       <PackagePath>www\css\jquery.mobile-1.4.1.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\jquery.mobile-1.4.5.min.css">
+      <PackagePath>www\css\jquery.mobile-1.4.5.min.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\klinik.css">
       <PackagePath>www\css\klinik.css</PackagePath>
@@ -974,6 +1016,15 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\index.js">
       <PackagePath>www\scripts\index.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-1.6.2-vsdoc.js">
+      <PackagePath>www\scripts\jquery-1.6.2-vsdoc.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-1.6.2.js">
+      <PackagePath>www\scripts\jquery-1.6.2.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-1.6.2.min.js">
+      <PackagePath>www\scripts\jquery-1.6.2.min.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-1.6.4-vsdoc.js">
       <PackagePath>www\scripts\jquery-1.6.4-vsdoc.js</PackagePath>
     </AppxPackagedFile>
@@ -983,6 +1034,21 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-1.6.4.min.js">
       <PackagePath>www\scripts\jquery-1.6.4.min.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-2.1.0.intellisense.js">
+      <PackagePath>www\scripts\jquery-2.1.0.intellisense.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-2.1.0.js">
+      <PackagePath>www\scripts\jquery-2.1.0.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-2.1.0.min.js">
+      <PackagePath>www\scripts\jquery-2.1.0.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-2.1.1.intellisense.js">
+      <PackagePath>www\scripts\jquery-2.1.1.intellisense.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-2.1.1.js">
+      <PackagePath>www\scripts\jquery-2.1.1.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-2.1.1.min.js">
       <PackagePath>www\scripts\jquery-2.1.1.min.js</PackagePath>
     </AppxPackagedFile>
@@ -991,6 +1057,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery.mobile-1.2.0-beta.1.min.js">
       <PackagePath>www\scripts\jquery.mobile-1.2.0-beta.1.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery.mobile-1.4.1.min.js">
+      <PackagePath>www\scripts\jquery.mobile-1.4.1.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery.mobile-1.4.5.min.js">
+      <PackagePath>www\scripts\jquery.mobile-1.4.5.min.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\backbone-requirejs\js\collections\CategoriesCollection.js">
       <PackagePath>www\scripts\jQueryMobile\demos\backbone-requirejs\js\collections\CategoriesCollection.js</PackagePath>
@@ -1072,6 +1144,93 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\winstore-jscompat.js">
       <PackagePath>www\scripts\winstore-jscompat.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\bild.jpg">
+      <PackagePath>www\css\bild.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\full.jpg">
+      <PackagePath>www\css\full.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-af.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-af.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-ag.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-ag.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-bb.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-bb.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-bk.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-bk.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-hc.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-hc.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-k.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-k.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-mg.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-mg.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-ok.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-ok.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-p.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-p.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-rh.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-rh.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-ws.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-ws.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-xx.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-xx.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\bike.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\bike.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\bmw-thumb.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\bmw-thumb.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\bmw.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\bmw.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\buenosaires.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\buenosaires.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\capetown.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\capetown.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\landrover-thumb.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\landrover-thumb.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\landrover.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\landrover.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\newyork.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\newyork.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\paris.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\paris.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\photo-landscape.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\photo-landscape.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\photo-portrait.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\photo-portrait.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\seoul.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\seoul.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\sydney.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\sydney.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\tesla-thumb.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\tesla-thumb.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\tesla.jpg">
+      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\tesla.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\Open_Sans\LICENSE.txt">
       <PackagePath>www\css\Open_Sans\LICENSE.txt</PackagePath>
@@ -1658,6 +1817,9 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\html\webserive.php">
       <PackagePath>www\html\webserive.php</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\index.php">
+      <PackagePath>www\index.php</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\jqm-contents.php">
       <PackagePath>www\scripts\jQueryMobile\demos\jqm-contents.php</PackagePath>
     </AppxPackagedFile>
@@ -1699,6 +1861,18 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\packages.config">
       <PackagePath>www\packages.config</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-2.1.0.min.map">
+      <PackagePath>www\scripts\jquery-2.1.0.min.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jquery-2.1.1.min.map">
+      <PackagePath>www\scripts\jquery-2.1.1.min.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\js\jquery.mobile-1.4.5.min.map">
+      <PackagePath>www\scripts\jQueryMobile\demos\js\jquery.mobile-1.4.5.min.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\jquery.mobile-1.4.5.min.map">
+      <PackagePath>www\scripts\jQueryMobile\jquery.mobile-1.4.5.min.map</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\css\themes\default\images\icons-svg\action-black.svg">
       <PackagePath>www\scripts\jQueryMobile\demos\css\themes\default\images\icons-svg\action-black.svg</PackagePath>
@@ -2302,93 +2476,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\favicon.ico">
       <PackagePath>www\scripts\jQueryMobile\demos\favicon.ico</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\js\jquery.mobile-1.4.5.min.map">
-      <PackagePath>www\scripts\jQueryMobile\demos\js\jquery.mobile-1.4.5.min.map</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\jquery.mobile-1.4.5.min.map">
-      <PackagePath>www\scripts\jQueryMobile\jquery.mobile-1.4.5.min.map</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-af.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-af.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-ag.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-ag.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-bb.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-bb.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-bk.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-bk.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-hc.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-hc.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-k.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-k.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-mg.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-mg.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-ok.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-ok.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-p.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-p.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-rh.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-rh.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-ws.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-ws.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\album-xx.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\album-xx.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\bike.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\bike.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\bmw-thumb.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\bmw-thumb.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\bmw.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\bmw.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\buenosaires.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\buenosaires.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\capetown.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\capetown.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\landrover-thumb.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\landrover-thumb.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\landrover.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\landrover.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\newyork.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\newyork.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\paris.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\paris.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\photo-landscape.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\photo-landscape.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\photo-portrait.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\photo-portrait.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\seoul.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\seoul.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\sydney.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\sydney.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\tesla-thumb.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\tesla-thumb.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\tesla.jpg">
-      <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\tesla.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\photo-run.jpeg">
       <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\photo-run.jpeg</PackagePath>
