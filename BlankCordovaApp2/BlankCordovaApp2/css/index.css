@@ -19,6 +19,11 @@
     src: url('Open_Sans/OpenSans-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'OpenSans-CondBold';
+    src: url('Open_Sans_Condensed/OpenSans-CondBold.ttf') format('truetype');
+}
+
 
 @media only screen and (min-device-width: 1300px) {
 
@@ -308,6 +313,8 @@
             font-family: meineSchrift;
             color: #1a4064;
         }
+
+
 }
 
     @media only screen and (min-device-width: 600px) and (max-device-width: 1300px) {
@@ -409,156 +416,59 @@
 
 
 
-        /*****************************Navigation******tablets***********************/
+      /*****************************Navigation******tablets***********************/
 
 
-        #navigation {
-            width: 100%;
-            position: fixed;
+    #navigation {
+        width: 100%;
+        position: fixed;
+        
+
+    }
+
+
+    .navii {
+        position: fixed;
+        background-color: #1a4064;
+        width: 100%;
+        height:20%;
+    }
+
+        .navii ul {
+            list-style-type: none;
+            height:20%;
         }
 
-        .navii {
-            position: fixed;
+
+
+        .navii li {
             background-color: #1a4064;
-            width: 100%;
-            height: 16%;
+            display: inline-block;
+            margin-left: 5%;
+            height:10%;
         }
 
-            .navii ul {
-              
-              list-style-type: none;
-           
+            .navii li a {
+                text-decoration: none;
             }
 
-            #divzuruck{
-width:150%;
-        position: absolute;
-        top: 20%;
-        
-        
-            }
+            .navii ul li div{
 
-
-
-            #divprodukt {
-                width:150%;
-        position: absolute;
-     
-        
-        text-align:center;
-            }
-
-
-            #divleistungen{
-                width:150%;
- position: absolute;
-        
-
-        text-align:center;
-            }
-
-
-            #divscanner{
-                width:150%;
-                 position: absolute;
-       
-      
-        text-align:center;
-        margin-left: -400%;
-
+                margin-top:5%;
 
             }
 
-            .navii li {
-                position: relative;
-                display: inline-block;
-                width: 30px;
-                height: 30px;
-                margin-right:10%;
-                margin-top:-100%;
-            }
-
-            .navii a{
-                     text-decoration: none;
-
-            }
-
-            
-        
-        #zuruckbild{
-
-         
-            border-style: none;
-        }
-
-
-
-        .navii li a img {
-            position: relative;
-            top: 10px;
-            width: 45px;
-            height: 45px;
-            display: inline;
-           
-        }
-
-        .navii li a span {
-            font-size: 0.7em;
+        .navii span {
+            display: block;
+          
             color: white;
-            font-family: OpenSans-bold;
-            text-decoration: none;
-      
-           
-            
         }
 
-     
-
-
-        #bildprgr{
-
-            width:160px;
-            height:80px;
-            border-radius: 4px;
-
-        }
-
-        #bildsub{
-
-            width:160px;
-            height:80px;
-            border-radius: 4px;
-
-        }
-
-        #bildpr{
-
-             width:160px;
-            height:80px;
-            border-radius: 4px;
-
-        }
-
-        #bildartikelgruppen{
-
-              width:160px;
-            height:80px;
-            border-radius: 4px;
-        }
-
-
-
-        #produkt {
-            left: -8%;
-        }
-
-        #leistungen {
-            left: -13%;
-        }
-
-        #scan {
-            left: -2%;
-        }
+    #zurück {
+        position: relative;
+        margin-left: -30px;
+        top: -5px;
+    }
 
 
 
@@ -568,129 +478,155 @@ width:150%;
 
 
 
-        #leistungen img:hover {
-            opacity: 0.4;
-        }
+    #leistungen img:hover {
+        opacity: 0.4;
+    }
 
-        #scan img:hover {
-            opacity: 0.4;
-        }
+    #scan img:hover {
+        opacity: 0.4;
+    }
+
+    #divprodukt{
+
+        text-align:center;
+        font-family:OpenSans-bold;
+        
+    }
+
+    #divleistungen{
+        text-align:center;
+        font-family:OpenSans-bold;
+
+    }
+
+    #divscanner{
+
+        text-align:center;
+        font-family:OpenSans-bold;
+    }
+ 
+
+    #ta {
+        width: 190px !important;
+        height: 20px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+        top: 6%;
+        left: 55%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
 
 
-  
-        #ta {
-            width: 120px !important;
-            height: 15px !important;
-            position: fixed;
-            background-position: right;
+
+    #bild {
+        position: fixed;
+        
+        height: 6%;
+        left: 82%;
+        top: 6%;
+        border-radius: 4px;
+    }
+
+    /******************************************************************/
+
+            #bildprgr{
+
+            width:250px;
+            height:130px;
             border-radius: 4px;
-            border-color: #1a4064;
-            top: 20px;
-            left: 44%;
-            font-size:12px;
-            font-weight:100;
-          
-            font-family:OpenSans-bold;
+
         }
 
+        #bildsub{
 
-        #bild {
-            position: fixed;
-            width: 40px;
-            height: 30px;
-            left: 85%;
-            top: 22px;
+            width:250px;
+            height:130px;
+            border-radius: 4px;
+
+        }
+
+        #bildpr{
+
+             width:250px;
+            height:130px;
+            border-radius: 4px;
+
+        }
+
+        #bildartikelgruppen{
+
+           width:250px;
+            height:130px;
             border-radius: 4px;
         }
 
-     
 
 
 
     #produktgruppen_inhalt {
         color: #1a4064;
-        font-size: 0.8em;
+        font-size: 1em;
         font-family:OpenSans-Regular;
-        height: 400px;
-        width: auto;
-        position: absolute;
+        height: 450px;
+        width: 200%;
+    overflow:scroll;
+  position:absolute;
         left: 5%;
         right: 5%;
+        top:25%;
+        border-radius:3px;
        
     }
 
     #sub {
         color: #1a4064;
        font-family:OpenSans-Regular;
-       font-size: 0.8em;
+       font-size: 1em;
         height: 400px;
+        overflow:scroll;
         width: auto;
         position: absolute;
         left: 5%;
         right: 5%;
+        top:20%;
     }
 
     #products {
         color: #1a4064;
         font-family:OpenSans-Regular;
-       font-size: 0.8em;
+       font-size: 1em;
         height: 400px;
+        overflow:scroll;
         width: auto;
         position: absolute;
         left: 5%;
         right: 5%;
+        top:20%;
 
     }
 
-        #divsuche {
-           background-color: white; 
-           height: 800px; 
-           margin-left: 0.5cm; 
-           margin-right: 0.5cm; 
-           overflow:scroll; 
-            height:400px;
-            font-family:OpenSans-Regular;
-            font-size:0.8em;
-        }
 
 
 
     #artikelgrp {
         color: #1a4064;
         font-family:OpenSans-Regular;
-       font-size: 0.6em;
+       font-size: 1em;
         height: 400px;
         width: auto;
         position: absolute;
         left: 5%;
         right: 5%;
+        top:20%;
     }
 
 
 
-    #Produktgruppen {
-        color: #1a4064;
-        font-family:OpenSans-Regular;
-       
-        font-size: 15px;
-    }
-
-    #artikelgrp {
-        color: #1a4064;
-       font-family:OpenSans-Regular;
-       font-size: 15px;
-      
-    }
-
-
-
-
-    #artgrp {
-        color: #1a4064;
-        font-family:OpenSans-Regular;
-       font-size: 15px;
-        
-    }
 
 
 
@@ -761,11 +697,12 @@ width:150%;
 
     #artgrpbild{
     
-        position:relative;
+    
       
-        height:90px;
-        width:100%
-        
+        height:110px;
+        width:80%;
+        margin-left:10%;
+        margin-right:10%;
 
 
 
@@ -776,15 +713,15 @@ width:150%;
       border: 2px solid white;
      margin-left:5%;
       height:45px;
-
+      color: #1a4064;
+      font-family:OpenSans-bold;
     }
 
 
     #divaga {
-      
 
-        margin-top: 25%;
-        height:470px;
+        margin-top: 15%;
+        height:480px;
         margin-left: 5%;
         margin-right: 5%;
         font-family:OpenSans-Regular;
@@ -872,6 +809,54 @@ width:150%;
             margin-left:5%; 
             margin-right:5%;
 
+
+        }
+
+                        #divsuchediv{
+
+            font-family:OpenSans-Regular;
+            font-size:0.9em;
+           margin-right:5%;
+           margin-left:5%;
+            background-color: white;
+            height:400px;
+            overflow:scroll;
+            margin-top:5%;
+
+        }
+   
+
+
+        #artikelgrpdiv{
+
+            background-color: white;
+            height:455px;
+           margin-left: 5%;
+           margin-right: 5%;
+           margin-top:5%;
+           overflow:scroll; 
+           border-radius:3px;
+        
+          
+        }
+
+        #artikelohneartikelgruppen{
+
+
+            background-color:white;
+       
+            height:330px;
+            font-family:OpenSans-Regular;
+            color: #1a4064;
+
+        }
+
+        #buttonmedia{
+
+       
+            height:14%;
+           background-color:#eaf4f5; 
+           
 
         }
 
@@ -979,109 +964,134 @@ width:150%;
         /************************************Smartphone Navigation*****(min-device-width:200px) and (max-device-width:600px) {**************************************************/
 
 
-        #navigation {
-            width: 100%;
-            position: fixed;
+    #navigation {
+        width: 100%;
+        position: fixed;
+        
+
+    }
+
+
+    .navii {
+        position: fixed;
+        background-color: #1a4064;
+        width: 100%;
+        height:15%;
+    }
+
+        .navii ul {
+            list-style-type: none;
+            height:20%;
+
         }
 
-        .navii {
-            position: fixed;
+
+
+        .navii li {
             background-color: #1a4064;
-            width: 100%;
-            height: 16%;
+            display: inline-block;
+          
+            height:10%;
         }
 
-            .navii ul {
-              
-              list-style-type: none;
-           margin-left:-10%;
-           
+            .navii li a {
+                text-decoration: none;
             }
 
-            #divzuruck{
-        width:150%;
-        position: absolute;
-        top: 20%;
-        
-        
+            .navii ul li div{
+
+                margin-top:5%;
+
+            }
+
+            .navii ul li div a img{
+
+                width:30px;
+                height:30px;
+
+
             }
 
 
+            #divprodukt{
 
-            #divprodukt {
-                width:150%;
-        position: absolute;
-     margin-left:-20%;
-        
-        text-align:center;
+                text-align:center;
+                margin-right:2%;
+                font-family:OpenSans-bold;
+                    font-size:0.8em;
+
             }
-
 
             #divleistungen{
-                width:150%;
- position: absolute;
-        
-
-        text-align:center;
+                 text-align:center;
+                  margin-right:2%;
+                    font-family:OpenSans-bold;
+                    font-size:0.8em;
             }
-
 
             #divscanner{
-                width:150%;
-                 position: absolute;
-       
-        text-align:center;
-        top: -7%;
-        margin-left: -200%;
-        margin-right:10%;
 
-
+                text-align:center;
+                 margin-right:2%;
+                   font-family:OpenSans-bold;
+                    font-size:0.8em;
             }
 
-            .navii li {
-                position: relative;
-                display: inline-block;
-                width: 30px;
-                height: 30px;
-                margin-right:15%;
-                margin-top:-100%;
-            }
 
-            .navii a{
-                     text-decoration: none;
-
-            }
-
+        .navii span {
+            display: block;
             
-        
-        #zuruckbild{
-
-         
-            border-style: none;
-        }
-
-
-
-        .navii li a img {
-            position: relative;
-            top: 10px;
-            width: 30px;
-            height: 30px;
-            display: inline;
-           
-        }
-
-        .navii li a span {
-            font-size: 0.7em;
             color: white;
-            font-family: OpenSans-bold;
-            text-decoration: none;
-      
-           
-            
         }
 
-     
+    #zurück {
+        position: relative;
+        margin-left: -25px;
+        top: -15px;
+    }
+
+
+
+
+        #zurück img:hover {
+            opacity: 0.4;
+        }
+
+
+
+    #leistungen img:hover {
+        opacity: 0.4;
+    }
+
+    #scan img:hover {
+        opacity: 0.4;
+    }
+ 
+
+    #ta {
+        width: 120px !important;
+        height: 15px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+        top: 4%;
+        left: 45%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+    }
+
+
+
+    #bild {
+        position: fixed;
+
+        height: 5.5%;
+        left: 87%;
+        top: 4%;
+        border-radius: 4px;
+    }
 
 
         #bildprgr{
@@ -1117,64 +1127,6 @@ width:150%;
 
 
 
-        #produkt {
-            left: -8%;
-        }
-
-        #leistungen {
-            left: -13%;
-        }
-
-        #scan {
-            left: -2%;
-        }
-
-
-
-        #zurück img:hover {
-            opacity: 0.4;
-        }
-
-
-
-        #leistungen img:hover {
-            opacity: 0.4;
-        }
-
-        #scan img:hover {
-            opacity: 0.4;
-        }
-
-
-  
-        #ta {
-            width: 100px !important;
-            height: 14px !important;
-            position: fixed;
-            background-position: right;
-            border-radius: 4px;
-            border-color: #1a4064;
-            top: 20px;
-            left: 48%;
-            font-size:12px;
-            font-weight:100;
-          
-            font-family:OpenSans-bold;
-        }
-
-
-        #bild {
-            position: fixed;
-            width: 40px;
-            height: 30px;
-            left: 88%;
-            top: 22px;
-            border-radius: 4px;
-        }
-
-     
-
-
 
 
     #produktgruppen_inhalt {
@@ -1186,6 +1138,7 @@ width:150%;
         position: absolute;
         left: 5%;
         right: 5%;
+        top:20%;
        
     }
 
@@ -1198,6 +1151,8 @@ width:150%;
         position: absolute;
         left: 5%;
         right: 5%;
+        top:20%;
+
     }
 
     #products {
@@ -1209,19 +1164,10 @@ width:150%;
         position: absolute;
         left: 5%;
         right: 5%;
+        top:20%;
 
     }
 
-        #divsuche {
-           background-color: white; 
-           height: 800px; 
-           margin-left: 0.5cm; 
-           margin-right: 0.5cm; 
-           overflow:scroll; 
-            height:400px;
-            font-family:OpenSans-Regular;
-            font-size:0.8em;
-        }
 
 
 
@@ -1234,6 +1180,7 @@ width:150%;
         position: absolute;
         left: 5%;
         right: 5%;
+        top:20%;
     }
 
 
@@ -1331,11 +1278,12 @@ width:150%;
 
     #artgrpbild{
     
-        position:relative;
       
-        height:90px;
-        width:100%
-        
+          height:90px;
+        width:80%;
+        margin-left:10%;
+        margin-right:10%;
+
 
 
 
@@ -1385,20 +1333,15 @@ width:150%;
             display: inline;
             font-family: OpenSans-Regular;
             color: #1a4064;
-            font-size:13px;
+            font-size: 0.6em;
          
         }
 
         
-
-        #alink{
-
-            font-size:10px;
-
-
-        }
                 #sapnr{
             margin-left:5%;
+            margin-right:10%;
+            font-family: OpenSans-bold;
 
         }
 
@@ -1412,10 +1355,11 @@ width:150%;
 
         #divlink {
            width:250px; 
-           height:30px;
+          
            float: right; 
-           
+           font-family:OpenSans-Regular;
            overflow-y:scroll; 
+           font-size: 0.6em;
        
         }
 
@@ -1445,10 +1389,58 @@ width:150%;
 
         }
 
+
+        #divsuchediv{
+
+            font-family:OpenSans-Regular;
+            font-size:0.7em;
+           margin-right:5%;
+           margin-left:5%;
+            background-color: white;
+            height:450px;
+            overflow:scroll;
+
+
+        }
+
+
+        #artikelgrpdiv{
+
+            background-color: white;
+            height:455px;
+           margin-left: 5%;
+           margin-right: 5%;
+           margin-top:5%;
+           overflow:scroll; 
+           border-radius:3px;
+        
+          
+        }
+
+        #artikelohneartikelgruppen{
+
+
+            background-color:white;
+       
+            height:330px;
+            font-family:OpenSans-Regular;
+            color: #1a4064;
+
+        }
+
+        #buttonmedia{
+
+       
+            height:14%;
+           background-color:#eaf4f5; 
+           
+
+        }
+
 }
 
 
-
+   
 
 
 
