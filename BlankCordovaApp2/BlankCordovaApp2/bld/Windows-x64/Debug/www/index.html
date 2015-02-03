@@ -159,7 +159,7 @@
 
                         <li id="produkt">
                             <div id="divprodukt">
-                                <a href="#">
+                                <a href="#produktgruppen">
                                     <img src="css/pro_weiss.png" id="produktbild" />
                                     <span>Produkte</span>
                                 </a>
@@ -220,7 +220,7 @@
 
                         <li id="produkt">
                             <div id="divprodukt">
-                                <a href="#">
+                                <a href="#produktgruppen">
                                     <img src="css/pro_weiss.png" id="produktbild" />
                                     <span>Produkte</span>
                                 </a>
@@ -283,7 +283,7 @@
 
                         <li id="produkt">
                             <div id="divprodukt">
-                                <a href="#">
+                                <a href="#produktgruppen">
                                     <img src="css/pro_weiss.png" id="produktbild" />
                                     <span>Produkte</span>
                                 </a>
@@ -358,7 +358,7 @@
 
                         <li id="produkt">
                             <div id="divprodukt">
-                                <a href="#">
+                                <a href="#produktgruppen">
                                     <img src="css/pro_weiss.png" id="produktbild" />
                                     <span>Produkte</span>
                                 </a>
@@ -430,7 +430,7 @@
 
                         <li id="produkt">
                             <div id="divprodukt">
-                                <a href="#">
+                                <a href="#produktgruppen">
                                     <img src="css/pro_weiss.png" id="produktbild" />
                                     <span>Produkte</span>
                                 </a>
@@ -511,7 +511,7 @@
 
                         <li id="produkt">
                             <div id="divprodukt">
-                                <a href="#">
+                                <a href="#produktgruppen">
                                     <img src="css/pro_weiss.png" id="produktbild" />
                                     <span>Produkte</span>
                                 </a>
@@ -585,7 +585,7 @@
 
                         <li id="produkt">
                             <div id="divprodukt">
-                                <a href="#">
+                                <a href="#produktgruppen">
                                     <img src="css/pro_weiss.png" id="produktbild" />
                                     <span>Produkte</span>
                                 </a>
@@ -824,7 +824,7 @@
 
                                                     var div = document.createElement('div');
                                                     div.style.styleFloat = "left";
-                                                    div.innerHTML = '<div><b>' + verpackungshinweis + '</b></div><div>' + abmessung + '</div><div id="mainselection"><br></div><div><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div >' + migel1 + '</div><hr style="color:grey;" noshade size="1"  />';
+                                                    div.innerHTML = '<div><b>' + verpackungshinweis + '</b></div><div>' + abmessung + '</div><div id="mainselection"></div><div><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div >' + migel1 + '</div><hr style="color:grey;" noshade size="1"  />';
 
                                                     $('#artikelohneartikelgruppen').append(div);
 
@@ -978,7 +978,7 @@
                                                             //div.style.styleFloat = "left";
 
                                                             $('#artgrpart').append(divb);
-                                                            divb.innerHTML = '<div id="lala"><b>' + verpackungshinweis + '</b></div><div>' + abmessung + '</div><div id="mainselection"><br></div><div><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade siz="3"/>';
+                                                            divb.innerHTML = '<div id="lala"><b>' + verpackungshinweis + '</b></div><div>' + abmessung + '</div><div id="mainselection"></div><div><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade siz="3"/>';
                                                             //<div style=" background-color: white; margin-left: 0.4cm; margin-right: 2cm; width:625px; height:150px;">
                                                         }
                                                         var divaa = document.createElement('div');
@@ -1183,7 +1183,6 @@
 
                         if (isNaN(Suche)) {
 
-                           
 
                             $('#prgr').html('');
 
@@ -1204,7 +1203,7 @@
                                 if (prgrname.search(Suche) >= 0) {
                                     zahler++;
 
-                                   //$.mobile.pageContainer.pagecontainer("change", "#Suche", { test: "Hello World!" });
+                                  
 
                                     var gr = datahandler.data[index].gr_fk;
 
