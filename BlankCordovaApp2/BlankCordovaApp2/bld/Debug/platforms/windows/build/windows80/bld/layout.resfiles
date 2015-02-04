@@ -97,6 +97,9 @@ www\html\webserive.php
 www\index.html
 www\index.php
 www\packages.config
+www\plugins\org.apache.cordova.network-information\src\windows8\NetworkInfoProxy.js
+www\plugins\org.apache.cordova.network-information\www\Connection.js
+www\plugins\org.apache.cordova.network-information\www\network.js
 www\Project_Readme.html
 www\scripts\ajax.js
 www\scripts\index.js

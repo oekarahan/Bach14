@@ -189,8 +189,8 @@
 
                         <li id="sucheli">
                             <div id="divsuche">
-                                <textarea id="ta" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
-                                <img onclick="datahandler.prgrsuchen();" src="css/lupe.png" id="bild" />
+                                <textarea id="subsuche" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                <img onclick="datahandler.subsuchen();" src="css/lupe.png" id="bild" />
                             </div>
                         </li>
 
@@ -1650,7 +1650,533 @@
 
                 },
 
+            
+
+
+/**********************************Subsuche************************************************/////////////////////////////////////
+
+
+
+                subsuchen: function () {
+
+                    var suchbegriff = document.getElementById('subsuche').value; //Begriff wird aus Textfeld ausgelesen
+                    var Suche = new RegExp(suchbegriff, "gi");
+
+            var zahler = 0;
+
+
+            console.log('ich suche im LocalStorage');
+            var alleDaten = JSON.parse(localStorage.getItem('feld')); //die Daten aus dem localStorage werden mit get ausgelesen
+            datahandler.data = alleDaten; //alleDaten aus dem lokalStorage werden in datahandler.data geschrieben
+
+
+            if (suchbegriff == '') {
+
+
+                $.mobile.pageContainer.pagecontainer("change", "#Suche", { test: "Hello World!" });
+
+                $('#zahler').html('');
+                var x = 0;
+                var div = document.createElement('div');
+                div.innerHTML = '<div><span style="color: #1a4064;"><b>Es wurden ' + x + ' Ergebnisse gefunden!</b></span></div>';
+                $('#zahler').append(div);
+
+
+            } else {
+
+
+               
+
+                if (isNaN(Suche)) {
+
+
+                    $('#prgr').html('');
+
+                    $.mobile.pageContainer.pagecontainer("change", "#Suche", { test: "Hello World!" });
+
+
+                    var diva = document.createElement('div');
+                    diva.innerHTML = '<span style="color: #1a4064;">Produktgruppen</span>';
+                    $('#prgr').append(diva);
+
+                    //Produktgruppe durchsuchen
+                    for (var index = 0; index < datahandler.data.length; index++) {
+
+
+                        var sublange = datahandler.data[index].subGroups.length;
+                        var prgrname = datahandler.data[index].name;
+
+                        if (prgrname.search(Suche) >= 0) {
+                            zahler++;
+
+                                  
+
+                            var gr = datahandler.data[index].gr_fk;
+
+                            console.log(prgrname);
+
+                            var div = document.createElement('div');
+                            div.innerHTML = '<div><span style="color:#74cae0;">' + prgrname + '</span></div>';
+                            $('#prgr').append(div);
+
+                            var makeShowItemEventListener = function (element) {
+                                return function () {
+                                    var tmp = [element];
+                                    datahandler.nextid = tmp;
+                                    $.mobile.pageContainer.pagecontainer("change", "#subgruppen", { test: "Hello World!" });
+                                };
+                            }
+                            div.onclick = makeShowItemEventListener(gr);
+
+                        } else {
+
+                            console.log('kein Treffer');
+
+                        }
+                    }
+                    var x = zahler;
+                    console.log(x);
+                    datahandler.subbsuchen(Suche, x);
+
+
+
+
+                } else {
+
+                    datahandler.artikelsuchen(Suche); // falls zahlen eingeben werden
+
+                }
             }
+        },
+
+        //-----------------------------------------subgruppen druchsuchen------------------------------------------------------------------------
+
+        subbsuchen: function (Suche, x) {
+
+            console.log('subsuche');
+            //console.log(suchbegriff);
+                   
+
+            var zahler = x;
+            console.log(zahler);
+
+            var diva = document.createElement('div');
+            diva.innerHTML = '<span style="color: #1a4064;">Subgruppen</span>';
+            $('#prgr').append(diva);
+
+            for (var index = 0; index < datahandler.data.length; index++) {
+                var sublange = datahandler.data[index].subGroups.length;
+
+                for (var i = 0; i < sublange; i++) {
+
+                    var subname = datahandler.data[index].subGroups[i].name;
+
+                    if (subname.search(Suche) >= 0) {
+                        zahler++;
+
+                        var prolange = datahandler.data[index].subGroups[i].products.length;
+                        var prgrname = datahandler.data[index].name;
+
+
+                        for (var ii = 0; ii < prolange; ii++) {
+
+                            var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+
+                        }
+
+                        var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                        var gr = datahandler.data[index].gr_fk;
+
+
+                        var div = document.createElement('div');
+                        div.innerHTML = '<div><span style="color:#74cae0;" id="span">' + prgrname + '<b>  >  </b>' + subname + '</span></div>';
+                        $('#prgr').append(div);
+
+                        var makeShowItemEventListener = function (element, sg_fk, pk) {
+                            return function () {
+                                var tmp = [element, sg_fk, pk];
+                                datahandler.nextid = tmp;
+                                $.mobile.pageContainer.pagecontainer("change", "#produkte", { test: "Hello World!" });
+                            };
+                        }
+                        div.onclick = makeShowItemEventListener(gr, sg_fk, pk);
+
+
+
+                    } else {
+
+                        console.log('kein Treffer');
+                    }
+                }
+            }
+            var x = zahler;
+
+            console.log(x);
+            datahandler.proosuchen(Suche, x);
+
+        },
+
+        //-----------------------------------------produkte druchsuchen----------------------------------------------------------------------------
+
+
+        proosuchen: function (Suche, x) {
+
+                    
+
+            var zahler = x;
+            console.log(zahler);
+
+            console.log('prosuche');
+            //console.log(suchbegriff);
+
+
+            var diva = document.createElement('div');
+            diva.innerHTML = '<span style="color: #1a4064;">Produkte</span>';
+            $('#prgr').append(diva);
+
+            for (var index = 0; index < datahandler.data.length; index++) {
+                var sublange = datahandler.data[index].subGroups.length;
+                for (var i = 0; i < sublange; i++) {
+                    var prolange = datahandler.data[index].subGroups[i].products.length;
+
+                    for (var ii = 0; ii < prolange; ii++) {
+
+                        var proname = datahandler.data[index].subGroups[i].products[ii].name;
+                        var artgr = datahandler.data[index].subGroups[i].products[ii].articlegroups;
+                        var prgrname = datahandler.data[index].name;
+                        var subname = datahandler.data[index].subGroups[i].name;
+
+
+                        if (proname.search(Suche) >= 0) {
+
+                            var prgrname = datahandler.data[index].name;
+                            var subname = datahandler.data[index].subGroups[i].name;
+
+                            console.log(proname);
+
+
+                            if (artgr != null) {
+
+                                var artgrlange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
+
+                                for (var ind = 0; ind < artgrlange; ind++) {
+
+                                    var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
+                                    var argr_name = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
+
+                                }
+
+                                var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                var gr = datahandler.data[index].gr_fk;
+                                var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+
+
+                                zahler++;
+                                var divaa = document.createElement('div');
+                                divaa.innerHTML = '<div><span style="color:#74cae0;">' + prgrname + '<b> > </b>' + subname + '<b> > </b>' + proname + '<b> > </b>' + argr_name + ' </span></div>';
+                                $('#prgr').append(divaa);
+
+                                var makeShowItemEventListener = function (element, sg_fk, pk, argr_fk) {
+                                    return function () {
+                                        var tmp = [element, sg_fk, pk, argr_fk];
+                                        datahandler.nextid = tmp;
+                                        $.mobile.pageContainer.pagecontainer("change", "#Artikelgruppen", { test: "Hello World!" });
+                                    };
+                                }
+                                divaa.onclick = makeShowItemEventListener(gr, sg_fk, pk, argr_fk);
+
+
+                                //datahandler.artgrsuchen(Suche,x);
+
+
+                            } else {
+
+                                zahler++;
+                                var divaa = document.createElement('div');
+                                divaa.innerHTML = '<div><span style="color:#74cae0;">' + prgrname + '<b> > </b>' + subname + '<b> > </b>' + proname + '<b> > </b>' + argr_name + ' </span></div>';
+                                $('#prgr').append(divaa);
+
+                                var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                var gr = datahandler.data[index].gr_fk;
+                                var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+
+
+                                var makeShowItemEventListener = function (element, sg_fk, pk) {
+                                    return function () {
+                                        var tmp = [element, sg_fk, pk];
+                                        datahandler.nextid = tmp;
+                                        $.mobile.pageContainer.pagecontainer("change", "#Artikelgruppen", { test: "Hello World!" });
+                                    };
+                                }
+                                divaa.onclick = makeShowItemEventListener(gr, sg_fk, pk);
+
+
+
+
+                            }
+
+                        }
+
+                        var x = zahler;
+                        console.log(x);
+                        datahandler.arttgrsuchen(Suche, x);
+
+                    }
+                }
+
+            }
+
+        },
+
+
+        //----------------------------------------------------Artikelgruppen durchsuchen--------------------------------------------------------------------------------
+
+        arttgrsuchen: function (Suche, x) {
+
+                   
+
+            var zahler = x;
+            console.log('Artikelgruppen_suche');
+
+            $('#artgr').html('');
+
+
+            var diva = document.createElement('div');
+            diva.innerHTML = '<span style="color: #1a4064;">Artikelgruppen</span>';
+            $('#artgr').append(diva);
+
+            for (var index = 0; index < datahandler.data.length; index++) {
+
+                var sublange = datahandler.data[index].subGroups.length
+
+                for (var i = 0; i < sublange; i++) {
+
+                    var prolange = datahandler.data[index].subGroups[i].products.length;
+
+
+                    for (var ii = 0; ii < prolange; ii++) {
+
+                        var artgr = datahandler.data[index].subGroups[i].products[ii].articlegroups
+
+                        if (artgr != null) {
+
+                            var artgrlange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
+
+                            for (var ind = 0; ind < artgrlange; ind++) {
+
+                                var artgrname = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
+
+                                if (artgrname != null) {
+
+                                    if (artgrname.search(Suche) >= 0) {
+
+                                        console.log(artgrname);
+
+                                        zahler++;
+
+                                        var prgrname = datahandler.data[index].name;
+                                        var subname = datahandler.data[index].subGroups[i].name;
+                                        var proname = datahandler.data[index].subGroups[i].products[ii].name;
+                                        var artgrname = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
+
+
+
+                                        var divaa = document.createElement('div');
+                                        divaa.innerHTML = '<div><span style="color:#74cae0;">' + prgrname + '<b> > </b>' + subname + '<b> > </b>' + proname + '<b> > </b>' + artgrname + '</span></div>';
+                                        $('#artgr').append(divaa);
+
+                                        var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
+                                        var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                        var gr = datahandler.data[index].gr_fk;
+                                        var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+
+
+                                        var makeShowItemEventListener = function (element, sg_fk, pk, argr_fk) {
+                                            return function () {
+                                                var tmp = [element, sg_fk, pk, argr_fk];
+                                                datahandler.nextid = tmp;
+                                                $.mobile.pageContainer.pagecontainer("change", "#ArtikelgruppenArtikel", { test: "Hello World!" });
+                                            };
+                                        }
+                                        divaa.onclick = makeShowItemEventListener(gr, sg_fk, pk, argr_fk);
+
+
+
+                                    } else {
+                                        console.log('keine artikelgruppe');
+
+                                    }
+
+                                } else {
+
+                                    console.log('name null');
+                                }
+
+                            }
+
+                        } else {
+
+
+
+                        }
+
+
+                    }
+
+
+                }
+
+            }
+
+            // $('#zahler').html('');
+            var x = zahler;
+            $('#zahler').html('');
+            var div = document.createElement('div');
+            div.innerHTML = '<div><span style="color: #1a4064;"><b>Es wurden ' + x + ' Ergebnisse gefunden!</b></span></div>';
+            $('#zahler').append(div);
+
+
+        },
+        //----------------------------------------------------------------------- Artiklen durchsuchen--------------------------------------------------------------
+        artikelsuchen: function (Suche) {
+
+            var zahler = 0;
+            $.mobile.pageContainer.pagecontainer("change", "#Artikelsuche", { test: "Hello World!" });
+
+            console.log('Artikeln suchen');
+            $('artikel').html('');
+
+            for (var index = 0; index < datahandler.data.length; index++) {
+
+                var sublange = datahandler.data[index].subGroups.length;
+
+                for (var i = 0; i < sublange; i++) {
+
+                    var prolange = datahandler.data[index].subGroups[i].products.length;
+
+                    for (var ii = 0; ii < prolange; ii++) {
+
+                        var artgrp = datahandler.data[index].subGroups[i].products[ii].articlegroups;
+
+                        if (artgrp != null) {
+
+                            var artgrplange = datahandler.data[index].subGroups[i].products[ii].articlegroups.length;
+
+                            for (var ind = 0; ind < artgrplange; ind++) {
+
+                                var artlange = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles.length;
+
+                                for (var inde = 0; inde < artlange; inde++) {
+
+                                    var art_nr = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].artikel_nr;
+
+                                    if (art_nr.search(Suche) >= 0) {
+
+                                        console.log(art_nr);
+                                        zahler++;
+                                        var div = document.createElement('div');
+                                        div.innerHTML = '<div><span style="color:#74cae0; margin-left: 1cm;">' + art_nr + '</span></div>';
+                                        $('#artikel').append(div);
+
+
+                                        var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
+                                        var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                        var gr = datahandler.data[index].gr_fk;
+                                        var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+
+
+                                        var makeShowItemEventListener = function (element, sg_fk, pk, argr_fk) {
+                                            return function () {
+                                                var tmp = [element, sg_fk, pk, argr_fk];
+                                                datahandler.nextid = tmp;
+                                                $.mobile.pageContainer.pagecontainer("change", "#ArtikelgruppenArtikel", { test: "Hello World!" });
+                                            };
+                                        }
+                                        div.onclick = makeShowItemEventListener(gr, sg_fk, pk, argr_fk);
+
+
+                                    } else {
+                                        console.log('keine artikeln vohanden')
+                                    }
+                                }
+                            }
+
+                        } else {
+
+                            var artlange = datahandler.data[index].subGroups[i].products[ii].articles.length;
+
+                            for (var inde = 0; inde < artlange; inde++) {
+
+                                var art_nr = datahandler.data[index].subGroups[i].products[ii].articles[inde].artikel_nr;
+
+                                if (art_nr.search(Suche) >= 0) {
+
+                                    console.log(art_nr);
+                                    zahler++;
+                                    var div = document.createElement('div');
+                                    div.innerHTML = '<div><span style="color:#74cae0; margin-left: 1cm;"><a>' + art_nr + '</a></span></div>';
+                                    $('#artikel').append(div);
+
+                                    //klick auf ergebnisse der artiklen
+                                    var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
+                                    var gr = datahandler.data[index].gr_fk;
+                                    var pk = datahandler.data[index].subGroups[i].products[ii].pk;
+
+
+                                    var makeShowItemEventListener = function (element, sg_fk, pk) {
+                                        return function () {
+                                            var tmp = [element, sg_fk, pk];
+                                            datahandler.nextid = tmp;
+                                            $.mobile.pageContainer.pagecontainer("change", "#Artikelgruppen", { test: "Hello World!" });
+                                        };
+                                    }
+                                    div.onclick = makeShowItemEventListener(gr, sg_fk, pk);
+
+
+
+                                } else {
+
+                                    console.log('keine Artikeln vorhanden');
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            var x = zahler;
+            $('#x').html('');
+            var div = document.createElement('div');
+            div.innerHTML = '<div><span style="color: #1a4064;"><b>Es wurden ' + x + ' Ergebnisse gefunden!</b></span></div>';
+            $('#x').append(div);
+
+
+
+        },
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1688,6 +2214,17 @@
         }
 
         //-----------------------------------------page Aufruf----------------------------------------------------------------------------------------------------------------------------
+
+        /**************************************************SUbSuche*********************************************************************************************/
+
+
+
+
+
+
+
+
+
 
 
 

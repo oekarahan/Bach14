@@ -520,8 +520,8 @@
         font-family:OpenSans-bold;
     }
  
-
-    #ta {
+/************************Suchefeld formatierungen einzelner pages********************************************************/
+    #suchen {
         width: 190px !important;
         height: 20px !important;
         position: fixed;
@@ -536,7 +536,91 @@
 
     }
 
-        #subsuche {
+        #subsuchen {
+        width: 190px !important;
+        height: 20px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+        top: 6%;
+        left: 55%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+                #prosuchen {
+        width: 190px !important;
+        height: 20px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+        top: 6%;
+        left: 55%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+                        #artgrpsuchen {
+        width: 190px !important;
+        height: 20px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+        top: 6%;
+        left: 55%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+                                #artgrpartsuchen {
+        width: 190px !important;
+        height: 20px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+        top: 6%;
+        left: 55%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+                                        #mediacentersuche {
+        width: 190px !important;
+        height: 20px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+        top: 6%;
+        left: 55%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+                                                #suchesuche {
+        width: 190px !important;
+        height: 20px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+        top: 6%;
+        left: 55%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+              #artikelsuchensuche {
         width: 190px !important;
         height: 20px !important;
         position: fixed;
@@ -551,6 +635,8 @@
 
     }
 
+
+/**********************************************************/
 
 
     #bild {
@@ -1096,9 +1182,9 @@
     #scan img:hover {
         opacity: 0.4;
     }
- 
+ /*********Suchfeld formatierung***************/
 
-    #ta {
+    #suchen {
         width: 120px !important;
         height: 15px !important;
         position: fixed;
@@ -1112,7 +1198,91 @@
         font-family:OpenSans-bold;
     }
     
-       #subsuche {
+       #subsuchen {
+        width: 120px !important;
+        height: 15px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+        top: 4%;
+        left: 45%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+              #prosuchen {
+        width: 120px !important;
+        height: 15px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+        top: 4%;
+        left: 45%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+                     #artgrpsuchen {
+        width: 120px !important;
+        height: 15px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+        top: 4%;
+        left: 45%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+                            #artgrpartsuchen {
+        width: 120px !important;
+        height: 15px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+        top: 4%;
+        left: 45%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+                                   #mediacentersuche {
+        width: 120px !important;
+        height: 15px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+        top: 4%;
+        left: 45%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+                                          #suchesuche {
+        width: 120px !important;
+        height: 15px !important;
+        position: fixed;
+        background-position: right;
+        border-radius: 4px;
+        border-color: #1a4064;
+        top: 4%;
+        left: 45%;
+        font-family:meineSchrift;
+        font-size:12px;
+        font-family:OpenSans-bold;
+
+    }
+             #artikelsuchensuche {
         width: 120px !important;
         height: 15px !important;
         position: fixed;
@@ -1127,7 +1297,7 @@
 
     }
 
-
+/*******************************************************/
     #bild {
         position: fixed;
 
