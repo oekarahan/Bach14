@@ -20,7 +20,7 @@
 
 <!-- hier wird die checkinternet funktion aufgerufen-->
 <body onload="checkInternet();" id="startseite">
-
+    <div id="bodydiv">
 
     <script src=" cordova.js">
     </script>
@@ -28,9 +28,7 @@
     <script src="scripts/index.js"></script>
 
     <!------------------------------- Startseite------------------------------------------------------------->
-
-
-    <div class="mainContent">
+ <div class="mainContent">
 
         <div data-role="page">
 
@@ -50,28 +48,28 @@
 
                 <div id="iconicon" >
                     <a href="#produktgruppen" style="display:block"><img id="img_icon" src="css/start_icons/klinik.png" /></a>
-                    <span id="klinik">KLINIK</span>
+                    <span id="klinik"><b>KLINIK</b></span>
                 </div>
-                <div id="iconicon" >
+                <div id="iconiconalters" >
                     <a href="#produktgruppen" style="display:block"><img id="img_icon" src="css/start_icons/alters.png" /></a>
-                    <span id="alters">ALTERS-UND <br />PFLEGEHEIME</span>
+                    <span id="alters"><b>ALTERS-UND<br /> PFLEGEHEIME</b></span>
                 </div>
                 <div id="iconicon" >
                     <a href="#produktgruppen" style="display:block"><img id="img_icon" src="css/start_icons/arzt.png" /></a>
-                    <span id="arzt">ARZTPRAXIS</span>
+                    <span id="arzt"><b>ARZTPRAXIS</b></span>
                 </div>
 
                 <div id="iconicon1" >
                     <a href="#produktgruppen" style="display:block"><img src="css/start_icons/apo.png" /></a>
-                    <span>APOTHEKE/<br />DROGERIE</span>
+                    <span><b>APOTHEKE/<br />DROGERIE</b></span>
                 </div>
-                <div id="iconicon1" >
+                <div id="iconiconindustrie" >
                     <a href="#produktgruppen" style="display:block"><img src="css/start_icons/industrie.png"></a>
-                    <span>INDUSTRIE</span>
+                    <span><b>INDUSTRIE</b></span>
                 </div>
                 <div id="iconicon1" >
                     <a href="#produktgruppen" style="display:block"><img src="css/start_icons/private.png" /></a>
-                    <span>PRIVATE</span>
+                    <span><b>PRIVATE</b></span>
                 </div>
             </div>
         </div>
@@ -88,7 +86,7 @@
                                 <li id="zurück">
                                     <div id="divzuruck">
                                         <a onclick="history.back()" class="azurück">
-                                            <img src="css/zurück.png" />
+                                            <img src="css/zuruck.png" />
                                         </a>
                                     </div>
 
@@ -105,19 +103,12 @@
                                 </li>
 
 
-                                <li id="leistungen">
-                                    <div id="divleistungen">
-                                        <a href="leistungen.html">
-                                            <img src="css/leistung.png" id="leistungenbild" /><span>Leistungen</span>
-                                        </a>
-                                    </div>
-                                </li>
-
+                               
 
                                 <li id="scan">
                                     <div id="divscanner">
                                         <a href="scanner.html">
-                                            <img src="css/scanner.png" />
+                                            <img src="css/scanner.PNG" />
                                             <span>Scanner</span>
                                         </a>
                                     </div>
@@ -135,8 +126,10 @@
                 </div>
             </div>
             <br /><br /><br /><br />
-            <div id="produktgruppen_inhalt" style="overflow-y:scroll;"></div>
-
+            <div id="prodivtrans">
+                <br /><br /><br /><br />
+            <div id="produktgruppen_inhalt" ></div>
+			</div>
         </div>
         <!---------------------------------------------------------------------- Subgruppen------------------------------------------------------------->
 
@@ -151,7 +144,7 @@
                         <li id="zurück">
                             <div id="divzuruck">
                                 <a onclick="history.back()" class="azurück">
-                                    <img src="css/zurück.png" />
+                                    <img src="css/zuruck.png" />
                                 </a>
                             </div>
 
@@ -168,19 +161,13 @@
                         </li>
 
 
-                        <li id="leistungen">
-                            <div id="divleistungen">
-                                <a href="leistungen.html">
-                                    <img src="css/leistung.png" id="leistungenbild" /><span>Leistungen</span>
-                                </a>
-                            </div>
-                        </li>
+                        
 
 
                         <li id="scan">
                             <div id="divscanner">
                                 <a href="scanner.html">
-                                    <img src="css/scanner.png" />
+                                    <img src="css/scanner.PNG" />
                                     <span>Scanner</span>
                                 </a>
                             </div>
@@ -197,8 +184,10 @@
                     </ul>
                 </div>
             </div>
+            <div id="subdivtrans">
+                <br /><br /><br /><br />
             <div id="sub" style="overflow-y:scroll;"></div>
-
+			</div>
         </div>
         <!---------------------------------------------------------------------- Produkte------------------------------------------------------------->
         <div data-role="page" id="produkte">
@@ -212,7 +201,7 @@
                         <li id="zurück">
                             <div id="divzuruck">
                                 <a onclick="history.back()" class="azurück">
-                                    <img src="css/zurück.png" />
+                                    <img src="css/zuruck.png" />
                                 </a>
                             </div>
 
@@ -229,19 +218,11 @@
                         </li>
 
 
-                        <li id="leistungen">
-                            <div id="divleistungen">
-                                <a href="leistungen.html">
-                                    <img src="css/leistung.png" id="leistungenbild" /><span>Leistungen</span>
-                                </a>
-                            </div>
-                        </li>
-
-
+                      
                         <li id="scan">
                             <div id="divscanner">
                                 <a href="scanner.html">
-                                    <img src="css/scanner.png" />
+                                    <img src="css/scanner.PNG" />
                                     <span>Scanner</span>
                                 </a>
                             </div>
@@ -259,8 +240,10 @@
                 </div>
             </div>
             <br /><br /><br /><br />
-            <div id="products" overflow-y:scroll;"></div>
-
+            <div id="prodivtrans">
+                <br /><br /><br /><br />
+            <div id="products"  style="overflow-y:scroll;"></div>
+		</div>
         </div>
 
         <!---------------------------------------------------------------------- Artikelgruppen------------------------------------------------------------->
@@ -275,7 +258,7 @@
                         <li id="zurück">
                             <div id="divzuruck">
                                 <a onclick="history.back()" class="azurück">
-                                    <img src="css/zurück.png" />
+                                    <img src="css/zuruck.png" />
                                 </a>
                             </div>
 
@@ -291,20 +274,10 @@
 
                         </li>
 
-
-                        <li id="leistungen">
-                            <div id="divleistungen">
-                                <a href="leistungen.html">
-                                    <img src="css/leistung.png" id="leistungenbild" /><span>Leistungen</span>
-                                </a>
-                            </div>
-                        </li>
-
-
                         <li id="scan">
                             <div id="divscanner">
                                 <a href="scanner.html">
-                                    <img src="css/scanner.png" />
+                                    <img src="css/scanner.PNG" />
                                     <span>Scanner</span>
                                 </a>
                             </div>
@@ -321,15 +294,18 @@
                     </ul>
                 </div>
             </div>
+            
+
+			  <div id="artgrpdivtrans">
             <br /><br /><br /><br />
-
             <div id="artikelgrp" style="overflow-y:scroll;"></div>
-
-            <div id="artikelgrpdiv">
+			</div>
+			
+            <div id="artikelgrpdiv" style="background-color: white;">
 
                 <div id="produktname"></div>
 
-                <hr style="color:grey;" noshade size="1"  />
+                    <hr style="color:grey;" noshade size="1" align="center" />
 
                 <div id="artikelohneartikelgruppen" style="overflow-y:scroll;"></div>
 
@@ -350,7 +326,7 @@
                         <li id="zurück">
                             <div id="divzuruck">
                                 <a onclick="history.back()" class="azurück">
-                                    <img src="css/zurück.png" />
+                                    <img src="css/zuruck.png" />
                                 </a>
                             </div>
 
@@ -367,19 +343,10 @@
                         </li>
 
 
-                        <li id="leistungen">
-                            <div id="divleistungen">
-                                <a href="leistungen.html">
-                                    <img src="css/leistung.png" id="leistungenbild" /><span>Leistungen</span>
-                                </a>
-                            </div>
-                        </li>
-
-
                         <li id="scan">
                             <div id="divscanner">
                                 <a href="scanner.html">
-                                    <img src="css/scanner.png" />
+                                    <img src="css/scanner.PNG" />
                                     <span>Scanner</span>
                                 </a>
                             </div>
@@ -405,7 +372,7 @@
 
                 <div id="artgrpart" style="overflow-y:scroll;"></div>
 
-                <div id="button" ></div>
+                <div id="button"></div>
 
             </div>
         </div>
@@ -422,7 +389,7 @@
                         <li id="zurück">
                             <div id="divzuruck">
                                 <a onclick="history.back()" class="azurück">
-                                    <img src="css/zurück.png" />
+                                    <img src="css/zuruck.png" />
                                 </a>
                             </div>
 
@@ -439,19 +406,13 @@
                         </li>
 
 
-                        <li id="leistungen">
-                            <div id="divleistungen">
-                                <a href="leistungen.html">
-                                    <img src="css/leistung.png" id="leistungenbild" /><span>Leistungen</span>
-                                </a>
-                            </div>
-                        </li>
+                        
 
 
                         <li id="scan">
                             <div id="divscanner">
                                 <a href="scanner.html">
-                                    <img src="css/scanner.png" />
+                                    <img src="css/scanner.PNG" />
                                     <span>Scanner</span>
                                 </a>
                             </div>
@@ -468,22 +429,22 @@
                     </ul>
                 </div>
             </div>
-            <br /><br /><br /><br />
+            
 
 
             <div id="media" >
-
-                <span id="sapnr">SAP Nr.:</span> &nbsp;&nbsp;&nbsp;<span id="saplink">Link:</span>
+                <br /><br /><br />
+                <span id="sapnr" style="font-size:1.5em; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: #1a4064;">SAP Nr.:</span><span id="saplink" style="font-size:1.5em; margin-left:15%; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #1a4064;">Link:</span>
                 <b><hr style="color:#83d0e3; margin-left:5%; margin-right:5%;" /></b>
                 <div id="divmediacenter" ></div>
 
                 <br />
 
+                
                 <div id="prgrlinks"  ></div>
-                <div id="sublinks" ></div>
-                <div id="prolinks"></div>
+                
 
-
+                
             </div>
 
         </div>
@@ -503,7 +464,7 @@
                         <li id="zurück">
                             <div id="divzuruck">
                                 <a onclick="history.back()" class="azurück">
-                                    <img src="css/zurück.png" />
+                                    <img src="css/zuruck.png" />
                                 </a>
                             </div>
 
@@ -520,19 +481,12 @@
                         </li>
 
 
-                        <li id="leistungen">
-                            <div id="divleistungen">
-                                <a href="leistungen.html">
-                                    <img src="css/leistung.png" id="leistungenbild" /><span>Leistungen</span>
-                                </a>
-                            </div>
-                        </li>
-
-
+                      
+                   
                         <li id="scan">
                             <div id="divscanner">
                                 <a href="scanner.html">
-                                    <img src="css/scanner.png" />
+                                    <img src="css/scanner.PNG" />
                                     <span>Scanner</span>
                                 </a>
                             </div>
@@ -550,10 +504,10 @@
                     </ul>
                 </div>
             </div>
-            <br /><br /><br /><br /><br />
-
-            <div id="zahler" style="margin-left: 0.5cm;"></div>
-
+            
+            <div id="zahler" ></div>
+          
+            
             <div id="divsuchediv">
 
                 <div id="prgr"></div>
@@ -578,7 +532,7 @@
                         <li id="zurück">
                             <div id="divzuruck">
                                 <a onclick="history.back()" class="azurück">
-                                    <img src="css/zurück.png" />
+                                    <img src="css/zuruck.png" />
                                 </a>
                             </div>
 
@@ -595,19 +549,12 @@
                         </li>
 
 
-                        <li id="leistungen">
-                            <div id="divleistungen">
-                                <a href="leistungen.html">
-                                    <img src="css/leistung.png" id="leistungenbild" /><span>Leistungen</span>
-                                </a>
-                            </div>
-                        </li>
-
+                        
 
                         <li id="scan">
                             <div id="divscanner">
                                 <a href="scanner.html">
-                                    <img src="css/scanner.png" />
+                                    <img src="css/scanner.PNG" />
                                     <span>Scanner</span>
                                 </a>
                             </div>
@@ -637,7 +584,7 @@
         </div>
 
     </div>
-
+</div>
     <script>
         //-----------------------------------------------Prdouktgruppen werden angezeigt---------------------------------------------------------------------------------------------------------------
 
@@ -662,7 +609,7 @@
 
                         div.style.styleFloat = "left";
 
-                        div.innerHTML = '<div style="float: left; "><b>' + pgname + '</div><div style="clear: both"><img id="bildprgr"  src="data:image/jpg;base64,' + prgrbild + '"/></div>';
+                        div.innerHTML = '<div id="pagename"><b>' + pgname + '</div><div style="clear: both;"><img id="bildprgr"  src="data:image/jpg;base64,' + prgrbild + '"/></div>';
 
                         var gr_fk = datahandler.data[index].gr_fk;
 
@@ -701,7 +648,7 @@
                                 //div.innerHTML = '<div  style="float: left; border: 0px;"><b>' + subgruppen + '</b></div><div style="clear: both"><img src="css/Probild.png"><div><div></div>';
 
                                 div.style.styleFloat = "left";
-                                div.innerHTML = '<div style="float: left;  "><b>' + subgruppen + '</div><div style="clear: both"><img id="bildsub"  src="data:image/jpg;base64,' + subBilder + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                div.innerHTML = '<div id="pagename"><b>' + subgruppen + '</div><div style="clear: both;"><img id="bildsub"  src="data:image/jpg;base64,' + subBilder + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
 
                                 $('#sub').append(div);
 
@@ -750,7 +697,7 @@
                                         var prbild = datahandler.data[index].subGroups[i].products[ii].image;
 
                                         div.style.styleFloat = "left";
-                                        div.innerHTML = '<div style="float: left;"><b>' + produktename + '</div><div style="clear: both"><img id="bildpr" src="data:image/jpg;base64,' + prbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                        div.innerHTML = '<div id="pagename"><b>' + produktename + '</div><div style="clear: both;"><img id="bildpr" src="data:image/jpg;base64,' + prbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
 
                                         $('#products').append(div);
 
@@ -804,15 +751,16 @@
 
                                             document.getElementById("artikelgrpdiv").style.display = "";
 
-                                            document.getElementById("artikelgrp").style.display = "none";
+                                            document.getElementById("artgrpdivtrans").style.display = "none";
 
                                             if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
 
                                                 var artikellange = datahandler.data[index].subGroups[i].products[ii].articles.length;
                                                 var divname = document.createElement('div');
+                                                var produktbild1 = datahandler.data[index].subGroups[i].products[ii].image;
 
                                                 $('#produktname').append(divname);
-                                                divname.innerHTML = '<div id="prddiv"><b><br>' + produktname + '</b></div>';
+                                                divname.innerHTML = '<div id="prddiv"><b><br>' + produktname + '</b></div><div ><img id="artgrpbild" src="data:image/jpg;base64,' + produktbild1 + '"/></div> ';
 
                                                 for (ind = 0; ind < artikellange; ind++) {
 
@@ -821,11 +769,11 @@
                                                     var migel1 = datahandler.data[index].subGroups[i].products[ii].articles[ind].migel1;
                                                     var verpackungshinweis = datahandler.data[index].subGroups[i].products[ii].articles[ind].verpackungshinweis;
 
-                                                    console.log(artikel_nr);
+                                                    //console.log(artikel_nr);
 
                                                     var div = document.createElement('div');
-                                                    div.style.styleFloat = "left";
-                                                    div.innerHTML = '<div><b>' + verpackungshinweis + '</b></div><div>' + abmessung + '</div><div id="mainselection"></div><div><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div >' + migel1 + '</div><hr style="color:grey;" noshade size="1"  />';
+                                                    
+                                                    div.innerHTML = '<div id="lala"><b>' + verpackungshinweis + '</b></div><div>' + abmessung + '</div><div id="mainselection"></div><div><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade siz="3"/>';
 
                                                     $('#artikelohneartikelgruppen').append(div);
 
@@ -833,7 +781,7 @@
                                                 var divaa = document.createElement('div');
                                                 var mediacenter = 'Mediacenter';
 
-                                                divaa.innerHTML = '<div><button name="button" style=" margiin-left:5px; background-color:#83d0e3; width:100px; height:25px; " value="Mediacenter" type="button"><span id="buttonschrift">' + mediacenter + '</span></button></div>';
+                                                divaa.innerHTML = '<div id="footer"><br>&nbsp;&nbsp;&nbsp;<button id="mediacenterbutton"  value="Mediacenter" type="button"><span id="buttonschrift">' + mediacenter + '</span></button></div>';
 
                                                 $('#buttonmedia').append(divaa);
 
@@ -848,7 +796,7 @@
                                             }
                                         } else {  // die Artikeln mt Artikelgruppen
                                             document.getElementById("artikelgrpdiv").style.display = "none";
-                                            document.getElementById("artikelgrp").style.display = "";
+                                            document.getElementById("artgrpdivtrans").style.display = "";
 
                                             for (var ii = 0; ii < prolange; ii++) {
 
@@ -864,7 +812,7 @@
                                                         for (ind = 0; ind < lange; ind++) {
 
                                                             var artikelgruppe = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
-                                                            console.log(artikelgruppe);
+                                                            //console.log(artikelgruppe);
                                                             var agbild = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].image;
 
 
@@ -872,7 +820,7 @@
 
                                                             div.style.styleFloat = "left";
 
-                                                            div.innerHTML = '<div style="float: left; "><b>' + artikelgruppe + '</div><div style="clear: both"><img id="bildartikelgruppen"  src="data:image/jpg;base64,' + agbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                                            div.innerHTML = '<div id="pagename"><b>' + artikelgruppe + '</div><div style="clear: both;"><img id="bildartikelgruppen"  src="data:image/jpg;base64,' + agbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
                                                             $('#artikelgrp').append(div);
 
 
@@ -905,7 +853,7 @@
                 //-------------------------------------------------------------Artikeln der Artikelgruppen werden angezeigt-------------------------------------------------------------------------------------------------
                 showArtikelgruppenArtikel: function (grgr) {
 
-                    console.log('test');
+                    //console.log('test');
 
 
 
@@ -965,10 +913,10 @@
                                                             var migel1 = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].migel1;
 
 
-                                                            console.log(abmessung);
-                                                            console.log(verpackungshinweis);
-                                                            console.log(artikel_nr);
-                                                            console.log(migel1);
+                                                            //console.log(abmessung);
+                                                            // console.log(verpackungshinweis);
+                                                            //console.log(artikel_nr);
+                                                            //console.log(migel1);
 
                                                             var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
                                                             var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
@@ -980,12 +928,12 @@
 
                                                             $('#artgrpart').append(divb);
                                                             divb.innerHTML = '<div id="lala"><b>' + verpackungshinweis + '</b></div><div>' + abmessung + '</div><div id="mainselection"></div><div><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade siz="3"/>';
-                                                            //<div style=" background-color: white; margin-left: 0.4cm; margin-right: 2cm; width:625px; height:150px;">
+                                                            
                                                         }
                                                         var divaa = document.createElement('div');
                                                         var mediacenter = 'Mediacenter';
 
-                                                        divaa.innerHTML = '<div id="footer"><br>&nbsp;&nbsp;&nbsp;<button name="button" style="background-color:#83d0e3; width:100px; height:25px; " value="Mediacenter" type="button"><span id="buttonschrift">' + mediacenter + '</span></button></div>';
+                                                        divaa.innerHTML = '<div id="footer"><br>&nbsp;&nbsp;&nbsp;<button id="mediacenterbutton" value="Mediacenter" type="button"><span id="buttonschrift">' + mediacenter + '</span></button></div>';
 
                                                         $('#button').append(divaa);
 
@@ -1029,8 +977,8 @@
                             var prgrname = datahandler.data[index].name;
 
 
-                            console.log('Links der Produktgruppe' + prgrname);
-                            console.log(prgrlinklange)
+                            //console.log('Links der Produktgruppe' + prgrname);
+                            // console.log(prgrlinklange)
 
                             // produktgruppenlinks werden ausgegeben
                             for (pi = 0; pi < prgrlinklange; pi++) {
@@ -1040,12 +988,13 @@
                                 var prgrurl = datahandler.data[index].links[pi].url;
 
 
-                                console.log(prgrlink);
-                                console.log(prgrurl);
+                                //console.log(prgrlink);
+                                //console.log(prgrurl);
 
                                 var div = document.createElement('div');
                                 div.innerHTML = '<div><span  id="sap">' + prgrsap + '</span><div id="divlink" ><a style="color:#74cae0;" id="alink" href="' + prgrurl + '">' + prgrlink + '</a></div><hr noshade size="0.3" style="color:grey;" />';
                                 $('#prgrlinks').append(div);
+                                
                             }
 
                             for (i = 0; i < lange; i++) {
@@ -1056,7 +1005,7 @@
                                     var sublinklange = datahandler.data[index].subGroups[i].links.length;
                                     var subname = datahandler.data[index].subGroups[i].name;
 
-                                    console.log('Links der Subgruppe' + subname);
+                                    //console.log('Links der Subgruppe' + subname);
                                     console.log(sublinklange);
                                     // subgruppen links werden ausgegeben
 
@@ -1066,12 +1015,13 @@
                                         var subsap = datahandler.data[index].subGroups[i].links[si].sap_nr;
                                         var suburl = datahandler.data[index].subGroups[i].links[si].url;
 
-                                        console.log(sublinks);
-                                        console.log(suburl);
+                                        //console.log(sublinks);
+                                        //console.log(suburl);
 
                                         var div = document.createElement('div');
-                                        div.innerHTML = '<div><span  id="sap">' + subsap + '</span><div id="divlink" ><a style="color:#74cae0;" id="alink" href="' + suburl + '">' + sublinks + '</a></div><hr noshade size="0.3" style="color:grey;" />';
-                                        $('#sublinks').append(div);
+                                        div.innerHTML = '<div><span id="sap">' + subsap + '</span><div id="divlink" ><a style="color:#74cae0;" id="alink" href="' + suburl + '">' + sublinks + '</a></div><hr noshade size="0.3" style="color:grey;" />';
+                                        $('#prgrlinks').append(div);
+                                        
                                     }
 
                                     for (ii = 0; ii < prolange; ii++) {
@@ -1081,8 +1031,8 @@
                                             var prolinklange = datahandler.data[index].subGroups[i].products[ii].links.length;
                                             var proname = datahandler.data[index].subGroups[i].products[ii].name;
 
-                                            console.log('Links der Produkte' + proname);
-                                            console.log(prolinklange);
+                                            //console.log('Links der Produkte' + proname);
+                                            // console.log(prolinklange);
 
                                             // produkte links werden ausgegeben
                                             for (pri = 0; pri < prolinklange; pri++) {
@@ -1092,12 +1042,13 @@
                                                 var prourl = datahandler.data[index].subGroups[i].products[ii].links[pri].url;
 
 
-                                                console.log(prolinks);
+                                                // console.log(prolinks);
 
 
                                                 var div = document.createElement('div');
                                                 div.innerHTML = '<div><span  id="sap">' + prosap + '</span><div id="divlink" ><a style="color:#74cae0;" id="alink" href="' + prourl + '">' + prolinks + '</a></div><hr noshade size="0.3" style="color:grey;" />';
-                                                $('#prolinks').append(div);
+                                                $('#prgrlinks').append(div);
+                                              
                                             }
                                         }
                                     }
@@ -1115,7 +1066,7 @@
 
                     datahandler.data = alleDaten;
 
-                    console.log(datahandler.data);
+                    //console.log(datahandler.data);
 
                     /*  for (var i = 0; i < localStorage.length; i++) {
 
@@ -1130,6 +1081,8 @@
                 //--------------------------------------------------Webservice wird aufgerufen und daten werden lokal abgespeichert------------------------------------------------------------------------------------------------------------
 
                 loaddata: function () {
+                	
+                
                     console.log('mit dem Webservice verbunden');
 
                     $.ajax({
@@ -1208,7 +1161,7 @@
 
                                     var gr = datahandler.data[index].gr_fk;
 
-                                    console.log(prgrname);
+                                    //console.log(prgrname);
 
                                     var div = document.createElement('div');
                                     div.innerHTML = '<div><span style="color:#74cae0;">' + prgrname + '</span></div>';
@@ -1225,12 +1178,12 @@
 
                                 } else {
 
-                                    console.log('kein Treffer');
+                                    // console.log('kein Treffer');
 
                                 }
                             }
                             var x = zahler;
-                            console.log(x);
+                            //console.log(x);
                             datahandler.subsuchen(Suche, x);
 
 
@@ -1248,12 +1201,12 @@
 
                 subsuchen: function (Suche, x) {
 
-                    console.log('subsuche');
+                    // console.log('subsuche');
                     //console.log(suchbegriff);
 
 
                     var zahler = x;
-                    console.log(zahler);
+                    //console.log(zahler);
 
                     var diva = document.createElement('div');
                     diva.innerHTML = '<span style="color: #1a4064;">Subgruppen</span>';
@@ -1300,13 +1253,13 @@
 
                             } else {
 
-                                console.log('kein Treffer');
+                                //console.log('kein Treffer');
                             }
                         }
                     }
                     var x = zahler;
 
-                    console.log(x);
+                    //console.log(x);
                     datahandler.prosuchen(Suche, x);
 
                 },
@@ -1319,9 +1272,9 @@
 
 
                     var zahler = x;
-                    console.log(zahler);
+                    // console.log(zahler);
 
-                    console.log('prosuche');
+                    //console.log('prosuche');
                     //console.log(suchbegriff);
 
 
@@ -1347,7 +1300,7 @@
                                     var prgrname = datahandler.data[index].name;
                                     var subname = datahandler.data[index].subGroups[i].name;
 
-                                    console.log(proname);
+                                    //console.log(proname);
 
 
                                     if (artgr != null) {
@@ -1413,7 +1366,7 @@
                                 }
 
                                 var x = zahler;
-                                console.log(x);
+                                // console.log(x);
                                 datahandler.artgrsuchen(Suche, x);
 
                             }
@@ -1428,10 +1381,10 @@
 
                 artgrsuchen: function (Suche, x) {
 
-
+                    
 
                     var zahler = x;
-                    console.log('Artikelgruppen_suche');
+                    //console.log('Artikelgruppen_suche');
 
                     $('#artgr').html('');
 
@@ -1465,7 +1418,7 @@
 
                                             if (artgrname.search(Suche) >= 0) {
 
-                                                console.log(artgrname);
+                                                //console.log(artgrname);
 
                                                 zahler++;
 
@@ -1498,13 +1451,13 @@
 
 
                                             } else {
-                                                console.log('keine artikelgruppe');
+                                                //console.log('keine artikelgruppe');
 
                                             }
 
                                         } else {
 
-                                            console.log('name null');
+                                            //console.log('name null');
                                         }
 
                                     }
@@ -1521,24 +1474,29 @@
 
                         }
 
+
+
+
                     }
 
-                    // $('#zahler').html('');
+                    
+
                     var x = zahler;
                     $('#zahler').html('');
                     var div = document.createElement('div');
                     div.innerHTML = '<div><span style="color: #1a4064;"><b>Es wurden ' + x + ' Ergebnisse gefunden!</b></span></div>';
+                    
                     $('#zahler').append(div);
 
-
-                },
+                
+            },
                 //----------------------------------------------------------------------- Artiklen durchsuchen--------------------------------------------------------------
                 artikelsuchen: function (Suche) {
 
                     var zahler = 0;
                     $.mobile.pageContainer.pagecontainer("change", "#Artikelsuche", { test: "Hello World!" });
 
-                    console.log('Artikeln suchen');
+                    //console.log('Artikeln suchen');
                     $('artikel').html('');
 
                     for (var index = 0; index < datahandler.data.length; index++) {
@@ -1567,7 +1525,7 @@
 
                                             if (art_nr.search(Suche) >= 0) {
 
-                                                console.log(art_nr);
+                                                //console.log(art_nr);
                                                 zahler++;
                                                 var div = document.createElement('div');
                                                 div.innerHTML = '<div><span style="color:#74cae0; margin-left: 1cm;">' + art_nr + '</span></div>';
@@ -1591,7 +1549,7 @@
 
 
                                             } else {
-                                                console.log('keine artikeln vohanden')
+                                                //console.log('keine artikeln vohanden')
                                             }
                                         }
                                     }
@@ -1606,7 +1564,7 @@
 
                                         if (art_nr.search(Suche) >= 0) {
 
-                                            console.log(art_nr);
+                                            //console.log(art_nr);
                                             zahler++;
                                             var div = document.createElement('div');
                                             div.innerHTML = '<div><span style="color:#74cae0; margin-left: 1cm;"><a>' + art_nr + '</a></span></div>';
@@ -1631,7 +1589,7 @@
 
                                         } else {
 
-                                            console.log('keine Artikeln vorhanden');
+                                            //console.log('keine Artikeln vorhanden');
 
                                         }
 
@@ -1652,7 +1610,7 @@
 
             }
 
-                //--------------------------------------------Internetverbidnung wird geprüft-----------------------------------------------------------------------------------------------------------------
+    //--------------------------------------------Internetverbidnung wird geprüft-----------------------------------------------------------------------------------------------------------------
 
             
         function checkInternet() {
@@ -1683,14 +1641,6 @@
         }
 
         //-----------------------------------------page Aufruf----------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
 
 
 
