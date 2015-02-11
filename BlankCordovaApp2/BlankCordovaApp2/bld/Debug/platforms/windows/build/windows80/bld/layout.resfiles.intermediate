@@ -3,11 +3,6 @@ images\logo.png
 images\smalllogo.png
 images\splashscreen.png
 images\storelogo.png
-www\Content\images\ajax-loader.gif
-www\Content\images\icons-18-black.png
-www\Content\images\icons-18-white.png
-www\Content\images\icons-36-black.png
-www\Content\images\icons-36-white.png
 www\Content\jquery.mobile.structure-1.2.0-beta.1.css
 www\Content\jquery.mobile.structure-1.2.0-beta.1.min.css
 www\Content\jquery.mobile.theme-1.2.0-beta.1.css
@@ -17,7 +12,6 @@ www\Content\jquery.mobile-1.2.0-beta.1.min.css
 www\cordova.js
 www\cordova_plugins.js
 www\css\back.PNG
-www\css\home.png
 www\css\index.css
 www\css\jquery.mobile-1.0b1.min.css
 www\css\jquery.mobile-1.4.1.min.css
@@ -36,10 +30,6 @@ www\css\Open_Sans\OpenSans-LightItalic.ttf
 www\css\Open_Sans\OpenSans-Regular.ttf
 www\css\Open_Sans\OpenSans-Semibold.ttf
 www\css\Open_Sans\OpenSans-SemiboldItalic.ttf
-www\css\Open_Sans_Condensed\LICENSE.txt
-www\css\Open_Sans_Condensed\OpenSans-CondBold.ttf
-www\css\Open_Sans_Condensed\OpenSans-CondLight.ttf
-www\css\Open_Sans_Condensed\OpenSans-CondLightItalic.ttf
 www\css\pro_weiss.png
 www\css\produkte.png
 www\css\scanner.png
@@ -56,13 +46,11 @@ www\css\start_laptop.png
 www\css\start_smatphones.png
 www\css\start_tablet.png
 www\css\start_tablet_hoch.png
-www\css\suche.PNG
 www\css\zuruck - Kopie.png
 www\css\zuruck.png
 www\index.html
 www\index.php
 www\packages.config
-www\Project_Readme.html
 www\scripts\ajax.js
 www\scripts\index.js
 www\scripts\jquery.mobile-1.2.0-beta.1.js

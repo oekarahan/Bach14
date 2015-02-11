@@ -472,6 +472,7 @@
         text-align:center;
         margin-left:7%;
         margin-right:5%;
+        overflow-y:scroll;
 
     }
 
@@ -487,6 +488,7 @@
         text-align:center;
         margin-left:7%;
         margin-right:5%;
+        overflow-y:scroll;
 
     }
 
@@ -500,6 +502,7 @@
         text-align:center;
         margin-left:9%;
         margin-right:5%;
+        overflow-y:scroll;
     }
 
 
@@ -515,6 +518,7 @@
         text-align:center;
         margin-left:9%;
         margin-right:5%;
+        overflow-y:scroll;
         }
 
 

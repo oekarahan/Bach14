@@ -32,23 +32,8 @@
       <PackagePath>images\storelogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\Content\images\icons-18-black.png">
-      <PackagePath>www\Content\images\icons-18-black.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\Content\images\icons-18-white.png">
-      <PackagePath>www\Content\images\icons-18-white.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\Content\images\icons-36-black.png">
-      <PackagePath>www\Content\images\icons-36-black.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\Content\images\icons-36-white.png">
-      <PackagePath>www\Content\images\icons-36-white.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\back.PNG">
       <PackagePath>www\css\back.PNG</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\home.png">
-      <PackagePath>www\css\home.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\leistung.png">
       <PackagePath>www\css\leistung.png</PackagePath>
@@ -106,9 +91,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\start_tablet_hoch.png">
       <PackagePath>www\css\start_tablet_hoch.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\suche.PNG">
-      <PackagePath>www\css\suche.PNG</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\zuruck - Kopie.png">
       <PackagePath>www\css\zuruck - Kopie.png</PackagePath>
@@ -800,18 +782,6 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\images\icons-png\video-white.png">
       <PackagePath>www\scripts\jQueryMobile\images\icons-png\video-white.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\Content\images\ajax-loader.gif">
-      <PackagePath>www\Content\images\ajax-loader.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\css\themes\default\images\ajax-loader.gif">
-      <PackagePath>www\scripts\jQueryMobile\demos\css\themes\default\images\ajax-loader.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\theme-classic\images\ajax-loader.gif">
-      <PackagePath>www\scripts\jQueryMobile\demos\theme-classic\images\ajax-loader.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\images\ajax-loader.gif">
-      <PackagePath>www\scripts\jQueryMobile\images\ajax-loader.gif</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\Content\jquery.mobile-1.2.0-beta.1.css">
       <PackagePath>www\Content\jquery.mobile-1.2.0-beta.1.css</PackagePath>
     </AppxPackagedFile>
@@ -1058,9 +1028,6 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\Open_Sans\LICENSE.txt">
       <PackagePath>www\css\Open_Sans\LICENSE.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\Open_Sans_Condensed\LICENSE.txt">
-      <PackagePath>www\css\Open_Sans_Condensed\LICENSE.txt</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\_assets\img\glyphish-icons\Read me first - license.txt">
       <PackagePath>www\scripts\jQueryMobile\demos\_assets\img\glyphish-icons\Read me first - license.txt</PackagePath>
     </AppxPackagedFile>
@@ -1094,20 +1061,8 @@
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\Open_Sans\OpenSans-SemiboldItalic.ttf">
       <PackagePath>www\css\Open_Sans\OpenSans-SemiboldItalic.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\Open_Sans_Condensed\OpenSans-CondBold.ttf">
-      <PackagePath>www\css\Open_Sans_Condensed\OpenSans-CondBold.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\Open_Sans_Condensed\OpenSans-CondLight.ttf">
-      <PackagePath>www\css\Open_Sans_Condensed\OpenSans-CondLight.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\css\Open_Sans_Condensed\OpenSans-CondLightItalic.ttf">
-      <PackagePath>www\css\Open_Sans_Condensed\OpenSans-CondLightItalic.ttf</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\index.html">
       <PackagePath>www\index.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\Project_Readme.html">
-      <PackagePath>www\Project_Readme.html</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\backbone-requirejs\backbone-require.html">
       <PackagePath>www\scripts\jQueryMobile\demos\backbone-requirejs\backbone-require.html</PackagePath>
@@ -1669,6 +1624,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\jquery.mobile-1.4.5.min.map">
       <PackagePath>www\scripts\jQueryMobile\jquery.mobile-1.4.5.min.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\css\themes\default\images\ajax-loader.gif">
+      <PackagePath>www\scripts\jQueryMobile\demos\css\themes\default\images\ajax-loader.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\theme-classic\images\ajax-loader.gif">
+      <PackagePath>www\scripts\jQueryMobile\demos\theme-classic\images\ajax-loader.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\images\ajax-loader.gif">
+      <PackagePath>www\scripts\jQueryMobile\images\ajax-loader.gif</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin.karahan\Documents\Visual Studio 2013\Projects\BlankCordovaApp2\BlankCordovaApp2\bld\Debug\platforms\windows\www\scripts\jQueryMobile\demos\css\themes\default\images\icons-svg\action-black.svg">
       <PackagePath>www\scripts\jQueryMobile\demos\css\themes\default\images\icons-svg\action-black.svg</PackagePath>

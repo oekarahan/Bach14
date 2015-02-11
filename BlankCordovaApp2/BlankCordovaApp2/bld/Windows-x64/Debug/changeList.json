@@ -922,7 +922,9 @@
   "deletedFilesIos": [],
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
-  "changedFiles": [],
+  "changedFiles": [
+    "css\\index.css"
+  ],
   "deletedFiles": [],
   "addedPlugins": [],
   "deletedPlugins": []
