@@ -15,7 +15,7 @@
     </Resources>
     <Applications>
         <Application Id="io.cordova.BlankCordovaApp2" StartPage="www/index.html">
-            <VisualElements BackgroundColor="#464646" Description="CordovaApp" DisplayName="BlankCordovaApp2" ForegroundText="light" Logo="images\logo.png" SmallLogo="images\smalllogo.png">
+            <VisualElements BackgroundColor="#464646" Description="CordovaApp" DisplayName="Katalog-IVF" ForegroundText="light" Logo="images\logo.png" SmallLogo="images\smalllogo.png">
                 <DefaultTile ShowName="logoOnly" />
                 <SplashScreen Image="images\splashscreen.png" />
             </VisualElements>

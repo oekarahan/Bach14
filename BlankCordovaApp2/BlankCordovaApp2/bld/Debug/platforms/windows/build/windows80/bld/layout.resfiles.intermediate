@@ -51,6 +51,9 @@ www\css\zuruck.png
 www\index.html
 www\index.php
 www\packages.config
+www\plugins\org.apache.cordova.network-information\src\windows8\NetworkInfoProxy.js
+www\plugins\org.apache.cordova.network-information\www\Connection.js
+www\plugins\org.apache.cordova.network-information\www\network.js
 www\scripts\ajax.js
 www\scripts\index.js
 www\scripts\jquery.mobile-1.2.0-beta.1.js
